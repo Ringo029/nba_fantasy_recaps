@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fantasy Weekly Recaps</title>
+
+  <meta name="description" content="Weekly fantasy basketball recap reports optimized for mobile." />
+  <meta name="referrer" content="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Basic CSP via meta (limited vs server headers, but still helpful on static pages) -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 img-src 'self' https: data:;
+                 style-src 'self' 'unsafe-inline';
+                 script-src 'self';
+                 object-src 'none';
+                 base-uri 'self';" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>🏀 Fantasy Weekly Recaps</h1>
+        <p id="leagueLine">Loading league…</p>
+      </div>
+      <div class="pill">
+        <span>📱</span>
+        <span class="tag">WhatsApp-friendly</span>
+      </div>
+    </div>
+
+    <!-- Hero Summary Card -->
+    <section id="hero-summary" class="card hero-card">
+      <div class="hero-header">
+        <h1 id="hero-title" class="hero-title">🏀 Fantasy Week <span id="hero-week">—</span> Overview</h1>
+        <div id="hero-stats" class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-label">Team of the Week:</span>
+            <span id="stat-top-team" class="stat-value">—</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">MVP:</span>
+            <span id="stat-mvp" class="stat-value">—</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Beatdown:</span>
+            <span id="stat-beatdown" class="stat-value">—</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Closest:</span>
+            <span id="stat-closest" class="stat-value">—</span>
+          </div>
+        </div>
+      </div>
+      <div id="week-nav" class="week-nav">
+        <button id="prev-week" class="nav-btn" title="Previous week">⬅</button>
+        <select id="week-select" class="week-select"></select>
+        <button id="next-week" class="nav-btn" title="Next week">➡</button>
+        <a id="view-full-recap" href="#" class="btn btn-primary" style="margin-left: auto;">View Full Recap →</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-h">
+          <h2>Recaps</h2>
+          <p>Quick hits in chat → full report here.</p>
+        </div>
+        <div class="card-b">
+          <div id="recapsList" class="recaps-list"></div>
+          <div class="footer">
+            Tip: Bookmark this page. Each week gets a new link.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-h">
+          <h2>League Teams</h2>
+          <p>Sorted by standings • Shows power ranking movement</p>
+        </div>
+        <div class="card-b">
+          <div id="teamsList" class="teams"></div>
+          <div class="notice">
+            Security note: this site uses only pre-generated public metadata (no tokens, no private data).
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pre-generated safe metadata (no secrets) -->
+  <script src="data/league_metadata.js"></script>
+  <script src="data/recaps_index.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,93 @@
+// Generated from recaps_index.json
+window.RECAPS_INDEX = {
+  "recaps": [
+    {
+      "week": 8,
+      "captured_at": "2025-12-15T20:25:00Z",
+      "url": "recaps/week-08.html",
+      "quick_hits": [
+        "**Team of the Week:** El TumbaCuello 🏆 with 526.0 pts",
+        "**Weekly MVP:** Trey Murphy III (Morrisville Rehab Facility) with 87.0 pts",
+        "**Closest Matchup:** Los Suns de PFKNR (427.0) def. Minneapolis Lakers (414.0) — margin 13 pts",
+        "**Biggest Beatdown:** Barrio Cerrillos 🏆 (436.0) obliterated Ringo's Cool Team (345.0) by 91 pts"
+      ]
+    },
+    {
+      "week": 7,
+      "captured_at": "2025-12-08T06:27:00Z",
+      "url": "recaps/week-07.html",
+      "quick_hits": [
+        "**Team of the Week:** Los Suns de PFKNR with 944.0 pts",
+        "**Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 163.0 pts",
+        "**Closest Matchup:** La Guillotina (826.0) def. Champion DX S*CK IT  (739.0) — margin 87 pts",
+        "**Biggest Beatdown:** El Mostroso (888.0) obliterated BBQ CHICKEN HOSPITAL (533.0) by 355 pts"
+      ]
+    },
+    {
+      "week": 6,
+      "captured_at": "2025-12-01T11:30:00Z",
+      "url": "recaps/week-06.html",
+      "quick_hits": [
+        "**Team of the Week:** Los Suns de PFKNR with 754.0 pts",
+        "**Weekly MVP:** Anthony Edwards (BBQ CHICKEN HOSPITAL) with 127.0 pts",
+        "**Closest Matchup:** Barrio Cerrillos 🏆 (695.0) def. Las Villas ENDGAME (671.0) — margin 24 pts",
+        "**Biggest Beatdown:** El TumbaCuello 🏆 (681.0) obliterated Bench warming brick layers unit (527.0) by 154 pts"
+      ]
+    },
+    {
+      "week": 5,
+      "captured_at": "2025-11-30T11:24:00Z",
+      "url": "recaps/week-05.html",
+      "quick_hits": [
+        "**Team of the Week:** Minneapolis Lakers with 855.0 pts",
+        "**Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 175.0 pts",
+        "**Closest Matchup:** Barrio Cerrillos 🏆 (629.0) def. Reaves's Pieces (619.0) — margin 10 pts",
+        "**Biggest Beatdown:** Minneapolis Lakers (855.0) obliterated Morrisville Rehab Facility (576.0) by 279 pts"
+      ]
+    },
+    {
+      "week": 4,
+      "captured_at": "2025-11-30T11:24:00Z",
+      "url": "recaps/week-04.html",
+      "quick_hits": [
+        "**Team of the Week:** Los Suns de PFKNR with 833.0 pts",
+        "**Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 158.0 pts",
+        "**Closest Matchup:** La Guillotina (757.0) def. BBQ CHICKEN HOSPITAL (691.0) — margin 66 pts",
+        "**Biggest Beatdown:** El TumbaCuello 🏆 (762.0) obliterated Ringo's Cool Team (528.0) by 234 pts"
+      ]
+    },
+    {
+      "week": 3,
+      "captured_at": "2025-11-30T11:24:00Z",
+      "url": "recaps/week-03.html",
+      "quick_hits": [
+        "**Team of the Week:** Minneapolis Lakers with 806.0 pts",
+        "**Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 196.0 pts",
+        "**Closest Matchup:** Barrio Cerrillos 🏆 (748.0) def. El Mostroso (721.0) — margin 27 pts",
+        "**Biggest Beatdown:** Morovis  El Calor 🏆 (778.0) obliterated Champion DX S*CK IT  (647.0) by 131 pts"
+      ]
+    },
+    {
+      "week": 2,
+      "captured_at": "2025-11-30T18:24:00Z",
+      "url": "recaps/week-02.html",
+      "quick_hits": [
+        "**Team of the Week:** Minneapolis Lakers with 779.0 pts",
+        "**Weekly MVP:** Tyrese Maxey (Ringo's Cool Team) with 137.0 pts",
+        "**Closest Matchup:** El Mostroso (863.0) def. Morrisville Rehab Facility (853.0) — margin 10 pts",
+        "**Biggest Beatdown:** Las Villas ENDGAME (857.0) obliterated BBQ CHICKEN HOSPITAL (648.0) by 209 pts"
+      ]
+    },
+    {
+      "week": 1,
+      "captured_at": "2025-11-30T18:24:00Z",
+      "url": "recaps/week-01.html",
+      "quick_hits": [
+        "**Team of the Week:** Barrio Cerrillos 🏆 with 671.0 pts",
+        "**Weekly MVP:** Giannis Antetokounmpo (Barrio Cerrillos 🏆) with 141.0 pts",
+        "**Closest Matchup:** Las Villas ENDGAME (658.0) def. Minneapolis Lakers (634.0) — margin 24 pts",
+        "**Biggest Beatdown:** Barrio Cerrillos 🏆 (671.0) obliterated Morrisville Rehab Facility (520.0) by 151 pts"
+      ]
+    }
+  ]
+};

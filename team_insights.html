@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fantasy Team Insights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050816;
+      color: #f9fafb;
+      margin: 0;
+      padding: 16px;
+    }
+    h1 {
+      margin-bottom: 8px;
+    }
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    select {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid #4b5563;
+      background: #0b1220;
+      color: #f9fafb;
+      cursor: pointer;
+    }
+    
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #1f2937;
+    }
+    .tab {
+      padding: 10px 16px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: #9ca3af;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .tab:hover {
+      color: #f9fafb;
+    }
+    .tab.active {
+      color: #facc15;
+      border-bottom-color: #facc15;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid #1f2937;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #111827;
+      border: 1px solid #4b5563;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+    .badge--good {
+      border-color: #22c55e;
+      color: #bbf7d0;
+    }
+    .badge--bad {
+      border-color: #ef4444;
+      color: #fecaca;
+    }
+    .list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .list li {
+      margin-bottom: 4px;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .muted {
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+    .highlight {
+      color: #facc15;
+      font-weight: 600;
+    }
+
+    .team-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .team-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #020617;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      border: 1px solid #1f2937;
+      flex-shrink: 0;
+    }
+    .team-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .team-meta-name {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .team-meta-owner {
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+
+    /* Roster Table */
+    .roster-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    .roster-table th {
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 1px solid #1f2937;
+      color: #9ca3af;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .roster-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #1f2937;
+    }
+    .roster-table tr:hover {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .roster-table tr:last-child td {
+      border-bottom: 2px solid #1f2937;
+      font-weight: 600;
+      color: #facc15;
+    }
+    .roster-table .text-right {
+      text-align: right;
+    }
+    .roster-table .text-center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>Fantasy Team Insights</h1>
+  <p class="muted">Scouting report for your team and upcoming opponent.</p>
+
+  <div class="toolbar">
+    <label>
+      Team:
+      <select id="team-select"></select>
+    </label>
+    <span id="meta-label" class="muted"></span>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="overview">Overview</button>
+    <button class="tab" data-tab="roster">Next Week Roster</button>
+  </div>
+
+  <!-- Overview Tab -->
+  <div id="overview-tab" class="tab-content active">
+    <div class="grid">
+      <div class="card" id="summary-card">
+        <h2>Summary</h2>
+        <div id="summary-content"></div>
+      </div>
+
+      <div class="card" id="categories-card">
+        <h2>Category Profile</h2>
+        <div id="categories-content"></div>
+      </div>
+
+      <div class="card" id="roster-card">
+        <h2>Roster Trends</h2>
+        <div id="roster-content"></div>
+      </div>
+
+      <div class="card" id="opponent-card">
+        <h2 id="opponent-title">Opponent Scout</h2>
+        <div id="opponent-content"></div>
+        <button id="view-opponent-btn" class="btn" style="margin-top: 8px; display: none;">View opponent team card</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next Week Roster Tab -->
+  <div id="roster-tab" class="tab-content">
+    <div class="card">
+      <h2 id="roster-title">Next Week Roster</h2>
+      <div id="roster-table-content"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const selectEl = document.getElementById("team-select");
+  const metaLabelEl = document.getElementById("meta-label");
+
+  const summaryEl = document.getElementById("summary-content");
+  const categoriesEl = document.getElementById("categories-content");
+  const rosterEl = document.getElementById("roster-content");
+  const opponentEl = document.getElementById("opponent-content");
+  const rosterTableEl = document.getElementById("roster-table-content");
+  const rosterTitleEl = document.getElementById("roster-title");
+  const opponentTitleEl = document.getElementById("opponent-title");
+  const viewOpponentBtn = document.getElementById("view-opponent-btn");
+
+  let insightsData = [];
+  let leagueMetadata = null;
+
+  function getTeamMetadata(teamName) {
+    if (!leagueMetadata || !Array.isArray(leagueMetadata.teams)) {
+      return { logo: null, owner: null };
+    }
+    const trimmed = teamName && teamName.trim();
+    const team = leagueMetadata.teams.find(t =>
+      t.team_name === teamName ||
+      (t.team_name && trimmed && t.team_name.trim() === trimmed)
+    );
+    return {
+      logo: team && team.logo_url ? team.logo_url : null,
+      owner: team && team.owner ? team.owner : null
+    };
+  }
+
+  const LS_MY_TEAM = 'fb_my_team';
+  const params = new URLSearchParams(window.location.search);
+  const urlTeam = params.get('team');
+
+  function getMyTeam() {
+    try {
+      return localStorage.getItem(LS_MY_TEAM) || "";
+    } catch {
+      return "";
+    }
+  }
+
+  function setMyTeam(name) {
+    try {
+      localStorage.setItem(LS_MY_TEAM, name || "");
+    } catch {
+      // ignore
+    }
+  }
+
+  // Tab switching
+  document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      const tabName = tab.dataset.tab;
+      
+      // Update active tab
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      
+      // Update active content
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      document.getElementById(`${tabName}-tab`).classList.add("active");
+    });
+  });
+
+  function formatNumber(x, decimals = 1) {
+    if (x === null || x === undefined || isNaN(x)) return "–";
+    const factor = Math.pow(10, decimals);
+    const rounded = Math.round(x * factor) / factor;
+    return rounded.toFixed(decimals);
+  }
+
+  function renderRosterTable(roster, teamName) {
+    if (!roster || roster.length === 0) {
+      rosterTableEl.innerHTML = `<p class="muted">No roster projection data available for next week.</p>`;
+      return;
+    }
+
+    let html = `<table class="roster-table">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th class="text-center">NBA Team</th>
+          <th class="text-right">FP/G</th>
+          <th class="text-center">Games</th>
+          <th class="text-right">Projected FP</th>
+        </tr>
+      </thead>
+      <tbody>`;
+
+    let totalProjected = 0;
+    roster.forEach(player => {
+      const nbaTeam = player.nba_team || "—";
+      const fpPerGame = formatNumber(player.fp_per_game, 1);
+      const games = player.games || 0;
+      const projected = player.projected_fp || 0;
+      totalProjected += projected;
+
+      html += `
+        <tr>
+          <td>${player.player_name || "—"}</td>
+          <td class="text-center">${nbaTeam}</td>
+          <td class="text-right">${fpPerGame}</td>
+          <td class="text-center">${games}</td>
+          <td class="text-right">${formatNumber(projected, 1)}</td>
+        </tr>`;
+    });
+
+    html += `
+        <tr>
+          <td colspan="4"><strong>Total Projected FP</strong></td>
+          <td class="text-right"><strong>${formatNumber(totalProjected, 1)}</strong></td>
+        </tr>
+      </tbody>
+    </table>`;
+
+    rosterTableEl.innerHTML = html;
+    rosterTitleEl.textContent = `${teamName} - Next Week Roster`;
+  }
+
+  function renderTeam(teamName) {
+    // Get all entries for this team and select the one with the highest week number
+    const teamEntries = insightsData.filter(t => t.team_name === teamName);
+    if (teamEntries.length === 0) return;
+    
+    // Sort by week descending and take the first (most recent) entry
+    const ti = teamEntries.sort((a, b) => (b.week || 0) - (a.week || 0))[0];
+    if (!ti) return;
+
+    setMyTeam(teamName);
+    metaLabelEl.textContent = `Week ${ti.week}`;
+
+    // Summary (with team logo + owner)
+    const meta = getTeamMetadata(teamName);
+    const teamMetaHtml = `
+      <div class="team-meta">
+        <div class="team-logo">
+          ${meta.logo ? `<img src="${meta.logo}" alt="${teamName} logo" />` : "🏀"}
+        </div>
+        <div>
+          <div class="team-meta-name">${teamName}</div>
+          ${meta.owner ? `<div class="team-meta-owner">Owner: ${meta.owner}</div>` : ""}
+        </div>
+      </div>
+    `;
+
+    const summaryStatsHtml = `
+      <p><span class="highlight">${formatNumber(ti.total_fp, 1)} FP</span> total • Rank <strong>${ti.rank_by_fp}</strong></p>
+      <p class="muted">Avg FP / game: ${formatNumber(ti.avg_fp_per_game, 1)}</p>
+      <p class="muted">Games this week: ${ti.games_this_week} (schedule edge: ${ti.schedule_advantage >= 0 ? "+" : ""}${ti.schedule_advantage})</p>
+      <p class="muted">Bench leakage: ${formatNumber(ti.bench_leakage_fp, 1)} FP • IR leakage: ${formatNumber(ti.ir_leakage_fp, 1)} FP</p>
+      ${ti.official_score !== null ? `<p class="muted">ESPN score: ${formatNumber(ti.official_score, 1)} | Our FP sum: ${formatNumber(ti.fp_from_all_players, 1)}<br />Gap: ${formatNumber(ti.scoreboard_gap, 1)}</p>` : ""}
+    `;
+
+    summaryEl.innerHTML = teamMetaHtml + summaryStatsHtml;
+
+    // Categories
+    const strengths = ti.strengths || [];
+    const weaknesses = ti.weaknesses || [];
+    const z = ti.category_zscores || {};
+
+    const cats = Object.keys(z);
+    const listItems = cats.map(cat => {
+      const val = z[cat];
+      const cls = val >= 0.7 ? "badge badge--good" : val <= -0.7 ? "badge badge--bad" : "badge";
+      return `<span class="${cls}">${cat.toUpperCase()} ${formatNumber(val, 2)}</span>`;
+    }).join("");
+
+    categoriesEl.innerHTML = `
+      <p><strong>Strengths:</strong> ${strengths.length ? strengths.join(", ") : "–"}</p>
+      <p><strong>Weaknesses:</strong> ${weaknesses.length ? weaknesses.join(", ") : "–"}</p>
+      <div class="pill-row" style="margin-top:8px;">${listItems}</div>
+    `;
+
+    // Roster trends
+    const hot = (ti.hot_players || []).map(p => `<li>🔥 ${p}</li>`).join("") || "<li class='muted'>No clear hot players</li>";
+    const cold = (ti.cold_players || []).map(p => `<li>🧊 ${p}</li>`).join("") || "<li class='muted'>No clear cold players</li>";
+
+    rosterEl.innerHTML = `
+      <p class="muted">Injury impact (approx FP from OUT/DTD): ${formatNumber(ti.injury_impact_fp, 1)} FP</p>
+      <div style="display:flex; gap:16px;">
+        <div style="flex:1;">
+          <p><strong>Hot players</strong></p>
+          <ul class="list">${hot}</ul>
+        </div>
+        <div style="flex:1;">
+          <p><strong>Cold players</strong></p>
+          <ul class="list">${cold}</ul>
+        </div>
+      </div>
+    `;
+
+    // Opponent
+    if (!ti.opponent) {
+      opponentEl.innerHTML = `<p class="muted">No opponent data available for this week.</p>`;
+      if (opponentTitleEl) {
+        opponentTitleEl.textContent = "Opponent Scout";
+      }
+      if (viewOpponentBtn) {
+        viewOpponentBtn.style.display = "none";
+        viewOpponentBtn.onclick = null;
+      }
+    } else {
+      const opp = ti.opponent;
+      const oppName = opp.team_name || opp.name || "";
+      const metaOpp = getTeamMetadata(oppName);
+      const prob = opp.win_probability !== null && opp.win_probability !== undefined
+        ? (opp.win_probability * 100).toFixed(1) + "%"
+        : "–";
+
+      opponentEl.innerHTML = `
+        <div class="team-meta" style="margin-bottom: 10px;">
+          <div class="team-logo">
+            ${metaOpp.logo ? `<img src="${metaOpp.logo}" alt="${oppName} logo" />` : "🏀"}
+          </div>
+          <div>
+            <div class="team-meta-name">${oppName || opp.name || "Opponent"}</div>
+            ${metaOpp.owner ? `<div class="team-meta-owner">Owner: ${metaOpp.owner}</div>` : ""}
+          </div>
+        </div>
+        <p class="muted">Opponent strength index: ${formatNumber(opp.strength_index || 0, 2)}</p>
+        <p class="muted">Model win probability: <span class="highlight">${prob}</span></p>
+        <p class="muted">Use this as a guide for streaming and start/sit decisions – especially in your weak categories.</p>
+      `;
+
+      if (opponentTitleEl) {
+        const headerName = oppName || opp.name || "";
+        const headerProb = opp.win_probability !== null && opp.win_probability !== undefined
+          ? `${(opp.win_probability * 100).toFixed(0)}%`
+          : "–";
+        opponentTitleEl.textContent = headerName
+          ? `Opponent Scout – ${headerName} (Win prob: ${headerProb})`
+          : "Opponent Scout";
+      }
+
+      if (viewOpponentBtn && oppName) {
+        viewOpponentBtn.style.display = "inline-block";
+        viewOpponentBtn.onclick = () => {
+          const target = oppName;
+          if (!target) return;
+          selectEl.value = target;
+          setMyTeam(target);
+          renderTeam(target);
+        };
+      } else if (viewOpponentBtn) {
+        viewOpponentBtn.style.display = "none";
+        viewOpponentBtn.onclick = null;
+      }
+    }
+
+    // Next Week Roster
+    renderRosterTable(ti.next_week_roster, teamName);
+  }
+
+  Promise.all([
+    fetch("data/team_insights.json").then(res => res.json()),
+    fetch("data/league_metadata.json").then(res => res.json()).catch(() => null)
+  ])
+    .then(([insights, leagueMeta]) => {
+      insightsData = Array.isArray(insights) ? insights : [];
+      leagueMetadata = leagueMeta;
+
+      if (!Array.isArray(insightsData) || insightsData.length === 0) {
+        summaryEl.innerHTML = `<p class="muted">No team insights data found.</p>`;
+        return;
+      }
+
+      // Populate select with unique team names
+      const uniqueTeamNames = [...new Set(insightsData.map(t => t.team_name))];
+      uniqueTeamNames
+        .sort((a, b) => a.localeCompare(b))
+        .forEach(teamName => {
+          const opt = document.createElement("option");
+          opt.value = teamName;
+          opt.textContent = teamName;
+          selectEl.appendChild(opt);
+        });
+
+      selectEl.addEventListener("change", () => {
+        const name = selectEl.value;
+        setMyTeam(name);
+        renderTeam(name);
+      });
+
+      // Initial render: URL param → localStorage → first team
+      const teamNames = insightsData.map(t => t.team_name);
+      let initialTeam = urlTeam && teamNames.includes(urlTeam) ? urlTeam : null;
+      if (!initialTeam) {
+        const stored = getMyTeam();
+        if (stored && teamNames.includes(stored)) {
+          initialTeam = stored;
+        }
+      }
+      if (!initialTeam) {
+        initialTeam = teamNames[0];
+      }
+
+      selectEl.value = initialTeam;
+      setMyTeam(initialTeam);
+      renderTeam(initialTeam);
+    })
+    .catch(err => {
+      console.error("Failed to load team_insights / league_metadata", err);
+      summaryEl.innerHTML = `<p class="muted">Error loading team insights. Make sure data/team_insights.json and data/league_metadata.json exist.</p>`;
+    });
+</script>
+</body>
+</html>
