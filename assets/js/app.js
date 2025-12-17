@@ -30,6 +30,13 @@ function renderTeams(meta) {
   teams.forEach(t => {
     const div = document.createElement("div");
     div.className = "team";
+    
+    // Make team card clickable to open team insights
+    div.addEventListener("click", () => {
+      const teamName = encodeURIComponent(t.team_name || "");
+      window.location.href = `team_insights.html?team=${teamName}`;
+    });
+    div.title = `Click to view insights for ${t.team_name || "team"}`;
 
     const img = document.createElement("img");
     img.alt = `${t.team_name || "Team"} logo`;

@@ -30,5 +30,10 @@ if __name__ == "__main__":
     json_to_js(DATA_DIR / "league_metadata.json", "LEAGUE_METADATA")
     json_to_js(DATA_DIR / "recaps_index.json", "RECAPS_INDEX")
     
+    # Generate team_insights.js if the JSON file exists
+    team_insights_json = DATA_DIR / "team_insights.json"
+    if team_insights_json.exists():
+        json_to_js(team_insights_json, "TEAM_INSIGHTS")
+    
     print("\nDone!")
 

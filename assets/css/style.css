@@ -11,6 +11,9 @@
 }
 
 *{box-sizing:border-box}
+html{
+  scroll-behavior: smooth;
+}
 html,body{height:100%}
 body{
   margin:0;
@@ -62,6 +65,27 @@ a:hover{text-decoration:underline}
   border:1px solid var(--border);
   border-radius:999px;
   background: rgba(17,24,38,.7);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+.pill-link{
+  cursor: pointer;
+}
+.pill-link:hover{
+  background: rgba(94,234,212,.1);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.pill-link:active{
+  transform: translateY(0);
+}
+/* Make pill more prominent on mobile */
+@media (max-width: 600px) {
+  .pill-link {
+    padding: 10px 14px;
+    font-weight: 500;
+  }
 }
 
 .grid{
@@ -153,6 +177,13 @@ a:hover{text-decoration:underline}
   border: 1px solid rgba(36,48,69,.7);
   border-radius: 12px;
   background: rgba(11,15,20,.35);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.team:hover{
+  background: rgba(11,15,20,.5);
+  border-color: var(--accent);
+  transform: translateY(-1px);
 }
 .team img{
   width: 36px;
