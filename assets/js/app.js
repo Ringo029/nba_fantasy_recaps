@@ -7,6 +7,27 @@ function safeText(s) {
   ));
 }
 
+function formatQuickHit(hit) {
+  // Remove markdown bold markers and format nicely
+  let text = hit.replace(/\*\*/g, "").trim();
+  
+  // Split on colon if present
+  if (text.includes(":")) {
+    const [label, ...valueParts] = text.split(":");
+    const value = valueParts.join(":").trim();
+    return {
+      label: label.trim(),
+      value: value
+    };
+  }
+  
+  // If no colon, return as is
+  return {
+    label: "",
+    value: text
+  };
+}
+
 function renderLeagueHeader(meta) {
   const el = document.getElementById("leagueLine");
   const name = safeText(meta.league_name || "League");
@@ -225,13 +246,21 @@ function renderRecaps(index) {
         <div><a href="${safeText(r.url)}">Open →</a></div>
       </div>
       <ul class="quickhits">
-        ${(r.quick_hits || []).slice(0, 6).map(h => `<li>${safeText(h)}</li>`).join("")}
+        ${(r.quick_hits || []).slice(0, 6).map(h => {
+          const formatted = formatQuickHit(h);
+          if (formatted.label) {
+            return `<li><span class="quickhit-label">${safeText(formatted.label)}:</span> <span class="quickhit-value">${safeText(formatted.value)}</span></li>`;
+          } else {
+            return `<li>${safeText(formatted.value)}</li>`;
+          }
+        }).join("")}
       </ul>
     `;
 
     root.appendChild(card);
   });
 }
+
 
 (async function init() {
   try {

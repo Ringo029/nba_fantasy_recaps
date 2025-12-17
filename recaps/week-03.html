@@ -60,6 +60,10 @@
         <h2 class="divider-title">WEEKLY RECAP</h2>
         <span class="divider-line"></span>
       </div>
+      <div id="recap-actions" class="recap-actions">
+        <button id="copy-recap" class="btn">Copy Recap (MD)</button>
+        <button id="save-recap" class="btn">Download recap.md</button>
+      </div>
       <div id="recap" class="md"></div>
     </section>
   </main>
@@ -71,6 +75,89 @@
   <script>
     // Embedded markdown content
     const markdownContent = "# FANTASY WEEK 3 RECAP\n\n## \ud83c\udfc6 League Standings\n\n```\n standing_rank                       team_name      record\n             1              Barrio Cerrillos \ud83c\udfc6 5-0-0 (1.0)\n             2               Los Suns de PFKNR 5-0-0 (1.0)\n             3              Minneapolis Lakers 4-1-0 (0.8)\n             4              Las Villas ENDGAME 4-1-0 (0.8)\n             5             Morovis  El Calor \ud83c\udfc6 3-2-0 (0.6)\n             6                El TumbaCuello \ud83c\udfc6 3-2-0 (0.6)\n             7                 Reaves's Pieces 3-2-0 (0.6)\n             8            BBQ CHICKEN HOSPITAL 3-2-0 (0.6)\n             9                     El Mostroso 2-3-0 (0.4)\n            10                   La Guillotina 1-4-0 (0.2)\n            11            Champion DX S*CK IT  1-4-0 (0.2)\n            12 Bench warming brick layers unit 1-4-0 (0.2)\n            13               Ringo's Cool Team 0-5-0 (0.0)\n            14      Morrisville Rehab Facility 0-5-0 (0.0)\n```\n\n## \ud83d\udcaa Weekly Power Ranking (Season-Adjusted Power Score)\n\n```\n power_rank                       team_name  week_points  power_score movement\n          1              Minneapolis Lakers        806.0     0.887565        -\n          2               Los Suns de PFKNR        766.0     0.756342     ^ +2\n          3              Barrio Cerrillos \ud83c\udfc6        748.0     0.750290        -\n          4            BBQ CHICKEN HOSPITAL        814.0     0.737789     ^ +5\n          5             Morovis  El Calor \ud83c\udfc6        778.0     0.695577     ^ +5\n          6              Las Villas ENDGAME        703.0     0.571562     v -4\n          7                     El Mostroso        721.0     0.539558     v -2\n          8                 Reaves's Pieces        727.0     0.526603     v -2\n          9                El TumbaCuello \ud83c\udfc6        621.0     0.481015     v -2\n         10               Ringo's Cool Team        739.0     0.383477     ^ +4\n         11                   La Guillotina        687.0     0.293167        -\n         12            Champion DX S*CK IT         647.0     0.193039        -\n         13      Morrisville Rehab Facility        673.0     0.180829     v -5\n         14 Bench warming brick layers unit        638.0     0.158766     v -1\n```\n\n## \ud83d\udd25 Top 10 Players of the Week\n\n```\n player_rank_week             player_name  fantasy_points            team_name\n                1            Nikola Jokic           196.0 Champion DX S*CK IT \n                2   Giannis Antetokounmpo           140.0   Barrio Cerrillos \ud83c\udfc6\n                3 Shai Gilgeous-Alexander           137.0   Minneapolis Lakers\n                4             Jalen Duren           134.0     El TumbaCuello \ud83c\udfc6\n                5            Tyrese Maxey           121.0    Ringo's Cool Team\n                6      Isaiah Hartenstein           120.0 BBQ CHICKEN HOSPITAL\n                7         Cade Cunningham           120.0    Ringo's Cool Team\n                8          Alperen Sengun           113.0        La Guillotina\n                9           Julius Randle           110.0          El Mostroso\n               10             Nic Claxton           106.0    Los Suns de PFKNR\n```\n\n## \ud83d\udcd6 Storylines\n\n- **Team of the Week:** Minneapolis Lakers with 806.0 pts\n- **Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 196.0 pts\n- **Closest Matchup:** Barrio Cerrillos \ud83c\udfc6 (748.0) def. El Mostroso (721.0) \u2014 margin 27 pts\n- **Biggest Beatdown:** Morovis  El Calor \ud83c\udfc6 (778.0) obliterated Champion DX S*CK IT  (647.0) by 131 pts\n\n## \ud83c\udfe5 Injury Watch\n\n**Most Affected:** El TumbaCuello \ud83c\udfc6 \u2014 5 injured players, 9.0 games missed \u2192 ~231.0 FP lost (37.2% of team output).\n\n\ud83e\uddbe **Ironman Award:** Barrio Cerrillos \ud83c\udfc6, Bench warming brick layers unit, Las Villas ENDGAME, Los Suns de PFKNR, Minneapolis Lakers, Champion DX S*CK IT \n\n**Notable Absences:**\n\n- \ud83d\ude37 LeBron James (DTD), 3.0 missed, ~129.0 FP impact\n- \ud83e\ude7c Jayson Tatum (O), 3.0 missed, ~129.0 FP impact\n- \ud83e\ude7c Dejounte Murray (O), 3.0 missed, ~129.0 FP impact\n- \ud83e\ude7c Scotty Pippen Jr. (O), 3.0 missed, ~129.0 FP impact\n- \ud83d\ude37 Coby White (DTD), 3.0 missed, ~129.0 FP impact\n- \ud83e\ude7c Kyrie Irving (O), 3.0 missed, ~129.0 FP impact\n\n**Injury Heat Map:**\n\n- BBQ CHICKEN HOSPITAL: LeBron James (DTD)  Isaiah Hartenstein (O)  Jrue Holiday (O)  P.J. Washington (DTD)  Obi Toppin (O)\n- Barrio Cerrillos: Jarrett Allen (O)  Joel Embiid (O)  Aaron Gordon (O)\n- Bench warming brick layers unit: Victor Wembanyama (O)  OG Anunoby (O)  Daniel Gafford (DTD)  Tari Eason (O)\n- El Mostroso: Trae Young (O)  Mark Williams (DTD)\n- El TumbaCuello: Anthony Davis (DTD)  Jalen Duren (DTD)  Coby White (DTD)  Stephon Castle (O)  Egor Demin (DTD)\n- La Guillotina: Michael Porter Jr. (DTD)  Jordan Poole (O)  Kyrie Irving (O)\n- Las Villas ENDGAME: Stephen Curry (O)  Kristaps Porzingis (O)  Kelly Oubre Jr. (O)  VJ Edgecombe (O)\n- Los Suns de PFKNR: Donovan Clingan (DTD)  Dennis Schroder (DTD)  Ryan Dunn (O)\n- Minneapolis Lakers: Cam Thomas (O)  Sam Merrill (O)\n- Morovis El Calor: Domantas Sabonis (O)  Jaime Jaquez Jr. (DTD)  Jayson Tatum (O)\n- Morrisville Rehab Facility: Paolo Banchero (O)  Ja Morant (O)  Trey Murphy III (DTD)  Dejounte Murray (O)  Andre Drummond (DTD)\n- Reaves's Pieces: Jalen Green (O)  Keyonte George (DTD)  Scotty Pippen Jr. (O)\n- Ringo's Cool Team: RJ Barrett (O)  Dereck Lively II (O)\n\n**Tough Break of the Week:** El TumbaCuello \ud83c\udfc6 lost Coby White this week \u2014 a critical blow to their lineup.\n\n## \u2699\ufe0f Efficiency & Chaos Report\n\n```\n                      team_name  efficiency  active_points  bench_points\n           BBQ CHICKEN HOSPITAL       100.0          814.0           0.0\n             Barrio Cerrillos \ud83c\udfc6       100.0          748.0           0.0\nBench warming brick layers unit       100.0          638.0           0.0\n           Champion DX S*CK IT        100.0          647.0           0.0\n                    El Mostroso       100.0          721.0           0.0\n               El TumbaCuello \ud83c\udfc6       100.0          621.0           0.0\n                  La Guillotina       100.0          687.0           0.0\n             Las Villas ENDGAME       100.0          703.0           0.0\n              Los Suns de PFKNR       100.0          766.0           0.0\n             Minneapolis Lakers       100.0          806.0           0.0\n            Morovis  El Calor \ud83c\udfc6       100.0          778.0           0.0\n     Morrisville Rehab Facility       100.0          673.0           0.0\n                Reaves's Pieces       100.0          727.0           0.0\n              Ringo's Cool Team       100.0          739.0           0.0\n```\n\n\ud83c\udfc5 Bench Hero: \u2014\n\ud83e\ude91 Bench Warmer of the Week: \u2014\n**\ud83d\udd25 Dumpster Fire Trophy:** El TumbaCuello \ud83c\udfc6 \u2014 lowest combo of points & efficiency\n\n\u2705 **Lineup perfection!** Every manager started all their points. Keeping a close eye on any future slackers \ud83d\ude04\n\n## \ud83d\udcc8 Overperformers (per-game heater vs season avg)\n\n```\n            player_name            team_name  week_pg  exp_pg  +/- pg  gp  fantasy_points\n           Nikola Jokic Champion DX S*CK IT     196.0    39.2   156.8   1           196.0\n            Jalen Duren     El TumbaCuello \ud83c\udfc6    134.0    20.6   113.4   1           134.0\nShai Gilgeous-Alexander   Minneapolis Lakers    137.0    33.5   103.5   1           137.0\n     Isaiah Hartenstein BBQ CHICKEN HOSPITAL    120.0    20.0   100.0   1           120.0\n        Cade Cunningham    Ringo's Cool Team    120.0    20.8    99.2   1           120.0\n  Giannis Antetokounmpo   Barrio Cerrillos \ud83c\udfc6    140.0    46.0    94.0   1           140.0\n            Nic Claxton    Los Suns de PFKNR    106.0    15.6    90.4   1           106.0\n      Russell Westbrook  Morovis  El Calor \ud83c\udfc6    101.0    12.8    88.2   1           101.0\n           Tyrese Maxey    Ringo's Cool Team    121.0    34.8    86.2   1           121.0\n         Alperen Sengun        La Guillotina    113.0    29.2    83.8   1           113.0\n          Julius Randle          El Mostroso    110.0    29.0    81.0   1           110.0\n       Donovan Mitchell   Minneapolis Lakers    102.0    22.6    79.4   1           102.0\n           Jaylen Brown      Reaves's Pieces    103.0    24.5    78.5   1           103.0\n            Deni Avdija    Los Suns de PFKNR     99.0    21.2    77.8   1            99.0\n              Alex Sarr  Morovis  El Calor \ud83c\udfc6    101.0    24.0    77.0   1           101.0\n```\n\n## \ud83d\ude2c Underperformers (per-game slump vs season avg)\n\n```\n         player_name                       team_name  week_pg  exp_pg  +/- pg  gp  fantasy_points\n        Bradley Beal              Barrio Cerrillos \ud83c\udfc6     -7.0     5.0   -12.0   1            -7.0\n         Josh Okogie Bench warming brick layers unit      0.0    10.8   -10.8   1             0.0\n        Ben Sheppard                     El Mostroso      0.0    10.2   -10.2   1             0.0\n   Ronald Holland II              Barrio Cerrillos \ud83c\udfc6      2.0    12.0   -10.0   1             2.0\n       Collin Sexton Bench warming brick layers unit      9.0    18.8    -9.8   1             9.0\n        Jordan Poole                   La Guillotina      5.0    14.4    -9.4   1             5.0\n     Bilal Coulibaly              Las Villas ENDGAME     13.0    22.0    -9.0   1            13.0\n   Simone Fontecchio              Minneapolis Lakers      6.0    14.8    -8.8   1             6.0\nCollin Murray-Boyles                     El Mostroso      0.0     8.5    -8.5   1             0.0\n       Dwight Powell               Ringo's Cool Team     -1.0     7.0    -8.0   1            -1.0\n         Josh Minott                     El Mostroso      7.0    14.4    -7.4   1             7.0\n       Kevin Huerter              Barrio Cerrillos \ud83c\udfc6     10.0    17.2    -7.2   1            10.0\n        Noah Clowney                     El Mostroso     -2.0     5.0    -7.0   1            -2.0\n      Jordan Goodwin              Minneapolis Lakers     -4.0     2.3    -6.3   1            -4.0\n        Goga Bitadze      Morrisville Rehab Facility      6.0    12.2    -6.2   1             6.0\n```\n\n## \ud83e\udde9 Free Agent Watch (top unrostered performers)\n\n```\n      player_name  expected_fp_per_game\n   Walker Kessler                  24.8\n     Steven Adams                  18.5\n     Cole Anthony                  16.2\nMitchell Robinson                  15.0\nSimone Fontecchio                  14.8\n     Terance Mann                  14.2\n   Isaiah Stewart                  13.4\n     Jake LaRavia                  13.3\n   Day'Ron Sharpe                  13.2\n  Khris Middleton                  12.8\n      Tre Johnson                  12.6\n    Jarace Walker                  12.4\nDerrick Jones Jr.                  12.2\n     Goga Bitadze                  12.2\n       Tolu Smith                  12.0\n```\n\n## \ud83d\udcca GM Activity (Waivers & Moves)\n\nQuiet week on the wire \u2014 no notable waiver or trade activity.\n\n## \ud83d\udcc5 Schedule Difficulty (Last 5 weeks (Weeks 1\u20133)):\n\n\u2022 Toughest Schedule: Ringo's Cool Team \u2014 difficulty 47.2 (avg opponent power: 0.5)\n\n\u2022 Easiest Schedule: Barrio Cerrillos \ud83c\udfc6 \u2014 difficulty 40.7 (avg opponent power: 0.5)\n\n\n**Top 3 Toughest Schedules:**\n\n  Ringo's Cool Team: 47.2 difficulty\n\n  Morrisville Rehab Facility: 46.9 difficulty\n\n  Bench warming brick layers unit: 46.7 difficulty\n\n## \ud83d\udd2e Matchup Projections \u2013 Week 4 Preview\n\n\u2022 Barrio Cerrillos \ud83c\udfc6 vs Champion DX S*CK IT : **Barrio Cerrillos \ud83c\udfc6** favored 653.7 \u2013 550.0 (\u0394 103.8) (72.5% / 27.5%) [Heavy favorite]\n\n\u2022 Reaves's Pieces vs El Mostroso: **Reaves's Pieces** favored 697.8 \u2013 677.0 (\u0394 20.7) (54.2% / 45.8%) [Toss-up] (\u26a0\ufe0f upset watch)\n\n\u2022 Las Villas ENDGAME vs Morovis  El Calor \ud83c\udfc6: **Las Villas ENDGAME** favored 776.4 \u2013 602.0 (\u0394 174.4) (77.8% / 22.2%) [Heavy favorite]\n\n\u2022 Los Suns de PFKNR vs Morrisville Rehab Facility: **Los Suns de PFKNR** favored 636.6 \u2013 611.0 (\u0394 25.6) (55.4% / 44.6%) [Slight favorite] (\u26a0\ufe0f upset watch)\n\n\u2022 Ringo's Cool Team vs El TumbaCuello \ud83c\udfc6: **El TumbaCuello \ud83c\udfc6** favored 647.9 \u2013 585.1 (\u0394 62.7) (37.1% / 62.9%) [Strong favorite] (\u26a0\ufe0f upset watch)\n\n\u2022 Minneapolis Lakers vs Bench warming brick layers unit: **Minneapolis Lakers** favored 712.5 \u2013 682.1 (\u0394 30.4) (57.0% / 43.0%) [Slight favorite] (\u26a0\ufe0f upset watch)\n\n\u2022 La Guillotina vs BBQ CHICKEN HOSPITAL: **BBQ CHICKEN HOSPITAL** favored 651.0 \u2013 556.9 (\u0394 94.1) (28.9% / 71.1%) [Strong favorite] (\u26a0\ufe0f upset watch)\n\n\n_Data captured 2025-11-30 11:24_\n";
+    const CURRENT_WEEK = 3;
+    
+    // Make recap sections collapsible (only specific sections)
+    function makeRecapCollapsible() {
+      const host = document.getElementById('recap');
+      if (!host) return;
+      
+      // List of section emojis/prefixes that should be collapsible
+      const collapsibleSections = [
+        '🏆 League Standings',
+        '💪 Weekly Power Ranking',
+        '🔥 Top 10 Players',
+        '🏥 Injury Watch',
+        '⚙️ Efficiency & Chaos',
+        '📈 Overperformers',
+        '😬 Underperformers',
+        '🧩 Free Agent Watch'
+      ];
+      
+      // Convert NodeList to array since we'll be modifying the DOM
+      const headings = Array.from(host.querySelectorAll('h2, h3'));
+      const processedHeadings = [];
+      
+      headings.forEach(h => {
+        // Skip if heading is already inside a details element
+        if (h.closest('details')) return;
+        
+        // Get text content, handling cases where marked.js wraps text in anchor tags
+        let headingText = h.textContent.trim();
+        
+        // Remove any ID links that marked.js might add
+        const anchor = h.querySelector('a');
+        if (anchor) {
+          headingText = anchor.textContent.trim();
+        }
+        
+        // Normalize whitespace
+        headingText = headingText.replace(/\s+/g, ' ').trim();
+        
+        // Check if this heading should be collapsible
+        const shouldCollapse = collapsibleSections.some(section => {
+          const normalizedSection = section.replace(/\s+/g, ' ').trim();
+          return headingText === normalizedSection || 
+                 headingText.startsWith(normalizedSection) || 
+                 headingText.includes(normalizedSection);
+        });
+        
+        if (!shouldCollapse) return;
+        
+        // Skip if already processed
+        if (processedHeadings.includes(h)) return;
+        processedHeadings.push(h);
+        
+        const next = h.nextElementSibling;
+        if (!next) return;
+        
+        const details = document.createElement('details');
+        // Start collapsed by default to reduce visual overwhelm
+        details.open = false;
+        const summary = document.createElement('summary');
+        summary.textContent = headingText;
+        details.appendChild(summary);
+        
+        // Move following siblings until the next heading of same or higher level
+        let cur = next;
+        const headingLevel = parseInt(h.tagName.charAt(1));
+        
+        while (cur) {
+          const isHeading = /^H[1-6]$/.test(cur.tagName);
+          if (isHeading) {
+            const curLevel = parseInt(cur.tagName.charAt(1));
+            // Stop if we hit a heading of same or higher level
+            if (curLevel <= headingLevel) break;
+          }
+          
+          const n = cur.nextElementSibling;
+          details.appendChild(cur);
+          cur = n;
+        }
+        
+        h.replaceWith(details);
+      });
+    }
     
     // Configure marked
     marked.setOptions({
@@ -84,6 +171,36 @@
     const html = marked.parse(markdownContent);
     const sanitized = DOMPurify.sanitize(html);
     document.getElementById('recap').innerHTML = sanitized;
+    
+    // Make sections collapsible after rendering
+    setTimeout(() => {
+      makeRecapCollapsible();
+    }, 0);
+    
+    // Copy/download button handlers
+    document.getElementById('copy-recap').addEventListener('click', async function() {
+      try {
+        await navigator.clipboard.writeText(markdownContent);
+        const btn = this;
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied! ✅';
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy:', err);
+        alert('Failed to copy to clipboard');
+      }
+    });
+    
+    document.getElementById('save-recap').addEventListener('click', function() {
+      const blob = new Blob([markdownContent], { type: 'text/markdown;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `recap_week_${String(CURRENT_WEEK).padStart(2, '0')}.md`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
     
     // Week selector navigation
     document.getElementById('week-select').addEventListener('change', function(e) {

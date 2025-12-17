@@ -1,0 +1,282 @@
+{
+  "BBQ CHICKEN HOSPITAL": [
+    {
+      "player_name": "Anthony Edwards",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "Franz Wagner",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Jrue Holiday",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Obi Toppin",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Barrio Cerrillos": [
+    {
+      "player_name": "Giannis Antetokounmpo",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Joel Embiid",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "Aaron Gordon",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Tari Eason",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Bench warming brick layers unit": [
+    {
+      "player_name": "LaMelo Ball",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Collin Sexton",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Champion DX S*CK IT": [
+    {
+      "player_name": "Zach LaVine",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Brandon Williams",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    }
+  ],
+  "El Mostroso": [
+    {
+      "player_name": "Trae Young",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "El TumbaCuello": [
+    {
+      "player_name": "Anthony Davis",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "Zach Edey",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "La Guillotina": [
+    {
+      "player_name": "Kyrie Irving",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Khris Middleton",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Las Villas ENDGAME": [
+    {
+      "player_name": "Kristaps Porzingis",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Kelly Oubre Jr.",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Bilal Coulibaly",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Los Suns de PFKNR": [
+    {
+      "player_name": "Evan Mobley",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Isaiah Joe",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Pat Spencer",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Minneapolis Lakers": [
+    {
+      "player_name": "Cam Thomas",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Jalen Suggs",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "Jusuf Nurkic",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "Sam Merrill",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Cam Spencer",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Morovis El Calor": [
+    {
+      "player_name": "Domantas Sabonis",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Alex Sarr",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Jayson Tatum",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Morrisville Rehab Facility": [
+    {
+      "player_name": "Ja Morant",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "Dejounte Murray",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Ayo Dosunmu",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    }
+  ],
+  "Reaves's Pieces": [
+    {
+      "player_name": "Austin Reaves",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Jalen Green",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Scotty Pippen Jr.",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ],
+  "Ringo's Cool Team": [
+    {
+      "player_name": "Tyrese Maxey",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Tyler Herro",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "RJ Barrett",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "player_name": "Peyton Watson",
+      "status": "DTD",
+      "severity": "minor",
+      "detail": ""
+    },
+    {
+      "player_name": "AJ Green",
+      "status": "O",
+      "severity": "medium",
+      "detail": ""
+    }
+  ]
+}

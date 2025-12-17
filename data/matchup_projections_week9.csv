@@ -1,0 +1,8 @@
+week,matchup_id,home_team,away_team,home_proj,away_proj,home_std,away_std,diff,home_win_prob,away_win_prob,favored,upset_risk,win_tier,abs_diff,closeness_rank
+9,1,Minneapolis Lakers,Barrio Cerrillos 🏆,747.2,719.0,114.9,136.3,28.2,0.563,0.437,Toss-up,True,Slight favorite,28.2,2
+9,2,Ringo's Cool Team,La Guillotina,769.5,699.0,130.2,108.2,70.5,0.661,0.339,Ringo's Cool Team,True,Strong favorite,70.5,6
+9,3,Los Suns de PFKNR,BBQ CHICKEN HOSPITAL,665.6,794.9,125.5,139.7,-129.4,0.245,0.755,BBQ CHICKEN HOSPITAL,False,Heavy favorite,129.4,7
+9,4,Las Villas ENDGAME,Bench warming brick layers unit,692.3,760.5,153.4,130.1,-68.3,0.367,0.633,Bench warming brick layers unit,True,Strong favorite,68.3,4
+9,5,Reaves's Pieces,El TumbaCuello 🏆,739.4,807.9,116.1,154.4,-68.5,0.362,0.638,El TumbaCuello 🏆,True,Strong favorite,68.5,5
+9,6,Champion DX S*CK IT ,Morrisville Rehab Facility,634.6,701.7,113.8,135.9,-67.1,0.353,0.647,Morrisville Rehab Facility,True,Strong favorite,67.1,3
+9,7,El Mostroso,Morovis  El Calor 🏆,740.2,751.1,153.5,152.4,-10.9,0.48,0.52,Toss-up,True,Toss-up,10.9,1

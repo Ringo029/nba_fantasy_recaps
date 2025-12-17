@@ -9,24 +9,22 @@ window.TEAM_INSIGHTS = [
     "rank_by_fp": 1,
     "strengths": [
       "pts",
-      "fg_pct",
-      "reb"
+      "reb",
+      "blk"
     ],
     "weaknesses": [
-      "ast",
-      "fg3m",
-      "stl"
+      "ft_pct"
     ],
     "category_zscores": {
-      "pts": 1.0563464766965407,
-      "reb": 0.8332999027717022,
-      "ast": -0.4436552198362356,
-      "stl": -0.5899816191231119,
-      "blk": 0.7836743302508837,
-      "fg3m": -0.4875813151034807,
-      "fg_pct": 1.0115994721177886,
-      "ft_pct": -0.3612076378116028,
-      "to": 0.5712015339066053
+      "pts": 1.3148953401099828,
+      "reb": 1.1770660896449758,
+      "ast": -0.14054449118453352,
+      "stl": -0.1474880387986501,
+      "blk": 1.0513087255677986,
+      "fg3m": -0.19285085454442713,
+      "fg_pct": 0.43135843644791705,
+      "ft_pct": -0.6365551167838452,
+      "to": 0.6939497465410555
     },
     "hot_players": [
       "Stephon Castle",
@@ -49,11 +47,11 @@ window.TEAM_INSIGHTS = [
     "fp_from_all_players": 526.0,
     "scoreboard_gap": 0.0,
     "games_this_week": 13,
-    "schedule_advantage": -1,
+    "schedule_advantage": -2,
     "opponent": {
       "name": "El Mostroso",
-      "win_probability": 0.7352429096328853,
-      "strength_index": -0.6060753584138713,
+      "win_probability": 0.8120643904304057,
+      "strength_index": -0.5922859016297839,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -149,6 +147,13 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 29.549999999999997
       },
       {
+        "player_name": "Dean Wade",
+        "nba_team": "CLE",
+        "fp_per_game": 8.105263157894736,
+        "games": 3,
+        "projected_fp": 24.31578947368421
+      },
+      {
         "player_name": "Egor Demin",
         "nba_team": null,
         "fp_per_game": 0.0,
@@ -156,14 +161,14 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 0.0
       }
     ],
-    "next_week_total_projected_fp": 783.5805527676657
+    "next_week_total_projected_fp": 807.8963422413499
   },
   {
     "week": 8,
     "team_name": "La Guillotina",
-    "total_fp": 523.0,
-    "avg_fp_per_game": 30.764705882352942,
-    "games_played": 17,
+    "total_fp": 524.0,
+    "avg_fp_per_game": 27.57894736842105,
+    "games_played": 19,
     "rank_by_fp": 2,
     "strengths": [
       "to",
@@ -175,15 +180,15 @@ window.TEAM_INSIGHTS = [
       "stl"
     ],
     "category_zscores": {
-      "pts": -0.40978099097177534,
-      "reb": 0.5282527328846555,
-      "ast": -0.3390013227719456,
-      "stl": -1.7409263684530851,
-      "blk": -0.3778270489962848,
-      "fg3m": -0.013549128780064474,
-      "fg_pct": -0.027126760444634385,
-      "ft_pct": -0.13275711481757582,
-      "to": 1.078906150858807
+      "pts": -0.4096294593320286,
+      "reb": 0.4640976937744477,
+      "ast": -0.34718499254771773,
+      "stl": -1.7641409503112853,
+      "blk": -0.40710768501752675,
+      "fg3m": -0.0060456974319904495,
+      "fg_pct": 0.0007788966424367923,
+      "ft_pct": -0.10444383829433972,
+      "to": 1.0597477763844139
     },
     "hot_players": [
       "Rudy Gobert",
@@ -193,24 +198,24 @@ window.TEAM_INSIGHTS = [
       "Jeremiah Fears"
     ],
     "cold_players": [
+      "Max Christie",
       "Sandro Mamukelashvili",
       "Alperen Sengun",
       "Aaron Holiday",
-      "Bub Carrington",
-      "Terance Mann"
+      "Bub Carrington"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 523.0,
-    "fp_from_all_players": 523.0,
+    "official_score": 524.0,
+    "fp_from_all_players": 524.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 17,
-    "schedule_advantage": 3,
+    "games_this_week": 19,
+    "schedule_advantage": 4,
     "opponent": {
       "name": "Las Villas ENDGAME",
-      "win_probability": 0.1862446599163867,
-      "strength_index": 0.27358778457495925,
+      "win_probability": 0.18990339217755792,
+      "strength_index": 0.25354709006576565,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -340,15 +345,15 @@ window.TEAM_INSIGHTS = [
       "fg_pct"
     ],
     "category_zscores": {
-      "pts": -0.41519415616726046,
-      "reb": -0.5899655780486267,
-      "ast": -0.475506584162182,
-      "stl": 0.5643435472860827,
-      "blk": 0.6388594901743013,
-      "fg3m": 1.212567357589116,
-      "fg_pct": -1.0520461490584563,
-      "ft_pct": 0.5698810944031277,
-      "to": 0.4088718646850992
+      "pts": -0.4149018722775523,
+      "reb": -0.6303070689215584,
+      "ast": -0.4836690445218085,
+      "stl": 0.5710228896783213,
+      "blk": 0.5952023632429219,
+      "fg3m": 1.2471971042165744,
+      "fg_pct": -1.081436719001594,
+      "ft_pct": 0.5942063838560726,
+      "to": 0.3893099598323616
     },
     "hot_players": [
       "Stephen Curry",
@@ -371,11 +376,11 @@ window.TEAM_INSIGHTS = [
     "fp_from_all_players": 471.0,
     "scoreboard_gap": 0.0,
     "games_this_week": 17,
-    "schedule_advantage": 3,
+    "schedule_advantage": 2,
     "opponent": {
       "name": "La Guillotina",
-      "win_probability": 0.8137553400836133,
-      "strength_index": -1.201010785982259,
+      "win_probability": 0.8100966078224421,
+      "strength_index": -1.1970909387789865,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -504,15 +509,15 @@ window.TEAM_INSIGHTS = [
       "fg3m"
     ],
     "category_zscores": {
-      "pts": -0.5517711134488277,
-      "reb": 0.1516182883796241,
-      "ast": 0.34079058154347547,
-      "stl": 0.005422235998762383,
-      "blk": -0.2950280301543062,
-      "fg3m": -1.9460364573719788,
-      "fg_pct": 2.061577073323549,
-      "ft_pct": -1.8972868000517082,
-      "to": -0.8369204309197628
+      "pts": -0.5479275775030591,
+      "reb": 0.0954840466614341,
+      "ast": 0.3325012895430051,
+      "stl": 0.004853684672567654,
+      "blk": -0.32547948854398545,
+      "fg3m": -1.9812869251285739,
+      "fg_pct": 2.20624786373521,
+      "ft_pct": -1.8589585236643693,
+      "to": -0.8572326183278224
     },
     "hot_players": [
       "Derik Queen",
@@ -538,8 +543,8 @@ window.TEAM_INSIGHTS = [
     "schedule_advantage": 0,
     "opponent": {
       "name": "El TumbaCuello 🏆",
-      "win_probability": 0.2647570903671146,
-      "strength_index": 0.41531281000518805,
+      "win_probability": 0.18793560956959424,
+      "strength_index": 0.8711943320742911,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -667,15 +672,15 @@ window.TEAM_INSIGHTS = [
       "ast"
     ],
     "category_zscores": {
-      "pts": -0.14341067932239296,
-      "reb": -0.02589924792483765,
-      "ast": -1.4296127208390816,
-      "stl": -0.7241933186193314,
-      "blk": -0.07818683181117951,
-      "fg3m": -0.12231423198450965,
-      "fg_pct": 1.6684045405338996,
-      "ft_pct": 0.21884636179211758,
-      "to": -0.6003044696938423
+      "pts": -0.1501852656438785,
+      "reb": -0.07825308077973464,
+      "ast": -1.437626937578691,
+      "stl": -0.7342232661893155,
+      "blk": -0.11170454061021944,
+      "fg3m": -0.11721709442150278,
+      "fg_pct": 1.7910957460620842,
+      "ft_pct": 0.24516403076058654,
+      "to": -0.6204741543519292
     },
     "hot_players": [
       "Joel Embiid",
@@ -701,8 +706,8 @@ window.TEAM_INSIGHTS = [
     "schedule_advantage": 2,
     "opponent": {
       "name": "Ringo's Cool Team",
-      "win_probability": 0.16788503786983056,
-      "strength_index": 1.2563154643084606,
+      "win_probability": 0.17371371754104328,
+      "strength_index": 1.2224919189814645,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -822,8 +827,7 @@ window.TEAM_INSIGHTS = [
     "games_played": 15,
     "rank_by_fp": 6,
     "strengths": [
-      "ft_pct",
-      "blk"
+      "ft_pct"
     ],
     "weaknesses": [
       "stl",
@@ -831,15 +835,15 @@ window.TEAM_INSIGHTS = [
       "pts"
     ],
     "category_zscores": {
-      "pts": -2.026291286763424,
-      "reb": 0.0232697867384192,
-      "ast": -0.9423962057330114,
-      "stl": -1.4595652685366447,
-      "blk": 0.30602907235956217,
-      "fg3m": -0.6700811428195085,
-      "fg_pct": -0.5991947920603234,
-      "ft_pct": 0.3673900173053298,
-      "to": -1.7743353778372606
+      "pts": -1.9841075146503597,
+      "reb": -0.03013114860736485,
+      "ast": -0.950486123421556,
+      "stl": -1.4791312592470163,
+      "blk": 0.2670783453774084,
+      "fg3m": -0.6771026726817518,
+      "fg_pct": -0.6032695425841452,
+      "ft_pct": 0.3928645921041584,
+      "to": -1.7952121265162893
     },
     "hot_players": [
       "Naz Reid",
@@ -862,11 +866,11 @@ window.TEAM_INSIGHTS = [
     "fp_from_all_players": 427.0,
     "scoreboard_gap": 0.0,
     "games_this_week": 15,
-    "schedule_advantage": 1,
+    "schedule_advantage": 0,
     "opponent": {
       "name": "Minneapolis Lakers",
-      "win_probability": 0.09546388458947277,
-      "strength_index": 0.7874379281046745,
+      "win_probability": 0.09912354624021784,
+      "strength_index": 0.7592666112805194,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -996,15 +1000,15 @@ window.TEAM_INSIGHTS = [
       "reb"
     ],
     "category_zscores": {
-      "pts": 1.726236819995421,
-      "reb": -1.6119267554464392,
-      "ast": -0.2584028534316749,
-      "stl": -0.0036341152139211684,
-      "blk": -0.9787365150121979,
-      "fg3m": 2.0926350487408585,
-      "fg_pct": -0.5584732331056895,
-      "ft_pct": 1.7271851930645497,
-      "to": -0.9164728673876205
+      "pts": 1.6708479603864412,
+      "reb": -1.630504587509067,
+      "ast": -0.2665990461421642,
+      "stl": -0.0043201060968849035,
+      "blk": -0.9995199700999331,
+      "fg3m": 2.146735207782455,
+      "fg_pct": -0.5602715200238767,
+      "ft_pct": 1.7449419331256595,
+      "to": -0.9368329655152485
     },
     "hot_players": [
       "Miles Bridges",
@@ -1030,8 +1034,8 @@ window.TEAM_INSIGHTS = [
     "schedule_advantage": 0,
     "opponent": {
       "name": "Los Suns de PFKNR",
-      "win_probability": 0.9045361154105271,
-      "strength_index": -1.461236300400814,
+      "win_probability": 0.9008764537597821,
+      "strength_index": -1.4477345017597323,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -1147,28 +1151,28 @@ window.TEAM_INSIGHTS = [
     "week": 8,
     "team_name": "Morrisville Rehab Facility",
     "total_fp": 399.0,
-    "avg_fp_per_game": 33.25,
-    "games_played": 12,
+    "avg_fp_per_game": 30.692307692307693,
+    "games_played": 13,
     "rank_by_fp": 8,
     "strengths": [
       "ft_pct",
       "fg3m"
     ],
     "weaknesses": [
-      "blk",
+      "ast",
       "to",
       "fg_pct"
     ],
     "category_zscores": {
-      "pts": 0.0010291583080284284,
-      "reb": -0.5089444894139679,
-      "ast": -0.37297143477997563,
-      "stl": 0.2514303227058315,
-      "blk": -0.5971817207491064,
-      "fg3m": 0.7007507222026464,
-      "fg_pct": -1.270286833925238,
-      "ft_pct": 0.9294447039721772,
-      "to": -0.7856514462644314
+      "pts": -0.1589710835276963,
+      "reb": -0.2247535499549497,
+      "ast": -0.5771191779687386,
+      "stl": -0.18778709143131692,
+      "blk": -0.4519734726718381,
+      "fg3m": 0.31709810253526044,
+      "fg_pct": -1.0575727806733692,
+      "ft_pct": 0.8708496303384813,
+      "to": -0.6708310205473176
     },
     "hot_players": [
       "Trey Murphy III",
@@ -1178,11 +1182,11 @@ window.TEAM_INSIGHTS = [
       "Paolo Banchero"
     ],
     "cold_players": [
+      "Jalen Smith",
       "Jaren Jackson Jr.",
       "Payton Pritchard",
       "Vit Krejci",
-      "Devin Booker",
-      "Goga Bitadze"
+      "Devin Booker"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
@@ -1190,12 +1194,12 @@ window.TEAM_INSIGHTS = [
     "official_score": 399.0,
     "fp_from_all_players": 399.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 12,
+    "games_this_week": 13,
     "schedule_advantage": -2,
     "opponent": {
       "name": "Morovis  El Calor 🏆",
-      "win_probability": 0.5331910744131196,
-      "strength_index": -0.22609351442803724,
+      "win_probability": 0.47605472869760507,
+      "strength_index": -0.273288954029159,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -1284,11 +1288,11 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 46.2
       },
       {
-        "player_name": "Duncan Robinson",
-        "nba_team": "DET",
-        "fp_per_game": 12.5,
+        "player_name": "Jalen Smith",
+        "nba_team": "CHI",
+        "fp_per_game": 12.72222222222222,
         "games": 3,
-        "projected_fp": 37.5
+        "projected_fp": 38.16666666666666
       },
       {
         "player_name": "Dejounte Murray",
@@ -1298,14 +1302,14 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 0.0
       }
     ],
-    "next_week_total_projected_fp": 701.0674996314316
+    "next_week_total_projected_fp": 701.7341662980982
   },
   {
     "week": 8,
     "team_name": "BBQ CHICKEN HOSPITAL",
     "total_fp": 373.0,
-    "avg_fp_per_game": 28.692307692307693,
-    "games_played": 13,
+    "avg_fp_per_game": 31.083333333333332,
+    "games_played": 12,
     "rank_by_fp": 9,
     "strengths": [
       "ast",
@@ -1318,15 +1322,15 @@ window.TEAM_INSIGHTS = [
       "blk"
     ],
     "category_zscores": {
-      "pts": 0.7741546019922892,
-      "reb": 1.094315598008182,
-      "ast": 2.7065378179074493,
-      "stl": 2.1554185344343733,
-      "blk": -1.352677304264947,
-      "fg3m": -0.1124141823007621,
-      "fg_pct": -0.532313184912083,
-      "ft_pct": -0.797323954931803,
-      "to": 1.9155382470186948
+      "pts": 0.7435216309425464,
+      "reb": 1.0181056987582764,
+      "ast": 2.697880949469848,
+      "stl": 2.182730374053006,
+      "blk": -1.3681730367848122,
+      "fg3m": -0.1070980183467162,
+      "fg_pct": -0.5326490426118619,
+      "ft_pct": -0.7652387742750595,
+      "to": 1.8968837370080536
     },
     "hot_players": [
       "Dyson Daniels",
@@ -1336,11 +1340,11 @@ window.TEAM_INSIGHTS = [
       "LeBron James"
     ],
     "cold_players": [
-      "Jrue Holiday",
       "Jonathan Kuminga",
       "Isaiah Hartenstein",
       "P.J. Washington",
-      "John Collins"
+      "John Collins",
+      "Tre Jones"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
@@ -1348,12 +1352,12 @@ window.TEAM_INSIGHTS = [
     "official_score": 373.0,
     "fp_from_all_players": 373.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 13,
-    "schedule_advantage": -1,
+    "games_this_week": 12,
+    "schedule_advantage": -2,
     "opponent": {
       "name": "Reaves's Pieces",
-      "win_probability": 0.79963771697387,
-      "strength_index": -0.2797010460349514,
+      "win_probability": 0.7946460331305754,
+      "strength_index": -0.2926414572780628,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -1483,15 +1487,15 @@ window.TEAM_INSIGHTS = [
       "fg3m"
     ],
     "category_zscores": {
-      "pts": -0.27361615854316573,
-      "reb": 2.0637998211761324,
-      "ast": -0.42128401107358016,
-      "stl": -0.6104006803906736,
-      "blk": 1.16566630343647,
-      "fg3m": -1.317395762982406,
-      "fg_pct": -0.581019520816673,
-      "ft_pct": -0.5413094003922887,
-      "to": 0.5866235819816179
+      "pts": -0.27700516295539973,
+      "reb": 1.9669438109763715,
+      "ast": -0.4294548962302101,
+      "stl": -0.6189550053082994,
+      "blk": 1.1145598466768027,
+      "fg3m": -1.3387383305818472,
+      "fg_pct": -0.5840782163423353,
+      "ft_pct": -0.5106772900637904,
+      "to": 0.5671687286920797
     },
     "hot_players": [
       "Russell Westbrook",
@@ -1514,11 +1518,11 @@ window.TEAM_INSIGHTS = [
     "fp_from_all_players": 372.0,
     "scoreboard_gap": 0.0,
     "games_this_week": 13,
-    "schedule_advantage": -1,
+    "schedule_advantage": -2,
     "opponent": {
       "name": "Morrisville Rehab Facility",
-      "win_probability": 0.4668089255868805,
-      "strength_index": -0.09313368694802686,
+      "win_probability": 0.523945271302395,
+      "strength_index": -0.36914336493850985,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -1634,8 +1638,8 @@ window.TEAM_INSIGHTS = [
     "week": 8,
     "team_name": "Champion DX S*CK IT ",
     "total_fp": 363.0,
-    "avg_fp_per_game": 27.923076923076923,
-    "games_played": 13,
+    "avg_fp_per_game": 25.928571428571427,
+    "games_played": 14,
     "rank_by_fp": 11,
     "strengths": [
       "fg_pct"
@@ -1646,15 +1650,15 @@ window.TEAM_INSIGHTS = [
       "ft_pct"
     ],
     "category_zscores": {
-      "pts": -1.34510551156169,
-      "reb": -1.6034817505843975,
-      "ast": -0.7738773659072034,
-      "stl": 0.2747747598747391,
-      "blk": -0.487275757478512,
-      "fg3m": -0.5460822514201151,
-      "fg_pct": 0.3655320532209851,
-      "ft_pct": -1.7362097179790823,
-      "to": -0.5020546183899293
+      "pts": -1.3206338223130658,
+      "reb": -1.6222394272522154,
+      "ast": -0.7819934671008073,
+      "stl": 0.2776990767330629,
+      "blk": -0.5150087302800711,
+      "fg3m": -0.5503604587189742,
+      "fg_pct": 0.41538857667192286,
+      "ft_pct": -1.6987956721476625,
+      "to": -0.5221651317481483
     },
     "hot_players": [
       "Jalen Brunson",
@@ -1664,11 +1668,11 @@ window.TEAM_INSIGHTS = [
       "Mikal Bridges"
     ],
     "cold_players": [
+      "Draymond Green",
       "Tobias Harris",
       "Zach LaVine",
       "Nikola Jokic",
-      "Cameron Johnson",
-      "Brandon Williams"
+      "Cameron Johnson"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
@@ -1676,12 +1680,12 @@ window.TEAM_INSIGHTS = [
     "official_score": 363.0,
     "fp_from_all_players": 363.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 13,
-    "schedule_advantage": -1,
+    "games_this_week": 14,
+    "schedule_advantage": 0,
     "opponent": {
       "name": "Bench warming brick layers unit",
-      "win_probability": 0.029822045912739577,
-      "strength_index": 1.9284367077893838,
+      "win_probability": 0.03368773948739633,
+      "strength_index": 1.8492794114679232,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -1797,27 +1801,27 @@ window.TEAM_INSIGHTS = [
     "week": 8,
     "team_name": "Ringo's Cool Team",
     "total_fp": 345.0,
-    "avg_fp_per_game": 21.5625,
-    "games_played": 16,
+    "avg_fp_per_game": 19.166666666666668,
+    "games_played": 18,
     "rank_by_fp": 12,
     "strengths": [
       "ast",
-      "ft_pct",
-      "fg_pct"
+      "fg_pct",
+      "ft_pct"
     ],
     "weaknesses": [
       "reb"
     ],
     "category_zscores": {
-      "pts": 0.771976874125582,
-      "reb": -0.465437140048629,
-      "ast": 1.1410364383122398,
-      "stl": 0.2939029738444229,
-      "blk": 0.09521454141474414,
-      "fg3m": 0.7917468884482755,
-      "fg_pct": 0.9070982274496513,
-      "ft_pct": 0.9547219556919739,
-      "to": 0.05595416149944414
+      "pts": 0.7414005280052425,
+      "reb": -0.5084305853174341,
+      "ast": 1.132622808632605,
+      "stl": 0.2970753386105217,
+      "blk": 0.05924484454470884,
+      "fg3m": 0.8170665011293774,
+      "fg_pct": 0.9872300084625075,
+      "ft_pct": 0.9768629910596737,
+      "to": 0.03617971078565199
     },
     "hot_players": [
       "Day'Ron Sharpe",
@@ -1827,11 +1831,11 @@ window.TEAM_INSIGHTS = [
       "Jerami Grant"
     ],
     "cold_players": [
+      "RJ Barrett",
       "Cade Cunningham",
       "Tyler Herro",
       "Jaylin Williams",
-      "Jordan Clarkson",
-      "Jakob Poeltl"
+      "Jordan Clarkson"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
@@ -1839,12 +1843,12 @@ window.TEAM_INSIGHTS = [
     "official_score": 345.0,
     "fp_from_all_players": 345.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 16,
-    "schedule_advantage": 2,
+    "games_this_week": 18,
+    "schedule_advantage": 4,
     "opponent": {
       "name": "Barrio Cerrillos 🏆",
-      "win_probability": 0.8321149621301693,
-      "strength_index": -0.3443756958342151,
+      "win_probability": 0.8262862824589566,
+      "strength_index": -0.3370407406934807,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -1974,15 +1978,15 @@ window.TEAM_INSIGHTS = [
       "blk"
     ],
     "category_zscores": {
-      "pts": 1.3409274591453044,
-      "reb": -0.8237158913161228,
-      "ast": 0.6440762538845752,
-      "stl": 0.03319389224456221,
-      "blk": -1.3093387168836825,
-      "fg3m": 0.6616818010307023,
-      "fg_pct": -0.6633511704023699,
-      "ft_pct": -0.28268395430632065,
-      "to": 1.4212701088674558
+      "pts": 1.295557351507181,
+      "reb": -0.8590794415614966,
+      "ast": 0.6357398390701549,
+      "stl": 0.0329854739259832,
+      "blk": -1.3254472801862327,
+      "fg3m": 0.6841238840420275,
+      "fg_pct": -0.6710124648629725,
+      "ft_pct": -0.2535197330301172,
+      "to": 1.4023179242259673
     },
     "hot_players": [
       "Keyonte George",
@@ -2005,11 +2009,11 @@ window.TEAM_INSIGHTS = [
     "fp_from_all_players": 316.0,
     "scoreboard_gap": 0.0,
     "games_this_week": 13,
-    "schedule_advantage": -1,
+    "schedule_advantage": -2,
     "opponent": {
       "name": "BBQ CHICKEN HOSPITAL",
-      "win_probability": 0.20036228302613002,
-      "strength_index": 1.1043305822362406,
+      "win_probability": 0.2053539668694247,
+      "strength_index": 1.0605201590644475,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -2125,8 +2129,8 @@ window.TEAM_INSIGHTS = [
     "week": 8,
     "team_name": "Bench warming brick layers unit",
     "total_fp": 277.0,
-    "avg_fp_per_game": 21.307692307692307,
-    "games_played": 13,
+    "avg_fp_per_game": 23.083333333333332,
+    "games_played": 12,
     "rank_by_fp": 14,
     "strengths": [
       "blk",
@@ -2139,15 +2143,15 @@ window.TEAM_INSIGHTS = [
       "fg_pct"
     ],
     "category_zscores": {
-      "pts": -0.5055014934846394,
-      "reb": 0.9348147228243091,
-      "ast": 0.6242666268871356,
-      "stl": 1.5502151039479994,
-      "blk": 2.486808187714256,
-      "fg3m": -0.2439273452487701,
-      "fg_pct": -0.7303997219203843,
-      "ft_pct": 0.9813092540611184,
-      "to": -0.6226264383248886
+      "pts": -0.5028610527483519,
+      "reb": 0.8620015500883065,
+      "ast": 0.6159332899806171,
+      "stl": 1.5696788797093186,
+      "blk": 2.4170200787849674,
+      "fg3m": -0.24152074784992225,
+      "fg_pct": -0.7418092419219423,
+      "ft_pct": 1.0032993870145477,
+      "to": -0.6428095664628585
     },
     "hot_players": [
       "OG Anunoby",
@@ -2157,11 +2161,11 @@ window.TEAM_INSIGHTS = [
       "Cedric Coward"
     ],
     "cold_players": [
-      "Collin Sexton",
       "Victor Wembanyama",
       "Anfernee Simons",
       "Reed Sheppard",
-      "Steven Adams"
+      "Steven Adams",
+      "Ausar Thompson"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
@@ -2169,12 +2173,12 @@ window.TEAM_INSIGHTS = [
     "official_score": 277.0,
     "fp_from_all_players": 277.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 13,
-    "schedule_advantage": -1,
+    "games_this_week": 12,
+    "schedule_advantage": -2,
     "opponent": {
       "name": "Champion DX S*CK IT ",
-      "win_probability": 0.9701779540872604,
-      "strength_index": -1.5537948889767321,
+      "win_probability": 0.9663122605126037,
+      "strength_index": -1.5070736638266964,
       "category_matchup": null
     },
     "next_week_roster": [

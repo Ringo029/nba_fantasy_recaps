@@ -3,7 +3,7 @@ window.RECAPS_INDEX = {
   "recaps": [
     {
       "week": 8,
-      "captured_at": "2025-12-15T20:25:00Z",
+      "captured_at": "2025-12-16T21:15:00Z",
       "url": "recaps/week-08.html",
       "quick_hits": [
         "**Team of the Week:** El TumbaCuello 🏆 with 526.0 pts",

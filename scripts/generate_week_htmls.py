@@ -138,6 +138,10 @@ def generate_week_html(week_num, md_content, recaps_index):
         <h2 class="divider-title">WEEKLY RECAP</h2>
         <span class="divider-line"></span>
       </div>
+      <div id="recap-actions" class="recap-actions">
+        <button id="copy-recap" class="btn">Copy Recap (MD)</button>
+        <button id="save-recap" class="btn">Download recap.md</button>
+      </div>
       <div id="recap" class="md"></div>
     </section>
   </main>
@@ -149,6 +153,89 @@ def generate_week_html(week_num, md_content, recaps_index):
   <script>
     // Embedded markdown content
     const markdownContent = {md_escaped};
+    const CURRENT_WEEK = {week_num};
+    
+    // Make recap sections collapsible (only specific sections)
+    function makeRecapCollapsible() {{
+      const host = document.getElementById('recap');
+      if (!host) return;
+      
+      // List of section emojis/prefixes that should be collapsible
+      const collapsibleSections = [
+        '🏆 League Standings',
+        '💪 Weekly Power Ranking',
+        '🔥 Top 10 Players',
+        '🏥 Injury Watch',
+        '⚙️ Efficiency & Chaos',
+        '📈 Overperformers',
+        '😬 Underperformers',
+        '🧩 Free Agent Watch'
+      ];
+      
+      // Convert NodeList to array since we'll be modifying the DOM
+      const headings = Array.from(host.querySelectorAll('h2, h3'));
+      const processedHeadings = [];
+      
+      headings.forEach(h => {{
+        // Skip if heading is already inside a details element
+        if (h.closest('details')) return;
+        
+        // Get text content, handling cases where marked.js wraps text in anchor tags
+        let headingText = h.textContent.trim();
+        
+        // Remove any ID links that marked.js might add
+        const anchor = h.querySelector('a');
+        if (anchor) {{
+          headingText = anchor.textContent.trim();
+        }}
+        
+        // Normalize whitespace
+        headingText = headingText.replace(/\\s+/g, ' ').trim();
+        
+        // Check if this heading should be collapsible
+        const shouldCollapse = collapsibleSections.some(section => {{
+          const normalizedSection = section.replace(/\\s+/g, ' ').trim();
+          return headingText === normalizedSection || 
+                 headingText.startsWith(normalizedSection) || 
+                 headingText.includes(normalizedSection);
+        }});
+        
+        if (!shouldCollapse) return;
+        
+        // Skip if already processed
+        if (processedHeadings.includes(h)) return;
+        processedHeadings.push(h);
+        
+        const next = h.nextElementSibling;
+        if (!next) return;
+        
+        const details = document.createElement('details');
+        // Start collapsed by default to reduce visual overwhelm
+        details.open = false;
+        const summary = document.createElement('summary');
+        summary.textContent = headingText;
+        details.appendChild(summary);
+        
+        // Move following siblings until the next heading of same or higher level
+        let cur = next;
+        const headingLevel = parseInt(h.tagName.charAt(1));
+        
+        while (cur) {{
+          const isHeading = /^H[1-6]$/.test(cur.tagName);
+          if (isHeading) {{
+            const curLevel = parseInt(cur.tagName.charAt(1));
+            // Stop if we hit a heading of same or higher level
+            if (curLevel <= headingLevel) break;
+          }}
+          
+          const n = cur.nextElementSibling;
+          details.appendChild(cur);
+          cur = n;
+        }}
+        
+        h.replaceWith(details);
+      }});
+    }}
     
     // Configure marked
     marked.setOptions({{
@@ -162,6 +249,36 @@ def generate_week_html(week_num, md_content, recaps_index):
     const html = marked.parse(markdownContent);
     const sanitized = DOMPurify.sanitize(html);
     document.getElementById('recap').innerHTML = sanitized;
+    
+    // Make sections collapsible after rendering
+    setTimeout(() => {{
+      makeRecapCollapsible();
+    }}, 0);
+    
+    // Copy/download button handlers
+    document.getElementById('copy-recap').addEventListener('click', async function() {{
+      try {{
+        await navigator.clipboard.writeText(markdownContent);
+        const btn = this;
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied! ✅';
+        setTimeout(() => {{
+          btn.textContent = originalText;
+        }}, 2000);
+      }} catch (err) {{
+        console.error('Failed to copy:', err);
+        alert('Failed to copy to clipboard');
+      }}
+    }});
+    
+    document.getElementById('save-recap').addEventListener('click', function() {{
+      const blob = new Blob([markdownContent], {{ type: 'text/markdown;charset=utf-8' }});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `recap_week_${{String(CURRENT_WEEK).padStart(2, '0')}}.md`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }});
     
     // Week selector navigation
     document.getElementById('week-select').addEventListener('change', function(e) {{
