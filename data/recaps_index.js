@@ -2,8 +2,19 @@
 window.RECAPS_INDEX = {
   "recaps": [
     {
+      "week": 9,
+      "captured_at": "2025-12-22T06:17:00Z",
+      "url": "recaps/week-09.html",
+      "quick_hits": [
+        "**Team of the Week:** El TumbaCuello 🏆 with 654.0 pts",
+        "**Weekly MVP:** Kel'el Ware (Morovis  El Calor 🏆) with 128.0 pts",
+        "**Closest Matchup:** El TumbaCuello 🏆 (654.0) def. Reaves's Pieces (653.0) — margin 1 pts",
+        "**Biggest Beatdown:** La Guillotina (608.0) obliterated Ringo's Cool Team (469.0) by 139 pts"
+      ]
+    },
+    {
       "week": 8,
-      "captured_at": "2025-12-16T21:15:00Z",
+      "captured_at": "2025-12-16T21:59:00Z",
       "url": "recaps/week-08.html",
       "quick_hits": [
         "**Team of the Week:** El TumbaCuello 🏆 with 526.0 pts",
