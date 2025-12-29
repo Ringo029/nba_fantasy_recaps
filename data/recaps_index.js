@@ -90,6 +90,17 @@ window.RECAPS_INDEX = {
       ]
     },
     {
+      "week": 10,
+      "captured_at": "2025-12-29T09:31:00Z",
+      "url": "recaps/week-10.html",
+      "quick_hits": [
+        "**Team of the Week:** El Mostroso with 886.0 pts",
+        "**Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 209.0 pts",
+        "**Closest Matchup:** Las Villas ENDGAME (629.0) def. Morrisville Rehab Facility (562.0) — margin 67 pts",
+        "**Biggest Beatdown:** Minneapolis Lakers (720.0) obliterated BBQ CHICKEN HOSPITAL (562.0) by 158 pts"
+      ]
+    },
+    {
       "week": 1,
       "captured_at": "2025-11-30T18:24:00Z",
       "url": "recaps/week-01.html",
