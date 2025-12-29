@@ -190,12 +190,33 @@
     .roster-table .text-center {
       text-align: center;
     }
+    .btn-home {
+      padding: 8px 16px;
+      background: #111827;
+      border: 1px solid #4b5563;
+      border-radius: 8px;
+      color: #f9fafb;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .btn-home:hover {
+      background: #1f2937;
+      border-color: #6b7280;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
 <div class="page">
-  <h1>Fantasy Team Insights</h1>
-  <p class="muted">Scouting report for your team and upcoming opponent.</p>
+  <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+    <a href="index.html" class="btn-home">← Back to Home</a>
+    <div style="flex: 1;">
+      <h1 style="margin: 0;">Fantasy Team Insights</h1>
+      <p class="muted" style="margin: 4px 0 0 0;">Scouting report for your team and upcoming opponent.</p>
+    </div>
+  </div>
 
   <div class="toolbar">
     <label>
