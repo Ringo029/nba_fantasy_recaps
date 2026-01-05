@@ -1,7 +1,7 @@
 // Generated from league_metadata.json
 window.LEAGUE_METADATA = {
   "season": 2026,
-  "week": 10,
+  "week": 11,
   "league_name": "THE LEAGUE",
   "scoring_type": "H2H_POINTS",
   "teams": [
