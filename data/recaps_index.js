@@ -2,6 +2,28 @@
 window.RECAPS_INDEX = {
   "recaps": [
     {
+      "week": 11,
+      "captured_at": "2026-01-05T10:27:00Z",
+      "url": "recaps/week-11.html",
+      "quick_hits": [
+        "**Team of the Week:** Barrio Cerrillos 🏆 with 969.0 pts",
+        "**Weekly MVP:** Giannis Antetokounmpo (Barrio Cerrillos 🏆) with 134.0 pts",
+        "**Closest Matchup:** Minneapolis Lakers (701.0) def. El TumbaCuello 🏆 (693.0) — margin 8 pts",
+        "**Biggest Beatdown:** Barrio Cerrillos 🏆 (969.0) obliterated BBQ CHICKEN HOSPITAL (649.0) by 320 pts"
+      ]
+    },
+    {
+      "week": 10,
+      "captured_at": "2025-12-29T09:31:00Z",
+      "url": "recaps/week-10.html",
+      "quick_hits": [
+        "**Team of the Week:** El Mostroso with 886.0 pts",
+        "**Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 209.0 pts",
+        "**Closest Matchup:** Las Villas ENDGAME (629.0) def. Morrisville Rehab Facility (562.0) — margin 67 pts",
+        "**Biggest Beatdown:** Minneapolis Lakers (720.0) obliterated BBQ CHICKEN HOSPITAL (562.0) by 158 pts"
+      ]
+    },
+    {
       "week": 9,
       "captured_at": "2025-12-22T06:17:00Z",
       "url": "recaps/week-09.html",
@@ -87,17 +109,6 @@ window.RECAPS_INDEX = {
         "**Weekly MVP:** Tyrese Maxey (Ringo's Cool Team) with 137.0 pts",
         "**Closest Matchup:** El Mostroso (863.0) def. Morrisville Rehab Facility (853.0) — margin 10 pts",
         "**Biggest Beatdown:** Las Villas ENDGAME (857.0) obliterated BBQ CHICKEN HOSPITAL (648.0) by 209 pts"
-      ]
-    },
-    {
-      "week": 10,
-      "captured_at": "2025-12-29T09:31:00Z",
-      "url": "recaps/week-10.html",
-      "quick_hits": [
-        "**Team of the Week:** El Mostroso with 886.0 pts",
-        "**Weekly MVP:** Nikola Jokic (Champion DX S*CK IT ) with 209.0 pts",
-        "**Closest Matchup:** Las Villas ENDGAME (629.0) def. Morrisville Rehab Facility (562.0) — margin 67 pts",
-        "**Biggest Beatdown:** Minneapolis Lakers (720.0) obliterated BBQ CHICKEN HOSPITAL (562.0) by 158 pts"
       ]
     },
     {

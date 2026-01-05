@@ -100,14 +100,21 @@ def parse_power_rankings(md_content):
     return power_rankings
 
 def main():
-    # Find latest week
-    md_files = sorted(MD_DIR.glob("recap_week_*.md"), reverse=True)
+    # Find latest week - sort by week number, not filename
+    md_files = list(MD_DIR.glob("recap_week_*.md"))
     if not md_files:
         print("No markdown files found")
         return
     
+    # Extract week numbers and sort by week (descending)
+    def get_week_num(path):
+        match = re.search(r"recap_week_(\d+)\.md", path.name)
+        return int(match.group(1)) if match else 0
+    
+    md_files.sort(key=get_week_num, reverse=True)
     latest_md = md_files[0]
-    print(f"Processing {latest_md.name}...")
+    week_num = get_week_num(latest_md)
+    print(f"Processing {latest_md.name} (Week {week_num})...")
     
     with open(latest_md, encoding="utf-8") as f:
         md_content = f.read()
@@ -118,6 +125,9 @@ def main():
     # Load existing metadata
     with open(DATA_DIR / "league_metadata.json", encoding="utf-8") as f:
         metadata = json.load(f)
+    
+    # Update week number in metadata
+    metadata["week"] = week_num
     
     def normalize_team_name(name):
         """Normalize team name for matching (remove extra spaces, trailing spaces)"""
