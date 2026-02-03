@@ -1,55 +1,547 @@
 // Generated from team_insights.json
 window.TEAM_INSIGHTS = [
   {
-    "week": 14,
-    "team_name": "El Mostroso",
-    "total_fp": 881.0,
-    "avg_fp_per_game": 62.92857142857143,
-    "games_played": 14,
+    "week": 15,
+    "team_name": "Barrio Cerrillos 🏆",
+    "total_fp": 930.0,
+    "avg_fp_per_game": 62.0,
+    "games_played": 15,
     "rank_by_fp": 1,
-    "strengths": [],
-    "weaknesses": [
+    "strengths": [
       "pts",
-      "to",
-      "fg3m"
+      "fg3m",
+      "ft_pct"
+    ],
+    "weaknesses": [
+      "blk",
+      "ast",
+      "stl"
     ],
     "category_zscores": {
-      "pts": -0.8301437705679305,
-      "reb": -0.18915542620243864,
-      "ast": -0.4958948063982851,
-      "stl": 0.09088778091041805,
-      "blk": -0.3018912861318468,
-      "fg3m": -1.787899840612459,
-      "fg_pct": 0.020732127708044945,
-      "ft_pct": -0.5865931219326439,
-      "to": -1.0565129042855774
+      "pts": 0.7031465215011532,
+      "reb": -0.056570009508922964,
+      "ast": -0.6131480832573903,
+      "stl": -1.0920244469741613,
+      "blk": -0.4451877495072032,
+      "fg3m": 0.6632625025758622,
+      "fg_pct": 0.3060647732596679,
+      "ft_pct": 0.442823316304837,
+      "to": -0.3600515848812999
     },
     "hot_players": [
-      "Immanuel Quickley",
-      "Jalen Johnson",
-      "Andrew Wiggins",
-      "Dylan Cardwell",
-      "Kevin Durant"
+      "Jarrett Allen",
+      "Joel Embiid",
+      "Jamal Murray",
+      "Karl-Anthony Towns",
+      "Jaylon Tyson"
     ],
     "cold_players": [
-      "De'Anthony Melton",
-      "Moussa Diabate",
-      "Dwight Powell",
-      "Derik Queen",
-      "Julius Randle"
+      "Dominick Barlow",
+      "Jonas Valanciunas",
+      "Zeke Nnaji",
+      "Moses Moody",
+      "Aaron Nesmith"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 881.0,
-    "fp_from_all_players": 881.0,
+    "official_score": 930.0,
+    "fp_from_all_players": 930.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 14,
-    "schedule_advantage": 0,
+    "games_this_week": 15,
+    "schedule_advantage": 1,
     "opponent": {
-      "name": "Bench warming brick layers unit",
-      "win_probability": 0.15910138599595056,
-      "strength_index": 0.6450390151578255,
+      "name": "Morovis  El Calor 🏆",
+      "win_probability": 0.3270095538913427,
+      "strength_index": 0.611170937472273,
+      "category_matchup": null
+    },
+    "next_week_roster": [
+      {
+        "player_name": "Giannis Antetokounmpo",
+        "nba_team": "MIL",
+        "fp_per_game": 36.73333333333333,
+        "games": 3,
+        "projected_fp": 110.19999999999999
+      },
+      {
+        "player_name": "Karl-Anthony Towns",
+        "nba_team": "NYK",
+        "fp_per_game": 26.47368421052632,
+        "games": 3,
+        "projected_fp": 79.42105263157896
+      },
+      {
+        "player_name": "Jamal Murray",
+        "nba_team": "DEN",
+        "fp_per_game": 24.444444444444443,
+        "games": 3,
+        "projected_fp": 73.33333333333333
+      },
+      {
+        "player_name": "De'Aaron Fox",
+        "nba_team": "SAS",
+        "fp_per_game": 23.18181818181818,
+        "games": 3,
+        "projected_fp": 69.54545454545453
+      },
+      {
+        "player_name": "Aaron Gordon",
+        "nba_team": "DEN",
+        "fp_per_game": 19.461538461538463,
+        "games": 3,
+        "projected_fp": 58.38461538461539
+      },
+      {
+        "player_name": "Jarrett Allen",
+        "nba_team": "CLE",
+        "fp_per_game": 18.933333333333334,
+        "games": 3,
+        "projected_fp": 56.8
+      },
+      {
+        "player_name": "Joel Embiid",
+        "nba_team": "PHI",
+        "fp_per_game": 18.57142857142857,
+        "games": 3,
+        "projected_fp": 55.71428571428571
+      },
+      {
+        "player_name": "CJ McCollum",
+        "nba_team": "WAS",
+        "fp_per_game": 15.055555555555554,
+        "games": 3,
+        "projected_fp": 45.16666666666666
+      },
+      {
+        "player_name": "Jaylon Tyson",
+        "nba_team": "CLE",
+        "fp_per_game": 14.0,
+        "games": 3,
+        "projected_fp": 42.0
+      },
+      {
+        "player_name": "Tari Eason",
+        "nba_team": "HOU",
+        "fp_per_game": 13.272727272727272,
+        "games": 3,
+        "projected_fp": 39.81818181818181
+      },
+      {
+        "player_name": "Aaron Nesmith",
+        "nba_team": "IND",
+        "fp_per_game": 12.636363636363638,
+        "games": 3,
+        "projected_fp": 37.909090909090914
+      },
+      {
+        "player_name": "Anfernee Simons",
+        "nba_team": "BOS",
+        "fp_per_game": 11.45,
+        "games": 3,
+        "projected_fp": 34.349999999999994
+      },
+      {
+        "player_name": "Pelle Larsson",
+        "nba_team": "MIA",
+        "fp_per_game": 11.3,
+        "games": 3,
+        "projected_fp": 33.900000000000006
+      },
+      {
+        "player_name": "Kyrie Irving",
+        "nba_team": null,
+        "fp_per_game": 0.0,
+        "games": 0,
+        "projected_fp": 0.0
+      },
+      {
+        "player_name": "Jonas Valanciunas",
+        "nba_team": null,
+        "fp_per_game": 0.0,
+        "games": 0,
+        "projected_fp": 0.0
+      }
+    ],
+    "next_week_total_projected_fp": 736.5426810032071
+  },
+  {
+    "week": 15,
+    "team_name": "Los Suns de PFKNR",
+    "total_fp": 818.0,
+    "avg_fp_per_game": 51.125,
+    "games_played": 16,
+    "rank_by_fp": 2,
+    "strengths": [
+      "fg_pct",
+      "blk"
+    ],
+    "weaknesses": [
+      "to",
+      "pts",
+      "stl"
+    ],
+    "category_zscores": {
+      "pts": -1.326058382010136,
+      "reb": 0.019879819287862747,
+      "ast": -1.1759648874810662,
+      "stl": -1.4833445338594378,
+      "blk": 0.4660095221098149,
+      "fg3m": -0.8586649239539593,
+      "fg_pct": 0.9121391239151405,
+      "ft_pct": -0.31566119354059535,
+      "to": -1.3243924309341262
+    },
+    "hot_players": [
+      "Dillon Brooks",
+      "Naz Reid",
+      "Deandre Ayton",
+      "Donovan Clingan",
+      "Brice Sensabaugh"
+    ],
+    "cold_players": [
+      "Daniss Jenkins",
+      "Deni Avdija",
+      "Evan Mobley",
+      "Dennis Schroder",
+      "Luka Doncic"
+    ],
+    "injury_impact_fp": 0.0,
+    "bench_leakage_fp": 0.0,
+    "ir_leakage_fp": 0.0,
+    "official_score": 818.0,
+    "fp_from_all_players": 818.0,
+    "scoreboard_gap": 0.0,
+    "games_this_week": 16,
+    "schedule_advantage": 2,
+    "opponent": {
+      "name": "La Guillotina",
+      "win_probability": 0.7375359965127429,
+      "strength_index": -1.9896582996865078,
+      "category_matchup": null
+    },
+    "next_week_roster": [
+      {
+        "player_name": "Josh Giddey",
+        "nba_team": "CHI",
+        "fp_per_game": 28.23529411764706,
+        "games": 3,
+        "projected_fp": 84.70588235294119
+      },
+      {
+        "player_name": "Deni Avdija",
+        "nba_team": "POR",
+        "fp_per_game": 25.8,
+        "games": 3,
+        "projected_fp": 77.4
+      },
+      {
+        "player_name": "Evan Mobley",
+        "nba_team": "CLE",
+        "fp_per_game": 23.2,
+        "games": 3,
+        "projected_fp": 69.6
+      },
+      {
+        "player_name": "Deandre Ayton",
+        "nba_team": "LAL",
+        "fp_per_game": 21.47058823529412,
+        "games": 3,
+        "projected_fp": 64.41176470588236
+      },
+      {
+        "player_name": "Nic Claxton",
+        "nba_team": "BKN",
+        "fp_per_game": 19.526315789473685,
+        "games": 3,
+        "projected_fp": 58.578947368421055
+      },
+      {
+        "player_name": "Donovan Clingan",
+        "nba_team": "POR",
+        "fp_per_game": 18.947368421052637,
+        "games": 3,
+        "projected_fp": 56.84210526315791
+      },
+      {
+        "player_name": "Dillon Brooks",
+        "nba_team": "PHX",
+        "fp_per_game": 16.133333333333333,
+        "games": 3,
+        "projected_fp": 48.4
+      },
+      {
+        "player_name": "Collin Gillespie",
+        "nba_team": "PHX",
+        "fp_per_game": 15.333333333333334,
+        "games": 3,
+        "projected_fp": 46.0
+      },
+      {
+        "player_name": "Naz Reid",
+        "nba_team": "MIN",
+        "fp_per_game": 14.85,
+        "games": 3,
+        "projected_fp": 44.55
+      },
+      {
+        "player_name": "Kevin Porter Jr.",
+        "nba_team": "MIL",
+        "fp_per_game": 14.5,
+        "games": 3,
+        "projected_fp": 43.5
+      },
+      {
+        "player_name": "Brice Sensabaugh",
+        "nba_team": "UTA",
+        "fp_per_game": 8.444444444444445,
+        "games": 3,
+        "projected_fp": 25.333333333333336
+      },
+      {
+        "player_name": "Collin Murray-Boyles",
+        "nba_team": "TOR",
+        "fp_per_game": 8.4375,
+        "games": 3,
+        "projected_fp": 25.3125
+      },
+      {
+        "player_name": "Luka Doncic",
+        "nba_team": null,
+        "fp_per_game": 0.0,
+        "games": 0,
+        "projected_fp": 0.0
+      },
+      {
+        "player_name": "Dennis Schroder",
+        "nba_team": null,
+        "fp_per_game": 0.0,
+        "games": 0,
+        "projected_fp": 0.0
+      },
+      {
+        "player_name": "Ty Jerome",
+        "nba_team": null,
+        "fp_per_game": 0.0,
+        "games": 0,
+        "projected_fp": 0.0
+      }
+    ],
+    "next_week_total_projected_fp": 644.6345330237358
+  },
+  {
+    "week": 15,
+    "team_name": "Ringo's Cool Team",
+    "total_fp": 810.0,
+    "avg_fp_per_game": 54.0,
+    "games_played": 15,
+    "rank_by_fp": 3,
+    "strengths": [
+      "fg_pct",
+      "ast",
+      "blk"
+    ],
+    "weaknesses": [
+      "fg3m"
+    ],
+    "category_zscores": {
+      "pts": 0.1791039155066622,
+      "reb": 0.23547201001474644,
+      "ast": 0.578127644812639,
+      "stl": 0.19404973081348403,
+      "blk": 0.30629121485641997,
+      "fg3m": -0.30132541960189374,
+      "fg_pct": 2.1615733699523143,
+      "ft_pct": 0.015007153741586033,
+      "to": -0.04691625271373233
+    },
+    "hot_players": [
+      "Cade Cunningham",
+      "Josh Hart",
+      "Matas Buzelis",
+      "Tyrese Maxey",
+      "Day'Ron Sharpe"
+    ],
+    "cold_players": [
+      "Caleb Love",
+      "Jerami Grant",
+      "Pelle Larsson",
+      "Yves Missi",
+      "Dru Smith"
+    ],
+    "injury_impact_fp": 0.0,
+    "bench_leakage_fp": 0.0,
+    "ir_leakage_fp": 0.0,
+    "official_score": 810.0,
+    "fp_from_all_players": 810.0,
+    "scoreboard_gap": 0.0,
+    "games_this_week": 15,
+    "schedule_advantage": 1,
+    "opponent": {
+      "name": "Minneapolis Lakers",
+      "win_probability": 0.4350380001353787,
+      "strength_index": 0.959205861924187,
+      "category_matchup": null
+    },
+    "next_week_roster": [
+      {
+        "player_name": "Tyrese Maxey",
+        "nba_team": "PHI",
+        "fp_per_game": 31.000000000000004,
+        "games": 3,
+        "projected_fp": 93.00000000000001
+      },
+      {
+        "player_name": "Cade Cunningham",
+        "nba_team": "DET",
+        "fp_per_game": 28.82352941176471,
+        "games": 3,
+        "projected_fp": 86.47058823529413
+      },
+      {
+        "player_name": "Tyler Herro",
+        "nba_team": "MIA",
+        "fp_per_game": 27.0,
+        "games": 3,
+        "projected_fp": 81.0
+      },
+      {
+        "player_name": "RJ Barrett",
+        "nba_team": "TOR",
+        "fp_per_game": 19.294117647058822,
+        "games": 3,
+        "projected_fp": 57.882352941176464
+      },
+      {
+        "player_name": "Josh Hart",
+        "nba_team": "NYK",
+        "fp_per_game": 19.0,
+        "games": 3,
+        "projected_fp": 57.0
+      },
+      {
+        "player_name": "Jakob Poeltl",
+        "nba_team": "TOR",
+        "fp_per_game": 18.333333333333336,
+        "games": 3,
+        "projected_fp": 55.00000000000001
+      },
+      {
+        "player_name": "Jerami Grant",
+        "nba_team": "POR",
+        "fp_per_game": 16.31578947368421,
+        "games": 3,
+        "projected_fp": 48.94736842105263
+      },
+      {
+        "player_name": "Matas Buzelis",
+        "nba_team": "CHI",
+        "fp_per_game": 14.105263157894736,
+        "games": 3,
+        "projected_fp": 42.315789473684205
+      },
+      {
+        "player_name": "T.J. McConnell",
+        "nba_team": "IND",
+        "fp_per_game": 13.7,
+        "games": 3,
+        "projected_fp": 41.099999999999994
+      },
+      {
+        "player_name": "Peyton Watson",
+        "nba_team": "DEN",
+        "fp_per_game": 13.36842105263158,
+        "games": 3,
+        "projected_fp": 40.10526315789474
+      },
+      {
+        "player_name": "Sandro Mamukelashvili",
+        "nba_team": "TOR",
+        "fp_per_game": 12.55,
+        "games": 3,
+        "projected_fp": 37.650000000000006
+      },
+      {
+        "player_name": "Yves Missi",
+        "nba_team": "NOP",
+        "fp_per_game": 10.4375,
+        "games": 3,
+        "projected_fp": 31.3125
+      },
+      {
+        "player_name": "Day'Ron Sharpe",
+        "nba_team": "BKN",
+        "fp_per_game": 10.222222222222223,
+        "games": 3,
+        "projected_fp": 30.66666666666667
+      },
+      {
+        "player_name": "Dru Smith",
+        "nba_team": "MIA",
+        "fp_per_game": 9.55,
+        "games": 3,
+        "projected_fp": 28.650000000000002
+      },
+      {
+        "player_name": "Jordan Miller",
+        "nba_team": "LAC",
+        "fp_per_game": 9.333333333333334,
+        "games": 3,
+        "projected_fp": 28.0
+      }
+    ],
+    "next_week_total_projected_fp": 759.1005288957687
+  },
+  {
+    "week": 15,
+    "team_name": "El Mostroso",
+    "total_fp": 808.0,
+    "avg_fp_per_game": 53.86666666666667,
+    "games_played": 15,
+    "rank_by_fp": 4,
+    "strengths": [],
+    "weaknesses": [
+      "blk",
+      "to",
+      "fg3m"
+    ],
+    "category_zscores": {
+      "pts": -0.6354137833517974,
+      "reb": -0.2014716636834429,
+      "ast": -0.3712924891998105,
+      "stl": 0.02148017849046386,
+      "blk": -0.7078179741467955,
+      "fg3m": -1.7613042185456833,
+      "fg_pct": -0.30397900479704026,
+      "ft_pct": -0.012608539702409967,
+      "to": -1.0105302226572523
+    },
+    "hot_players": [
+      "Kevin Durant",
+      "Julius Randle",
+      "Mark Williams",
+      "Jalen Johnson",
+      "Dylan Cardwell"
+    ],
+    "cold_players": [
+      "De'Anthony Melton",
+      "Moussa Diabate",
+      "Tre Johnson",
+      "Justin Champagnie",
+      "Immanuel Quickley"
+    ],
+    "injury_impact_fp": 0.0,
+    "bench_leakage_fp": 0.0,
+    "ir_leakage_fp": 0.0,
+    "official_score": 808.0,
+    "fp_from_all_players": 808.0,
+    "scoreboard_gap": 0.0,
+    "games_this_week": 15,
+    "schedule_advantage": 1,
+    "opponent": {
+      "name": "Morrisville Rehab Facility",
+      "win_probability": 0.18911001561057908,
+      "strength_index": 0.5091730910422977,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -138,11 +630,11 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 16.3125
       },
       {
-        "player_name": "Dylan Cardwell",
-        "nba_team": "SAC",
-        "fp_per_game": 2.6666666666666665,
+        "player_name": "GG Jackson",
+        "nba_team": "MEM",
+        "fp_per_game": 1.875,
         "games": 3,
-        "projected_fp": 8.0
+        "projected_fp": 5.625
       },
       {
         "player_name": "Moussa Diabate",
@@ -159,226 +651,226 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 0.0
       }
     ],
-    "next_week_total_projected_fp": 684.3073990122365
+    "next_week_total_projected_fp": 681.9323990122365
   },
   {
-    "week": 14,
-    "team_name": "Barrio Cerrillos 🏆",
-    "total_fp": 843.0,
-    "avg_fp_per_game": 49.588235294117645,
-    "games_played": 17,
-    "rank_by_fp": 2,
+    "week": 15,
+    "team_name": "El TumbaCuello 🏆",
+    "total_fp": 807.0,
+    "avg_fp_per_game": 57.642857142857146,
+    "games_played": 14,
+    "rank_by_fp": 5,
     "strengths": [
+      "to",
       "pts",
-      "fg_pct",
-      "ft_pct"
+      "ast"
     ],
     "weaknesses": [
-      "ast",
-      "stl"
+      "ft_pct",
+      "blk"
     ],
     "category_zscores": {
-      "pts": 0.6588725969595658,
-      "reb": 0.01679491278456346,
-      "ast": -0.8230523184804744,
-      "stl": -0.9470853812011255,
-      "blk": -0.19242049615813767,
-      "fg3m": 0.360903121032704,
-      "fg_pct": 0.6197790338520165,
-      "ft_pct": 0.5439019035042758,
-      "to": -0.20191941401502322
+      "pts": 1.4487828011126949,
+      "reb": 0.9650126666538845,
+      "ast": 1.315902778596223,
+      "stl": 0.4086862309864188,
+      "blk": -0.7754392552715116,
+      "fg3m": 0.3997622641939293,
+      "fg_pct": 0.24943155615507318,
+      "ft_pct": -0.4751059849879378,
+      "to": 1.5843541395981564
     },
     "hot_players": [
-      "Joel Embiid",
-      "Giannis Antetokounmpo",
-      "Jarrett Allen",
-      "De'Aaron Fox",
-      "Jaylon Tyson"
+      "Jalen Duren",
+      "Kon Knueppel",
+      "DeMar DeRozan",
+      "Jabari Smith Jr.",
+      "Ace Bailey"
     ],
     "cold_players": [
-      "Christian Braun",
-      "Jonas Valanciunas",
-      "Craig Porter Jr.",
-      "Khris Middleton",
-      "Tari Eason"
+      "Egor Demin",
+      "Jock Landale",
+      "Stephon Castle",
+      "Isaiah Collier",
+      "Bennedict Mathurin"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 843.0,
-    "fp_from_all_players": 843.0,
+    "official_score": 807.0,
+    "fp_from_all_players": 807.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 17,
-    "schedule_advantage": 3,
+    "games_this_week": 14,
+    "schedule_advantage": 0,
     "opponent": {
-      "name": "Morrisville Rehab Facility",
-      "win_probability": 0.36054824398686836,
-      "strength_index": 0.49876939235850104,
+      "name": "Champion DX S*CK IT ",
+      "win_probability": 0.9333330214899545,
+      "strength_index": -1.9399339934200595,
       "category_matchup": null
     },
     "next_week_roster": [
       {
-        "player_name": "Giannis Antetokounmpo",
-        "nba_team": "MIL",
-        "fp_per_game": 36.73333333333333,
+        "player_name": "Jalen Duren",
+        "nba_team": "DET",
+        "fp_per_game": 27.294117647058822,
         "games": 3,
-        "projected_fp": 110.19999999999999
+        "projected_fp": 81.88235294117646
       },
       {
-        "player_name": "Karl-Anthony Towns",
-        "nba_team": "NYK",
-        "fp_per_game": 26.47368421052632,
+        "player_name": "Lauri Markkanen",
+        "nba_team": "UTA",
+        "fp_per_game": 25.0,
         "games": 3,
-        "projected_fp": 79.42105263157896
+        "projected_fp": 75.0
       },
       {
-        "player_name": "Jamal Murray",
-        "nba_team": "DEN",
-        "fp_per_game": 24.444444444444443,
+        "player_name": "Anthony Davis",
+        "nba_team": "DAL",
+        "fp_per_game": 24.33333333333333,
         "games": 3,
-        "projected_fp": 73.33333333333333
+        "projected_fp": 72.99999999999999
       },
       {
-        "player_name": "De'Aaron Fox",
+        "player_name": "Pascal Siakam",
+        "nba_team": "IND",
+        "fp_per_game": 23.210526315789476,
+        "games": 3,
+        "projected_fp": 69.63157894736842
+      },
+      {
+        "player_name": "Stephon Castle",
         "nba_team": "SAS",
-        "fp_per_game": 23.18181818181818,
+        "fp_per_game": 20.769230769230766,
         "games": 3,
-        "projected_fp": 69.54545454545453
+        "projected_fp": 62.3076923076923
       },
       {
-        "player_name": "Aaron Gordon",
-        "nba_team": "DEN",
-        "fp_per_game": 19.461538461538463,
+        "player_name": "Coby White",
+        "nba_team": "CHI",
+        "fp_per_game": 20.4,
         "games": 3,
-        "projected_fp": 58.38461538461539
+        "projected_fp": 61.199999999999996
       },
       {
-        "player_name": "Jarrett Allen",
-        "nba_team": "CLE",
-        "fp_per_game": 18.933333333333334,
+        "player_name": "Bennedict Mathurin",
+        "nba_team": "IND",
+        "fp_per_game": 18.33333333333333,
         "games": 3,
-        "projected_fp": 56.8
+        "projected_fp": 54.999999999999986
       },
       {
-        "player_name": "Joel Embiid",
-        "nba_team": "PHI",
-        "fp_per_game": 18.57142857142857,
+        "player_name": "Kon Knueppel",
+        "nba_team": "CHA",
+        "fp_per_game": 18.3,
         "games": 3,
-        "projected_fp": 55.71428571428571
+        "projected_fp": 54.900000000000006
       },
       {
-        "player_name": "CJ McCollum",
-        "nba_team": "WAS",
-        "fp_per_game": 15.055555555555554,
+        "player_name": "DeMar DeRozan",
+        "nba_team": "SAC",
+        "fp_per_game": 18.19047619047619,
         "games": 3,
-        "projected_fp": 45.16666666666666
+        "projected_fp": 54.57142857142857
       },
       {
-        "player_name": "Jaylon Tyson",
-        "nba_team": "CLE",
-        "fp_per_game": 14.0,
-        "games": 3,
-        "projected_fp": 42.0
-      },
-      {
-        "player_name": "Christian Braun",
-        "nba_team": "DEN",
-        "fp_per_game": 13.545454545454543,
-        "games": 3,
-        "projected_fp": 40.636363636363626
-      },
-      {
-        "player_name": "Tari Eason",
+        "player_name": "Jabari Smith Jr.",
         "nba_team": "HOU",
-        "fp_per_game": 13.272727272727272,
+        "fp_per_game": 16.6875,
         "games": 3,
-        "projected_fp": 39.81818181818181
+        "projected_fp": 50.0625
       },
       {
-        "player_name": "Moses Moody",
-        "nba_team": "GSW",
-        "fp_per_game": 11.473684210526311,
+        "player_name": "Davion Mitchell",
+        "nba_team": "MIA",
+        "fp_per_game": 15.45,
         "games": 3,
-        "projected_fp": 34.42105263157893
+        "projected_fp": 46.349999999999994
       },
       {
-        "player_name": "Anfernee Simons",
+        "player_name": "Jock Landale",
+        "nba_team": "MEM",
+        "fp_per_game": 13.19047619047619,
+        "games": 3,
+        "projected_fp": 39.57142857142857
+      },
+      {
+        "player_name": "Isaiah Collier",
+        "nba_team": "UTA",
+        "fp_per_game": 11.363636363636363,
+        "games": 3,
+        "projected_fp": 34.09090909090909
+      },
+      {
+        "player_name": "Ace Bailey",
+        "nba_team": "UTA",
+        "fp_per_game": 10.052631578947366,
+        "games": 3,
+        "projected_fp": 30.1578947368421
+      },
+      {
+        "player_name": "Sam Hauser",
         "nba_team": "BOS",
-        "fp_per_game": 11.45,
+        "fp_per_game": 7.7,
         "games": 3,
-        "projected_fp": 34.349999999999994
-      },
-      {
-        "player_name": "Kyrie Irving",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
-      },
-      {
-        "player_name": "Jonas Valanciunas",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
+        "projected_fp": 23.1
       }
     ],
-    "next_week_total_projected_fp": 739.791006362059
+    "next_week_total_projected_fp": 810.8257851668455
   },
   {
-    "week": 14,
+    "week": 15,
     "team_name": "Morovis  El Calor 🏆",
-    "total_fp": 831.0,
-    "avg_fp_per_game": 59.357142857142854,
+    "total_fp": 796.0,
+    "avg_fp_per_game": 56.857142857142854,
     "games_played": 14,
-    "rank_by_fp": 3,
+    "rank_by_fp": 6,
     "strengths": [
       "reb",
       "to",
       "blk"
     ],
     "weaknesses": [
-      "stl",
       "ft_pct",
+      "stl",
       "fg_pct"
     ],
     "category_zscores": {
-      "pts": 0.503105721671818,
-      "reb": 2.729284807490508,
-      "ast": 0.010489598528022708,
-      "stl": -0.4073839143478504,
-      "blk": 1.5225651608658206,
-      "fg3m": -0.3475070675155119,
-      "fg_pct": -0.9095378062500488,
-      "ft_pct": -0.43737195614561336,
-      "to": 1.5580170000207603
+      "pts": 0.49641202504403875,
+      "reb": 2.6655916264076174,
+      "ast": 0.050959236629216614,
+      "stl": -0.3718343429323578,
+      "blk": 1.3563558419111044,
+      "fg3m": -0.2794933450899552,
+      "fg_pct": -0.7687357274793696,
+      "ft_pct": -0.3406231841773292,
+      "to": 1.35903880735245
     },
     "hot_players": [
-      "Scottie Barnes",
-      "Ivica Zubac",
-      "Max Christie",
       "Brandon Miller",
-      "Domantas Sabonis"
+      "Desmond Bane",
+      "Jaime Jaquez Jr.",
+      "Alex Sarr",
+      "Shaedon Sharpe"
     ],
     "cold_players": [
+      "Russell Westbrook",
+      "Max Christie",
+      "Domantas Sabonis",
       "Kel'el Ware",
-      "Jaime Jaquez Jr.",
-      "Noah Clowney",
-      "Desmond Bane",
-      "Shaedon Sharpe"
+      "Ivica Zubac"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 831.0,
-    "fp_from_all_players": 831.0,
+    "official_score": 796.0,
+    "fp_from_all_players": 796.0,
     "scoreboard_gap": 0.0,
     "games_this_week": 14,
     "schedule_advantage": 0,
     "opponent": {
-      "name": "El TumbaCuello 🏆",
-      "win_probability": 0.6104702734633751,
-      "strength_index": 0.19671223676767338,
+      "name": "Barrio Cerrillos 🏆",
+      "win_probability": 0.6729904461086574,
+      "strength_index": -0.11057080883289379,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -491,58 +983,58 @@ window.TEAM_INSIGHTS = [
     "next_week_total_projected_fp": 785.649980063796
   },
   {
-    "week": 14,
+    "week": 15,
     "team_name": "Las Villas ENDGAME",
-    "total_fp": 816.0,
-    "avg_fp_per_game": 51.0,
-    "games_played": 16,
-    "rank_by_fp": 4,
+    "total_fp": 737.0,
+    "avg_fp_per_game": 38.78947368421053,
+    "games_played": 19,
+    "rank_by_fp": 7,
     "strengths": [
       "fg3m",
-      "to",
-      "stl"
+      "blk",
+      "to"
     ],
     "weaknesses": [
       "reb",
       "fg_pct"
     ],
     "category_zscores": {
-      "pts": 0.7616018291767844,
-      "reb": -0.4691140688301285,
-      "ast": 0.85700308706347,
-      "stl": 1.0664899683265714,
-      "blk": 0.8512347186364825,
-      "fg3m": 2.165212957207875,
-      "fg_pct": -1.6653583830140997,
-      "ft_pct": 0.5729779804245543,
-      "to": 1.0831464515797955
+      "pts": 0.5785587575844451,
+      "reb": -0.32828058673648436,
+      "ast": 0.29747194800049936,
+      "stl": 0.6028637545458546,
+      "blk": 1.5870852274977092,
+      "fg3m": 2.033013388364812,
+      "fg_pct": -1.7086738460216326,
+      "ft_pct": 0.5215799051309306,
+      "to": 0.7925555599264911
     },
     "hot_players": [
+      "Ryan Rollins",
+      "Brandon Ingram",
       "Chet Holmgren",
-      "James Harden",
-      "Stephen Curry",
-      "Kelly Oubre Jr.",
-      "Brandon Ingram"
+      "Derrick White",
+      "Bilal Coulibaly"
     ],
     "cold_players": [
-      "Pelle Larsson",
-      "Ace Bailey",
-      "Dominick Barlow",
-      "Precious Achiuwa",
-      "Royce O'Neale"
+      "Duncan Robinson",
+      "Jaylen Wells",
+      "AJ Green",
+      "Jake LaRavia",
+      "Aaron Nesmith"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 816.0,
-    "fp_from_all_players": 816.0,
+    "official_score": 737.0,
+    "fp_from_all_players": 737.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 16,
-    "schedule_advantage": 2,
+    "games_this_week": 19,
+    "schedule_advantage": 5,
     "opponent": {
-      "name": "Minneapolis Lakers",
-      "win_probability": 0.5777749394106817,
-      "strength_index": 1.0494672606009467,
+      "name": "BBQ CHICKEN HOSPITAL",
+      "win_probability": 0.6556120736982274,
+      "strength_index": 0.47663786768286054,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -624,13 +1116,6 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 40.333333333333336
       },
       {
-        "player_name": "Duncan Robinson",
-        "nba_team": "DET",
-        "fp_per_game": 12.5,
-        "games": 3,
-        "projected_fp": 37.5
-      },
-      {
         "player_name": "Bilal Coulibaly",
         "nba_team": "WAS",
         "fp_per_game": 11.6,
@@ -638,11 +1123,18 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 34.8
       },
       {
-        "player_name": "Pelle Larsson",
-        "nba_team": "MIA",
-        "fp_per_game": 11.3,
+        "player_name": "Jaylen Wells",
+        "nba_team": "MEM",
+        "fp_per_game": 10.61904761904762,
         "games": 3,
-        "projected_fp": 33.900000000000006
+        "projected_fp": 31.85714285714286
+      },
+      {
+        "player_name": "Jay Huff",
+        "nba_team": "IND",
+        "fp_per_game": 9.85,
+        "games": 3,
+        "projected_fp": 29.549999999999997
       },
       {
         "player_name": "Kristaps Porzingis",
@@ -652,15 +1144,15 @@ window.TEAM_INSIGHTS = [
         "projected_fp": 0.0
       }
     ],
-    "next_week_total_projected_fp": 736.7931464691139
+    "next_week_total_projected_fp": 726.8002893262568
   },
   {
-    "week": 14,
+    "week": 15,
     "team_name": "Minneapolis Lakers",
-    "total_fp": 757.0,
-    "avg_fp_per_game": 58.23076923076923,
-    "games_played": 13,
-    "rank_by_fp": 5,
+    "total_fp": 735.0,
+    "avg_fp_per_game": 52.5,
+    "games_played": 14,
+    "rank_by_fp": 8,
     "strengths": [
       "ft_pct",
       "fg3m",
@@ -672,42 +1164,42 @@ window.TEAM_INSIGHTS = [
       "reb"
     ],
     "category_zscores": {
-      "pts": 1.2984253920489501,
-      "reb": -0.9533340750199468,
-      "ast": -0.8267065313197449,
-      "stl": -0.011976337259056802,
-      "blk": 0.06287717066876791,
-      "fg3m": 1.4334464302968415,
-      "fg_pct": 0.9602928051975487,
-      "ft_pct": 1.788195555742629,
-      "to": -0.7998058424818812
+      "pts": 1.1907621769491847,
+      "reb": -0.9630779505427153,
+      "ast": -0.7256687998418775,
+      "stl": 0.013620826700337523,
+      "blk": 0.04813882125482656,
+      "fg3m": 1.5526709836043917,
+      "fg_pct": 0.958397680871192,
+      "ft_pct": 1.9604304697047186,
+      "to": -0.6358275662085643
     },
     "hot_players": [
-      "Shai Gilgeous-Alexander",
       "Bam Adebayo",
+      "Shai Gilgeous-Alexander",
       "Donovan Mitchell",
-      "Cam Spencer",
+      "Miles Bridges",
       "Myles Turner"
     ],
     "cold_players": [
       "Cam Thomas",
-      "De'Andre Hunter",
       "Jusuf Nurkic",
-      "Miles Bridges",
-      "Ajay Mitchell"
+      "De'Andre Hunter",
+      "Ryan Kalkbrenner",
+      "Sam Merrill"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 757.0,
-    "fp_from_all_players": 757.0,
+    "official_score": 735.0,
+    "fp_from_all_players": 735.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 13,
-    "schedule_advantage": -1,
+    "games_this_week": 14,
+    "schedule_advantage": 0,
     "opponent": {
-      "name": "Las Villas ENDGAME",
-      "win_probability": 0.4222250605893183,
-      "strength_index": 1.3631131844596964,
+      "name": "Ringo's Cool Team",
+      "win_probability": 0.5649619998646214,
+      "strength_index": 0.6978807738227376,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -820,45 +1312,44 @@ window.TEAM_INSIGHTS = [
     "next_week_total_projected_fp": 752.3055432699396
   },
   {
-    "week": 14,
-    "team_name": "Los Suns de PFKNR",
+    "week": 15,
+    "team_name": "Champion DX S*CK IT ",
     "total_fp": 691.0,
-    "avg_fp_per_game": 49.357142857142854,
-    "games_played": 14,
-    "rank_by_fp": 6,
+    "avg_fp_per_game": 53.15384615384615,
+    "games_played": 13,
+    "rank_by_fp": 9,
     "strengths": [
-      "fg_pct",
-      "blk"
+      "fg_pct"
     ],
     "weaknesses": [
-      "to",
       "pts",
-      "stl"
+      "reb",
+      "ft_pct"
     ],
     "category_zscores": {
-      "pts": -1.4849174412605943,
-      "reb": 0.13612157435331948,
-      "ast": -1.1329139778034545,
-      "stl": -1.5475931685726239,
-      "blk": 0.5291307309436983,
-      "fg3m": -0.8232226414453154,
-      "fg_pct": 0.7591336731119459,
-      "ft_pct": 0.21351635523391727,
-      "to": -1.3902466588279665
+      "pts": -1.4483739890021732,
+      "reb": -2.0349414058205055,
+      "ast": -1.21588513720182,
+      "stl": -0.5900701867084746,
+      "blk": -0.6972003549876424,
+      "fg3m": -1.2572629076204018,
+      "fg_pct": 0.8703802602429971,
+      "ft_pct": -2.1336880252004926,
+      "to": -1.1625785772017618
     },
     "hot_players": [
-      "Evan Mobley",
-      "Collin Gillespie",
-      "Nic Claxton",
-      "Dillon Brooks",
-      "Naz Reid"
+      "Anthony Black",
+      "Tobias Harris",
+      "Nickeil Alexander-Walker",
+      "Mikal Bridges",
+      "Zion Williamson"
     ],
     "cold_players": [
-      "Deni Avdija",
-      "Dennis Schroder",
-      "Luka Doncic",
-      "Deandre Ayton",
-      "Kevin Porter Jr."
+      "Nikola Jokic",
+      "Draymond Green",
+      "Marvin Bagley III",
+      "Mitchell Robinson",
+      "Brandon Williams"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
@@ -866,995 +1357,159 @@ window.TEAM_INSIGHTS = [
     "official_score": 691.0,
     "fp_from_all_players": 691.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 14,
-    "schedule_advantage": 0,
-    "opponent": {
-      "name": "Ringo's Cool Team",
-      "win_probability": 0.1547008835381352,
-      "strength_index": 0.6842861403313542,
-      "category_matchup": null
-    },
-    "next_week_roster": [
-      {
-        "player_name": "Josh Giddey",
-        "nba_team": "CHI",
-        "fp_per_game": 28.23529411764706,
-        "games": 3,
-        "projected_fp": 84.70588235294119
-      },
-      {
-        "player_name": "Deni Avdija",
-        "nba_team": "POR",
-        "fp_per_game": 25.8,
-        "games": 3,
-        "projected_fp": 77.4
-      },
-      {
-        "player_name": "Evan Mobley",
-        "nba_team": "CLE",
-        "fp_per_game": 23.2,
-        "games": 3,
-        "projected_fp": 69.6
-      },
-      {
-        "player_name": "Deandre Ayton",
-        "nba_team": "LAL",
-        "fp_per_game": 21.47058823529412,
-        "games": 3,
-        "projected_fp": 64.41176470588236
-      },
-      {
-        "player_name": "Nic Claxton",
-        "nba_team": "BKN",
-        "fp_per_game": 19.526315789473685,
-        "games": 3,
-        "projected_fp": 58.578947368421055
-      },
-      {
-        "player_name": "Donovan Clingan",
-        "nba_team": "POR",
-        "fp_per_game": 18.947368421052637,
-        "games": 3,
-        "projected_fp": 56.84210526315791
-      },
-      {
-        "player_name": "Dillon Brooks",
-        "nba_team": "PHX",
-        "fp_per_game": 16.133333333333333,
-        "games": 3,
-        "projected_fp": 48.4
-      },
-      {
-        "player_name": "Collin Gillespie",
-        "nba_team": "PHX",
-        "fp_per_game": 15.333333333333334,
-        "games": 3,
-        "projected_fp": 46.0
-      },
-      {
-        "player_name": "Naz Reid",
-        "nba_team": "MIN",
-        "fp_per_game": 14.85,
-        "games": 3,
-        "projected_fp": 44.55
-      },
-      {
-        "player_name": "Kevin Porter Jr.",
-        "nba_team": "MIL",
-        "fp_per_game": 14.5,
-        "games": 3,
-        "projected_fp": 43.5
-      },
-      {
-        "player_name": "Brice Sensabaugh",
-        "nba_team": "UTA",
-        "fp_per_game": 8.444444444444445,
-        "games": 3,
-        "projected_fp": 25.333333333333336
-      },
-      {
-        "player_name": "Collin Murray-Boyles",
-        "nba_team": "TOR",
-        "fp_per_game": 8.4375,
-        "games": 3,
-        "projected_fp": 25.3125
-      },
-      {
-        "player_name": "Jalen Pickett",
-        "nba_team": "DEN",
-        "fp_per_game": 2.5,
-        "games": 3,
-        "projected_fp": 7.5
-      },
-      {
-        "player_name": "Luka Doncic",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
-      },
-      {
-        "player_name": "Dennis Schroder",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
-      }
-    ],
-    "next_week_total_projected_fp": 652.1345330237358
-  },
-  {
-    "week": 14,
-    "team_name": "La Guillotina",
-    "total_fp": 641.0,
-    "avg_fp_per_game": 40.0625,
-    "games_played": 16,
-    "rank_by_fp": 7,
-    "strengths": [
-      "ft_pct",
-      "fg3m"
-    ],
-    "weaknesses": [
-      "ast",
-      "blk",
-      "stl"
-    ],
-    "category_zscores": {
-      "pts": -0.8069385115131189,
-      "reb": -0.3833878431992628,
-      "ast": -0.8759543407052367,
-      "stl": -1.8514489252363064,
-      "blk": -0.9141955990040711,
-      "fg3m": 0.48470160029886794,
-      "fg_pct": 0.040614392463201775,
-      "ft_pct": 0.5711926415267382,
-      "to": -0.5401065414678157
-    },
-    "hot_players": [
-      "Malik Monk",
-      "Michael Porter Jr.",
-      "Alperen Sengun",
-      "Bobby Portis",
-      "Keldon Johnson"
-    ],
-    "cold_players": [
-      "Jordan Poole",
-      "Nikola Vucevic",
-      "Buddy Hield",
-      "Luguentz Dort",
-      "Klay Thompson"
-    ],
-    "injury_impact_fp": 0.0,
-    "bench_leakage_fp": 0.0,
-    "ir_leakage_fp": 0.0,
-    "official_score": 641.0,
-    "fp_from_all_players": 641.0,
-    "scoreboard_gap": 0.0,
-    "games_this_week": 16,
-    "schedule_advantage": 2,
-    "opponent": {
-      "name": "Reaves's Pieces",
-      "win_probability": 0.18539940435700908,
-      "strength_index": 0.18911636223783249,
-      "category_matchup": null
-    },
-    "next_week_roster": [
-      {
-        "player_name": "Alperen Sengun",
-        "nba_team": "HOU",
-        "fp_per_game": 26.823529411764703,
-        "games": 3,
-        "projected_fp": 80.47058823529412
-      },
-      {
-        "player_name": "Michael Porter Jr.",
-        "nba_team": "BKN",
-        "fp_per_game": 23.375,
-        "games": 3,
-        "projected_fp": 70.125
-      },
-      {
-        "player_name": "Rudy Gobert",
-        "nba_team": "MIN",
-        "fp_per_game": 19.3,
-        "games": 3,
-        "projected_fp": 57.900000000000006
-      },
-      {
-        "player_name": "Keldon Johnson",
-        "nba_team": "SAS",
-        "fp_per_game": 17.210526315789473,
-        "games": 3,
-        "projected_fp": 51.63157894736842
-      },
-      {
-        "player_name": "Quentin Grimes",
-        "nba_team": "PHI",
-        "fp_per_game": 16.42105263157895,
-        "games": 3,
-        "projected_fp": 49.26315789473685
-      },
-      {
-        "player_name": "Luke Kornet",
-        "nba_team": "SAS",
-        "fp_per_game": 15.0,
-        "games": 3,
-        "projected_fp": 45.0
-      },
-      {
-        "player_name": "Devin Vassell",
-        "nba_team": "SAS",
-        "fp_per_game": 14.73684210526316,
-        "games": 3,
-        "projected_fp": 44.21052631578948
-      },
-      {
-        "player_name": "Darius Garland",
-        "nba_team": "CLE",
-        "fp_per_game": 13.714285714285714,
-        "games": 3,
-        "projected_fp": 41.14285714285714
-      },
-      {
-        "player_name": "Toumani Camara",
-        "nba_team": "POR",
-        "fp_per_game": 12.95,
-        "games": 3,
-        "projected_fp": 38.849999999999994
-      },
-      {
-        "player_name": "Bobby Portis",
-        "nba_team": "MIL",
-        "fp_per_game": 12.0,
-        "games": 3,
-        "projected_fp": 36.0
-      },
-      {
-        "player_name": "Jordan Poole",
-        "nba_team": "NOP",
-        "fp_per_game": 11.571428571428571,
-        "games": 3,
-        "projected_fp": 34.714285714285715
-      },
-      {
-        "player_name": "Malik Monk",
-        "nba_team": "SAC",
-        "fp_per_game": 11.5,
-        "games": 3,
-        "projected_fp": 34.5
-      },
-      {
-        "player_name": "Miles McBride",
-        "nba_team": "NYK",
-        "fp_per_game": 11.0625,
-        "games": 3,
-        "projected_fp": 33.1875
-      },
-      {
-        "player_name": "Buddy Hield",
-        "nba_team": "GSW",
-        "fp_per_game": 6.571428571428571,
-        "games": 3,
-        "projected_fp": 19.714285714285715
-      },
-      {
-        "player_name": "Nikola Vucevic",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
-      }
-    ],
-    "next_week_total_projected_fp": 636.7097799646174
-  },
-  {
-    "week": 14,
-    "team_name": "El TumbaCuello 🏆",
-    "total_fp": 634.0,
-    "avg_fp_per_game": 48.76923076923077,
-    "games_played": 13,
-    "rank_by_fp": 8,
-    "strengths": [
-      "pts",
-      "reb",
-      "to"
-    ],
-    "weaknesses": [
-      "ft_pct",
-      "blk"
-    ],
-    "category_zscores": {
-      "pts": 1.2242440280744702,
-      "reb": 0.7361243133432094,
-      "ast": 0.21971459660002873,
-      "stl": 0.08302904616209997,
-      "blk": -1.1047420711348506,
-      "fg3m": 0.24929533642009005,
-      "fg_pct": 0.08281598200116416,
-      "ft_pct": -0.44572926299400806,
-      "to": 0.686992040055363
-    },
-    "hot_players": [
-      "Jalen Duren",
-      "Sam Hauser",
-      "Pascal Siakam",
-      "DeMar DeRozan",
-      "Coby White"
-    ],
-    "cold_players": [
-      "Lauri Markkanen",
-      "Egor Demin",
-      "Davion Mitchell",
-      "Jay Huff",
-      "Jabari Smith Jr."
-    ],
-    "injury_impact_fp": 0.0,
-    "bench_leakage_fp": 0.0,
-    "ir_leakage_fp": 0.0,
-    "official_score": 634.0,
-    "fp_from_all_players": 634.0,
-    "scoreboard_gap": 0.0,
     "games_this_week": 13,
     "schedule_advantage": -1,
     "opponent": {
-      "name": "Morovis  El Calor 🏆",
-      "win_probability": 0.38952972653662493,
-      "strength_index": 0.6460016548840538,
+      "name": "El TumbaCuello 🏆",
+      "win_probability": 0.06666697851004562,
+      "strength_index": 0.6991183244374932,
       "category_matchup": null
     },
     "next_week_roster": [
       {
-        "player_name": "Jalen Duren",
-        "nba_team": "DET",
-        "fp_per_game": 27.294117647058822,
-        "games": 3,
-        "projected_fp": 81.88235294117646
-      },
-      {
-        "player_name": "Lauri Markkanen",
-        "nba_team": "UTA",
-        "fp_per_game": 25.0,
-        "games": 3,
-        "projected_fp": 75.0
-      },
-      {
-        "player_name": "Anthony Davis",
-        "nba_team": "DAL",
-        "fp_per_game": 24.33333333333333,
-        "games": 3,
-        "projected_fp": 72.99999999999999
-      },
-      {
-        "player_name": "Pascal Siakam",
-        "nba_team": "IND",
-        "fp_per_game": 23.210526315789476,
-        "games": 3,
-        "projected_fp": 69.63157894736842
-      },
-      {
-        "player_name": "Stephon Castle",
-        "nba_team": "SAS",
-        "fp_per_game": 20.769230769230766,
-        "games": 3,
-        "projected_fp": 62.3076923076923
-      },
-      {
-        "player_name": "Coby White",
-        "nba_team": "CHI",
-        "fp_per_game": 20.4,
-        "games": 3,
-        "projected_fp": 61.199999999999996
-      },
-      {
-        "player_name": "Bennedict Mathurin",
-        "nba_team": "IND",
-        "fp_per_game": 18.33333333333333,
-        "games": 3,
-        "projected_fp": 54.999999999999986
-      },
-      {
-        "player_name": "Kon Knueppel",
-        "nba_team": "CHA",
-        "fp_per_game": 18.3,
-        "games": 3,
-        "projected_fp": 54.900000000000006
-      },
-      {
-        "player_name": "DeMar DeRozan",
-        "nba_team": "SAC",
-        "fp_per_game": 18.19047619047619,
-        "games": 3,
-        "projected_fp": 54.57142857142857
-      },
-      {
-        "player_name": "Jabari Smith Jr.",
-        "nba_team": "HOU",
-        "fp_per_game": 16.6875,
-        "games": 3,
-        "projected_fp": 50.0625
-      },
-      {
-        "player_name": "Davion Mitchell",
-        "nba_team": "MIA",
-        "fp_per_game": 15.45,
-        "games": 3,
-        "projected_fp": 46.349999999999994
-      },
-      {
-        "player_name": "Jock Landale",
-        "nba_team": "MEM",
-        "fp_per_game": 13.19047619047619,
-        "games": 3,
-        "projected_fp": 39.57142857142857
-      },
-      {
-        "player_name": "Ace Bailey",
-        "nba_team": "UTA",
-        "fp_per_game": 10.052631578947366,
-        "games": 3,
-        "projected_fp": 30.1578947368421
-      },
-      {
-        "player_name": "Sam Hauser",
-        "nba_team": "BOS",
-        "fp_per_game": 7.7,
-        "games": 3,
-        "projected_fp": 23.1
-      },
-      {
-        "player_name": "Egor Demin",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
-      }
-    ],
-    "next_week_total_projected_fp": 776.7348760759364
-  },
-  {
-    "week": 14,
-    "team_name": "BBQ CHICKEN HOSPITAL",
-    "total_fp": 632.0,
-    "avg_fp_per_game": 52.666666666666664,
-    "games_played": 12,
-    "rank_by_fp": 9,
-    "strengths": [
-      "ast",
-      "stl",
-      "to"
-    ],
-    "weaknesses": [
-      "fg3m",
-      "blk",
-      "ft_pct"
-    ],
-    "category_zscores": {
-      "pts": 0.08533669636111604,
-      "reb": 0.5468191729184357,
-      "ast": 2.3526491493582324,
-      "stl": 1.579065607149999,
-      "blk": -1.2033860168217447,
-      "fg3m": -0.37448156633310975,
-      "fg_pct": 0.02426954752670251,
-      "ft_pct": -1.3440496575571534,
-      "to": 1.033688047504385
-    },
-    "hot_players": [
-      "Saddiq Bey",
-      "John Collins",
-      "Andrew Nembhard",
-      "Anthony Edwards",
-      "Naji Marshall"
-    ],
-    "cold_players": [
-      "P.J. Washington",
-      "Jrue Holiday",
-      "Donte DiVincenzo",
-      "Jonathan Kuminga",
-      "Tre Jones"
-    ],
-    "injury_impact_fp": 0.0,
-    "bench_leakage_fp": 0.0,
-    "ir_leakage_fp": 0.0,
-    "official_score": 632.0,
-    "fp_from_all_players": 632.0,
-    "scoreboard_gap": 0.0,
-    "games_this_week": 12,
-    "schedule_advantage": -2,
-    "opponent": {
-      "name": "Champion DX S*CK IT ",
-      "win_probability": 0.9426808424695179,
-      "strength_index": -2.336755802584705,
-      "category_matchup": null
-    },
-    "next_week_roster": [
-      {
-        "player_name": "Anthony Edwards",
-        "nba_team": "MIN",
-        "fp_per_game": 25.1875,
-        "games": 3,
-        "projected_fp": 75.5625
-      },
-      {
-        "player_name": "Franz Wagner",
-        "nba_team": "ORL",
-        "fp_per_game": 22.9,
-        "games": 3,
-        "projected_fp": 68.69999999999999
-      },
-      {
-        "player_name": "Isaiah Hartenstein",
-        "nba_team": "OKC",
-        "fp_per_game": 22.73684210526316,
-        "games": 3,
-        "projected_fp": 68.21052631578948
-      },
-      {
-        "player_name": "Jrue Holiday",
-        "nba_team": "POR",
-        "fp_per_game": 21.083333333333336,
-        "games": 3,
-        "projected_fp": 63.25000000000001
-      },
-      {
-        "player_name": "LeBron James",
-        "nba_team": "LAL",
-        "fp_per_game": 20.25,
-        "games": 3,
-        "projected_fp": 60.75
-      },
-      {
-        "player_name": "Dyson Daniels",
-        "nba_team": "ATL",
-        "fp_per_game": 17.80952380952381,
-        "games": 3,
-        "projected_fp": 53.42857142857143
-      },
-      {
-        "player_name": "P.J. Washington",
-        "nba_team": "DAL",
-        "fp_per_game": 16.94736842105263,
-        "games": 3,
-        "projected_fp": 50.84210526315789
-      },
-      {
-        "player_name": "Tre Jones",
-        "nba_team": "CHI",
-        "fp_per_game": 16.9375,
-        "games": 3,
-        "projected_fp": 50.8125
-      },
-      {
-        "player_name": "Donte DiVincenzo",
-        "nba_team": "MIN",
-        "fp_per_game": 15.35,
-        "games": 3,
-        "projected_fp": 46.05
-      },
-      {
-        "player_name": "Saddiq Bey",
-        "nba_team": "NOP",
-        "fp_per_game": 15.0,
-        "games": 3,
-        "projected_fp": 45.0
-      },
-      {
-        "player_name": "Andrew Nembhard",
-        "nba_team": "IND",
-        "fp_per_game": 14.916666666666668,
-        "games": 3,
-        "projected_fp": 44.75
-      },
-      {
-        "player_name": "Naji Marshall",
-        "nba_team": "DAL",
-        "fp_per_game": 14.80952380952381,
-        "games": 3,
-        "projected_fp": 44.42857142857143
-      },
-      {
-        "player_name": "Jonathan Kuminga",
-        "nba_team": "GSW",
-        "fp_per_game": 14.357142857142858,
-        "games": 3,
-        "projected_fp": 43.07142857142857
-      },
-      {
-        "player_name": "John Collins",
-        "nba_team": "LAC",
-        "fp_per_game": 12.35,
-        "games": 3,
-        "projected_fp": 37.05
-      },
-      {
-        "player_name": "Jayson Tatum",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
-      }
-    ],
-    "next_week_total_projected_fp": 751.9062030075187
-  },
-  {
-    "week": 14,
-    "team_name": "Ringo's Cool Team",
-    "total_fp": 613.0,
-    "avg_fp_per_game": 43.785714285714285,
-    "games_played": 14,
-    "rank_by_fp": 10,
-    "strengths": [
-      "fg_pct",
-      "ast"
-    ],
-    "weaknesses": [
-      "fg3m"
-    ],
-    "category_zscores": {
-      "pts": 0.11365868960699708,
-      "reb": 0.1495245518115389,
-      "ast": 1.0668956936482008,
-      "stl": -0.16682108773665755,
-      "blk": 0.2936038664721024,
-      "fg3m": -0.3449034795629641,
-      "fg_pct": 1.9910913661406584,
-      "ft_pct": 0.013606833578314352,
-      "to": -0.08353206290854198
-    },
-    "hot_players": [
-      "Sandro Mamukelashvili",
-      "Tyrese Maxey",
-      "Peyton Watson",
-      "Matas Buzelis",
-      "Cade Cunningham"
-    ],
-    "cold_players": [
-      "Jerami Grant",
-      "RJ Barrett",
-      "T.J. McConnell",
-      "Jake LaRavia",
-      "Jamal Shead"
-    ],
-    "injury_impact_fp": 0.0,
-    "bench_leakage_fp": 0.0,
-    "ir_leakage_fp": 0.0,
-    "official_score": 613.0,
-    "fp_from_all_players": 613.0,
-    "scoreboard_gap": 0.0,
-    "games_this_week": 14,
-    "schedule_advantage": 0,
-    "opponent": {
-      "name": "Los Suns de PFKNR",
-      "win_probability": 0.8452991164618647,
-      "strength_index": -1.0139109395039372,
-      "category_matchup": null
-    },
-    "next_week_roster": [
-      {
-        "player_name": "Tyrese Maxey",
-        "nba_team": "PHI",
-        "fp_per_game": 31.000000000000004,
-        "games": 3,
-        "projected_fp": 93.00000000000001
-      },
-      {
-        "player_name": "Cade Cunningham",
-        "nba_team": "DET",
-        "fp_per_game": 28.82352941176471,
-        "games": 3,
-        "projected_fp": 86.47058823529413
-      },
-      {
-        "player_name": "Tyler Herro",
-        "nba_team": "MIA",
-        "fp_per_game": 27.0,
-        "games": 3,
-        "projected_fp": 81.0
-      },
-      {
-        "player_name": "RJ Barrett",
-        "nba_team": "TOR",
-        "fp_per_game": 19.294117647058822,
-        "games": 3,
-        "projected_fp": 57.882352941176464
-      },
-      {
-        "player_name": "Josh Hart",
+        "player_name": "Jalen Brunson",
         "nba_team": "NYK",
-        "fp_per_game": 19.0,
+        "fp_per_game": 24.47058823529412,
         "games": 3,
-        "projected_fp": 57.0
+        "projected_fp": 73.41176470588236
       },
       {
-        "player_name": "Jakob Poeltl",
-        "nba_team": "TOR",
-        "fp_per_game": 18.333333333333336,
-        "games": 3,
-        "projected_fp": 55.00000000000001
-      },
-      {
-        "player_name": "Jerami Grant",
-        "nba_team": "POR",
-        "fp_per_game": 16.31578947368421,
-        "games": 3,
-        "projected_fp": 48.94736842105263
-      },
-      {
-        "player_name": "Matas Buzelis",
-        "nba_team": "CHI",
-        "fp_per_game": 14.105263157894736,
-        "games": 3,
-        "projected_fp": 42.315789473684205
-      },
-      {
-        "player_name": "T.J. McConnell",
-        "nba_team": "IND",
-        "fp_per_game": 13.7,
-        "games": 3,
-        "projected_fp": 41.099999999999994
-      },
-      {
-        "player_name": "Peyton Watson",
-        "nba_team": "DEN",
-        "fp_per_game": 13.36842105263158,
-        "games": 3,
-        "projected_fp": 40.10526315789474
-      },
-      {
-        "player_name": "Sandro Mamukelashvili",
-        "nba_team": "TOR",
-        "fp_per_game": 12.55,
-        "games": 3,
-        "projected_fp": 37.650000000000006
-      },
-      {
-        "player_name": "Yves Missi",
-        "nba_team": "NOP",
-        "fp_per_game": 10.4375,
-        "games": 3,
-        "projected_fp": 31.3125
-      },
-      {
-        "player_name": "Day'Ron Sharpe",
-        "nba_team": "BKN",
-        "fp_per_game": 10.222222222222223,
-        "games": 3,
-        "projected_fp": 30.66666666666667
-      },
-      {
-        "player_name": "Jamal Shead",
-        "nba_team": "TOR",
-        "fp_per_game": 9.523809523809524,
-        "games": 3,
-        "projected_fp": 28.57142857142857
-      },
-      {
-        "player_name": "Jordan Miller",
-        "nba_team": "LAC",
-        "fp_per_game": 9.333333333333334,
-        "games": 3,
-        "projected_fp": 28.0
-      }
-    ],
-    "next_week_total_projected_fp": 759.0219574671972
-  },
-  {
-    "week": 14,
-    "team_name": "Reaves's Pieces",
-    "total_fp": 600.0,
-    "avg_fp_per_game": 46.15384615384615,
-    "games_played": 13,
-    "rank_by_fp": 11,
-    "strengths": [
-      "to",
-      "pts",
-      "ast"
-    ],
-    "weaknesses": [
-      "fg_pct",
-      "ft_pct",
-      "blk"
-    ],
-    "category_zscores": {
-      "pts": 1.186176988211398,
-      "reb": -0.37186023759417114,
-      "ast": 1.0042724656762865,
-      "stl": 0.739253112416884,
-      "blk": -1.023419852803439,
-      "fg3m": 0.6401565966048475,
-      "fg_pct": -0.6293050008977091,
-      "ft_pct": -0.6404130016908307,
-      "to": 1.6265126097266462
-    },
-    "hot_players": [
-      "Jaylen Brown",
-      "Keyonte George",
-      "Amen Thompson",
-      "Kyle Filipowski",
-      "Kyshawn George"
-    ],
-    "cold_players": [
-      "Jalen Green",
-      "Aaron Wiggins",
-      "Herbert Jones",
-      "Jaden Ivey",
-      "Dylan Harper"
-    ],
-    "injury_impact_fp": 0.0,
-    "bench_leakage_fp": 0.0,
-    "ir_leakage_fp": 0.0,
-    "official_score": 600.0,
-    "fp_from_all_players": 600.0,
-    "scoreboard_gap": 0.0,
-    "games_this_week": 13,
-    "schedule_advantage": -1,
-    "opponent": {
-      "name": "La Guillotina",
-      "win_probability": 0.8146005956429909,
-      "strength_index": -1.291069123804156,
-      "category_matchup": null
-    },
-    "next_week_roster": [
-      {
-        "player_name": "Austin Reaves",
-        "nba_team": "LAL",
-        "fp_per_game": 30.4375,
-        "games": 3,
-        "projected_fp": 91.3125
-      },
-      {
-        "player_name": "Jaylen Brown",
-        "nba_team": "BOS",
-        "fp_per_game": 24.65,
-        "games": 3,
-        "projected_fp": 73.94999999999999
-      },
-      {
-        "player_name": "Norman Powell",
-        "nba_team": "MIA",
-        "fp_per_game": 21.5,
-        "games": 3,
-        "projected_fp": 64.5
-      },
-      {
-        "player_name": "Keyonte George",
-        "nba_team": "UTA",
+        "player_name": "Mikal Bridges",
+        "nba_team": "NYK",
         "fp_per_game": 21.26315789473684,
         "games": 3,
         "projected_fp": 63.78947368421052
       },
       {
-        "player_name": "Amen Thompson",
-        "nba_team": "HOU",
-        "fp_per_game": 20.11764705882353,
-        "games": 3,
-        "projected_fp": 60.35294117647059
-      },
-      {
-        "player_name": "Kyshawn George",
-        "nba_team": "WAS",
-        "fp_per_game": 18.3125,
-        "games": 3,
-        "projected_fp": 54.9375
-      },
-      {
-        "player_name": "Cooper Flagg",
-        "nba_team": "DAL",
-        "fp_per_game": 18.3,
-        "games": 3,
-        "projected_fp": 54.900000000000006
-      },
-      {
-        "player_name": "Jaden McDaniels",
-        "nba_team": "MIN",
-        "fp_per_game": 17.105263157894736,
-        "games": 3,
-        "projected_fp": 51.315789473684205
-      },
-      {
-        "player_name": "Santi Aldama",
-        "nba_team": "MEM",
-        "fp_per_game": 17.095238095238095,
-        "games": 3,
-        "projected_fp": 51.285714285714285
-      },
-      {
-        "player_name": "Dylan Harper",
-        "nba_team": "SAS",
-        "fp_per_game": 13.666666666666666,
-        "games": 3,
-        "projected_fp": 41.0
-      },
-      {
-        "player_name": "Aaron Wiggins",
-        "nba_team": "OKC",
-        "fp_per_game": 13.3,
-        "games": 3,
-        "projected_fp": 39.900000000000006
-      },
-      {
-        "player_name": "Jalen Green",
-        "nba_team": "PHX",
-        "fp_per_game": 12.5,
-        "games": 3,
-        "projected_fp": 37.5
-      },
-      {
-        "player_name": "Kyle Filipowski",
-        "nba_team": "UTA",
-        "fp_per_game": 11.833333333333332,
-        "games": 3,
-        "projected_fp": 35.5
-      },
-      {
-        "player_name": "Herbert Jones",
+        "player_name": "Zion Williamson",
         "nba_team": "NOP",
-        "fp_per_game": 9.875,
+        "fp_per_game": 20.800000000000004,
         "games": 3,
-        "projected_fp": 29.625
+        "projected_fp": 62.40000000000001
       },
       {
-        "player_name": "Scotty Pippen Jr.",
+        "player_name": "Nickeil Alexander-Walker",
+        "nba_team": "ATL",
+        "fp_per_game": 18.105263157894736,
+        "games": 3,
+        "projected_fp": 54.315789473684205
+      },
+      {
+        "player_name": "Zach LaVine",
+        "nba_team": "SAC",
+        "fp_per_game": 16.63157894736842,
+        "games": 3,
+        "projected_fp": 49.89473684210526
+      },
+      {
+        "player_name": "Tobias Harris",
+        "nba_team": "DET",
+        "fp_per_game": 16.545454545454547,
+        "games": 3,
+        "projected_fp": 49.63636363636364
+      },
+      {
+        "player_name": "Draymond Green",
+        "nba_team": "GSW",
+        "fp_per_game": 13.277777777777777,
+        "games": 3,
+        "projected_fp": 39.83333333333333
+      },
+      {
+        "player_name": "Anthony Black",
+        "nba_team": "ORL",
+        "fp_per_game": 12.45,
+        "games": 3,
+        "projected_fp": 37.349999999999994
+      },
+      {
+        "player_name": "Mitchell Robinson",
+        "nba_team": "NYK",
+        "fp_per_game": 11.916666666666664,
+        "games": 3,
+        "projected_fp": 35.74999999999999
+      },
+      {
+        "player_name": "Cameron Johnson",
+        "nba_team": "DEN",
+        "fp_per_game": 11.888888888888888,
+        "games": 3,
+        "projected_fp": 35.666666666666664
+      },
+      {
+        "player_name": "Marvin Bagley III",
+        "nba_team": "WAS",
+        "fp_per_game": 11.357142857142858,
+        "games": 3,
+        "projected_fp": 34.07142857142857
+      },
+      {
+        "player_name": "Brandon Williams",
+        "nba_team": "DAL",
+        "fp_per_game": 10.684210526315788,
+        "games": 3,
+        "projected_fp": 32.05263157894736
+      },
+      {
+        "player_name": "Nikola Jokic",
         "nba_team": null,
         "fp_per_game": 0.0,
         "games": 0,
         "projected_fp": 0.0
       }
     ],
-    "next_week_total_projected_fp": 749.8689186200796
+    "next_week_total_projected_fp": 568.172188492622
   },
   {
-    "week": 14,
+    "week": 15,
     "team_name": "Morrisville Rehab Facility",
-    "total_fp": 580.0,
-    "avg_fp_per_game": 38.666666666666664,
-    "games_played": 15,
-    "rank_by_fp": 12,
+    "total_fp": 661.0,
+    "avg_fp_per_game": 60.09090909090909,
+    "games_played": 11,
+    "rank_by_fp": 10,
     "strengths": [
       "ft_pct",
-      "stl"
+      "stl",
+      "fg3m"
     ],
-    "weaknesses": [
-      "fg_pct",
-      "to"
-    ],
+    "weaknesses": [],
     "category_zscores": {
-      "pts": 0.25474965144315964,
-      "reb": -0.10891486755111161,
-      "ast": -0.14449595291194417,
-      "stl": 0.5097127665325526,
-      "blk": -0.05560661389473973,
-      "fg3m": 0.27776867230804286,
-      "fg_pct": -0.3494451116366207,
-      "ft_pct": 1.343186904215884,
-      "to": -0.3884388442484342
+      "pts": 0.2795859090647094,
+      "reb": -0.13102924116178344,
+      "ast": -0.09281367416780073,
+      "stl": 0.5221790174108987,
+      "blk": -0.05804997023946219,
+      "fg3m": 0.3637620276695806,
+      "fg_pct": -0.25138683035599463,
+      "ft_pct": 1.5003281460794267,
+      "to": -0.2877852208822244
     },
     "hot_players": [
-      "Julian Champagnie",
-      "Payton Pritchard",
+      "Paolo Banchero",
+      "Ayo Dosunmu",
       "Grayson Allen",
-      "Devin Booker",
-      "Trey Murphy III"
+      "Maxime Raynaud",
+      "Payton Pritchard"
     ],
     "cold_players": [
       "Goga Bitadze",
-      "Luka Garza",
-      "Wendell Carter Jr.",
-      "Ja Morant",
-      "Paul George"
+      "Trey Murphy III",
+      "Julian Champagnie",
+      "Paul George",
+      "Wendell Carter Jr."
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 580.0,
-    "fp_from_all_players": 580.0,
+    "official_score": 661.0,
+    "fp_from_all_players": 661.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 15,
-    "schedule_advantage": 1,
+    "games_this_week": 11,
+    "schedule_advantage": -3,
     "opponent": {
-      "name": "Barrio Cerrillos 🏆",
-      "win_probability": 0.6394517560131315,
-      "strength_index": -0.07421601267002945,
+      "name": "El Mostroso",
+      "win_probability": 0.810889984389421,
+      "strength_index": -0.9466303607174001,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -1967,12 +1622,12 @@ window.TEAM_INSIGHTS = [
     "next_week_total_projected_fp": 714.4548140713777
   },
   {
-    "week": 14,
+    "week": 15,
     "team_name": "Bench warming brick layers unit",
-    "total_fp": 544.0,
-    "avg_fp_per_game": 38.857142857142854,
-    "games_played": 14,
-    "rank_by_fp": 13,
+    "total_fp": 657.0,
+    "avg_fp_per_game": 50.53846153846154,
+    "games_played": 13,
+    "rank_by_fp": 11,
     "strengths": [
       "blk",
       "stl",
@@ -1984,42 +1639,42 @@ window.TEAM_INSIGHTS = [
       "fg_pct"
     ],
     "category_zscores": {
-      "pts": -1.23968886391854,
-      "reb": 0.20223066382236637,
-      "ast": 0.14314746608175752,
-      "stl": 1.4951251149738913,
-      "blk": 2.3050108559323026,
-      "fg3m": -0.6355231287545082,
-      "fg_pct": -1.8100859380493282,
-      "ft_pct": 0.5791940712466227,
-      "to": -0.10539718071101996
+      "pts": -1.0251267100287524,
+      "reb": 0.17555809782706983,
+      "ast": 0.1740197902170997,
+      "stl": 1.4827885401801422,
+      "blk": 2.0576076045477345,
+      "fg3m": -0.5757912294206413,
+      "fg_pct": -1.6005580084581137,
+      "ft_pct": 0.7104224296933701,
+      "to": -0.04831417720183993
     },
     "hot_players": [
+      "OG Anunoby",
       "Victor Wembanyama",
       "Ausar Thompson",
-      "OG Anunoby",
-      "Isaiah Stewart",
-      "Collin Sexton"
+      "LaMelo Ball",
+      "Bub Carrington"
     ],
     "cold_players": [
-      "Jimmy Butler III",
-      "Jordan Goodwin",
+      "Reed Sheppard",
+      "Jeremiah Fears",
       "Luguentz Dort",
-      "Cason Wallace",
-      "Cedric Coward"
+      "Isaiah Stewart",
+      "Cason Wallace"
     ],
     "injury_impact_fp": 0.0,
-    "bench_leakage_fp": 16.0,
+    "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 528.0,
-    "fp_from_all_players": 544.0,
-    "scoreboard_gap": -16.0,
-    "games_this_week": 14,
-    "schedule_advantage": 0,
+    "official_score": 657.0,
+    "fp_from_all_players": 657.0,
+    "scoreboard_gap": 0.0,
+    "games_this_week": 13,
+    "schedule_advantage": -1,
     "opponent": {
-      "name": "El Mostroso",
-      "win_probability": 0.8408986140040495,
-      "strength_index": -1.019890436667905,
+      "name": "Reaves's Pieces",
+      "win_probability": 0.5894516765278682,
+      "strength_index": 0.2539632174205519,
       "category_matchup": null
     },
     "next_week_roster": [
@@ -2125,159 +1780,494 @@ window.TEAM_INSIGHTS = [
     "next_week_total_projected_fp": 666.1809591852934
   },
   {
-    "week": 14,
-    "team_name": "Champion DX S*CK IT ",
-    "total_fp": 434.0,
-    "avg_fp_per_game": 36.166666666666664,
-    "games_played": 12,
-    "rank_by_fp": 14,
-    "strengths": [
-      "fg_pct"
-    ],
+    "week": 15,
+    "team_name": "La Guillotina",
+    "total_fp": 653.0,
+    "avg_fp_per_game": 38.411764705882355,
+    "games_played": 17,
+    "rank_by_fp": 12,
+    "strengths": [],
     "weaknesses": [
+      "ast",
       "pts",
-      "reb",
-      "ft_pct"
+      "stl"
     ],
     "category_zscores": {
-      "pts": -1.724483006294048,
-      "reb": -2.0411334781268886,
-      "ast": -1.3551541293368514,
-      "stl": -0.6312545821188172,
-      "blk": -0.7687605675703441,
-      "fg3m": -1.2979469899453948,
-      "fg_pct": 0.8650033118465792,
-      "ft_pct": -2.171615245152714,
-      "to": -1.4223966999407025
+      "pts": -1.6658241844834303,
+      "reb": -0.4711193099922284,
+      "ast": -1.4182259241399646,
+      "stl": -2.0189528526089835,
+      "blk": -1.125634157568975,
+      "fg3m": -0.4079559515759288,
+      "fg_pct": -0.40857187550043383,
+      "ft_pct": -0.04430026480796705,
+      "to": -1.1919664202282094
     },
     "hot_players": [
-      "Mitchell Robinson",
-      "Zion Williamson",
-      "Nickeil Alexander-Walker",
-      "Jalen Brunson",
-      "Brandon Williams"
+      "Alperen Sengun",
+      "Rudy Gobert",
+      "Michael Porter Jr.",
+      "Bobby Portis",
+      "Toumani Camara"
     ],
     "cold_players": [
-      "Marvin Bagley III",
-      "Moritz Wagner",
-      "Draymond Green",
-      "Anthony Black",
-      "Mikal Bridges"
+      "Malik Monk",
+      "Miles McBride",
+      "Nikola Vucevic",
+      "Luke Kornet",
+      "Quentin Grimes"
     ],
     "injury_impact_fp": 0.0,
     "bench_leakage_fp": 0.0,
     "ir_leakage_fp": 0.0,
-    "official_score": 434.0,
-    "fp_from_all_players": 434.0,
+    "official_score": 653.0,
+    "fp_from_all_players": 653.0,
     "scoreboard_gap": 0.0,
-    "games_this_week": 12,
-    "schedule_advantage": -2,
+    "games_this_week": 17,
+    "schedule_advantage": 3,
     "opponent": {
-      "name": "BBQ CHICKEN HOSPITAL",
-      "win_probability": 0.05731915753048214,
-      "strength_index": 0.46333706843284944,
+      "name": "Los Suns de PFKNR",
+      "win_probability": 0.2624640034872571,
+      "strength_index": -0.9564573468890125,
       "category_matchup": null
     },
     "next_week_roster": [
       {
-        "player_name": "Jalen Brunson",
+        "player_name": "Alperen Sengun",
+        "nba_team": "HOU",
+        "fp_per_game": 26.823529411764703,
+        "games": 3,
+        "projected_fp": 80.47058823529412
+      },
+      {
+        "player_name": "Michael Porter Jr.",
+        "nba_team": "BKN",
+        "fp_per_game": 23.375,
+        "games": 3,
+        "projected_fp": 70.125
+      },
+      {
+        "player_name": "Rudy Gobert",
+        "nba_team": "MIN",
+        "fp_per_game": 19.3,
+        "games": 3,
+        "projected_fp": 57.900000000000006
+      },
+      {
+        "player_name": "Keldon Johnson",
+        "nba_team": "SAS",
+        "fp_per_game": 17.210526315789473,
+        "games": 3,
+        "projected_fp": 51.63157894736842
+      },
+      {
+        "player_name": "Quentin Grimes",
+        "nba_team": "PHI",
+        "fp_per_game": 16.42105263157895,
+        "games": 3,
+        "projected_fp": 49.26315789473685
+      },
+      {
+        "player_name": "Luke Kornet",
+        "nba_team": "SAS",
+        "fp_per_game": 15.0,
+        "games": 3,
+        "projected_fp": 45.0
+      },
+      {
+        "player_name": "Devin Vassell",
+        "nba_team": "SAS",
+        "fp_per_game": 14.73684210526316,
+        "games": 3,
+        "projected_fp": 44.21052631578948
+      },
+      {
+        "player_name": "Darius Garland",
+        "nba_team": "CLE",
+        "fp_per_game": 13.714285714285714,
+        "games": 3,
+        "projected_fp": 41.14285714285714
+      },
+      {
+        "player_name": "Toumani Camara",
+        "nba_team": "POR",
+        "fp_per_game": 12.95,
+        "games": 3,
+        "projected_fp": 38.849999999999994
+      },
+      {
+        "player_name": "Bobby Portis",
+        "nba_team": "MIL",
+        "fp_per_game": 12.0,
+        "games": 3,
+        "projected_fp": 36.0
+      },
+      {
+        "player_name": "Miles McBride",
         "nba_team": "NYK",
-        "fp_per_game": 24.47058823529412,
+        "fp_per_game": 11.0625,
         "games": 3,
-        "projected_fp": 73.41176470588236
+        "projected_fp": 33.1875
       },
       {
-        "player_name": "Mikal Bridges",
-        "nba_team": "NYK",
-        "fp_per_game": 21.26315789473684,
-        "games": 3,
-        "projected_fp": 63.78947368421052
-      },
-      {
-        "player_name": "Zion Williamson",
-        "nba_team": "NOP",
-        "fp_per_game": 20.800000000000004,
-        "games": 3,
-        "projected_fp": 62.40000000000001
-      },
-      {
-        "player_name": "Nickeil Alexander-Walker",
+        "player_name": "Luke Kennard",
         "nba_team": "ATL",
-        "fp_per_game": 18.105263157894736,
+        "fp_per_game": 8.38888888888889,
         "games": 3,
-        "projected_fp": 54.315789473684205
+        "projected_fp": 25.166666666666668
       },
       {
-        "player_name": "Zach LaVine",
-        "nba_team": "SAC",
-        "fp_per_game": 16.63157894736842,
-        "games": 3,
-        "projected_fp": 49.89473684210526
-      },
-      {
-        "player_name": "Tobias Harris",
-        "nba_team": "DET",
-        "fp_per_game": 16.545454545454547,
-        "games": 3,
-        "projected_fp": 49.63636363636364
-      },
-      {
-        "player_name": "Draymond Green",
-        "nba_team": "GSW",
-        "fp_per_game": 13.277777777777777,
-        "games": 3,
-        "projected_fp": 39.83333333333333
-      },
-      {
-        "player_name": "Anthony Black",
-        "nba_team": "ORL",
-        "fp_per_game": 12.45,
-        "games": 3,
-        "projected_fp": 37.349999999999994
-      },
-      {
-        "player_name": "Mitchell Robinson",
-        "nba_team": "NYK",
-        "fp_per_game": 11.916666666666664,
-        "games": 3,
-        "projected_fp": 35.74999999999999
-      },
-      {
-        "player_name": "Cameron Johnson",
-        "nba_team": "DEN",
-        "fp_per_game": 11.888888888888888,
-        "games": 3,
-        "projected_fp": 35.666666666666664
-      },
-      {
-        "player_name": "Marvin Bagley III",
-        "nba_team": "WAS",
-        "fp_per_game": 11.357142857142858,
-        "games": 3,
-        "projected_fp": 34.07142857142857
-      },
-      {
-        "player_name": "Brandon Williams",
+        "player_name": "Caleb Martin",
         "nba_team": "DAL",
-        "fp_per_game": 10.684210526315788,
+        "fp_per_game": 2.7777777777777777,
         "games": 3,
-        "projected_fp": 32.05263157894736
+        "projected_fp": 8.333333333333332
       },
       {
-        "player_name": "Nikola Jokic",
-        "nba_team": null,
-        "fp_per_game": 0.0,
-        "games": 0,
-        "projected_fp": 0.0
+        "player_name": "Gui Santos",
+        "nba_team": "GSW",
+        "fp_per_game": 2.4000000000000004,
+        "games": 3,
+        "projected_fp": 7.200000000000001
       },
       {
-        "player_name": "Moritz Wagner",
+        "player_name": "Nikola Vucevic",
         "nba_team": null,
         "fp_per_game": 0.0,
         "games": 0,
         "projected_fp": 0.0
       }
     ],
-    "next_week_total_projected_fp": 568.172188492622
+    "next_week_total_projected_fp": 588.4812085360461
+  },
+  {
+    "week": 15,
+    "team_name": "Reaves's Pieces",
+    "total_fp": 626.0,
+    "avg_fp_per_game": 48.15384615384615,
+    "games_played": 13,
+    "rank_by_fp": 13,
+    "strengths": [
+      "to",
+      "pts",
+      "ast"
+    ],
+    "weaknesses": [
+      "fg_pct",
+      "ft_pct",
+      "blk"
+    ],
+    "category_zscores": {
+      "pts": 1.0927642282517052,
+      "reb": -0.39012253729585294,
+      "ast": 0.9728455297876804,
+      "stl": 0.7459418335203224,
+      "blk": -0.9254337950429538,
+      "fg3m": 0.736570317645577,
+      "fg_pct": -0.5098890505255036,
+      "ft_pct": -0.5505509159779517,
+      "to": 1.416990399845209
+    },
+    "hot_players": [
+      "Amen Thompson",
+      "Cooper Flagg",
+      "Jaden McDaniels",
+      "Dylan Harper",
+      "Kyle Filipowski"
+    ],
+    "cold_players": [
+      "Jalen Green",
+      "Santi Aldama",
+      "Norman Powell",
+      "Kyshawn George",
+      "Jaylen Brown"
+    ],
+    "injury_impact_fp": 0.0,
+    "bench_leakage_fp": 0.0,
+    "ir_leakage_fp": 0.0,
+    "official_score": 626.0,
+    "fp_from_all_players": 626.0,
+    "scoreboard_gap": 0.0,
+    "games_this_week": 13,
+    "schedule_advantage": -1,
+    "opponent": {
+      "name": "Bench warming brick layers unit",
+      "win_probability": 0.4105483234721318,
+      "strength_index": 0.6156623198465793,
+      "category_matchup": null
+    },
+    "next_week_roster": [
+      {
+        "player_name": "Austin Reaves",
+        "nba_team": "LAL",
+        "fp_per_game": 30.4375,
+        "games": 3,
+        "projected_fp": 91.3125
+      },
+      {
+        "player_name": "Jaylen Brown",
+        "nba_team": "BOS",
+        "fp_per_game": 24.65,
+        "games": 3,
+        "projected_fp": 73.94999999999999
+      },
+      {
+        "player_name": "Norman Powell",
+        "nba_team": "MIA",
+        "fp_per_game": 21.5,
+        "games": 3,
+        "projected_fp": 64.5
+      },
+      {
+        "player_name": "Keyonte George",
+        "nba_team": "UTA",
+        "fp_per_game": 21.26315789473684,
+        "games": 3,
+        "projected_fp": 63.78947368421052
+      },
+      {
+        "player_name": "Amen Thompson",
+        "nba_team": "HOU",
+        "fp_per_game": 20.11764705882353,
+        "games": 3,
+        "projected_fp": 60.35294117647059
+      },
+      {
+        "player_name": "Kyshawn George",
+        "nba_team": "WAS",
+        "fp_per_game": 18.3125,
+        "games": 3,
+        "projected_fp": 54.9375
+      },
+      {
+        "player_name": "Cooper Flagg",
+        "nba_team": "DAL",
+        "fp_per_game": 18.3,
+        "games": 3,
+        "projected_fp": 54.900000000000006
+      },
+      {
+        "player_name": "Jaden McDaniels",
+        "nba_team": "MIN",
+        "fp_per_game": 17.105263157894736,
+        "games": 3,
+        "projected_fp": 51.315789473684205
+      },
+      {
+        "player_name": "Santi Aldama",
+        "nba_team": "MEM",
+        "fp_per_game": 17.095238095238095,
+        "games": 3,
+        "projected_fp": 51.285714285714285
+      },
+      {
+        "player_name": "Dylan Harper",
+        "nba_team": "SAS",
+        "fp_per_game": 13.666666666666666,
+        "games": 3,
+        "projected_fp": 41.0
+      },
+      {
+        "player_name": "Aaron Wiggins",
+        "nba_team": "OKC",
+        "fp_per_game": 13.3,
+        "games": 3,
+        "projected_fp": 39.900000000000006
+      },
+      {
+        "player_name": "Jalen Green",
+        "nba_team": "PHX",
+        "fp_per_game": 12.5,
+        "games": 3,
+        "projected_fp": 37.5
+      },
+      {
+        "player_name": "Kyle Filipowski",
+        "nba_team": "UTA",
+        "fp_per_game": 11.833333333333332,
+        "games": 3,
+        "projected_fp": 35.5
+      },
+      {
+        "player_name": "Herbert Jones",
+        "nba_team": "NOP",
+        "fp_per_game": 9.875,
+        "games": 3,
+        "projected_fp": 29.625
+      },
+      {
+        "player_name": "Scotty Pippen Jr.",
+        "nba_team": null,
+        "fp_per_game": 0.0,
+        "games": 0,
+        "projected_fp": 0.0
+      }
+    ],
+    "next_week_total_projected_fp": 749.8689186200796
+  },
+  {
+    "week": 15,
+    "team_name": "BBQ CHICKEN HOSPITAL",
+    "total_fp": 585.0,
+    "avg_fp_per_game": 53.18181818181818,
+    "games_played": 11,
+    "rank_by_fp": 14,
+    "strengths": [
+      "ast",
+      "stl",
+      "to"
+    ],
+    "weaknesses": [
+      "fg3m",
+      "blk",
+      "ft_pct"
+    ],
+    "category_zscores": {
+      "pts": 0.13168071386170777,
+      "reb": 0.5150984845507643,
+      "ast": 2.2236720672463894,
+      "stl": 1.5646162504354968,
+      "blk": -1.086724975413071,
+      "fg3m": -0.30724348824569625,
+      "fg_pct": 0.09380757874163813,
+      "ft_pct": -1.2780533122601683,
+      "to": 0.9154235461866973
+    },
+    "hot_players": [
+      "Dyson Daniels",
+      "Saddiq Bey",
+      "Andrew Nembhard",
+      "LeBron James",
+      "Anthony Edwards"
+    ],
+    "cold_players": [
+      "Isaiah Hartenstein",
+      "Jrue Holiday",
+      "Naji Marshall",
+      "P.J. Washington",
+      "John Collins"
+    ],
+    "injury_impact_fp": 0.0,
+    "bench_leakage_fp": 0.0,
+    "ir_leakage_fp": 0.0,
+    "official_score": 585.0,
+    "fp_from_all_players": 585.0,
+    "scoreboard_gap": 0.0,
+    "games_this_week": 11,
+    "schedule_advantage": -3,
+    "opponent": {
+      "name": "Las Villas ENDGAME",
+      "win_probability": 0.34438792630177256,
+      "strength_index": 1.1204384158968932,
+      "category_matchup": null
+    },
+    "next_week_roster": [
+      {
+        "player_name": "Anthony Edwards",
+        "nba_team": "MIN",
+        "fp_per_game": 25.1875,
+        "games": 3,
+        "projected_fp": 75.5625
+      },
+      {
+        "player_name": "Franz Wagner",
+        "nba_team": "ORL",
+        "fp_per_game": 22.9,
+        "games": 3,
+        "projected_fp": 68.69999999999999
+      },
+      {
+        "player_name": "Isaiah Hartenstein",
+        "nba_team": "OKC",
+        "fp_per_game": 22.73684210526316,
+        "games": 3,
+        "projected_fp": 68.21052631578948
+      },
+      {
+        "player_name": "Jrue Holiday",
+        "nba_team": "POR",
+        "fp_per_game": 21.083333333333336,
+        "games": 3,
+        "projected_fp": 63.25000000000001
+      },
+      {
+        "player_name": "LeBron James",
+        "nba_team": "LAL",
+        "fp_per_game": 20.25,
+        "games": 3,
+        "projected_fp": 60.75
+      },
+      {
+        "player_name": "Dyson Daniels",
+        "nba_team": "ATL",
+        "fp_per_game": 17.80952380952381,
+        "games": 3,
+        "projected_fp": 53.42857142857143
+      },
+      {
+        "player_name": "P.J. Washington",
+        "nba_team": "DAL",
+        "fp_per_game": 16.94736842105263,
+        "games": 3,
+        "projected_fp": 50.84210526315789
+      },
+      {
+        "player_name": "Tre Jones",
+        "nba_team": "CHI",
+        "fp_per_game": 16.9375,
+        "games": 3,
+        "projected_fp": 50.8125
+      },
+      {
+        "player_name": "Donte DiVincenzo",
+        "nba_team": "MIN",
+        "fp_per_game": 15.35,
+        "games": 3,
+        "projected_fp": 46.05
+      },
+      {
+        "player_name": "Saddiq Bey",
+        "nba_team": "NOP",
+        "fp_per_game": 15.0,
+        "games": 3,
+        "projected_fp": 45.0
+      },
+      {
+        "player_name": "Andrew Nembhard",
+        "nba_team": "IND",
+        "fp_per_game": 14.916666666666668,
+        "games": 3,
+        "projected_fp": 44.75
+      },
+      {
+        "player_name": "Naji Marshall",
+        "nba_team": "DAL",
+        "fp_per_game": 14.80952380952381,
+        "games": 3,
+        "projected_fp": 44.42857142857143
+      },
+      {
+        "player_name": "Jonathan Kuminga",
+        "nba_team": "GSW",
+        "fp_per_game": 14.357142857142858,
+        "games": 3,
+        "projected_fp": 43.07142857142857
+      },
+      {
+        "player_name": "John Collins",
+        "nba_team": "LAC",
+        "fp_per_game": 12.35,
+        "games": 3,
+        "projected_fp": 37.05
+      },
+      {
+        "player_name": "Jayson Tatum",
+        "nba_team": null,
+        "fp_per_game": 0.0,
+        "games": 0,
+        "projected_fp": 0.0
+      }
+    ],
+    "next_week_total_projected_fp": 751.9062030075187
   }
 ];
