@@ -1,7 +1,7 @@
 // Generated from league_metadata.json
 window.LEAGUE_METADATA = {
   "season": 2026,
-  "week": 15,
+  "week": 16,
   "league_name": "THE LEAGUE",
   "scoring_type": "H2H_POINTS",
   "teams": [
@@ -10,20 +10,20 @@ window.LEAGUE_METADATA = {
       "team_name": "Morovis  El Calor 🏆",
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StarsAndFlames/stars_flames-4.svg",
-      "standing_rank": 7,
-      "record": "7-8-0 (0.467)",
-      "power_rank": 6,
-      "power_movement": "—"
+      "standing_rank": 6,
+      "record": "8-8-0 (0.5)",
+      "power_rank": 7,
+      "power_movement": "v -1"
     },
     {
       "team_id": 4,
       "team_name": "Minneapolis Lakers",
       "owner": null,
       "logo_url": "https://i.imgur.com/rDV46Wu.jpg",
-      "standing_rank": 6,
-      "record": "8-7-0 (0.533)",
-      "power_rank": 7,
-      "power_movement": "v -2"
+      "standing_rank": 7,
+      "record": "8-8-0 (0.5)",
+      "power_rank": 6,
+      "power_movement": "^ +1"
     },
     {
       "team_id": 5,
@@ -31,19 +31,19 @@ window.LEAGUE_METADATA = {
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/TeamMascots-RobbHarskamp/Team_Mascots-07.svg",
       "standing_rank": 2,
-      "record": "13-2-0 (0.867)",
-      "power_rank": 1,
-      "power_movement": "—"
+      "record": "13-3-0 (0.812)",
+      "power_rank": 2,
+      "power_movement": "v -1"
     },
     {
       "team_id": 6,
       "team_name": "Las Villas ENDGAME",
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg",
-      "standing_rank": 4,
-      "record": "10-5-0 (0.667)",
+      "standing_rank": 5,
+      "record": "10-6-0 (0.625)",
       "power_rank": 5,
-      "power_movement": "v -1"
+      "power_movement": "—"
     },
     {
       "team_id": 9,
@@ -51,9 +51,9 @@ window.LEAGUE_METADATA = {
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/fba/images/default_logos/16.svg",
       "standing_rank": 8,
-      "record": "6-9-0 (0.4)",
-      "power_rank": 8,
-      "power_movement": "—"
+      "record": "7-9-0 (0.438)",
+      "power_rank": 9,
+      "power_movement": "v -1"
     },
     {
       "team_id": 16,
@@ -61,19 +61,19 @@ window.LEAGUE_METADATA = {
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/Mascots/mascots-9.svg",
       "standing_rank": 3,
-      "record": "11-4-0 (0.733)",
+      "record": "12-4-0 (0.75)",
       "power_rank": 4,
-      "power_movement": "^ +3"
+      "power_movement": "—"
     },
     {
       "team_id": 17,
       "team_name": "El Mostroso",
       "owner": null,
       "logo_url": "https://media1.tenor.com/m/MBAEKon_7o4AAAAC/mike-wazowski-mike.gif",
-      "standing_rank": 5,
-      "record": "10-5-0 (0.667)",
-      "power_rank": 3,
-      "power_movement": "v -1"
+      "standing_rank": 4,
+      "record": "11-5-0 (0.688)",
+      "power_rank": 1,
+      "power_movement": "^ +2"
     },
     {
       "team_id": 18,
@@ -81,9 +81,9 @@ window.LEAGUE_METADATA = {
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/OldTimeMickeyAndFriends/Basketball_Mickey.svg",
       "standing_rank": 9,
-      "record": "6-9-0 (0.4)",
-      "power_rank": 9,
-      "power_movement": "—"
+      "record": "7-9-0 (0.438)",
+      "power_rank": 8,
+      "power_movement": "^ +1"
     },
     {
       "team_id": 20,
@@ -91,9 +91,9 @@ window.LEAGUE_METADATA = {
       "owner": null,
       "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/d3e2b300-aa3a-11f0-b1c3-bf61c28fbeb9",
       "standing_rank": 10,
-      "record": "6-9-0 (0.4)",
-      "power_rank": 13,
-      "power_movement": "v -3"
+      "record": "6-10-0 (0.375)",
+      "power_rank": 12,
+      "power_movement": "^ +1"
     },
     {
       "team_id": 22,
@@ -101,9 +101,9 @@ window.LEAGUE_METADATA = {
       "owner": null,
       "logo_url": "https://e0.pxfuel.com/wallpapers/191/592/desktop-wallpaper-wwe-dx-quotes-quotesgram-d-generation-x.jpg",
       "standing_rank": 11,
-      "record": "4-11-0 (0.267)",
+      "record": "4-12-0 (0.25)",
       "power_rank": 11,
-      "power_movement": "^ +2"
+      "power_movement": "—"
     },
     {
       "team_id": 23,
@@ -111,17 +111,17 @@ window.LEAGUE_METADATA = {
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/fba/AtTheArena-RobbHarskamp/Basketball_At_The_Arena-03.svg",
       "standing_rank": 1,
-      "record": "14-1-0 (0.933)",
-      "power_rank": 2,
-      "power_movement": "^ +1"
+      "record": "15-1-0 (0.938)",
+      "power_rank": 3,
+      "power_movement": "v -1"
     },
     {
       "team_id": 24,
       "team_name": "Bench warming brick layers unit",
       "owner": null,
       "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/f3f51d60-a876-11f0-afb5-e14f006a2a34",
-      "standing_rank": 13,
-      "record": "3-12-0 (0.2)",
+      "standing_rank": 14,
+      "record": "3-13-0 (0.188)",
       "power_rank": 14,
       "power_movement": "—"
     },
@@ -130,19 +130,19 @@ window.LEAGUE_METADATA = {
       "team_name": "Ringo's Cool Team",
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/fba/8-bitHeros-JoeyEllis/8bit_basketball-03.svg",
-      "standing_rank": 14,
-      "record": "3-12-0 (0.2)",
+      "standing_rank": 12,
+      "record": "4-12-0 (0.25)",
       "power_rank": 10,
-      "power_movement": "^ +2"
+      "power_movement": "—"
     },
     {
       "team_id": 26,
       "team_name": "Morrisville Rehab Facility",
       "owner": null,
       "logo_url": "https://g.espncdn.com/lm-static/fba/images/default_logos/1.svg",
-      "standing_rank": 12,
-      "record": "4-11-0 (0.267)",
-      "power_rank": 12,
+      "standing_rank": 13,
+      "record": "4-12-0 (0.25)",
+      "power_rank": 13,
       "power_movement": "v -1"
     }
   ]

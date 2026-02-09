@@ -90,6 +90,17 @@ window.RECAPS_INDEX = {
       ]
     },
     {
+      "week": 16,
+      "captured_at": "2026-02-09T12:49:00Z",
+      "url": "recaps/week-16.html",
+      "quick_hits": [
+        "**Team of the Week:** El Mostroso with 880.0 pts",
+        "**Weekly MVP:** Kawhi Leonard (El Mostroso) with 124.0 pts",
+        "**Closest Matchup:** Morovis  El Calor 🏆 (609.0) def. Champion DX S*CK IT  (607.0) — margin 2 pts",
+        "**Biggest Beatdown:** El Mostroso (880.0) obliterated Barrio Cerrillos 🏆 (701.0) by 179 pts"
+      ]
+    },
+    {
       "week": 15,
       "captured_at": "2026-02-03T06:08:00Z",
       "url": "recaps/week-15.html",
