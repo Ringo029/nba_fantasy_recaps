@@ -9,13 +9,16 @@
   const shareLink = document.getElementById("whatsapp-share");
   const myTeamLink = document.getElementById("my-team-link");
   const teamsNote = document.getElementById("teams-note");
+  const fixturePanel = document.getElementById("fixture-panel");
+  const fixtureCount = document.getElementById("fixture-count");
+  const fixtureNote = document.getElementById("fixture-note");
 
   function text(value) {
     return String(value ?? "");
   }
 
   function clear(node) {
-    while (node.firstChild) node.removeChild(node.firstChild);
+    while (node && node.firstChild) node.removeChild(node.firstChild);
   }
 
   function paragraph(parent, className, value) {
@@ -26,6 +29,11 @@
     return el;
   }
 
+  function displayMetric(value) {
+    if (value === null || value === undefined || value === "") return "Unavailable";
+    return String(value);
+  }
+
   function savedTeamId() {
     try {
       return localStorage.getItem(TEAM_KEY) || "";
@@ -34,45 +42,61 @@
     }
   }
 
-  function applySavedTeam() {
+  function applySavedTeam(seasonId) {
     const id = savedTeamId();
-    if (myTeamLink) {
-      myTeamLink.href = id ? `team_insights.html?team_id=${encodeURIComponent(id)}` : "team_insights.html";
+    if (!myTeamLink) return;
+    if (seasonId && id) {
+      myTeamLink.href = `team_insights.html?season=${encodeURIComponent(seasonId)}&team_id=${encodeURIComponent(id)}`;
+      return;
     }
+    myTeamLink.href = id ? `team_insights.html?team_id=${encodeURIComponent(id)}` : "team_insights.html";
   }
 
   function formatUpdated(iso, timezone) {
-    if (!iso) return "No refresh timestamp has been published.";
+    const zone = timezone || "America/New_York";
+    if (!iso) return `No capture time has been published. League timezone: ${zone}.`;
     const date = new Date(iso);
-    if (Number.isNaN(date.getTime())) return "The published timestamp could not be read.";
-    return `Updated ${date.toLocaleString(undefined, { timeZoneName: "short" })} (${timezone || "league time"})`;
+    if (Number.isNaN(date.getTime())) return `The published timestamp could not be read. League timezone: ${zone}.`;
+    try {
+      const clock = new Intl.DateTimeFormat("en-US", {
+        timeZone: zone,
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        timeZoneName: "short",
+      }).format(date);
+      return `Captured ${clock}. League timezone: ${zone}.`;
+    } catch (err) {
+      return `Captured ${iso}. League timezone: ${zone}.`;
+    }
   }
 
   function showStale(hub) {
     if (!staleWarning) return;
     const hours = Number(hub.stale_after_hours || 6);
+    const messages = [];
+    if (hub.data_mode && hub.data_mode !== "live") {
+      messages.push("This publication is not a live snapshot.");
+    }
     if (!hub.generated_at) {
-      staleWarning.hidden = false;
-      staleWarning.textContent = "Live data has not been published. Choose 2025–26 to open the archived recaps.";
-      return;
+      messages.push("Live data has not been published. Choose 2025–26 to open the archived recaps.");
+    } else {
+      const age = Date.now() - new Date(hub.generated_at).getTime();
+      if (Number.isNaN(age) || age > hours * 60 * 60 * 1000) {
+        messages.push(`This capture is older than ${hours} hours. A newer publication has not replaced it.`);
+      }
     }
-    const age = Date.now() - new Date(hub.generated_at).getTime();
-    if (Number.isNaN(age) || age > hours * 60 * 60 * 1000) {
-      staleWarning.hidden = false;
-      staleWarning.textContent = `This update is older than ${hours} hours. A newer publication has not replaced it.`;
-      return;
-    }
-    staleWarning.hidden = true;
-    staleWarning.textContent = "";
+    staleWarning.hidden = messages.length === 0;
+    staleWarning.textContent = messages.join(" ");
   }
 
-  function renderMatchups(progress, status) {
+  function renderMatchups(progress) {
     clear(cards);
     const rows = progress && Array.isArray(progress.matchups) ? progress.matchups : [];
     if (!rows.length) {
-      paragraph(cards, "empty-state", status === "unavailable"
-        ? "Matchup progress is not available for this season."
-        : "No matchup cards were published for this period.");
+      paragraph(cards, "empty-state", "Matchup scores are unavailable.");
       return;
     }
     rows.forEach((row) => {
@@ -81,15 +105,72 @@
       const title = document.createElement("h3");
       title.textContent = `${text(row.home_team_name)} vs ${text(row.away_team_name)}`;
       card.appendChild(title);
-      paragraph(card, "", `${row.home_score ?? "—"} – ${row.away_score ?? "—"}`);
-      paragraph(card, "footer", `Games remaining: ${row.home_games_remaining ?? "—"} / ${row.away_games_remaining ?? "—"}`);
-      const projected = row.home_projected_finish == null && row.away_projected_finish == null
-        ? "Projected finish unavailable."
-        : `Projected finish (not a win probability): ${row.home_projected_finish ?? "—"} – ${row.away_projected_finish ?? "—"}`;
-      paragraph(card, "footer", projected);
-      if (row.projection_note) paragraph(card, "footer", text(row.projection_note));
+      paragraph(card, "", `${displayMetric(row.home_score)} – ${displayMetric(row.away_score)}`);
+      const remainingMissing = row.home_games_remaining == null && row.away_games_remaining == null;
+      paragraph(
+        card,
+        "footer",
+        remainingMissing
+          ? "Per-team games remaining: Unavailable"
+          : `Per-team games remaining: ${displayMetric(row.home_games_remaining)} / ${displayMetric(row.away_games_remaining)}`
+      );
+      const projectionsHidden = row.projection_basis === "unavailable"
+        || (row.home_projected_finish == null && row.away_projected_finish == null);
+      if (!projectionsHidden) {
+        paragraph(
+          card,
+          "footer",
+          `Projected finish: ${displayMetric(row.home_projected_finish)} – ${displayMetric(row.away_projected_finish)}`
+        );
+      }
       cards.appendChild(card);
     });
+  }
+
+  function renderFixtures(fixtures) {
+    if (!fixturePanel || !fixtureCount || !fixtureNote) return;
+    fixturePanel.hidden = false;
+    if (!fixtures || fixtures.available === false || !fixtures.counts) {
+      fixtureCount.textContent = "Scheduled future games: Unavailable";
+      fixtureNote.textContent = fixtures && fixtures.reason
+        ? fixtures.reason
+        : "Game status is unavailable, so an exact remaining-game count is not shown.";
+      return;
+    }
+    const future = fixtures.counts.scheduled_future_tipoffs;
+    fixtureCount.textContent = `Scheduled future games: ${displayMetric(future)}`;
+    fixtureNote.textContent = "Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed. This is ESPN's fantasy scoring schedule, and completeness against the NBA official schedule is not verified.";
+  }
+
+  function renderLiveStandings(doc, seasonId) {
+    const root = document.getElementById("teamsList");
+    const teamsSection = document.getElementById("teams-section");
+    const teamsJump = document.getElementById("teams-jump");
+    if (!root || !doc || !Array.isArray(doc.standings)) return;
+    if (teamsSection) teamsSection.hidden = false;
+    if (teamsJump) teamsJump.hidden = false;
+    clear(root);
+    doc.standings.forEach((row) => {
+      const div = document.createElement("div");
+      div.className = "team";
+      const link = document.createElement("a");
+      link.className = "team-link";
+      link.href = `team_insights.html?season=${encodeURIComponent(seasonId)}&team_id=${encodeURIComponent(row.team_id)}`;
+      const info = document.createElement("div");
+      const name = document.createElement("div");
+      name.className = "tname";
+      name.textContent = row.team_name;
+      const meta = document.createElement("div");
+      meta.className = "team-meta";
+      meta.textContent = `#${displayMetric(row.rank)} ${displayMetric(row.wins)}-${displayMetric(row.losses)}-${displayMetric(row.ties)}. Power rank: ${displayMetric(row.power_rank)}.`;
+      info.append(name, meta);
+      link.appendChild(info);
+      div.appendChild(link);
+      root.appendChild(div);
+    });
+    if (teamsNote) {
+      teamsNote.textContent = "Standings from this capture. Power rank is unavailable when no power score was published. Null values stay Unavailable.";
+    }
   }
 
   function renderArchive(index, seasonId) {
@@ -108,10 +189,12 @@
       top.className = "top";
       const title = document.createElement("div");
       title.className = "title";
-      title.textContent = `${seasonId} matchup ${String(row.period_id || row.week).padStart(2, "0")}`;
+      const periodLabel = `${seasonId} matchup ${String(row.period_id || row.week).padStart(2, "0")}`;
+      const provisional = row.status !== "final";
+      title.textContent = provisional ? `${periodLabel} · Matchup progress` : periodLabel;
       const link = document.createElement("a");
       link.href = row.url || "#";
-      link.textContent = "Open";
+      link.textContent = provisional ? "Matchup progress" : "Open";
       top.appendChild(title);
       top.appendChild(link);
       card.appendChild(top);
@@ -128,9 +211,10 @@
 
   async function selectSeason(season, hub) {
     const liveSeason = hub && hub.season_id;
+    const live = season.season_id === liveSeason && hub.status !== "unavailable" && hub.matchup_period_id;
     if (statusLine) {
-      if (season.season_id === liveSeason && hub.matchup_period_id) {
-        statusLine.textContent = `Matchup ${hub.matchup_period_id}: ${hub.period_start || "—"} to ${hub.period_end || "—"}. Status: ${hub.status}.`;
+      if (live) {
+        statusLine.textContent = `Matchup ${hub.matchup_period_id}: ${hub.period_start || "Unavailable"} to ${hub.period_end || "Unavailable"}. Status: ${hub.status}.`;
       } else if (season.archive) {
         statusLine.textContent = `${season.label} is an archive. It does not use the current matchup.`;
       } else {
@@ -143,28 +227,44 @@
     const leagueLine = document.getElementById("leagueLine");
     const showArchivePanels = Boolean(season.archive);
     if (hero) hero.hidden = !showArchivePanels;
-    if (teamsSection) teamsSection.hidden = !showArchivePanels;
-    if (teamsJump) teamsJump.hidden = !showArchivePanels;
     if (leagueLine) {
       leagueLine.dataset.managed = "hub";
       leagueLine.textContent = showArchivePanels
         ? "THE LEAGUE • 2025–26 archive"
         : "THE LEAGUE • 2026–27";
     }
-    if (teamsNote) {
-      teamsNote.textContent = showArchivePanels
-        ? "Last published team directory for 2025–26. It is not a standings snapshot for an individual archived week."
-        : "A team directory for this season has not been published. The 2025–26 list is hidden so it is not read as this season's standings.";
+    applySavedTeam(live ? season.season_id : "");
+    if (!live) {
+      if (fixturePanel) fixturePanel.hidden = true;
+      if (teamsSection) teamsSection.hidden = !showArchivePanels;
+      if (teamsJump) teamsJump.hidden = !showArchivePanels;
+      if (teamsNote) {
+        teamsNote.textContent = showArchivePanels
+          ? "Last published team directory for 2025–26. It is not a standings snapshot for an individual archived week."
+          : "A team directory for this season has not been published. The 2025–26 list is hidden so it is not read as this season's standings.";
+      }
     }
     try {
-      if (season.season_id === liveSeason && hub.status !== "unavailable" && hub.matchup_period_id) {
+      if (live) {
         const progress = await loadJson(`data/seasons/${season.season_id}/weeks/${hub.matchup_period_id}/matchup_progress.json`);
-        renderMatchups(progress, hub.status);
+        renderMatchups(progress);
       } else {
-        renderMatchups(null, "unavailable");
+        renderMatchups(null);
       }
     } catch (err) {
-      renderMatchups(null, "unavailable");
+      renderMatchups(null);
+    }
+    if (live) {
+      try {
+        renderFixtures(await loadJson(`data/seasons/${season.season_id}/weeks/${hub.matchup_period_id}/fixtures.json`));
+      } catch (err) {
+        renderFixtures(null);
+      }
+      try {
+        renderLiveStandings(await loadJson(`data/seasons/${season.season_id}/standings.json`), season.season_id);
+      } catch (err) {
+        if (teamsNote) teamsNote.textContent = "Standings are unavailable for this capture.";
+      }
     }
     try {
       const index = await loadJson(season.recap_index);
@@ -179,9 +279,10 @@
   }
 
   async function init() {
-    applySavedTeam();
+    try {
+    applySavedTeam("");
     if (statusLine) statusLine.textContent = "Loading hub data…";
-    let hub = { status: "unavailable", warnings: ["Hub data could not be loaded."], stale_after_hours: 6 };
+    let hub = { status: "unavailable", warnings: ["Hub data could not be loaded."], stale_after_hours: 6, timezone: "America/New_York" };
     let seasons = [];
     try {
       hub = await loadJson("data/hub/current.json");
@@ -194,9 +295,12 @@
     } catch (err) {
       seasons = [];
     }
-    if (updatedLine) updatedLine.textContent = formatUpdated(hub.generated_at, hub.timezone);
+    if (updatedLine) updatedLine.textContent = formatUpdated(hub.source_updated_at || hub.generated_at, hub.timezone);
     showStale(hub);
-    if (hubWarning) hubWarning.textContent = (hub.warnings || []).join(" ");
+    if (hubWarning) {
+      const warnings = (hub.warnings || []).filter((item) => !/win probabilit/i.test(item));
+      hubWarning.textContent = warnings.join(" ");
+    }
     if (shareLink) {
       const latest = hub.latest_final_recap;
       const summary = latest
@@ -213,7 +317,7 @@
       seasonSelect.appendChild(option);
     });
     if (!seasons.length) {
-      renderMatchups(null, "unavailable");
+      renderMatchups(null);
       return;
     }
     const preferred = seasons.find((season) => season.season_id === hub.season_id) || seasons[0];
@@ -223,6 +327,10 @@
       if (season) selectSeason(season, hub);
     });
     await selectSeason(preferred, hub);
+    } catch (err) {
+      if (statusLine) statusLine.textContent = "The hub could not be shown.";
+      if (hubWarning) hubWarning.textContent = "Matchup data is unavailable.";
+    }
   }
 
   init();

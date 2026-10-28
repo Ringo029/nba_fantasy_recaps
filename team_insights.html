@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>" />
   <style>
+    [hidden] { display: none !important; }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #050816;
@@ -283,6 +284,7 @@
   const params = new URLSearchParams(window.location.search);
   const urlTeam = params.get('team');
   const urlTeamId = params.get('team_id');
+  const urlSeason = params.get('season');
 
   function getMyTeam() {
     try {
@@ -510,7 +512,61 @@
     renderRosterTable(ti.next_week_roster, teamName);
   }
 
-  Promise.all([
+  function hideUnsupportedAdvice() {
+    document.querySelectorAll(".tabs, #categories-card, #roster-card, #opponent-card, #roster-tab").forEach((el) => {
+      el.hidden = true;
+    });
+  }
+
+  function renderStructuredTeam(directory, insights, teamId) {
+    const team = (directory.teams || []).find((row) => String(row.team_id) === String(teamId));
+    const insight = (insights.teams || []).find((row) => String(row.team_id) === String(teamId));
+    const name = team ? team.team_name : "Unavailable";
+    metaLabelEl.textContent = insights.period_id ? `Matchup ${insights.period_id}` : "Matchup unavailable";
+    summaryEl.textContent = "";
+    const title = document.createElement("p");
+    title.textContent = name;
+    const lineup = document.createElement("p");
+    lineup.textContent = "Lineup recommendations: Unavailable";
+    const roster = document.createElement("p");
+    roster.textContent = insight && insight.roster_reason
+      ? insight.roster_reason
+      : "Roster details and win probability are unavailable for this publication.";
+    summaryEl.append(title, lineup, roster);
+  }
+
+  async function showStructuredSeason(season) {
+    hideUnsupportedAdvice();
+    const [directory, hub] = await Promise.all([
+      fetch(`data/seasons/${encodeURIComponent(season)}/teams.json`).then((res) => res.ok ? res.json() : { teams: [] }),
+      fetch("data/hub/current.json").then((res) => res.ok ? res.json() : null)
+    ]);
+    const period = hub && hub.season_id === season ? hub.matchup_period_id : null;
+    const insights = period
+      ? await fetch(`data/seasons/${encodeURIComponent(season)}/weeks/${period}/team_insights.json`).then((res) => res.ok ? res.json() : { teams: [] })
+      : { teams: [] };
+    selectEl.textContent = "";
+    (directory.teams || []).forEach((team) => {
+      const option = document.createElement("option");
+      option.value = String(team.team_id);
+      option.textContent = team.team_name;
+      selectEl.appendChild(option);
+    });
+    if (!selectEl.options.length) {
+      summaryEl.textContent = "Team insights are unavailable for this season.";
+      return;
+    }
+    if (urlTeamId && [...selectEl.options].some((option) => option.value === urlTeamId)) {
+      selectEl.value = urlTeamId;
+    }
+    const draw = () => renderStructuredTeam(directory, insights, selectEl.value);
+    selectEl.addEventListener("change", draw);
+    draw();
+  }
+
+  if (urlSeason === "2026-27") {
+    showStructuredSeason(urlSeason);
+  } else Promise.all([
     fetch("data/team_insights.json").then(res => res.json()),
     fetch("data/league_metadata.json").then(res => res.json()).catch(() => null)
   ])
