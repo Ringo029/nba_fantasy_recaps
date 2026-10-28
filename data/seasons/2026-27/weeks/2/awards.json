@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "period_id": 2,
+  "awards": {
+    "team_of_period": null,
+    "mvp": null,
+    "widest_margin": null,
+    "closest_matchup": null
+  }
+}

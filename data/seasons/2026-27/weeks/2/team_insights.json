@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "period_id": 2,
+  "teams": [
+    {
+      "team_id": 3,
+      "team_name": "Morovis  El Calor \ud83c\udfc6",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 4,
+      "team_name": "Minneapolis Lakers \ud83c\udfc6",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 5,
+      "team_name": "Barrio Cerrillos \ud83c\udfc6",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 6,
+      "team_name": "Las Villas ENDGAME",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 9,
+      "team_name": "La Guillotina",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 16,
+      "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 17,
+      "team_name": "El Mostroso",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 18,
+      "team_name": "La Nueva Escuela* ",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 20,
+      "team_name": "BBQ CHICKEN MADNESS",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 22,
+      "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 23,
+      "team_name": "Los Suns de PFKNR",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 24,
+      "team_name": "Bench warming brick layers unit",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 25,
+      "team_name": "Ringo's Cool Team",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    },
+    {
+      "team_id": 26,
+      "team_name": "Morrisville Fundamental",
+      "period_id": 2,
+      "roster_status": "unavailable",
+      "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
+      "attention": [],
+      "lineup_assessment": "unavailable"
+    }
+  ]
+}

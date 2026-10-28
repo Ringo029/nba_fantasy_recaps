@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "recaps": [
+    {
+      "season_id": "2026-27",
+      "period_id": 2,
+      "status": "provisional",
+      "generated_at": "2026-10-28T13:39:40Z",
+      "url": "seasons/2026-27/recaps/period-02.html",
+      "summary": "2026-27 matchup 2 (Provisional) | 2026-10-26 to 2026-11-01 America/New_York",
+      "awards": {
+        "team_of_period": null,
+        "mvp": null,
+        "widest_margin": null,
+        "closest_matchup": null
+      }
+    }
+  ]
+}

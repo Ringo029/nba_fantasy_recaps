@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "period_id": 2,
+  "status": "provisional",
+  "standings": [
+    {
+      "team_id": 4,
+      "team_name": "Minneapolis Lakers \ud83c\udfc6",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "rank": 1,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 5,
+      "team_name": "Barrio Cerrillos \ud83c\udfc6",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "rank": 2,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 9,
+      "team_name": "La Guillotina",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "rank": 3,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 16,
+      "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "rank": 4,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 17,
+      "team_name": "El Mostroso",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "rank": 5,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 22,
+      "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "rank": 6,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 23,
+      "team_name": "Los Suns de PFKNR",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "rank": 7,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 3,
+      "team_name": "Morovis  El Calor \ud83c\udfc6",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "rank": 8,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 6,
+      "team_name": "Las Villas ENDGAME",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "rank": 9,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 18,
+      "team_name": "La Nueva Escuela* ",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "rank": 10,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 20,
+      "team_name": "BBQ CHICKEN MADNESS",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "rank": 11,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 24,
+      "team_name": "Bench warming brick layers unit",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "rank": 12,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 25,
+      "team_name": "Ringo's Cool Team",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "rank": 13,
+      "power_rank": null,
+      "power_movement": null
+    },
+    {
+      "team_id": 26,
+      "team_name": "Morrisville Fundamental",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "rank": 14,
+      "power_rank": null,
+      "power_movement": null
+    }
+  ]
+}

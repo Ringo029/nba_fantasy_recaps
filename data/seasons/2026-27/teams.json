@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "teams": [
+    {
+      "team_id": 3,
+      "team_name": "Morovis  El Calor \ud83c\udfc6",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StarsAndFlames/stars_flames-4.svg"
+    },
+    {
+      "team_id": 4,
+      "team_name": "Minneapolis Lakers \ud83c\udfc6",
+      "logo_url": "https://i.imgur.com/rDV46Wu.jpg"
+    },
+    {
+      "team_id": 5,
+      "team_name": "Barrio Cerrillos \ud83c\udfc6",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/TeamMascots-RobbHarskamp/Team_Mascots-07.svg"
+    },
+    {
+      "team_id": 6,
+      "team_name": "Las Villas ENDGAME",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg"
+    },
+    {
+      "team_id": 9,
+      "team_name": "La Guillotina",
+      "logo_url": "https://g.espncdn.com/lm-static/fba/images/default_logos/16.svg"
+    },
+    {
+      "team_id": 16,
+      "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/Mascots/mascots-9.svg"
+    },
+    {
+      "team_id": 17,
+      "team_name": "El Mostroso",
+      "logo_url": "https://media1.tenor.com/m/MBAEKon_7o4AAAAC/mike-wazowski-mike.gif"
+    },
+    {
+      "team_id": 18,
+      "team_name": "La Nueva Escuela* ",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/OldTimeMickeyAndFriends/Basketball_Mickey.svg"
+    },
+    {
+      "team_id": 20,
+      "team_name": "BBQ CHICKEN MADNESS",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/d8332830-c76d-11f1-be69-d364b1302012"
+    },
+    {
+      "team_id": 22,
+      "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/31b79f10-c7ed-11f1-8f58-258cf02cf3a3"
+    },
+    {
+      "team_id": 23,
+      "team_name": "Los Suns de PFKNR",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/fba/AtTheArena-RobbHarskamp/Basketball_At_The_Arena-03.svg"
+    },
+    {
+      "team_id": 24,
+      "team_name": "Bench warming brick layers unit",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/f3f51d60-a876-11f0-afb5-e14f006a2a34"
+    },
+    {
+      "team_id": 25,
+      "team_name": "Ringo's Cool Team",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/fba/8-bitHeros-JoeyEllis/8bit_basketball-03.svg"
+    },
+    {
+      "team_id": 26,
+      "team_name": "Morrisville Fundamental",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/d3c57230-d14f-11f1-8b59-0b2ba9e1f95a"
+    }
+  ]
+}
