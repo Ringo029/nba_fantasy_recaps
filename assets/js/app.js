@@ -30,6 +30,7 @@ function formatQuickHit(hit) {
 
 function renderLeagueHeader(meta) {
   const el = document.getElementById("leagueLine");
+  if (el.dataset.managed === "hub") return;
   const name = safeText(meta.league_name || "League");
   const season = safeText(meta.season || "");
   const scoring = safeText(meta.scoring_type || "");
@@ -53,15 +54,16 @@ function renderTeams(meta) {
     div.className = "team";
     
     // Make team card clickable to open team insights
-    div.addEventListener("click", () => {
-      const teamName = encodeURIComponent(t.team_name || "");
-      window.location.href = `team_insights.html?team=${teamName}`;
-    });
-    div.title = `Click to view insights for ${t.team_name || "team"}`;
+    const teamLink = document.createElement("a");
+    teamLink.className = "team-link";
+    teamLink.href = t.team_id
+      ? `team_insights.html?team_id=${encodeURIComponent(t.team_id)}`
+      : `team_insights.html?team=${encodeURIComponent(t.team_name || "")}`;
+    teamLink.setAttribute("aria-label", `Open ${t.team_name || "team"}`);
 
     const img = document.createElement("img");
     img.alt = `${t.team_name || "Team"} logo`;
-    img.src = t.logo_url || "";
+    if (/^https?:\/\//i.test(t.logo_url || "")) img.src = t.logo_url;
     img.loading = "lazy";
     img.referrerPolicy = "no-referrer";
     img.onerror = () => { img.style.display = "none"; };
@@ -85,8 +87,9 @@ function renderTeams(meta) {
     
     info.innerHTML = teamInfo;
 
-    if (t.logo_url) div.appendChild(img);
-    div.appendChild(info);
+    if (t.logo_url) teamLink.appendChild(img);
+    teamLink.appendChild(info);
+    div.appendChild(teamLink);
     root.appendChild(div);
   });
 }

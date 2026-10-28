@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fantasy Weekly Recaps</title>
-
-  <meta name="description" content="Weekly fantasy basketball recap reports optimized for mobile." />
+  <title>Fantasy Hub</title>
+  <meta name="description" content="Matchup progress and weekly fantasy basketball recaps." />
+  <link rel="canonical" href="https://ringo029.github.io/nba_fantasy_recaps/" />
+  <meta property="og:title" content="Fantasy hub" />
+  <meta property="og:description" content="Matchup progress and weekly recaps. The page shows the last published update." />
+  <meta property="og:url" content="https://ringo029.github.io/nba_fantasy_recaps/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ringo029.github.io/nba_fantasy_recaps/data/seasons/2025-26/share.svg" />
   <meta name="referrer" content="no-referrer" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261028c" />
 
   <!-- Basic CSP via meta (limited vs server headers, but still helpful on static pages) -->
   <meta http-equiv="Content-Security-Policy"
@@ -22,7 +27,7 @@
   <div class="container">
     <div class="header">
       <div class="brand">
-        <h1>🏀 Fantasy Weekly Recaps</h1>
+        <h1>🏀 Fantasy Hub</h1>
         <p id="leagueLine">Loading league…</p>
       </div>
       <a href="#teams-section" class="pill pill-link" id="teams-jump">
@@ -30,6 +35,26 @@
         <span class="tag">View Teams</span>
       </a>
     </div>
+
+    <section id="hub-status" class="card" aria-live="polite">
+      <div class="card-b">
+        <div class="hub-toolbar">
+          <label for="season-select">Season</label>
+          <select id="season-select"></select>
+          <a id="my-team-link" class="btn btn-primary" href="team_insights.html">My Team</a>
+          <a id="whatsapp-share" class="btn" href="https://wa.me/?text=">Share</a>
+        </div>
+        <p id="period-line">Loading matchup period…</p>
+        <p id="updated-line">Updated at —</p>
+        <p id="stale-warning" class="stale-warning" hidden></p>
+        <p id="hub-warning"></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="matchup-heading">
+      <h2 id="matchup-heading">Matchup progress</h2>
+      <div id="matchup-cards" class="matchup-grid"></div>
+    </section>
 
     <!-- Hero Summary Card -->
     <section id="hero-summary" class="card hero-card">
@@ -83,9 +108,7 @@
         </div>
         <div class="card-b">
           <div id="teamsList" class="teams"></div>
-          <div class="notice">
-            Security note: this site uses only pre-generated public metadata (no tokens, no private data).
-          </div>
+          <p id="teams-note" class="footer">Team list for the selected season.</p>
         </div>
       </div>
     </div>
@@ -95,6 +118,7 @@
   <script src="data/league_metadata.js"></script>
   <script src="data/recaps_index.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/hub.js?v=20261028c"></script>
 </body>
 </html>
 

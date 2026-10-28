@@ -195,6 +195,7 @@
 <body>
 <div class="page">
   <h1>Fantasy Team Insights</h1>
+  <p class="muted">Choosing a team saves it in this browser. The insights on this page are public. Change your roster in ESPN; a later refresh can show the new roster.</p>
   <p class="muted">Scouting report for your team and upcoming opponent.</p>
 
   <div class="toolbar">
@@ -273,13 +274,15 @@
     );
     return {
       logo: team && team.logo_url ? team.logo_url : null,
-      owner: team && team.owner ? team.owner : null
+      owner: null
     };
   }
 
   const LS_MY_TEAM = 'fb_my_team';
+  const LS_MY_TEAM_ID = 'fb_my_team_id';
   const params = new URLSearchParams(window.location.search);
   const urlTeam = params.get('team');
+  const urlTeamId = params.get('team_id');
 
   function getMyTeam() {
     try {
@@ -289,9 +292,16 @@
     }
   }
 
-  function setMyTeam(name) {
+  function setMyTeam(name, teamId) {
     try {
       localStorage.setItem(LS_MY_TEAM, name || "");
+      if (teamId) localStorage.setItem(LS_MY_TEAM_ID, String(teamId));
+      const next = new URL(window.location.href);
+      if (teamId) {
+        next.searchParams.set("team_id", teamId);
+        next.searchParams.delete("team");
+      }
+      window.history.replaceState({}, "", next);
     } catch {
       // ignore
     }
@@ -376,7 +386,7 @@
     const ti = teamEntries.sort((a, b) => (b.week || 0) - (a.week || 0))[0];
     if (!ti) return;
 
-    setMyTeam(teamName);
+    setMyTeam(teamName, teamIdFor(teamName));
     metaLabelEl.textContent = `Week ${ti.week}`;
 
     // Summary (with team logo + owner)
@@ -397,7 +407,7 @@
       <p><span class="highlight">${formatNumber(ti.total_fp, 1)} FP</span> total • Rank <strong>${ti.rank_by_fp}</strong></p>
       <p class="muted">Avg FP / game: ${formatNumber(ti.avg_fp_per_game, 1)}</p>
       <p class="muted">Games this week: ${ti.games_this_week} (schedule edge: ${ti.schedule_advantage >= 0 ? "+" : ""}${ti.schedule_advantage})</p>
-      <p class="muted">Bench leakage: ${formatNumber(ti.bench_leakage_fp, 1)} FP • IR leakage: ${formatNumber(ti.ir_leakage_fp, 1)} FP</p>
+      <p class="muted">Bench points not in the active lineup: ${formatNumber(ti.bench_leakage_fp, 1)} FP. This is a hindsight total, not an avoidable mistake. IR: ${formatNumber(ti.ir_leakage_fp, 1)} FP.</p>
       ${ti.official_score !== null ? `<p class="muted">ESPN score: ${formatNumber(ti.official_score, 1)} | Our FP sum: ${formatNumber(ti.fp_from_all_players, 1)}<br />Gap: ${formatNumber(ti.scoreboard_gap, 1)}</p>` : ""}
     `;
 
@@ -464,11 +474,10 @@
           </div>
           <div>
             <div class="team-meta-name">${oppName || opp.name || "Opponent"}</div>
-            ${metaOpp.owner ? `<div class="team-meta-owner">Owner: ${metaOpp.owner}</div>` : ""}
           </div>
         </div>
         <p class="muted">Opponent strength index: ${formatNumber(opp.strength_index || 0, 2)}</p>
-        <p class="muted">Model win probability: <span class="highlight">${prob}</span></p>
+        <p class="muted">Illustrative margin only, not a calibrated forecast: <span class="highlight">${prob}</span></p>
         <p class="muted">Use this as a guide for streaming and start/sit decisions – especially in your weak categories.</p>
       `;
 
@@ -478,7 +487,7 @@
           ? `${(opp.win_probability * 100).toFixed(0)}%`
           : "–";
         opponentTitleEl.textContent = headerName
-          ? `Opponent Scout – ${headerName} (Win prob: ${headerProb})`
+          ? `Opponent Scout – ${headerName} (illustrative margin ${headerProb}; not a calibrated forecast)`
           : "Opponent Scout";
       }
 
@@ -525,27 +534,39 @@
           selectEl.appendChild(opt);
         });
 
+      function teamIdFor(name) {
+        const teams = (leagueMetadata && leagueMetadata.teams) || [];
+        const team = teams.find(t => t.team_name === name);
+        return team && team.team_id ? String(team.team_id) : "";
+      }
+      function teamNameForId(id) {
+        const teams = (leagueMetadata && leagueMetadata.teams) || [];
+        const team = teams.find(t => String(t.team_id) === String(id));
+        return team ? team.team_name : "";
+      }
+      window.teamIdFor = teamIdFor;
+
       selectEl.addEventListener("change", () => {
         const name = selectEl.value;
-        setMyTeam(name);
+        setMyTeam(name, teamIdFor(name));
         renderTeam(name);
       });
 
-      // Initial render: URL param → localStorage → first team
       const teamNames = insightsData.map(t => t.team_name);
-      let initialTeam = urlTeam && teamNames.includes(urlTeam) ? urlTeam : null;
+      let initialTeam = urlTeamId ? teamNameForId(urlTeamId) : "";
+      if (!initialTeam && urlTeam && teamNames.includes(urlTeam)) initialTeam = urlTeam;
+      if (!initialTeam) {
+        const storedId = localStorage.getItem(LS_MY_TEAM_ID) || "";
+        if (storedId) initialTeam = teamNameForId(storedId);
+      }
       if (!initialTeam) {
         const stored = getMyTeam();
-        if (stored && teamNames.includes(stored)) {
-          initialTeam = stored;
-        }
+        if (stored && teamNames.includes(stored)) initialTeam = stored;
       }
-      if (!initialTeam) {
-        initialTeam = teamNames[0];
-      }
+      if (!initialTeam) initialTeam = teamNames[0];
 
       selectEl.value = initialTeam;
-      setMyTeam(initialTeam);
+      setMyTeam(initialTeam, teamIdFor(initialTeam));
       renderTeam(initialTeam);
     })
     .catch(err => {
