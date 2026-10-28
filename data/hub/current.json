@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "status": "unavailable",
+  "generated_at": null,
+  "source_updated_at": null,
+  "matchup_period_id": null,
+  "period_start": null,
+  "period_end": null,
+  "timezone": "America/New_York",
+  "warnings": [
+    "Live 2026-27 matchup progress has not been published."
+  ],
+  "power_formula": null,
+  "latest_final_recap": {
+    "season_id": "2025-26",
+    "period_id": 16,
+    "week": 16,
+    "status": "final",
+    "generated_at": "2026-02-09T12:49:00Z",
+    "url": "recaps/week-16.html",
+    "compatibility_url": "seasons/2025-26/recaps/week-16.html",
+    "archived_quick_hits": [
+      "**Team of the Week:** El Mostroso with 880.0 pts",
+      "**Weekly MVP:** Kawhi Leonard (El Mostroso) with 124.0 pts",
+      "**Closest Matchup:** Morovis  El Calor \ud83c\udfc6 (609.0) def. Champion DX S*CK IT  (607.0) \u2014 margin 2 pts",
+      "**Biggest Beatdown:** El Mostroso (880.0) obliterated Barrio Cerrillos \ud83c\udfc6 (701.0) by 179 pts"
+    ],
+    "note": "Preserved from the original recap page. This row was not rebuilt from a structured awards file."
+  },
+  "stale_after_hours": 6
+}
