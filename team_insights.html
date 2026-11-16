@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Fantasy Team Insights</title>
+  <title>My Team</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261116c" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>" />
   <style>
     [hidden] { display: none !important; }
@@ -12,7 +13,7 @@
       background: #050816;
       color: #f9fafb;
       margin: 0;
-      padding: 16px;
+      padding: 0 0 24px;
     }
     h1 {
       margin-bottom: 8px;
@@ -20,6 +21,7 @@
     .page {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 16px;
     }
     .toolbar {
       display: flex;
@@ -223,10 +225,20 @@
   </style>
 </head>
 <body>
-<div class="page">
-  <h1>Fantasy Team Insights</h1>
-  <p class="muted">Choosing a team saves it in this browser. The insights on this page are public. Change your roster in ESPN; a later refresh can show the new roster.</p>
-  <p class="muted">Scouting report for your team and upcoming opponent.</p>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="league-header">
+  <a class="league-brand" href="./" aria-label="THE LEAGUE — Home">THE LEAGUE</a>
+  <nav class="league-nav" aria-label="League">
+    <a href="./" data-nav="home">Home</a>
+    <a href="./#matchups" data-nav="matchups">Matchups</a>
+    <a href="./#recaps" data-nav="recaps">Recaps</a>
+    <a href="./#standings" data-nav="standings">Standings</a>
+    <a href="team_insights.html" data-nav="my-team" aria-current="page">My Team</a>
+  </nav>
+</header>
+<main id="content" class="page">
+  <h1 id="page-title">My Team</h1>
+  <p class="muted">The team saved in this browser. Rosters change in ESPN.</p>
 
   <div class="toolbar">
     <label>
@@ -273,10 +285,14 @@
 
       <div class="card" id="watchlist-card" hidden>
         <h2>Watchlist</h2>
-        <p id="watchlist-note" class="muted"></p>
+        <p id="watchlist-note" class="muted">Check availability in ESPN. Injury status is current. Averages are fantasy points per player game.</p>
         <div id="watchlist-content"></div>
       </div>
     </div>
+    <details id="about-data" class="card about-data">
+      <summary>About the data</summary>
+      <div id="about-content" class="muted"></div>
+    </details>
   </div>
 
   <!-- Next Week Roster Tab -->
@@ -286,9 +302,10 @@
       <div id="roster-table-content"></div>
     </div>
   </div>
-</div>
+</main>
 
-<script src="assets/js/directory.js?v=20261116b"></script>
+<script src="assets/js/shell.js?v=20261116c"></script>
+<script src="assets/js/directory.js?v=20261116c"></script>
 <script>
   const selectEl = document.getElementById("team-select");
   const metaLabelEl = document.getElementById("meta-label");
@@ -335,16 +352,21 @@
     }
   }
 
-  function setMyTeam(name, teamId) {
+  function setMyTeam(name, teamId, mode) {
     try {
       localStorage.setItem(LS_MY_TEAM, name || "");
       if (teamId) localStorage.setItem(LS_MY_TEAM_ID, String(teamId));
+      if (urlSeason) localStorage.setItem("fb_my_season", urlSeason);
       const next = new URL(window.location.href);
       if (teamId) {
         next.searchParams.set("team_id", teamId);
         next.searchParams.delete("team");
       }
-      window.history.replaceState({}, "", next);
+      const same = next.search === window.location.search;
+      if (!same && mode !== "none") {
+        const method = mode === "push" ? "pushState" : "replaceState";
+        window.history[method]({}, "", next);
+      }
     } catch {
       // ignore
     }
@@ -429,6 +451,8 @@
     const ti = teamEntries.sort((a, b) => (b.week || 0) - (a.week || 0))[0];
     if (!ti) return;
 
+    const pageTitle = document.getElementById("page-title");
+    if (pageTitle) pageTitle.textContent = teamName;
     setMyTeam(teamName, teamIdFor(teamName));
     metaLabelEl.textContent = `Week ${ti.week}`;
 
@@ -577,22 +601,46 @@
     return el;
   }
 
-  function renderPlayerList(parent, players, basisNote, options) {
-    if (basisNote) paragraph(parent, basisNote, "muted");
+  function renderPlayerTable(parent, players, options) {
     if (!players.length) {
-      paragraph(parent, "No players were in this capture.", "muted");
+      paragraph(parent, "No players are listed.", "muted");
       return;
     }
-    const list = document.createElement("ul");
-    list.className = "list";
-    players.forEach((player) => {
-      const facts = FantasyDirectory.playerFacts(player, options);
-      const item = document.createElement("li");
-      const slot = player.lineup_slot ? `Current slot: ${player.lineup_slot}` : "Current slot was not provided.";
-      item.textContent = `${player.player_name || "Player"} (${player.pro_team || "pro team unavailable"}) — ${slot} ${facts.injury} ${facts.average}. ${facts.acquisition}`;
-      list.appendChild(item);
+    const table = document.createElement("table");
+    table.className = "player-table";
+    const columns = [
+      ["player", "Player"],
+      ["nbaTeam", "NBA team"],
+      ["slot", "Slot"],
+      ["injury", "Injury"],
+      ["fpPerGame", "FP/G"],
+      ["gamesPlayed", "GP"],
+      ["acquisition", "Status"],
+      ["acquired", "Acquired"],
+    ];
+    const head = document.createElement("tr");
+    columns.forEach((column) => {
+      const cell = document.createElement("th");
+      cell.textContent = column[1];
+      head.appendChild(cell);
     });
-    parent.appendChild(list);
+    const thead = document.createElement("thead");
+    thead.appendChild(head);
+    const body = document.createElement("tbody");
+    players.forEach((player) => {
+      const view = FantasyDirectory.playerView(player, options);
+      const row = document.createElement("tr");
+      columns.forEach((column) => {
+        const cell = document.createElement("td");
+        cell.dataset.label = column[1];
+        cell.textContent = view[column[0]];
+        row.appendChild(cell);
+      });
+      body.appendChild(row);
+    });
+    table.appendChild(thead);
+    table.appendChild(body);
+    parent.appendChild(table);
   }
 
   function renderResultLines(parent, lines) {
@@ -605,7 +653,7 @@
     list.className = "list";
     lines.forEach((line) => {
       const item = document.createElement("li");
-      item.textContent = `Period ${line.period_id}: ${line.points}–${line.opponent_points} vs ${line.opponent_name}`;
+      item.textContent = `Week ${line.period_id}: ${FantasyDirectory.displayValue(line.points)}–${FantasyDirectory.displayValue(line.opponent_points)} vs ${line.opponent_name} · Final`;
       list.appendChild(item);
     });
     parent.appendChild(list);
@@ -630,44 +678,46 @@
       watchlist: watchPlayers.length > 0,
       history: history.length > 0,
     }));
-    const scope = [];
-    if (context.hub && context.hub.snapshot_id) scope.push(`Hub snapshot ${context.hub.snapshot_id}`);
-    if (context.hub && context.hub.season_id) scope.push(`season ${context.hub.season_id}`);
-    if (context.hub && context.hub.matchup_period_id) scope.push(`matchup ${context.hub.matchup_period_id}`);
-    if (context.hub && context.hub.source_updated_at) scope.push(`source ${context.hub.source_updated_at}`);
-    metaLabelEl.textContent = scope.length ? scope.join(" · ") : "Hub snapshot unavailable";
+    const updatedAt = context.hub && (context.hub.source_updated_at || context.hub.generated_at);
+    const zone = (context.hub && context.hub.timezone) || "America/New_York";
+    metaLabelEl.textContent = window.LeagueShell ? LeagueShell.updatedLabel(updatedAt, zone) : "Updated time unavailable";
+    const pageTitle = document.getElementById("page-title");
+    if (pageTitle) pageTitle.textContent = name;
     summaryEl.textContent = "";
     const head = document.createElement("div");
     head.className = "summary-head";
     head.appendChild(FantasyDirectory.logoElement(team && team.logo_url, name));
-    const title = document.createElement("strong");
-    title.textContent = name;
-    head.appendChild(title);
     summaryEl.appendChild(head);
     if (standing) {
       const movement = FantasyDirectory.movementText(standing.power_movement);
-      paragraph(summaryEl, `Power rank ${standing.power_rank == null ? "unavailable" : standing.power_rank}${movement ? `. ${movement}` : ""}`);
-      const movementEl = document.createElement("p");
-      movementEl.className = FantasyDirectory.movementClass(standing.power_movement);
-      movementEl.textContent = movement || "Power movement unavailable";
-      summaryEl.appendChild(movementEl);
+      const shown = FantasyDirectory.displayValue;
+      paragraph(summaryEl, `Record ${shown(standing.wins)}-${shown(standing.losses)}-${shown(standing.ties)}. Standing rank ${shown(standing.rank)}. Power rank ${shown(standing.power_rank)}.`);
+      if (movement) {
+        const movementEl = document.createElement("p");
+        movementEl.className = FantasyDirectory.movementClass(standing.power_movement);
+        movementEl.textContent = movement;
+        summaryEl.appendChild(movementEl);
+      }
+    }
+    if (opponent) {
+      const ours = FantasyDirectory.displayValue(opponent.score);
+      const theirs = FantasyDirectory.displayValue(opponent.opponent_score);
+      paragraph(summaryEl, `This week: ${ours}–${theirs} vs ${opponent.team_name}`);
     }
     if (insight) {
-      ["result_line", "power_line", "all_play_line", "luck_line", "lineup_line"].forEach((key) => {
+      ["all_play_line", "luck_line"].forEach((key) => {
         if (insight[key]) paragraph(summaryEl, insight[key]);
       });
-      if (!insight.lineup_line && insight.roster_reason) paragraph(summaryEl, insight.roster_reason);
+      if (insight.lineup_line) paragraph(summaryEl, "Lineup recommendations are not shown for this week.", "muted");
     }
     const rosterHeading = document.querySelector("#roster-card h2");
     if (rosterHeading) rosterHeading.textContent = "Current roster";
     rosterEl.textContent = "";
     if (context.roster && context.roster.historical_reconstruction === false) {
-      const captured = context.roster.observed_at ? context.roster.observed_at : "unavailable";
-      const rosterSeason = context.roster.season_id || "unavailable";
-      const rosterPeriod = context.roster.matchup_period_id == null ? "unavailable" : context.roster.matchup_period_id;
-      paragraph(rosterEl, `${context.roster.label || "Current roster."} observed_at ${captured}. Season ${rosterSeason}. Matchup period ${rosterPeriod}.`);
-      if (context.roster.injury_note) paragraph(rosterEl, context.roster.injury_note, "muted");
-      renderPlayerList(rosterEl, rosterPlayers, context.roster.avg_basis_note || FantasyDirectory.AVERAGE_NOTE);
+      const rosterWhen = context.roster.observed_at || updatedAt;
+      paragraph(rosterEl, window.LeagueShell ? LeagueShell.asOfLabel(rosterWhen, zone) : "Roster as of unavailable");
+      paragraph(rosterEl, "Injury status is current. FP/G is fantasy points per player game.", "muted");
+      renderPlayerTable(rosterEl, rosterPlayers);
     }
     opponentTitleEl.textContent = opponent ? `Completed results — ${opponent.team_name}` : "Completed results";
     renderResultLines(opponentEl, opponentHistory);
@@ -688,19 +738,24 @@
     const watchRoot = document.getElementById("watchlist-content");
     const watchNote = document.getElementById("watchlist-note");
     if (watchNote) {
-      const observed = context.watchlist && context.watchlist.observed_at ? `observed_at ${context.watchlist.observed_at}.` : "observed_at unavailable.";
-      const seasonScope = context.hub && context.hub.season_id ? ` Season ${context.hub.season_id}.` : "";
-      const snapshotScope = context.hub && context.hub.snapshot_id ? ` Hub snapshot ${context.hub.snapshot_id}.` : "";
-      watchNote.textContent = `${(context.watchlist && context.watchlist.label) || "Current free-agent list."} ${observed}${seasonScope}${snapshotScope} ${(context.watchlist && context.watchlist.injury_note) || "Injury status is the status at capture, not a record of earlier games."} ${(context.watchlist && context.watchlist.acquisition_note) || "Players on this list were on the captured free-agent list. Waiver priority and availability are not inferred."}`;
+      const when = context.watchlist && context.watchlist.observed_at;
+      const asOf = window.LeagueShell && when ? LeagueShell.asOfLabel(when, zone).replace("Roster as of", "Watchlist as of") : "";
+      watchNote.textContent = `${asOf} Check availability in ESPN. Injury status is current. Averages are fantasy points per player game.`.trim();
     }
     if (watchRoot) {
       watchRoot.textContent = "";
-      renderPlayerList(
-        watchRoot,
-        watchPlayers.slice(0, 15),
-        (context.watchlist && context.watchlist.avg_basis_note) || FantasyDirectory.AVERAGE_NOTE,
-        { freeAgentList: true }
-      );
+      renderPlayerTable(watchRoot, watchPlayers.slice(0, 15), { freeAgentList: true });
+    }
+    const about = document.getElementById("about-content");
+    if (about) {
+      const notes = [
+        FantasyDirectory.AVERAGE_NOTE,
+        context.roster && context.roster.injury_note,
+        context.roster && context.roster.acquisition_note,
+        context.watchlist && context.watchlist.acquisition_note,
+        insight && insight.roster_reason,
+      ].filter(Boolean);
+      about.textContent = notes.join(" ");
     }
   }
 
@@ -760,16 +815,28 @@
       finals,
     };
     const draw = () => renderStructuredTeam(context, selectEl.value);
+    let teamNavigation = "replace";
     selectEl.addEventListener("change", () => {
       const selected = teams.find((team) => String(team.team_id) === selectEl.value);
-      setMyTeam(selected ? selected.team_name : "", selectEl.value);
+      setMyTeam(selected ? selected.team_name : "", selectEl.value, teamNavigation);
       const next = new URL(window.location.href);
-      next.searchParams.set("season", season);
-      window.history.replaceState({}, "", next);
+      if (next.searchParams.get("season") !== season) {
+        next.searchParams.set("season", season);
+        window.history.replaceState({}, "", next);
+      }
       draw();
     });
     selectEl.value = FantasyDirectory.chosenTeamId(urlTeamId, savedId, teams.map((team) => team.team_id));
     selectEl.dispatchEvent(new Event("change"));
+    teamNavigation = "push";
+    window.addEventListener("popstate", () => {
+      const nextId = new URLSearchParams(window.location.search).get("team_id");
+      if (!nextId || !Array.from(selectEl.options).some((option) => option.value === nextId)) return;
+      teamNavigation = "none";
+      selectEl.value = nextId;
+      selectEl.dispatchEvent(new Event("change"));
+      teamNavigation = "push";
+    });
   }
 
   if (urlSeason === "2026-27") {
@@ -812,7 +879,7 @@
 
       selectEl.addEventListener("change", () => {
         const name = selectEl.value;
-        setMyTeam(name, teamIdFor(name));
+        setMyTeam(name, teamIdFor(name), "push");
         renderTeam(name);
       });
 

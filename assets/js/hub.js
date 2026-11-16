@@ -43,34 +43,20 @@
   }
 
   function applySavedTeam(seasonId) {
-    const id = savedTeamId();
-    if (!myTeamLink) return;
-    if (seasonId && id) {
-      myTeamLink.href = `team_insights.html?season=${encodeURIComponent(seasonId)}&team_id=${encodeURIComponent(id)}`;
-      return;
-    }
-    myTeamLink.href = id ? `team_insights.html?team_id=${encodeURIComponent(id)}` : "team_insights.html";
+    if (seasonId && window.LeagueShell) LeagueShell.rememberSeason(seasonId);
+    const savedSeason = window.LeagueShell ? LeagueShell.readSaved().season : "";
+    const href = window.LeagueShell
+      ? LeagueShell.myTeamHref(location.pathname, { season: seasonId || savedSeason, teamId: savedTeamId() })
+      : "team_insights.html";
+    document.querySelectorAll("[data-nav='my-team']").forEach((link) => {
+      link.href = href;
+    });
+    if (myTeamLink) myTeamLink.href = href;
   }
 
   function formatUpdated(iso, timezone) {
-    const zone = timezone || "America/New_York";
-    if (!iso) return `No capture time has been published. League timezone: ${zone}.`;
-    const date = new Date(iso);
-    if (Number.isNaN(date.getTime())) return `The published timestamp could not be read. League timezone: ${zone}.`;
-    try {
-      const clock = new Intl.DateTimeFormat("en-US", {
-        timeZone: zone,
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "2-digit",
-        timeZoneName: "short",
-      }).format(date);
-      return `Captured ${clock}. League timezone: ${zone}.`;
-    } catch (err) {
-      return `Captured ${iso}. League timezone: ${zone}.`;
-    }
+    if (window.LeagueShell) return LeagueShell.updatedLabel(iso, timezone);
+    return iso ? `Updated ${iso}` : "Updated time unavailable";
   }
 
   function showStale(hub) {
@@ -78,14 +64,14 @@
     const hours = Number(hub.stale_after_hours || 6);
     const messages = [];
     if (hub.data_mode && hub.data_mode !== "live") {
-      messages.push("This publication is not a live snapshot.");
+      messages.push("This is not a live update.");
     }
     if (!hub.generated_at) {
-      messages.push("Live data has not been published. Choose 2025–26 to open the archived recaps.");
+      messages.push("A live update has not been published. Choose 2025–26 for the archived recaps.");
     } else {
       const age = Date.now() - new Date(hub.generated_at).getTime();
       if (Number.isNaN(age) || age > hours * 60 * 60 * 1000) {
-        messages.push(`This capture is older than ${hours} hours. A newer publication has not replaced it.`);
+        messages.push(`This update is more than ${hours} hours old.`);
       }
     }
     staleWarning.hidden = messages.length === 0;
@@ -120,13 +106,13 @@
       );
       card.appendChild(title);
       const remainingMissing = row.home_games_remaining == null && row.away_games_remaining == null;
-      paragraph(
-        card,
-        "footer",
-        remainingMissing
-          ? "Per-team games remaining: Unavailable"
-          : `Per-team games remaining: ${displayMetric(row.home_games_remaining)} / ${displayMetric(row.away_games_remaining)}`
-      );
+      if (!remainingMissing) {
+        paragraph(
+          card,
+          "footer",
+          `Games left: ${displayMetric(row.home_games_remaining)} / ${displayMetric(row.away_games_remaining)}`
+        );
+      }
       const projectionsHidden = row.projection_basis === "unavailable"
         || (row.home_projected_finish == null && row.away_projected_finish == null);
       if (!projectionsHidden) {
@@ -144,15 +130,13 @@
     if (!fixturePanel || !fixtureCount || !fixtureNote) return;
     fixturePanel.hidden = false;
     if (!fixtures || fixtures.available === false || !fixtures.counts) {
-      fixtureCount.textContent = "Scheduled future games: Unavailable";
-      fixtureNote.textContent = fixtures && fixtures.reason
-        ? fixtures.reason
-        : "Game status is unavailable, so an exact remaining-game count is not shown.";
+      fixtureCount.textContent = "Future games: Unavailable";
+      fixtureNote.textContent = "A future-game count was not published.";
       return;
     }
     const future = fixtures.counts.scheduled_future_tipoffs;
-    fixtureCount.textContent = `Scheduled future games: ${displayMetric(future)}`;
-    fixtureNote.textContent = "Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed. This is ESPN's fantasy scoring schedule, and completeness against the NBA official schedule is not verified.";
+    fixtureCount.textContent = `Future games on the fantasy schedule: ${displayMetric(future)}`;
+    fixtureNote.textContent = "This is less specific than the league matchups above. It is not a roster's remaining games.";
   }
 
   function renderLiveStandings(doc, seasonId, directory) {
@@ -192,7 +176,7 @@
       root.appendChild(div);
     });
     if (teamsNote) {
-      teamsNote.textContent = "Standings from this capture. Power rank is unavailable when no power score was published. Null values stay Unavailable.";
+      teamsNote.textContent = "Standing rank follows the league record. Power rank stays unavailable when it was not published.";
     }
   }
 
@@ -225,7 +209,7 @@
       root.appendChild(div);
     });
     if (teamsNote) {
-      teamsNote.textContent = "Last published team directory for 2025–26. It is not a standings snapshot for one recap.";
+      teamsNote.textContent = "2025–26 team directory. It is not the current season.";
     }
   }
 
@@ -245,12 +229,12 @@
       top.className = "top";
       const title = document.createElement("div");
       title.className = "title";
-      const periodLabel = `${seasonId} matchup ${String(row.period_id || row.week).padStart(2, "0")}`;
       const provisional = row.status !== "final";
-      title.textContent = provisional ? `${periodLabel} · Matchup progress` : `${periodLabel} · Finalized recap`;
+      const badge = window.LeagueShell ? LeagueShell.periodBadge(row.status) : (provisional ? "This week" : "Final");
+      title.textContent = `Week ${String(row.period_id || row.week).padStart(2, "0")} · ${badge}`;
       const link = document.createElement("a");
       link.href = row.url || "#";
-      link.textContent = provisional ? "Matchup progress" : "Finalized recap";
+      link.textContent = "Open recap";
       top.appendChild(title);
       top.appendChild(link);
       card.appendChild(top);
@@ -292,7 +276,7 @@
     if (valueNode && value) valueNode.textContent = value;
   }
 
-  function renderCompletedRecap(recap, seasonId) {
+  function renderCompletedRecap(recap, seasonId, options) {
     const hero = document.getElementById("hero-summary");
     const source = document.getElementById("hero-source");
     const viewLink = document.getElementById("view-full-recap");
@@ -302,19 +286,28 @@
     }
     if (hero) hero.hidden = false;
     const period = recap.period_id || recap.week;
+    const title = document.getElementById("hero-title");
+    const newest = options && options.newest;
+    const latest = !newest || String(newest) === String(period);
+    if (title && window.LeagueShell) title.textContent = LeagueShell.recapTitle(latest);
     const weekNode = document.getElementById("hero-week");
-    if (weekNode) weekNode.textContent = String(period).padStart(2, "0");
+    if (weekNode) weekNode.textContent = `Week ${String(period).padStart(2, "0")} · Final`;
     setStat("stat-top-row", "stat-top-team", awardValue(recap, "team_of_period", ["Team of the Week"]));
     setStat("stat-mvp-row", "stat-mvp", awardValue(recap, "mvp", ["Weekly MVP", "MVP"]));
     setStat("stat-beat-row", "stat-beatdown", awardValue(recap, "widest_margin", ["Biggest Beatdown", "Biggest win"]));
     setStat("stat-close-row", "stat-closest", awardValue(recap, "closest_matchup", ["Closest Matchup", "Closest"]));
-    if (viewLink) viewLink.href = recap.url || "#";
+    if (viewLink) {
+      viewLink.href = recap.url || "#";
+      viewLink.textContent = "Open recap";
+    }
     if (source) {
-      source.textContent = `${seasonId} matchup ${String(period).padStart(2, "0")} is the selected finalized recap. Current standings stay on the latest capture.`;
+      source.textContent = latest
+        ? "The newest completed week. Standings stay on the current season."
+        : "Selected recap. Standings stay on the current season.";
     }
   }
 
-  function bindRecapPicker(finals, seasonId) {
+  function bindRecapPicker(finals, seasonId, navigation) {
     const select = document.getElementById("week-select");
     const prev = document.getElementById("prev-week");
     const next = document.getElementById("next-week");
@@ -325,23 +318,25 @@
       const option = document.createElement("option");
       const period = recap.period_id || recap.week;
       option.value = String(period);
-      option.textContent = `Matchup ${String(period).padStart(2, "0")}`;
+      option.textContent = `Week ${String(period).padStart(2, "0")}`;
       select.appendChild(option);
     });
-    const show = (period) => {
+    const newest = ordered.length ? (ordered[0].period_id || ordered[0].week) : "";
+    const show = (period, historyMode) => {
       const recap = ordered.find((row) => String(row.period_id || row.week) === String(period));
-      if (recap) renderCompletedRecap(recap, seasonId);
+      if (recap) renderCompletedRecap(recap, seasonId, { newest });
       const index = ordered.findIndex((row) => String(row.period_id || row.week) === String(period));
-      if (prev) prev.disabled = index >= ordered.length - 1;
+      if (prev) prev.disabled = index < 0 || index >= ordered.length - 1;
       if (next) next.disabled = index <= 0;
+      if (historyMode && historyMode !== "none") writeLocation(seasonId, period, historyMode);
     };
-    select.onchange = () => show(select.value);
+    select.onchange = () => show(select.value, "push");
     if (prev) {
       prev.onclick = () => {
         const index = ordered.findIndex((row) => String(row.period_id || row.week) === select.value);
         if (index < ordered.length - 1) {
           select.value = String(ordered[index + 1].period_id || ordered[index + 1].week);
-          show(select.value);
+          show(select.value, "push");
         }
       };
     }
@@ -350,64 +345,77 @@
         const index = ordered.findIndex((row) => String(row.period_id || row.week) === select.value);
         if (index > 0) {
           select.value = String(ordered[index - 1].period_id || ordered[index - 1].week);
-          show(select.value);
+          show(select.value, "push");
         }
       };
     }
-    if (ordered.length) show(ordered[0].period_id || ordered[0].week);
-    else renderCompletedRecap(null, seasonId);
+    const requested = navigation && navigation.recap;
+    const initial = ordered.some((row) => String(row.period_id || row.week) === String(requested))
+      ? requested
+      : (ordered.length ? (ordered[0].period_id || ordered[0].week) : "");
+    if (initial) {
+      select.value = String(initial);
+      show(initial, "none");
+    } else renderCompletedRecap(null, seasonId);
+  }
+
+  function writeLocation(seasonId, recap, mode) {
+    const url = new URL(window.location.href);
+    if (seasonId) url.searchParams.set("season", seasonId);
+    if (recap) url.searchParams.set("recap", String(recap));
+    else url.searchParams.delete("recap");
+    const next = `${url.pathname}${url.search}${url.hash}`;
+    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+    if (next === current) return;
+    window.history[mode === "replace" ? "replaceState" : "pushState"]({}, "", next);
   }
 
   let seasonRequest = 0;
 
-  async function selectSeason(season, hub) {
+  async function selectSeason(season, hub, navigation) {
     const requestId = ++seasonRequest;
     const teamsRoot = document.getElementById("teamsList");
     if (teamsRoot) clear(teamsRoot);
     const liveSeason = hub && hub.season_id;
     const live = season.season_id === liveSeason && hub.status !== "unavailable" && hub.matchup_period_id;
+    const matchupHeading = document.getElementById("matchup-heading");
     if (statusLine) {
       if (live) {
-        statusLine.textContent = `Matchup ${hub.matchup_period_id}: ${hub.period_start || "Unavailable"} to ${hub.period_end || "Unavailable"}. Status: ${hub.status}.`;
+        const heading = window.LeagueShell
+          ? LeagueShell.weekHeading(hub.matchup_period_id, hub.period_start, hub.period_end, hub.timezone)
+          : `Week ${hub.matchup_period_id}`;
+        const badge = window.LeagueShell ? LeagueShell.periodBadge(hub.status) : "This week";
+        statusLine.textContent = badge;
+        if (matchupHeading) matchupHeading.textContent = heading;
       } else if (season.archive) {
-        statusLine.textContent = `${season.label} is an archive. It does not use the current matchup.`;
+        statusLine.textContent = "Archived season.";
+        if (matchupHeading) matchupHeading.textContent = "Current matchups stay with the live season";
       } else {
-        statusLine.textContent = "This season does not have a published matchup period yet.";
+        statusLine.textContent = "This season does not have a published week yet.";
+        if (matchupHeading) matchupHeading.textContent = "This week";
       }
     }
     const teamsSection = document.getElementById("teams-section");
-    const teamsJump = document.getElementById("teams-jump");
-    const leagueLine = document.getElementById("leagueLine");
     const standingsHeading = document.getElementById("standings-heading");
     const standingsSub = document.getElementById("standings-sub");
-    const matchupHeading = document.getElementById("matchup-heading");
     const showArchivePanels = Boolean(season.archive);
-    if (matchupHeading) {
-      matchupHeading.textContent = live ? "Current matchup progress" : "Current matchup stays with the live season";
-    }
     if (standingsHeading) {
-      standingsHeading.textContent = showArchivePanels ? `${season.label} team directory` : "Current standings";
+      standingsHeading.textContent = showArchivePanels ? `${season.label} team directory` : "Standings";
     }
     if (standingsSub) {
       standingsSub.textContent = showArchivePanels
-        ? "Last published team directory for this archive. It is not a standings snapshot for one recap."
-        : "From the latest capture. Choosing a recap does not change this table.";
+        ? "Last published team directory for this archive."
+        : "Standing rank follows the league record. Power rank is separate. Choosing a recap does not change this table.";
     }
-    if (leagueLine) {
-      leagueLine.dataset.managed = "hub";
-      leagueLine.textContent = showArchivePanels
-        ? `THE LEAGUE • ${season.label || season.season_id} archive`
-        : "THE LEAGUE • 2026–27";
-    }
-    applySavedTeam(live ? season.season_id : "");
+    applyLeagueName(live ? season.season_id : "");
+    applySavedTeam(season.season_id || "");
     if (!live) {
       if (fixturePanel) fixturePanel.hidden = true;
       if (teamsSection) teamsSection.hidden = !showArchivePanels;
-      if (teamsJump) teamsJump.hidden = !showArchivePanels;
       if (teamsNote) {
         teamsNote.textContent = showArchivePanels
-          ? "Last published team directory for 2025–26. It is not a standings snapshot for an individual archived week."
-          : "A team directory for this season has not been published. The 2025–26 list is hidden so it is not read as this season's standings.";
+          ? "2025–26 team directory. It is not the current season."
+          : "A team directory for this season has not been published.";
       }
     }
     let directory = FantasyDirectory.indexByTeamId([], season.season_id);
@@ -466,7 +474,7 @@
       const index = await loadJson(season.recap_index);
       renderArchive(index, season.season_id);
       const finals = (index.recaps || []).filter((row) => row.status === "final");
-      bindRecapPicker(finals, season.season_id);
+      bindRecapPicker(finals, season.season_id, navigation || {});
     } catch (err) {
       const root = document.getElementById("recapsList");
       if (root) {
@@ -474,6 +482,32 @@
         paragraph(root, "empty-state", "The recap index for this season is not available.");
       }
       renderCompletedRecap(null, season.season_id);
+    }
+  }
+
+  async function applyLeagueName(seasonId) {
+    const brand = document.getElementById("league-brand");
+    if (!brand) return;
+    let name = "THE LEAGUE";
+    if (seasonId) {
+      try {
+        const season = await loadJson(`data/seasons/${seasonId}/season.json`);
+        name = window.LeagueShell ? LeagueShell.leagueName(season.league_name) : (season.league_name || name);
+      } catch (err) {
+        name = "THE LEAGUE";
+      }
+    }
+    brand.textContent = name;
+    brand.setAttribute("aria-label", "THE LEAGUE — Home");
+  }
+
+  function showWarnings(warnings) {
+    const mapped = window.LeagueShell ? LeagueShell.memberWarnings(warnings) : { primary: warnings || [], about: [] };
+    if (hubWarning) hubWarning.textContent = mapped.primary.join(" ");
+    const about = document.getElementById("about-notes");
+    if (about) {
+      about.textContent = "";
+      mapped.about.forEach((line) => paragraph(about, "", line));
     }
   }
 
@@ -496,10 +530,7 @@
     }
     if (updatedLine) updatedLine.textContent = formatUpdated(hub.source_updated_at || hub.generated_at, hub.timezone);
     showStale(hub);
-    if (hubWarning) {
-      const warnings = (hub.warnings || []).filter((item) => !/win probabilit/i.test(item));
-      hubWarning.textContent = warnings.join(" ");
-    }
+    showWarnings(hub.warnings || []);
     if (shareLink) {
       const latest = hub.latest_final_recap;
       const summary = latest
@@ -519,13 +550,29 @@
       renderMatchups(null);
       return;
     }
-    const preferred = seasons.find((season) => season.season_id === hub.season_id) || seasons[0];
+    const params = new URLSearchParams(location.search);
+    const requestedSeason = params.get("season");
+    const preferred = seasons.find((season) => season.season_id === requestedSeason)
+      || seasons.find((season) => season.season_id === hub.season_id)
+      || seasons[0];
     seasonSelect.value = preferred.season_id;
     seasonSelect.addEventListener("change", () => {
       const season = seasons.find((item) => item.season_id === seasonSelect.value);
-      if (season) selectSeason(season, hub);
+      if (!season) return;
+      writeLocation(season.season_id, "", "push");
+      selectSeason(season, hub, { recap: "" });
     });
-    await selectSeason(preferred, hub);
+    window.addEventListener("popstate", () => {
+      const next = new URLSearchParams(location.search);
+      const season = seasons.find((item) => item.season_id === next.get("season")) || preferred;
+      seasonSelect.value = season.season_id;
+      selectSeason(season, hub, { recap: next.get("recap") || "" });
+      if (window.LeagueShell) LeagueShell.markLocation(document, location.pathname, location.hash);
+    });
+    window.addEventListener("hashchange", () => {
+      if (window.LeagueShell) LeagueShell.markLocation(document, location.pathname, location.hash);
+    });
+    await selectSeason(preferred, hub, { recap: params.get("recap") || "" });
     } catch (err) {
       if (statusLine) statusLine.textContent = "The hub could not be shown.";
       if (hubWarning) hubWarning.textContent = "Matchup data is unavailable.";

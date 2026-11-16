@@ -51,22 +51,26 @@ test("a failed image is replaced by an initials fallback", () => {
   assert.equal(img.replacedWith.attrs.role, "img");
 });
 
-test("player facts keep the capture labels and the checked average denominator", () => {
+test("player facts use member labels and keep the checked average denominator", () => {
   const injured = directory.playerFacts({
     injury_status: "OUT",
     avg_fantasy_points: 18,
     games_played: 2,
     acquisition_status: "DRAFT",
   });
-  assert.match(injured.injury, /at capture: OUT/);
+  assert.match(injured.injury, /OUT/);
+  assert.match(injured.injury, /current/);
   assert.match(injured.injury, /not a record of earlier games/);
-  assert.match(injured.average, /appliedAverage 18 over 2 GP/);
-  assert.match(injured.acquisition, /acquisitionType at capture: DRAFT/);
-  assert.match(injured.acquisition, /not waiver priority/);
+  assert.match(injured.average, /FP\/G 18 over 2 GP/);
+  assert.equal(injured.status, "Rostered");
+  assert.equal(injured.acquired, "DRAFT");
   const listed = directory.playerFacts({ avg_fantasy_points: 13, injury_status: "OUT" }, { freeAgentList: true });
-  assert.match(listed.acquisition, /captured free-agent list/);
-  assert.match(listed.acquisition, /not inferred/);
+  assert.equal(listed.status, "Free agent");
+  assert.match(listed.acquisition, /Check availability in ESPN/);
   assert.match(directory.AVERAGE_NOTE, /appliedTotal divided by GP/);
+  const blank = directory.playerView({ games_played: null, avg_fantasy_points: 0 });
+  assert.equal(blank.gamesPlayed, "Unavailable");
+  assert.equal(blank.fpPerGame, "0");
 });
 
 test("only https and local image URLs are accepted", () => {

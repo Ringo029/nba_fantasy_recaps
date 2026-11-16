@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://ringo029.github.io/nba_fantasy_recaps/data/seasons/2025-26/share.svg" />
   <meta name="referrer" content="no-referrer" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261028d" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261116c" />
 
   <!-- Basic CSP via meta (limited vs server headers, but still helpful on static pages) -->
   <meta http-equiv="Content-Security-Policy"
@@ -24,54 +24,41 @@
                  base-uri 'self';" />
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="brand">
-        <h1>🏀 Fantasy Hub</h1>
-        <p id="leagueLine">Loading league…</p>
-      </div>
-      <a href="#teams-section" class="pill pill-link" id="teams-jump">
-        <span>👥</span>
-        <span class="tag">View Teams</span>
-      </a>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="league-header">
+    <a class="league-brand" id="league-brand" href="./" aria-label="THE LEAGUE — Home">THE LEAGUE</a>
+    <nav class="league-nav" aria-label="League">
+      <a href="./" data-nav="home">Home</a>
+      <a href="#matchups" data-nav="matchups">Matchups</a>
+      <a href="#recaps" data-nav="recaps">Recaps</a>
+      <a href="#standings" data-nav="standings">Standings</a>
+      <a href="team_insights.html" data-nav="my-team" id="my-team-link">My Team</a>
+    </nav>
+  </header>
+  <main id="content" class="container">
+    <div class="season-bar">
+      <label for="season-select">Season</label>
+      <select id="season-select"></select>
+      <p id="updated-line">Updated —</p>
+      <p id="stale-warning" class="stale-warning" hidden></p>
+      <a id="whatsapp-share" class="btn" href="https://wa.me/?text=">Share</a>
     </div>
 
-    <section id="hub-status" class="card" aria-live="polite">
-      <div class="card-b">
-        <div class="hub-toolbar">
-          <label for="season-select">Season</label>
-          <select id="season-select"></select>
-          <a id="my-team-link" class="btn btn-primary" href="team_insights.html">My Team</a>
-          <a id="whatsapp-share" class="btn" href="https://wa.me/?text=">Share</a>
-        </div>
-        <p id="period-line">Loading matchup period…</p>
-        <p id="updated-line">Updated at —</p>
-        <p id="stale-warning" class="stale-warning" hidden></p>
-        <p id="hub-warning"></p>
-      </div>
-    </section>
-
-    <section aria-labelledby="matchup-heading">
-      <h2 id="matchup-heading">Current matchup progress</h2>
+    <section id="matchups">
+      <h1 id="matchup-heading">This week</h1>
+      <p id="period-line">Loading the week…</p>
+      <p id="hub-warning"></p>
       <div id="matchup-cards" class="matchup-grid"></div>
     </section>
 
-    <section id="fixture-panel" class="card" hidden>
-      <div class="card-b">
-        <h2>Scheduled future games</h2>
-        <p id="fixture-count"></p>
-        <p id="fixture-note" class="footer"></p>
-      </div>
-    </section>
-
-    <!-- Hero Summary Card -->
     <section id="hero-summary" class="card hero-card">
       <div class="hero-header">
-        <h1 id="hero-title" class="hero-title">Latest completed recap <span id="hero-week">—</span></h1>
+        <h2 id="hero-title" class="hero-title">Latest completed recap</h2>
+        <p id="hero-week" class="footer"></p>
         <p id="hero-source" class="footer"></p>
         <div id="hero-stats" class="hero-stats">
           <div class="stat-item" id="stat-top-row">
-            <span class="stat-label">Team of the Week:</span>
+            <span class="stat-label">Team of the week:</span>
             <span id="stat-top-team" class="stat-value">—</span>
           </div>
           <div class="stat-item" id="stat-mvp-row">
@@ -89,46 +76,58 @@
         </div>
       </div>
       <div id="week-nav" class="week-nav">
-        <button id="prev-week" class="nav-btn" title="Previous week">⬅</button>
+        <label for="week-select">Recap</label>
+        <button id="prev-week" class="nav-btn" type="button">Previous</button>
         <select id="week-select" class="week-select"></select>
-        <button id="next-week" class="nav-btn" title="Next week">➡</button>
-        <a id="view-full-recap" href="#" class="btn btn-primary" style="margin-left: auto;">View Full Recap →</a>
+        <button id="next-week" class="nav-btn" type="button">Next</button>
+        <a id="view-full-recap" href="#" class="btn btn-primary">Open recap</a>
       </div>
     </section>
 
-    <div class="grid">
-      <div class="card">
-        <div class="card-h">
-          <h2>Recaps</h2>
-          <p>Quick hits in chat → full report here.</p>
-        </div>
-        <div class="card-b">
-          <div id="recapsList" class="recaps-list"></div>
-          <div class="footer">
-            Tip: Bookmark this page. Each week gets a new link.
-          </div>
-        </div>
-      </div>
-
+    <section id="standings">
       <div class="card" id="teams-section">
         <div class="card-h">
-          <h2 id="standings-heading">Current standings</h2>
-          <p id="standings-sub">From the latest capture. Choosing a recap does not change this table.</p>
+          <h2 id="standings-heading">Standings</h2>
+          <p id="standings-sub">Standing rank follows the league record. Power rank is separate. Choosing a recap does not change this table.</p>
         </div>
         <div class="card-b">
           <div id="teamsList" class="teams"></div>
-          <p id="teams-note" class="footer">Team list for the selected season.</p>
+          <p id="teams-note" class="footer"></p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Pre-generated safe metadata (no secrets) -->
+    <section id="recaps" class="card">
+      <div class="card-h">
+        <h2>Recaps</h2>
+        <p>Completed weeks and the current week.</p>
+      </div>
+      <div class="card-b">
+        <div id="recapsList" class="recaps-list"></div>
+      </div>
+    </section>
+
+    <details id="about-data" class="card about-data">
+      <summary>About the data</summary>
+      <div class="card-b">
+        <p>Scores are fantasy totals. Averages are fantasy points per player game. Injury status is current. Check availability in ESPN before adding a player.</p>
+        <p>Standing rank is the shared record. Power rank is separate. On a completed week, power and luck are through that week.</p>
+        <div id="about-notes"></div>
+        <div id="fixture-panel">
+          <h2>Scheduled future games</h2>
+          <p id="fixture-count"></p>
+          <p id="fixture-note" class="footer"></p>
+        </div>
+      </div>
+    </details>
+  </main>
+
   <script src="data/league_metadata.js"></script>
   <script src="data/recaps_index.js"></script>
-  <script src="assets/js/directory.js?v=20261116b"></script>
+  <script src="assets/js/shell.js?v=20261116c"></script>
+  <script src="assets/js/directory.js?v=20261116c"></script>
   <script src="assets/js/app.js"></script>
-  <script src="assets/js/hub.js?v=20261116b"></script>
+  <script src="assets/js/hub.js?v=20261116c"></script>
 </body>
 </html>
 

@@ -127,29 +127,55 @@
       team_id: home ? row.away_team_id : row.home_team_id,
       team_name: home ? row.away_team_name : row.home_team_name,
       period_id: row.period_id,
+      score: home ? row.home_score : row.away_score,
+      opponent_score: home ? row.away_score : row.home_score,
+    };
+  }
+
+  function displayValue(value) {
+    if (value === null || value === undefined || value === "") return "Unavailable";
+    return String(value);
+  }
+
+  function playerView(player, options) {
+    const row = player || {};
+    const onList = Boolean(options && options.freeAgentList);
+    const status = row.acquisition_status;
+    let acquisition = "Unavailable";
+    let acquired = "Unavailable";
+    if (status === "free_agent" || (onList && !status)) {
+      acquisition = "Free agent";
+      acquired = "Check ESPN";
+    } else if (status) {
+      acquisition = "Rostered";
+      acquired = String(status);
+    }
+    return {
+      player: displayValue(row.player_name),
+      nbaTeam: displayValue(row.pro_team),
+      slot: displayValue(row.lineup_slot),
+      injury: displayValue(row.injury_status),
+      fpPerGame: displayValue(row.avg_fantasy_points),
+      gamesPlayed: displayValue(row.games_played),
+      acquisition,
+      acquired,
     };
   }
 
   const AVERAGE_NOTE = "ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals. On the payloads checked for this client, that value equals appliedTotal divided by GP on the same split. GP is games that player has played, not team games and not fantasy matchup periods.";
 
   function playerFacts(player, options) {
-    const row = player || {};
-    const onList = Boolean(options && options.freeAgentList);
-    const injury = row.injury_status
-      ? `Injury status at capture: ${row.injury_status}. This is not a record of earlier games.`
-      : "Injury status was not provided at capture.";
-    let average = "ESPN appliedAverage was not provided.";
-    if (row.avg_fantasy_points != null && row.avg_fantasy_points !== "") {
-      const games = row.games_played == null || row.games_played === "" ? "" : ` over ${row.games_played} GP`;
-      average = `ESPN appliedAverage ${row.avg_fantasy_points}${games} on the season-total split`;
-    }
-    let acquisition = "Acquisition type was not provided at capture.";
-    if (row.acquisition_status === "free_agent" || (onList && !row.acquisition_status)) {
-      acquisition = "On the captured free-agent list. Waiver priority and availability are not inferred.";
-    } else if (row.acquisition_status) {
-      acquisition = `ESPN acquisitionType at capture: ${row.acquisition_status}. This is not waiver priority.`;
-    }
-    return { injury, average, acquisition };
+    const view = playerView(player, options);
+    const injury = view.injury === "Unavailable"
+      ? "Injury status unavailable."
+      : `${view.injury}. Injury status is current, not a record of earlier games.`;
+    const average = view.fpPerGame === "Unavailable"
+      ? "FP/G unavailable."
+      : `FP/G ${view.fpPerGame}${view.gamesPlayed === "Unavailable" ? "" : ` over ${view.gamesPlayed} GP`}. Fantasy points per player game.`;
+    let acquisition = "Acquisition unavailable.";
+    if (view.acquisition === "Free agent") acquisition = "Free agent. Check availability in ESPN.";
+    else if (view.acquisition === "Rostered") acquisition = `Rostered. Acquired: ${view.acquired}.`;
+    return { injury, average, acquisition, status: view.acquisition, acquired: view.acquired };
   }
 
   function completedLines(results, teamId) {
@@ -189,6 +215,8 @@
     opponentInMatchup,
     completedLines,
     AVERAGE_NOTE,
+    displayValue,
+    playerView,
     playerFacts,
   };
 });
