@@ -46,6 +46,8 @@
     img.alt = `${name || "Team"} logo`;
     if (typeof img.setAttribute === "function") img.setAttribute("data-team-name", name || "Team");
     img.addEventListener("error", function onError() {
+      if (img.__fallbackApplied) return;
+      img.__fallbackApplied = true;
       const fallback = fallbackElement(documentRef, name);
       if (typeof img.replaceWith === "function") img.replaceWith(fallback);
     });
@@ -128,6 +130,28 @@
     };
   }
 
+  const AVERAGE_NOTE = "ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals. On the payloads checked for this client, that value equals appliedTotal divided by GP on the same split. GP is games that player has played, not team games and not fantasy matchup periods.";
+
+  function playerFacts(player, options) {
+    const row = player || {};
+    const onList = Boolean(options && options.freeAgentList);
+    const injury = row.injury_status
+      ? `Injury status at capture: ${row.injury_status}. This is not a record of earlier games.`
+      : "Injury status was not provided at capture.";
+    let average = "ESPN appliedAverage was not provided.";
+    if (row.avg_fantasy_points != null && row.avg_fantasy_points !== "") {
+      const games = row.games_played == null || row.games_played === "" ? "" : ` over ${row.games_played} GP`;
+      average = `ESPN appliedAverage ${row.avg_fantasy_points}${games} on the season-total split`;
+    }
+    let acquisition = "Acquisition type was not provided at capture.";
+    if (row.acquisition_status === "free_agent" || (onList && !row.acquisition_status)) {
+      acquisition = "On the captured free-agent list. Waiver priority and availability are not inferred.";
+    } else if (row.acquisition_status) {
+      acquisition = `ESPN acquisitionType at capture: ${row.acquisition_status}. This is not waiver priority.`;
+    }
+    return { injury, average, acquisition };
+  }
+
   function completedLines(results, teamId) {
     const id = String(teamId);
     const lines = [];
@@ -164,5 +188,7 @@
     sectionVisibility,
     opponentInMatchup,
     completedLines,
+    AVERAGE_NOTE,
+    playerFacts,
   };
 });

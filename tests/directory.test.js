@@ -42,10 +42,31 @@ test("logo elements come from the selected season directory", () => {
 test("a failed image is replaced by an initials fallback", () => {
   const doc = fakeDocument();
   const img = directory.logoElement("https://cdn.example/missing.png", "Las Villas", doc);
+  const src = img.src;
   img.listeners.error();
+  img.listeners.error();
+  assert.equal(img.src, src);
   assert.equal(img.replacedWith.tag, "span");
   assert.equal(img.replacedWith.textContent, "LV");
   assert.equal(img.replacedWith.attrs.role, "img");
+});
+
+test("player facts keep the capture labels and the checked average denominator", () => {
+  const injured = directory.playerFacts({
+    injury_status: "OUT",
+    avg_fantasy_points: 18,
+    games_played: 2,
+    acquisition_status: "DRAFT",
+  });
+  assert.match(injured.injury, /at capture: OUT/);
+  assert.match(injured.injury, /not a record of earlier games/);
+  assert.match(injured.average, /appliedAverage 18 over 2 GP/);
+  assert.match(injured.acquisition, /acquisitionType at capture: DRAFT/);
+  assert.match(injured.acquisition, /not waiver priority/);
+  const listed = directory.playerFacts({ avg_fantasy_points: 13, injury_status: "OUT" }, { freeAgentList: true });
+  assert.match(listed.acquisition, /captured free-agent list/);
+  assert.match(listed.acquisition, /not inferred/);
+  assert.match(directory.AVERAGE_NOTE, /appliedTotal divided by GP/);
 });
 
 test("only https and local image URLs are accepted", () => {

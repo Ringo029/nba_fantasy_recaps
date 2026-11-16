@@ -288,7 +288,7 @@
   </div>
 </div>
 
-<script src="assets/js/directory.js?v=20261116a"></script>
+<script src="assets/js/directory.js?v=20261116b"></script>
 <script>
   const selectEl = document.getElementById("team-select");
   const metaLabelEl = document.getElementById("meta-label");
@@ -577,7 +577,7 @@
     return el;
   }
 
-  function renderPlayerList(parent, players, basisNote) {
+  function renderPlayerList(parent, players, basisNote, options) {
     if (basisNote) paragraph(parent, basisNote, "muted");
     if (!players.length) {
       paragraph(parent, "No players were in this capture.", "muted");
@@ -586,12 +586,10 @@
     const list = document.createElement("ul");
     list.className = "list";
     players.forEach((player) => {
+      const facts = FantasyDirectory.playerFacts(player, options);
       const item = document.createElement("li");
-      const injury = player.injury_status ? `Injury: ${player.injury_status}` : "Injury: not provided";
-      const average = player.avg_fantasy_points == null ? "average unavailable" : `${player.avg_fantasy_points} season avg`;
-      const acquisition = player.acquisition_status || "acquisition not provided";
-      const slot = player.lineup_slot ? `Slot: ${player.lineup_slot}` : "Slot: not provided";
-      item.textContent = `${player.player_name || "Player"} (${player.pro_team || "pro team unavailable"}) — ${slot}; ${injury}; ${average}; ${acquisition}`;
+      const slot = player.lineup_slot ? `Current slot: ${player.lineup_slot}` : "Current slot was not provided.";
+      item.textContent = `${player.player_name || "Player"} (${player.pro_team || "pro team unavailable"}) — ${slot} ${facts.injury} ${facts.average}. ${facts.acquisition}`;
       list.appendChild(item);
     });
     parent.appendChild(list);
@@ -632,7 +630,12 @@
       watchlist: watchPlayers.length > 0,
       history: history.length > 0,
     }));
-    metaLabelEl.textContent = context.insights.period_id ? `Current matchup ${context.insights.period_id}` : "Matchup unavailable";
+    const scope = [];
+    if (context.hub && context.hub.snapshot_id) scope.push(`Hub snapshot ${context.hub.snapshot_id}`);
+    if (context.hub && context.hub.season_id) scope.push(`season ${context.hub.season_id}`);
+    if (context.hub && context.hub.matchup_period_id) scope.push(`matchup ${context.hub.matchup_period_id}`);
+    if (context.hub && context.hub.source_updated_at) scope.push(`source ${context.hub.source_updated_at}`);
+    metaLabelEl.textContent = scope.length ? scope.join(" · ") : "Hub snapshot unavailable";
     summaryEl.textContent = "";
     const head = document.createElement("div");
     head.className = "summary-head";
@@ -659,9 +662,12 @@
     if (rosterHeading) rosterHeading.textContent = "Current roster";
     rosterEl.textContent = "";
     if (context.roster && context.roster.historical_reconstruction === false) {
-      const captured = context.roster.observed_at ? `Captured ${context.roster.observed_at}.` : "Capture time unavailable.";
-      paragraph(rosterEl, `${context.roster.label || "Current roster."} ${captured}`);
-      renderPlayerList(rosterEl, rosterPlayers, context.roster.avg_basis_note || "");
+      const captured = context.roster.observed_at ? context.roster.observed_at : "unavailable";
+      const rosterSeason = context.roster.season_id || "unavailable";
+      const rosterPeriod = context.roster.matchup_period_id == null ? "unavailable" : context.roster.matchup_period_id;
+      paragraph(rosterEl, `${context.roster.label || "Current roster."} observed_at ${captured}. Season ${rosterSeason}. Matchup period ${rosterPeriod}.`);
+      if (context.roster.injury_note) paragraph(rosterEl, context.roster.injury_note, "muted");
+      renderPlayerList(rosterEl, rosterPlayers, context.roster.avg_basis_note || FantasyDirectory.AVERAGE_NOTE);
     }
     opponentTitleEl.textContent = opponent ? `Completed results — ${opponent.team_name}` : "Completed results";
     renderResultLines(opponentEl, opponentHistory);
@@ -682,18 +688,18 @@
     const watchRoot = document.getElementById("watchlist-content");
     const watchNote = document.getElementById("watchlist-note");
     if (watchNote) {
-      const observed = context.watchlist && context.watchlist.observed_at ? ` Observed ${context.watchlist.observed_at}.` : "";
-      watchNote.textContent = `${(context.watchlist && context.watchlist.label) || "Current free-agent list."}${observed} ${(context.watchlist && context.watchlist.acquisition_note) || "Players on this list are current free agents. Waiver priority is not inferred."}`;
+      const observed = context.watchlist && context.watchlist.observed_at ? `observed_at ${context.watchlist.observed_at}.` : "observed_at unavailable.";
+      const seasonScope = context.hub && context.hub.season_id ? ` Season ${context.hub.season_id}.` : "";
+      const snapshotScope = context.hub && context.hub.snapshot_id ? ` Hub snapshot ${context.hub.snapshot_id}.` : "";
+      watchNote.textContent = `${(context.watchlist && context.watchlist.label) || "Current free-agent list."} ${observed}${seasonScope}${snapshotScope} ${(context.watchlist && context.watchlist.injury_note) || "Injury status is the status at capture, not a record of earlier games."} ${(context.watchlist && context.watchlist.acquisition_note) || "Players on this list were on the captured free-agent list. Waiver priority and availability are not inferred."}`;
     }
     if (watchRoot) {
       watchRoot.textContent = "";
       renderPlayerList(
         watchRoot,
-        watchPlayers.slice(0, 15).map((player) => ({
-          ...player,
-          acquisition_status: player.acquisition_status || "free_agent",
-        })),
-        (context.watchlist && context.watchlist.avg_basis_note) || "Average is the ESPN season-total applied average at the watchlist capture. It is not this matchup's points."
+        watchPlayers.slice(0, 15),
+        (context.watchlist && context.watchlist.avg_basis_note) || FantasyDirectory.AVERAGE_NOTE,
+        { freeAgentList: true }
       );
     }
   }
@@ -747,6 +753,7 @@
       directory: { teams },
       insights: insights || { teams: [] },
       standings: standings || { standings: [] },
+      hub: hub && hub.season_id === season ? hub : null,
       roster: safeRoster,
       watchlist: watchlist && watchlist.players ? watchlist : null,
       progress: progress && Array.isArray(progress.matchups) ? progress.matchups : [],
