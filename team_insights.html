@@ -4,227 +4,11 @@
   <meta charset="UTF-8" />
   <title>My Team</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261116c" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261116d" />
+  <link rel="stylesheet" href="assets/css/team.css?v=20261116d" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>" />
-  <style>
-    [hidden] { display: none !important; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #050816;
-      color: #f9fafb;
-      margin: 0;
-      padding: 0 0 24px;
-    }
-    h1 {
-      margin-bottom: 8px;
-    }
-    .page {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 16px;
-    }
-    .toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      margin-bottom: 24px;
-    }
-    select {
-      padding: 8px 10px;
-      border-radius: 8px;
-      border: 1px solid #4b5563;
-      background: #0b1220;
-      color: #f9fafb;
-      cursor: pointer;
-    }
-    
-    /* Tabs */
-    .tabs {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 16px;
-      border-bottom: 1px solid #1f2937;
-    }
-    .tab {
-      padding: 10px 16px;
-      background: transparent;
-      border: none;
-      border-bottom: 2px solid transparent;
-      color: #9ca3af;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: all 0.2s;
-    }
-    .tab:hover {
-      color: #f9fafb;
-    }
-    .tab.active {
-      color: #facc15;
-      border-bottom-color: #facc15;
-    }
-    .tab-content {
-      display: none;
-    }
-    .tab-content.active {
-      display: block;
-    }
-    
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      background: #020617;
-      border-radius: 12px;
-      padding: 16px;
-      border: 1px solid #1f2937;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6);
-    }
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-    }
-    .badge {
-      display: inline-block;
-      font-size: 0.8rem;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: #111827;
-      border: 1px solid #4b5563;
-      margin-right: 4px;
-      margin-bottom: 4px;
-    }
-    .badge--good {
-      border-color: #22c55e;
-      color: #bbf7d0;
-    }
-    .badge--bad {
-      border-color: #ef4444;
-      color: #fecaca;
-    }
-    .list {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .list li {
-      margin-bottom: 4px;
-    }
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .muted {
-      color: #9ca3af;
-      font-size: 0.9rem;
-    }
-    .highlight {
-      color: #facc15;
-      font-weight: 600;
-    }
-
-    .team-meta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-    .team-logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 999px;
-      overflow: hidden;
-      background: #020617;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      border: 1px solid #1f2937;
-      flex-shrink: 0;
-    }
-    .team-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .logo-fallback {
-      width: 44px;
-      height: 44px;
-      border-radius: 999px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #020617;
-      border: 1px solid #1f2937;
-      font-size: 0.85rem;
-      font-weight: 700;
-      flex: 0 0 auto;
-    }
-    .summary-head {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 8px;
-    }
-    .summary-head img,
-    .summary-head .logo-fallback {
-      width: 44px;
-      height: 44px;
-      border-radius: 999px;
-      object-fit: cover;
-      border: 1px solid #1f2937;
-      background: #020617;
-      flex: 0 0 auto;
-    }
-    .team-meta-name {
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    .team-meta-owner {
-      font-size: 0.85rem;
-      color: #9ca3af;
-    }
-
-    /* Roster Table */
-    .roster-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
-    }
-    .roster-table th {
-      text-align: left;
-      padding: 8px 12px;
-      border-bottom: 1px solid #1f2937;
-      color: #9ca3af;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-    .roster-table td {
-      padding: 10px 12px;
-      border-bottom: 1px solid #1f2937;
-    }
-    .roster-table tr:hover {
-      background: rgba(255, 255, 255, 0.02);
-    }
-    .roster-table tr:last-child td {
-      border-bottom: 2px solid #1f2937;
-      font-weight: 600;
-      color: #facc15;
-    }
-    .roster-table .text-right {
-      text-align: right;
-    }
-    .roster-table .text-center {
-      text-align: center;
-    }
-  </style>
 </head>
-<body>
+<body class="team-page">
 <a class="skip-link" href="#content">Skip to content</a>
 <header class="league-header">
   <a class="league-brand" href="./" aria-label="THE LEAGUE — Home">THE LEAGUE</a>
@@ -236,7 +20,7 @@
     <a href="team_insights.html" data-nav="my-team" aria-current="page">My Team</a>
   </nav>
 </header>
-<main id="content" class="page">
+<main id="content" class="container">
   <h1 id="page-title">My Team</h1>
   <p class="muted">The team saved in this browser. Rosters change in ESPN.</p>
 
@@ -256,7 +40,7 @@
 
   <!-- Overview Tab -->
   <div id="overview-tab" class="tab-content active">
-    <div class="grid">
+    <div class="team-board">
       <div class="card" id="summary-card">
         <h2>Summary</h2>
         <div id="summary-content"></div>
@@ -272,15 +56,15 @@
         <div id="roster-content"></div>
       </div>
 
-      <div class="card" id="opponent-card">
-        <h2 id="opponent-title">Opponent Scout</h2>
-        <div id="opponent-content"></div>
-        <button id="view-opponent-btn" class="btn" style="margin-top: 8px; display: none;">View opponent team card</button>
-      </div>
-
       <div class="card" id="history-card" hidden>
         <h2>Scoring history</h2>
         <div id="history-content"></div>
+      </div>
+
+      <div class="card" id="opponent-card">
+        <h2 id="opponent-title">Opponent Scout</h2>
+        <div id="opponent-content"></div>
+        <button id="view-opponent-btn" class="btn" style="margin-top: 8px;">View opponent team card</button>
       </div>
 
       <div class="card" id="watchlist-card" hidden>
