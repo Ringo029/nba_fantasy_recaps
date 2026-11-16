@@ -1,6 +1,6 @@
-# Recap: 2026-27 matchup 4
+# Week 4 · Nov 9–15
 
-Status: final.
+Final
 Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 
 ## Awards
@@ -60,8 +60,6 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 
 ## Power rankings
 
-power_score = 0.625 * normalized season points-for/points-against + 0.375 * normalized matchup-period points. Strength of schedule is not a component.
-
 - 1. DX✌🏾two words SUC-K IT!! (Unchanged)
 - 2. El Mostroso (Unchanged)
 - 3. El TumbaCuello 🏆🏆 (Up 6)
@@ -82,3 +80,7 @@ power_score = 0.625 * normalized season points-for/points-against + 0.375 * norm
 - Coach grades and lineup analysis are omitted. Historical slot positions were not reliable, so today's roster was not substituted.
 - Transactions and waiver analysis are omitted. The activity feed is not limited to this matchup's dates, so later moves were not used.
 - Totals use matchup 4 and earlier finalized matchups only.
+
+## About the data
+
+power_score = 0.625 * normalized season points-for/points-against + 0.375 * normalized matchup-period points. Strength of schedule is not a component.

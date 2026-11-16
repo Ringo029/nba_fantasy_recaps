@@ -15,7 +15,7 @@
       "power_line": "Power rank 14. Unchanged.",
       "all_play_line": "All-play through matchup 4: 4-48-0.",
       "luck_line": "Pythagorean luck through matchup 4: -1.47 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 4,
@@ -29,7 +29,7 @@
       "power_line": "Power rank 5. Unchanged.",
       "all_play_line": "All-play through matchup 4: 29-21-2.",
       "luck_line": "Pythagorean luck through matchup 4: +0.98 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 5,
@@ -43,7 +43,7 @@
       "power_line": "Power rank 13. Down 3.",
       "all_play_line": "All-play through matchup 4: 23-29-0.",
       "luck_line": "Pythagorean luck through matchup 4: +0.04 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 6,
@@ -57,7 +57,7 @@
       "power_line": "Power rank 4. Down 1.",
       "all_play_line": "All-play through matchup 4: 30-22-0.",
       "luck_line": "Pythagorean luck through matchup 4: +0.81 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 9,
@@ -71,7 +71,7 @@
       "power_line": "Power rank 8. Down 4.",
       "all_play_line": "All-play through matchup 4: 36-16-0.",
       "luck_line": "Pythagorean luck through matchup 4: -0.04 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 16,
@@ -85,7 +85,7 @@
       "power_line": "Power rank 3. Up 6.",
       "all_play_line": "All-play through matchup 4: 31-21-0.",
       "luck_line": "Pythagorean luck through matchup 4: -0.01 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 17,
@@ -99,7 +99,7 @@
       "power_line": "Power rank 2. Unchanged.",
       "all_play_line": "All-play through matchup 4: 40-12-0.",
       "luck_line": "Pythagorean luck through matchup 4: +1.59 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 18,
@@ -113,7 +113,7 @@
       "power_line": "Power rank 11. Down 5.",
       "all_play_line": "All-play through matchup 4: 31-20-1.",
       "luck_line": "Pythagorean luck through matchup 4: +0.12 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 20,
@@ -127,7 +127,7 @@
       "power_line": "Power rank 6. Up 1.",
       "all_play_line": "All-play through matchup 4: 19-33-0.",
       "luck_line": "Pythagorean luck through matchup 4: +0.00 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 22,
@@ -141,7 +141,7 @@
       "power_line": "Power rank 1. Unchanged.",
       "all_play_line": "All-play through matchup 4: 40-11-1.",
       "luck_line": "Pythagorean luck through matchup 4: +1.54 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 23,
@@ -155,7 +155,7 @@
       "power_line": "Power rank 9. Up 4.",
       "all_play_line": "All-play through matchup 4: 23-29-0.",
       "luck_line": "Pythagorean luck through matchup 4: -0.86 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 24,
@@ -169,7 +169,7 @@
       "power_line": "Power rank 10. Down 2.",
       "all_play_line": "All-play through matchup 4: 19-32-1.",
       "luck_line": "Pythagorean luck through matchup 4: -0.96 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 25,
@@ -183,7 +183,7 @@
       "power_line": "Power rank 12. Down 1.",
       "all_play_line": "All-play through matchup 4: 17-35-0.",
       "luck_line": "Pythagorean luck through matchup 4: -0.90 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     },
     {
       "team_id": 26,
@@ -197,7 +197,7 @@
       "power_line": "Power rank 7. Up 5.",
       "all_play_line": "All-play through matchup 4: 19-32-1.",
       "luck_line": "Pythagorean luck through matchup 4: -0.83 wins. This is not an all-play record.",
-      "lineup_line": "Lineup recommendations are omitted. Box-score slots did not separate starters from bench, and today's roster was not used."
+      "lineup_line": "Lineup recommendations are not shown for this week."
     }
   ]
 }
