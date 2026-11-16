@@ -13,7 +13,8 @@ test("season trends stay hidden until the export has lines", () => {
   assert.match(page, /streak_line/);
   assert.match(page, /upcoming_line/);
   assert.match(page, /trendsCard\.hidden = trendLines\.length === 0/);
-  assert.match(page, /Upcoming opponent strength is the average power rank/);
+  assert.match(page, /Average opponent power rank is the mean power rank/);
+  assert.match(page, /Lower means stronger/);
   assert.match(page, /A missing matchup or a tie ends it/);
   assert.doesNotMatch(page, /unlucky/);
 });
