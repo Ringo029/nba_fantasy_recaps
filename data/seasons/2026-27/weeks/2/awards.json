@@ -175,8 +175,6 @@
       }
     ],
     "limitations": [
-      "Coach grades and lineup analysis are omitted. Historical slot positions were not reliable, so today's roster was not substituted.",
-      "Transactions and waiver analysis are omitted. The activity feed is not limited to this matchup's dates, so later moves were not used.",
       "Totals use matchup 2 and earlier finalized matchups only."
     ]
   }

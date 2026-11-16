@@ -77,8 +77,6 @@ Dates: 2026-11-02 to 2026-11-08 (America/New_York).
 
 ## Limits
 
-- Coach grades and lineup analysis are omitted. Historical slot positions were not reliable, so today's roster was not substituted.
-- Transactions and waiver analysis are omitted. The activity feed is not limited to this matchup's dates, so later moves were not used.
 - Totals use matchup 3 and earlier finalized matchups only.
 
 ## About the data
