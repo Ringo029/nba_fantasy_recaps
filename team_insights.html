@@ -150,6 +150,35 @@
       object-fit: cover;
       display: block;
     }
+    .logo-fallback {
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #020617;
+      border: 1px solid #1f2937;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+    .summary-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .summary-head img,
+    .summary-head .logo-fallback {
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 1px solid #1f2937;
+      background: #020617;
+      flex: 0 0 auto;
+    }
     .team-meta-name {
       font-weight: 600;
       font-size: 1rem;
@@ -236,6 +265,17 @@
         <div id="opponent-content"></div>
         <button id="view-opponent-btn" class="btn" style="margin-top: 8px; display: none;">View opponent team card</button>
       </div>
+
+      <div class="card" id="history-card" hidden>
+        <h2>Scoring history</h2>
+        <div id="history-content"></div>
+      </div>
+
+      <div class="card" id="watchlist-card" hidden>
+        <h2>Watchlist</h2>
+        <p id="watchlist-note" class="muted"></p>
+        <div id="watchlist-content"></div>
+      </div>
     </div>
   </div>
 
@@ -248,6 +288,7 @@
   </div>
 </div>
 
+<script src="assets/js/directory.js?v=20261116b"></script>
 <script>
   const selectEl = document.getElementById("team-select");
   const metaLabelEl = document.getElementById("meta-label");
@@ -512,44 +553,191 @@
     renderRosterTable(ti.next_week_roster, teamName);
   }
 
-  function hideUnsupportedAdvice() {
-    document.querySelectorAll(".tabs, #categories-card, #roster-card, #opponent-card, #roster-tab").forEach((el) => {
-      el.hidden = true;
+  function applySectionVisibility(flags) {
+    const sections = {
+      categories: "#categories-card",
+      projection: ".tabs, #roster-tab",
+      roster: "#roster-card",
+      opponent: "#opponent-card",
+      history: "#history-card",
+      watchlist: "#watchlist-card",
+    };
+    Object.keys(sections).forEach((key) => {
+      document.querySelectorAll(sections[key]).forEach((el) => {
+        el.hidden = !flags[key];
+      });
     });
   }
 
-  function renderStructuredTeam(directory, insights, teamId) {
-    const team = (directory.teams || []).find((row) => String(row.team_id) === String(teamId));
-    const insight = (insights.teams || []).find((row) => String(row.team_id) === String(teamId));
+  function paragraph(parent, value, className) {
+    const el = document.createElement("p");
+    if (className) el.className = className;
+    el.textContent = value;
+    parent.appendChild(el);
+    return el;
+  }
+
+  function renderPlayerList(parent, players, basisNote, options) {
+    if (basisNote) paragraph(parent, basisNote, "muted");
+    if (!players.length) {
+      paragraph(parent, "No players were in this capture.", "muted");
+      return;
+    }
+    const list = document.createElement("ul");
+    list.className = "list";
+    players.forEach((player) => {
+      const facts = FantasyDirectory.playerFacts(player, options);
+      const item = document.createElement("li");
+      const slot = player.lineup_slot ? `Current slot: ${player.lineup_slot}` : "Current slot was not provided.";
+      item.textContent = `${player.player_name || "Player"} (${player.pro_team || "pro team unavailable"}) — ${slot} ${facts.injury} ${facts.average}. ${facts.acquisition}`;
+      list.appendChild(item);
+    });
+    parent.appendChild(list);
+  }
+
+  function renderResultLines(parent, lines) {
+    parent.textContent = "";
+    if (!lines.length) {
+      paragraph(parent, "No completed matchup has been published for this team.", "muted");
+      return;
+    }
+    const list = document.createElement("ul");
+    list.className = "list";
+    lines.forEach((line) => {
+      const item = document.createElement("li");
+      item.textContent = `Period ${line.period_id}: ${line.points}–${line.opponent_points} vs ${line.opponent_name}`;
+      list.appendChild(item);
+    });
+    parent.appendChild(list);
+  }
+
+  function renderStructuredTeam(context, teamId) {
+    const team = (context.directory.teams || []).find((row) => String(row.team_id) === String(teamId));
+    const insight = (context.insights.teams || []).find((row) => String(row.team_id) === String(teamId));
+    const standing = (context.standings.standings || []).find((row) => String(row.team_id) === String(teamId));
+    const rosterTeam = context.roster && (context.roster.teams || []).find((row) => String(row.team_id) === String(teamId));
     const name = team ? team.team_name : "Unavailable";
-    metaLabelEl.textContent = insights.period_id ? `Current matchup ${insights.period_id}` : "Matchup unavailable";
+    const history = FantasyDirectory.completedLines(context.finals, teamId);
+    const opponent = FantasyDirectory.opponentInMatchup(context.progress, teamId);
+    const opponentHistory = opponent ? FantasyDirectory.completedLines(context.finals, opponent.team_id) : [];
+    const rosterPlayers = rosterTeam && Array.isArray(rosterTeam.players) ? rosterTeam.players : [];
+    const watchPlayers = context.watchlist && Array.isArray(context.watchlist.players) ? context.watchlist.players : [];
+    applySectionVisibility(FantasyDirectory.sectionVisibility({
+      categories: false,
+      projection: false,
+      roster: Boolean(context.roster && context.roster.historical_reconstruction === false),
+      opponent: Boolean(opponent && opponentHistory.length),
+      watchlist: watchPlayers.length > 0,
+      history: history.length > 0,
+    }));
+    const scope = [];
+    if (context.hub && context.hub.snapshot_id) scope.push(`Hub snapshot ${context.hub.snapshot_id}`);
+    if (context.hub && context.hub.season_id) scope.push(`season ${context.hub.season_id}`);
+    if (context.hub && context.hub.matchup_period_id) scope.push(`matchup ${context.hub.matchup_period_id}`);
+    if (context.hub && context.hub.source_updated_at) scope.push(`source ${context.hub.source_updated_at}`);
+    metaLabelEl.textContent = scope.length ? scope.join(" · ") : "Hub snapshot unavailable";
     summaryEl.textContent = "";
-    const lines = [name];
+    const head = document.createElement("div");
+    head.className = "summary-head";
+    head.appendChild(FantasyDirectory.logoElement(team && team.logo_url, name));
+    const title = document.createElement("strong");
+    title.textContent = name;
+    head.appendChild(title);
+    summaryEl.appendChild(head);
+    if (standing) {
+      const movement = FantasyDirectory.movementText(standing.power_movement);
+      paragraph(summaryEl, `Power rank ${standing.power_rank == null ? "unavailable" : standing.power_rank}${movement ? `. ${movement}` : ""}`);
+      const movementEl = document.createElement("p");
+      movementEl.className = FantasyDirectory.movementClass(standing.power_movement);
+      movementEl.textContent = movement || "Power movement unavailable";
+      summaryEl.appendChild(movementEl);
+    }
     if (insight) {
       ["result_line", "power_line", "all_play_line", "luck_line", "lineup_line"].forEach((key) => {
-        if (insight[key]) lines.push(insight[key]);
+        if (insight[key]) paragraph(summaryEl, insight[key]);
       });
-      if (!insight.lineup_line && insight.roster_reason) lines.push(insight.roster_reason);
+      if (!insight.lineup_line && insight.roster_reason) paragraph(summaryEl, insight.roster_reason);
     }
-    lines.forEach((line) => {
-      const paragraph = document.createElement("p");
-      paragraph.textContent = line;
-      summaryEl.appendChild(paragraph);
-    });
+    const rosterHeading = document.querySelector("#roster-card h2");
+    if (rosterHeading) rosterHeading.textContent = "Current roster";
+    rosterEl.textContent = "";
+    if (context.roster && context.roster.historical_reconstruction === false) {
+      const captured = context.roster.observed_at ? context.roster.observed_at : "unavailable";
+      const rosterSeason = context.roster.season_id || "unavailable";
+      const rosterPeriod = context.roster.matchup_period_id == null ? "unavailable" : context.roster.matchup_period_id;
+      paragraph(rosterEl, `${context.roster.label || "Current roster."} observed_at ${captured}. Season ${rosterSeason}. Matchup period ${rosterPeriod}.`);
+      if (context.roster.injury_note) paragraph(rosterEl, context.roster.injury_note, "muted");
+      renderPlayerList(rosterEl, rosterPlayers, context.roster.avg_basis_note || FantasyDirectory.AVERAGE_NOTE);
+    }
+    opponentTitleEl.textContent = opponent ? `Completed results — ${opponent.team_name}` : "Completed results";
+    renderResultLines(opponentEl, opponentHistory);
+    if (viewOpponentBtn) {
+      if (opponent) {
+        viewOpponentBtn.style.display = "inline-block";
+        viewOpponentBtn.onclick = () => {
+          selectEl.value = String(opponent.team_id);
+          selectEl.dispatchEvent(new Event("change"));
+        };
+      } else {
+        viewOpponentBtn.style.display = "none";
+        viewOpponentBtn.onclick = null;
+      }
+    }
+    const historyRoot = document.getElementById("history-content");
+    if (historyRoot) renderResultLines(historyRoot, history);
+    const watchRoot = document.getElementById("watchlist-content");
+    const watchNote = document.getElementById("watchlist-note");
+    if (watchNote) {
+      const observed = context.watchlist && context.watchlist.observed_at ? `observed_at ${context.watchlist.observed_at}.` : "observed_at unavailable.";
+      const seasonScope = context.hub && context.hub.season_id ? ` Season ${context.hub.season_id}.` : "";
+      const snapshotScope = context.hub && context.hub.snapshot_id ? ` Hub snapshot ${context.hub.snapshot_id}.` : "";
+      watchNote.textContent = `${(context.watchlist && context.watchlist.label) || "Current free-agent list."} ${observed}${seasonScope}${snapshotScope} ${(context.watchlist && context.watchlist.injury_note) || "Injury status is the status at capture, not a record of earlier games."} ${(context.watchlist && context.watchlist.acquisition_note) || "Players on this list were on the captured free-agent list. Waiver priority and availability are not inferred."}`;
+    }
+    if (watchRoot) {
+      watchRoot.textContent = "";
+      renderPlayerList(
+        watchRoot,
+        watchPlayers.slice(0, 15),
+        (context.watchlist && context.watchlist.avg_basis_note) || FantasyDirectory.AVERAGE_NOTE,
+        { freeAgentList: true }
+      );
+    }
+  }
+
+  async function optionalJson(url) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return null;
+      return await response.json();
+    } catch (err) {
+      return null;
+    }
   }
 
   async function showStructuredSeason(season) {
-    hideUnsupportedAdvice();
-    const [directory, hub] = await Promise.all([
-      fetch(`data/seasons/${encodeURIComponent(season)}/teams.json`).then((res) => res.ok ? res.json() : { teams: [] }),
-      fetch("data/hub/current.json").then((res) => res.ok ? res.json() : null)
+    const sources = FantasyDirectory.dataSources(season);
+    if (!sources.teams) return;
+    const [directory, hub, standings, roster, watchlist] = await Promise.all([
+      optionalJson(sources.teams),
+      optionalJson("data/hub/current.json"),
+      optionalJson(sources.standings),
+      optionalJson("data/hub/current_roster.json"),
+      optionalJson("data/hub/current_watchlist.json"),
     ]);
+    const teams = directory && Array.isArray(directory.teams) ? directory.teams : [];
     const period = hub && hub.season_id === season ? hub.matchup_period_id : null;
-    const insights = period
-      ? await fetch(`data/seasons/${encodeURIComponent(season)}/weeks/${period}/team_insights.json`).then((res) => res.ok ? res.json() : { teams: [] })
-      : { teams: [] };
+    const [insights, progress] = await Promise.all([
+      period ? optionalJson(`data/seasons/${encodeURIComponent(season)}/weeks/${period}/team_insights.json`) : Promise.resolve({ teams: [] }),
+      period ? optionalJson(`data/seasons/${encodeURIComponent(season)}/weeks/${period}/matchup_progress.json`) : Promise.resolve({ matchups: [] }),
+    ]);
+    const finals = [];
+    for (let id = 1; period && id < Number(period); id += 1) {
+      const doc = await optionalJson(`data/seasons/${encodeURIComponent(season)}/weeks/${id}/weekly_results.json`);
+      if (doc && doc.season_id === season && doc.status === "final") finals.push(doc);
+    }
+    const safeRoster = roster && roster.season_id === season && roster.historical_reconstruction === false ? roster : null;
     selectEl.textContent = "";
-    (directory.teams || []).forEach((team) => {
+    teams.forEach((team) => {
       const option = document.createElement("option");
       option.value = String(team.team_id);
       option.textContent = team.team_name;
@@ -559,12 +747,29 @@
       summaryEl.textContent = "Team insights are unavailable for this season.";
       return;
     }
-    if (urlTeamId && [...selectEl.options].some((option) => option.value === urlTeamId)) {
-      selectEl.value = urlTeamId;
-    }
-    const draw = () => renderStructuredTeam(directory, insights, selectEl.value);
-    selectEl.addEventListener("change", draw);
-    draw();
+    let savedId = "";
+    try { savedId = localStorage.getItem(LS_MY_TEAM_ID) || ""; } catch (err) { savedId = ""; }
+    const context = {
+      directory: { teams },
+      insights: insights || { teams: [] },
+      standings: standings || { standings: [] },
+      hub: hub && hub.season_id === season ? hub : null,
+      roster: safeRoster,
+      watchlist: watchlist && watchlist.players ? watchlist : null,
+      progress: progress && Array.isArray(progress.matchups) ? progress.matchups : [],
+      finals,
+    };
+    const draw = () => renderStructuredTeam(context, selectEl.value);
+    selectEl.addEventListener("change", () => {
+      const selected = teams.find((team) => String(team.team_id) === selectEl.value);
+      setMyTeam(selected ? selected.team_name : "", selectEl.value);
+      const next = new URL(window.location.href);
+      next.searchParams.set("season", season);
+      window.history.replaceState({}, "", next);
+      draw();
+    });
+    selectEl.value = FantasyDirectory.chosenTeamId(urlTeamId, savedId, teams.map((team) => team.team_id));
+    selectEl.dispatchEvent(new Event("change"));
   }
 
   if (urlSeason === "2026-27") {

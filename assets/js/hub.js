@@ -92,7 +92,18 @@
     staleWarning.textContent = messages.join(" ");
   }
 
-  function renderMatchups(progress) {
+  function matchupSide(directory, teamId, name, score) {
+    const side = document.createElement("div");
+    side.className = "matchup-side";
+    const profile = FantasyDirectory.profileFor(directory, teamId);
+    side.appendChild(FantasyDirectory.logoElement(profile.logo_url, name || "Team"));
+    const label = document.createElement("span");
+    label.textContent = `${name || "Team"} ${displayMetric(score)}`;
+    side.appendChild(label);
+    return side;
+  }
+
+  function renderMatchups(progress, directory) {
     clear(cards);
     const rows = progress && Array.isArray(progress.matchups) ? progress.matchups : [];
     if (!rows.length) {
@@ -103,9 +114,11 @@
       const card = document.createElement("article");
       card.className = "card matchup-card";
       const title = document.createElement("h3");
-      title.textContent = `${text(row.home_team_name)} vs ${text(row.away_team_name)}`;
+      title.append(
+        matchupSide(directory, row.home_team_id, row.home_team_name, row.home_score),
+        matchupSide(directory, row.away_team_id, row.away_team_name, row.away_score)
+      );
       card.appendChild(title);
-      paragraph(card, "", `${displayMetric(row.home_score)} – ${displayMetric(row.away_score)}`);
       const remainingMissing = row.home_games_remaining == null && row.away_games_remaining == null;
       paragraph(
         card,
@@ -142,11 +155,12 @@
     fixtureNote.textContent = "Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed. This is ESPN's fantasy scoring schedule, and completeness against the NBA official schedule is not verified.";
   }
 
-  function renderLiveStandings(doc, seasonId) {
+  function renderLiveStandings(doc, seasonId, directory) {
     const root = document.getElementById("teamsList");
     const teamsSection = document.getElementById("teams-section");
     const teamsJump = document.getElementById("teams-jump");
     if (!root || !doc || !Array.isArray(doc.standings)) return;
+    if (directory && directory.seasonId && directory.seasonId !== seasonId) return;
     if (teamsSection) teamsSection.hidden = false;
     if (teamsJump) teamsJump.hidden = false;
     clear(root);
@@ -156,6 +170,8 @@
       const link = document.createElement("a");
       link.className = "team-link";
       link.href = `team_insights.html?season=${encodeURIComponent(seasonId)}&team_id=${encodeURIComponent(row.team_id)}`;
+      const profile = FantasyDirectory.profileFor(directory, row.team_id);
+      link.appendChild(FantasyDirectory.logoElement(profile.logo_url, row.team_name || "Team"));
       const info = document.createElement("div");
       const name = document.createElement("div");
       name.className = "tname";
@@ -164,6 +180,13 @@
       meta.className = "team-meta";
       meta.textContent = `#${displayMetric(row.rank)} ${displayMetric(row.wins)}-${displayMetric(row.losses)}-${displayMetric(row.ties)}. Power rank: ${displayMetric(row.power_rank)}.`;
       info.append(name, meta);
+      const movement = FantasyDirectory.movementText(row.power_movement);
+      if (movement) {
+        const movementEl = document.createElement("div");
+        movementEl.className = FantasyDirectory.movementClass(row.power_movement);
+        movementEl.textContent = movement;
+        info.appendChild(movementEl);
+      }
       link.appendChild(info);
       div.appendChild(link);
       root.appendChild(div);
@@ -335,7 +358,12 @@
     else renderCompletedRecap(null, seasonId);
   }
 
+  let seasonRequest = 0;
+
   async function selectSeason(season, hub) {
+    const requestId = ++seasonRequest;
+    const teamsRoot = document.getElementById("teamsList");
+    if (teamsRoot) clear(teamsRoot);
     const liveSeason = hub && hub.season_id;
     const live = season.season_id === liveSeason && hub.status !== "unavailable" && hub.matchup_period_id;
     if (statusLine) {
@@ -382,24 +410,41 @@
           : "A team directory for this season has not been published. The 2025–26 list is hidden so it is not read as this season's standings.";
       }
     }
+    let directory = FantasyDirectory.indexByTeamId([], season.season_id);
     try {
       if (live) {
-        const progress = await loadJson(`data/seasons/${season.season_id}/weeks/${hub.matchup_period_id}/matchup_progress.json`);
-        renderMatchups(progress);
+        const sources = FantasyDirectory.dataSources(season.season_id);
+        const [progress, teamsDoc] = await Promise.all([
+          loadJson(`data/seasons/${season.season_id}/weeks/${hub.matchup_period_id}/matchup_progress.json`),
+          sources.teams ? loadJson(sources.teams) : Promise.resolve({ teams: [] }),
+        ]);
+        const accepted = FantasyDirectory.acceptDirectory(
+          requestId,
+          seasonRequest,
+          FantasyDirectory.indexByTeamId(teamsDoc.teams || [], season.season_id)
+        );
+        if (!accepted) return;
+        directory = accepted;
+        renderMatchups(progress, directory);
       } else {
-        renderMatchups(null);
+        renderMatchups(null, directory);
       }
     } catch (err) {
-      renderMatchups(null);
+      if (requestId !== seasonRequest) return;
+      renderMatchups(null, directory);
     }
+    if (requestId !== seasonRequest) return;
     if (live) {
       try {
         renderFixtures(await loadJson(`data/seasons/${season.season_id}/weeks/${hub.matchup_period_id}/fixtures.json`));
       } catch (err) {
         renderFixtures(null);
       }
+      if (requestId !== seasonRequest) return;
       try {
-        renderLiveStandings(await loadJson(`data/seasons/${season.season_id}/standings.json`), season.season_id);
+        const standingsDoc = await loadJson(FantasyDirectory.dataSources(season.season_id).standings);
+        if (requestId !== seasonRequest) return;
+        renderLiveStandings(standingsDoc, season.season_id, directory);
       } catch (err) {
         if (teamsNote) teamsNote.textContent = "Standings are unavailable for this capture.";
       }
