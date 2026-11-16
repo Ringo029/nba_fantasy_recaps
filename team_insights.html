@@ -522,17 +522,20 @@
     const team = (directory.teams || []).find((row) => String(row.team_id) === String(teamId));
     const insight = (insights.teams || []).find((row) => String(row.team_id) === String(teamId));
     const name = team ? team.team_name : "Unavailable";
-    metaLabelEl.textContent = insights.period_id ? `Matchup ${insights.period_id}` : "Matchup unavailable";
+    metaLabelEl.textContent = insights.period_id ? `Current matchup ${insights.period_id}` : "Matchup unavailable";
     summaryEl.textContent = "";
-    const title = document.createElement("p");
-    title.textContent = name;
-    const lineup = document.createElement("p");
-    lineup.textContent = "Lineup recommendations: Unavailable";
-    const roster = document.createElement("p");
-    roster.textContent = insight && insight.roster_reason
-      ? insight.roster_reason
-      : "Roster details and win probability are unavailable for this publication.";
-    summaryEl.append(title, lineup, roster);
+    const lines = [name];
+    if (insight) {
+      ["result_line", "power_line", "all_play_line", "luck_line", "lineup_line"].forEach((key) => {
+        if (insight[key]) lines.push(insight[key]);
+      });
+      if (!insight.lineup_line && insight.roster_reason) lines.push(insight.roster_reason);
+    }
+    lines.forEach((line) => {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = line;
+      summaryEl.appendChild(paragraph);
+    });
   }
 
   async function showStructuredSeason(season) {

@@ -52,7 +52,7 @@
     </section>
 
     <section aria-labelledby="matchup-heading">
-      <h2 id="matchup-heading">Matchup progress</h2>
+      <h2 id="matchup-heading">Current matchup progress</h2>
       <div id="matchup-cards" class="matchup-grid"></div>
     </section>
 
@@ -67,22 +67,23 @@
     <!-- Hero Summary Card -->
     <section id="hero-summary" class="card hero-card">
       <div class="hero-header">
-        <h1 id="hero-title" class="hero-title">🏀 Fantasy Week <span id="hero-week">—</span> Overview</h1>
+        <h1 id="hero-title" class="hero-title">Latest completed recap <span id="hero-week">—</span></h1>
+        <p id="hero-source" class="footer"></p>
         <div id="hero-stats" class="hero-stats">
-          <div class="stat-item">
+          <div class="stat-item" id="stat-top-row">
             <span class="stat-label">Team of the Week:</span>
             <span id="stat-top-team" class="stat-value">—</span>
           </div>
-          <div class="stat-item">
+          <div class="stat-item" id="stat-mvp-row">
             <span class="stat-label">MVP:</span>
             <span id="stat-mvp" class="stat-value">—</span>
           </div>
-          <div class="stat-item">
-            <span class="stat-label">Beatdown:</span>
+          <div class="stat-item" id="stat-beat-row">
+            <span class="stat-label">Biggest win:</span>
             <span id="stat-beatdown" class="stat-value">—</span>
           </div>
-          <div class="stat-item">
-            <span class="stat-label">Closest:</span>
+          <div class="stat-item" id="stat-close-row">
+            <span class="stat-label">Closest matchup:</span>
             <span id="stat-closest" class="stat-value">—</span>
           </div>
         </div>
@@ -111,8 +112,8 @@
 
       <div class="card" id="teams-section">
         <div class="card-h">
-          <h2>League Teams</h2>
-          <p>Sorted by standings • Shows power ranking movement</p>
+          <h2 id="standings-heading">Current standings</h2>
+          <p id="standings-sub">From the latest capture. Choosing a recap does not change this table.</p>
         </div>
         <div class="card-b">
           <div id="teamsList" class="teams"></div>
@@ -126,7 +127,7 @@
   <script src="data/league_metadata.js"></script>
   <script src="data/recaps_index.js"></script>
   <script src="assets/js/app.js"></script>
-  <script src="assets/js/hub.js?v=20261028f"></script>
+  <script src="assets/js/hub.js?v=20261028g"></script>
 </body>
 </html>
 
