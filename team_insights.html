@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <title>My Team</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261116d" />
-  <link rel="stylesheet" href="assets/css/team.css?v=20261116d" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261116h" />
+  <link rel="stylesheet" href="assets/css/team.css?v=20261116h" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>" />
 </head>
 <body class="team-page">
@@ -88,7 +88,7 @@
   </div>
 </main>
 
-<script src="assets/js/shell.js?v=20261116c"></script>
+<script src="assets/js/shell.js?v=20261116h"></script>
 <script src="assets/js/directory.js?v=20261116c"></script>
 <script>
   const selectEl = document.getElementById("team-select");
@@ -425,6 +425,66 @@
     table.appendChild(thead);
     table.appendChild(body);
     parent.appendChild(table);
+    renderPlayerList(parent, players, options);
+  }
+
+  function relevantInjury(value) {
+    const text = FantasyDirectory.displayValue(value);
+    if (!text || text === "Unavailable" || /^(active|healthy|normal|ok)$/i.test(text)) return "";
+    return text;
+  }
+
+  let playerSeq = 0;
+
+  function renderPlayerList(parent, players, options) {
+    const list = document.createElement("ul");
+    list.className = "player-list";
+    players.forEach((player) => {
+      const view = FantasyDirectory.playerView(player, options);
+      const injury = relevantInjury(player.injury_status);
+      const id = `player-detail-${playerSeq += 1}`;
+      const item = document.createElement("li");
+      item.className = "player-item";
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "player-summary";
+      button.setAttribute("aria-expanded", "false");
+      button.setAttribute("aria-controls", id);
+      const name = document.createElement("span");
+      name.className = "player-name";
+      name.textContent = view.player;
+      const sub = document.createElement("span");
+      sub.className = "player-sub";
+      const bits = [];
+      if (view.nbaTeam && view.nbaTeam !== "Unavailable") bits.push(view.nbaTeam);
+      if (view.slot && view.slot !== "Unavailable") bits.push(view.slot);
+      sub.textContent = bits.join(" · ");
+      const fp = document.createElement("span");
+      fp.className = "player-fp";
+      fp.textContent = view.fpPerGame === "Unavailable" ? "FP/G unavailable" : `${view.fpPerGame} FP/G`;
+      button.append(name, sub, fp);
+      if (injury) {
+        const badge = document.createElement("span");
+        badge.className = "injury-badge";
+        badge.textContent = injury;
+        button.appendChild(badge);
+      }
+      const details = document.createElement("div");
+      details.className = "player-details";
+      details.id = id;
+      details.hidden = true;
+      const facts = FantasyDirectory.playerFacts(player, options);
+      paragraph(details, `GP ${view.gamesPlayed}`);
+      paragraph(details, facts.acquisition);
+      button.addEventListener("click", () => {
+        const open = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", open ? "false" : "true");
+        details.hidden = open;
+      });
+      item.append(button, details);
+      list.appendChild(item);
+    });
+    parent.appendChild(list);
   }
 
   function renderResultLines(parent, lines) {
@@ -490,9 +550,10 @@
     }
     if (insight) {
       ["all_play_line", "luck_line"].forEach((key) => {
-        if (insight[key]) paragraph(summaryEl, insight[key]);
+        if (!insight[key]) return;
+        const text = String(insight[key]).replace(/\s*This is not an all-play record\.?/g, "").trim();
+        if (text) paragraph(summaryEl, text);
       });
-      if (insight.lineup_line) paragraph(summaryEl, "Lineup recommendations are not shown for this week.", "muted");
     }
     const rosterHeading = document.querySelector("#roster-card h2");
     if (rosterHeading) rosterHeading.textContent = "Current roster";
@@ -533,11 +594,11 @@
     const about = document.getElementById("about-content");
     if (about) {
       const notes = [
+        "All-play counts a result against every other team in a finalized week. Pythagorean luck compares wins with the score-based expectation through that week.",
         FantasyDirectory.AVERAGE_NOTE,
         context.roster && context.roster.injury_note,
         context.roster && context.roster.acquisition_note,
         context.watchlist && context.watchlist.acquisition_note,
-        insight && insight.roster_reason,
       ].filter(Boolean);
       about.textContent = notes.join(" ");
     }

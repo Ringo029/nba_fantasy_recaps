@@ -18,6 +18,17 @@ test("home links resolve at the site root and under nested recaps", () => {
   );
 });
 
+test("recap navigation targets the overview and the archive separately", () => {
+  assert.equal(shell.sectionHref("/nba_fantasy_recaps/", "recaps"), "/nba_fantasy_recaps/#recaps");
+  assert.equal(shell.sectionHref("/nba_fantasy_recaps/team_insights.html", "recaps"), "/nba_fantasy_recaps/#recaps");
+  assert.equal(
+    shell.sectionHref("/nba_fantasy_recaps/seasons/2026-27/recaps/period-04.html", "all-recaps"),
+    "/nba_fantasy_recaps/#all-recaps"
+  );
+  assert.equal(shell.sectionHref("/nba_fantasy_recaps/recaps/week-02.html", "recaps"), "/nba_fantasy_recaps/#recaps");
+  assert.equal(shell.sectionHref("/", "standings"), "/#standings");
+});
+
 test("my team keeps the saved id and season", () => {
   assert.equal(
     shell.myTeamHref("/nba_fantasy_recaps/seasons/2026-27/recaps/period-04.html", { season: "2026-27", teamId: "25" }),

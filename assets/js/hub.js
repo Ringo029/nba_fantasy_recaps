@@ -136,7 +136,7 @@
     }
     const future = fixtures.counts.scheduled_future_tipoffs;
     fixtureCount.textContent = `Future games on the fantasy schedule: ${displayMetric(future)}`;
-    fixtureNote.textContent = "This is less specific than the league matchups above. It is not a roster's remaining games.";
+    fixtureNote.textContent = "";
   }
 
   function renderLiveStandings(doc, seasonId, directory) {
@@ -277,7 +277,7 @@
   }
 
   function renderCompletedRecap(recap, seasonId, options) {
-    const hero = document.getElementById("hero-summary");
+    const hero = document.getElementById("recaps");
     const source = document.getElementById("hero-source");
     const viewLink = document.getElementById("view-full-recap");
     if (!recap) {
@@ -300,11 +300,7 @@
       viewLink.href = recap.url || "#";
       viewLink.textContent = "Open recap";
     }
-    if (source) {
-      source.textContent = latest
-        ? "The newest completed week. Standings stay on the current season."
-        : "Selected recap. Standings stay on the current season.";
-    }
+    if (source) source.textContent = "";
   }
 
   function bindRecapPicker(finals, seasonId, navigation) {
@@ -405,7 +401,7 @@
     if (standingsSub) {
       standingsSub.textContent = showArchivePanels
         ? "Last published team directory for this archive."
-        : "Standing rank follows the league record. Power rank is separate. Choosing a recap does not change this table.";
+        : "Standing rank follows the league record. Power rank is separate.";
     }
     applyLeagueName(live ? season.season_id : "");
     applySavedTeam(season.season_id || "");
@@ -482,6 +478,10 @@
         paragraph(root, "empty-state", "The recap index for this season is not available.");
       }
       renderCompletedRecap(null, season.season_id);
+    }
+    if (window.LeagueShell) {
+      LeagueShell.revealLocation(document);
+      window.requestAnimationFrame(() => LeagueShell.revealLocation(document));
     }
   }
 
@@ -570,9 +570,13 @@
       if (window.LeagueShell) LeagueShell.markLocation(document, location.pathname, location.hash);
     });
     window.addEventListener("hashchange", () => {
-      if (window.LeagueShell) LeagueShell.markLocation(document, location.pathname, location.hash);
+      if (window.LeagueShell) {
+        LeagueShell.markLocation(document, location.pathname, location.hash);
+        LeagueShell.revealLocation(document);
+      }
     });
     await selectSeason(preferred, hub, { recap: params.get("recap") || "" });
+    if (window.LeagueShell) LeagueShell.revealLocation(document);
     } catch (err) {
       if (statusLine) statusLine.textContent = "The hub could not be shown.";
       if (hubWarning) hubWarning.textContent = "Matchup data is unavailable.";
