@@ -3,9 +3,181 @@
   "season_id": "2026-27",
   "period_id": 2,
   "awards": {
-    "team_of_period": null,
-    "mvp": null,
-    "widest_margin": null,
-    "closest_matchup": null
+    "team_of_period": "La Nueva Escuela*  with 730 pts",
+    "mvp": "Luka Doncic (La Guillotina) with 128 pts",
+    "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts",
+    "closest_matchup": "La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
+    "storylines": [
+      "DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts.",
+      "Barrio Cerrillos \ud83c\udfc6 (701) def. Morovis  El Calor \ud83c\udfc6 (520) \u2014 margin 181 pts.",
+      "El Mostroso (679) def. Morrisville Fundamental (581) \u2014 margin 98 pts.",
+      "Ringo's Cool Team (674) def. Minneapolis Lakers \ud83c\udfc6 (581) \u2014 margin 93 pts.",
+      "Las Villas ENDGAME (703) def. BBQ CHICKEN MADNESS (624) \u2014 margin 79 pts.",
+      "La Nueva Escuela*  (730) def. Bench warming brick layers unit (697) \u2014 margin 33 pts.",
+      "La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts.",
+      "Highest team score: La Nueva Escuela*  with 730 pts.",
+      "Closest matchup: La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts.",
+      "Biggest win: DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts."
+    ],
+    "scoring_table": [
+      {
+        "team_id": 18,
+        "team_name": "La Nueva Escuela* ",
+        "points": 730.0,
+        "opponent_points": 697.0,
+        "opponent_name": "Bench warming brick layers unit",
+        "result": "W",
+        "margin": 33.0
+      },
+      {
+        "team_id": 9,
+        "team_name": "La Guillotina",
+        "points": 716.0,
+        "opponent_points": 695.0,
+        "opponent_name": "Los Suns de PFKNR",
+        "result": "W",
+        "margin": 21.0
+      },
+      {
+        "team_id": 6,
+        "team_name": "Las Villas ENDGAME",
+        "points": 703.0,
+        "opponent_points": 624.0,
+        "opponent_name": "BBQ CHICKEN MADNESS",
+        "result": "W",
+        "margin": 79.0
+      },
+      {
+        "team_id": 5,
+        "team_name": "Barrio Cerrillos \ud83c\udfc6",
+        "points": 701.0,
+        "opponent_points": 520.0,
+        "opponent_name": "Morovis  El Calor \ud83c\udfc6",
+        "result": "W",
+        "margin": 181.0
+      },
+      {
+        "team_id": 24,
+        "team_name": "Bench warming brick layers unit",
+        "points": 697.0,
+        "opponent_points": 730.0,
+        "opponent_name": "La Nueva Escuela* ",
+        "result": "L",
+        "margin": 33.0
+      },
+      {
+        "team_id": 22,
+        "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "points": 697.0,
+        "opponent_points": 514.0,
+        "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+        "result": "W",
+        "margin": 183.0
+      },
+      {
+        "team_id": 23,
+        "team_name": "Los Suns de PFKNR",
+        "points": 695.0,
+        "opponent_points": 716.0,
+        "opponent_name": "La Guillotina",
+        "result": "L",
+        "margin": 21.0
+      },
+      {
+        "team_id": 17,
+        "team_name": "El Mostroso",
+        "points": 679.0,
+        "opponent_points": 581.0,
+        "opponent_name": "Morrisville Fundamental",
+        "result": "W",
+        "margin": 98.0
+      },
+      {
+        "team_id": 25,
+        "team_name": "Ringo's Cool Team",
+        "points": 674.0,
+        "opponent_points": 581.0,
+        "opponent_name": "Minneapolis Lakers \ud83c\udfc6",
+        "result": "W",
+        "margin": 93.0
+      },
+      {
+        "team_id": 20,
+        "team_name": "BBQ CHICKEN MADNESS",
+        "points": 624.0,
+        "opponent_points": 703.0,
+        "opponent_name": "Las Villas ENDGAME",
+        "result": "L",
+        "margin": 79.0
+      },
+      {
+        "team_id": 4,
+        "team_name": "Minneapolis Lakers \ud83c\udfc6",
+        "points": 581.0,
+        "opponent_points": 674.0,
+        "opponent_name": "Ringo's Cool Team",
+        "result": "L",
+        "margin": 93.0
+      },
+      {
+        "team_id": 26,
+        "team_name": "Morrisville Fundamental",
+        "points": 581.0,
+        "opponent_points": 679.0,
+        "opponent_name": "El Mostroso",
+        "result": "L",
+        "margin": 98.0
+      },
+      {
+        "team_id": 3,
+        "team_name": "Morovis  El Calor \ud83c\udfc6",
+        "points": 520.0,
+        "opponent_points": 701.0,
+        "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
+        "result": "L",
+        "margin": 181.0
+      },
+      {
+        "team_id": 16,
+        "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+        "points": 514.0,
+        "opponent_points": 697.0,
+        "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "result": "L",
+        "margin": 183.0
+      }
+    ],
+    "top_performances": [
+      {
+        "player_name": "Luka Doncic",
+        "team_name": "La Guillotina",
+        "points": 128.0
+      },
+      {
+        "player_name": "Victor Wembanyama",
+        "team_name": "Minneapolis Lakers \ud83c\udfc6",
+        "points": 128.0
+      },
+      {
+        "player_name": "Giannis Antetokounmpo",
+        "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "points": 121.0
+      },
+      {
+        "player_name": "Jayson Tatum",
+        "team_name": "La Nueva Escuela* ",
+        "points": 112.0
+      },
+      {
+        "player_name": "Cooper Flagg",
+        "team_name": "El Mostroso",
+        "points": 103.0
+      }
+    ],
+    "limitations": [
+      "Coach grades and lineup analysis are omitted. Historical slot positions were not reliable, so today's roster was not substituted.",
+      "Transactions and waiver analysis are omitted. The activity feed is not limited to this matchup's dates, so later moves were not used.",
+      "Totals use matchup 2 and earlier finalized matchups only."
+    ]
   }
 }

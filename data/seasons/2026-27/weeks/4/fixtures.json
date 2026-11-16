@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "period_id": 4,
+  "period_start": "2026-11-09",
+  "period_end": "2026-11-15",
+  "available": false,
+  "reason": "Scheduled future games stay on the open matchup. This completed recap does not replace them.",
+  "games": null,
+  "counts": null,
+  "coverage": null
+}
