@@ -266,6 +266,7 @@ function renderRecaps(index) {
 
 
 (async function init() {
+  if (document.getElementById("season-select")) return;
   try {
     const meta = window.LEAGUE_METADATA || {};
     const recapsIndex = window.RECAPS_INDEX || {};
