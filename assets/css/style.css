@@ -13,14 +13,19 @@
 *{box-sizing:border-box}
 html{
   scroll-behavior: smooth;
+  background-color: var(--bg);
+  min-height: 100%;
 }
-html,body{height:100%}
 body{
   margin:0;
+  min-height: 100vh;
+  min-height: 100dvh;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background: radial-gradient(1200px 600px at 20% 0%, rgba(94,234,212,.10), transparent 55%),
-              radial-gradient(1200px 600px at 80% 10%, rgba(59,130,246,.10), transparent 60%),
-              var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(1200px 600px at 20% 0%, rgba(94,234,212,.10), transparent 55%),
+    radial-gradient(1200px 600px at 80% 10%, rgba(59,130,246,.10), transparent 60%);
+  background-repeat: no-repeat;
   color:var(--text);
   line-height:1.45;
 }
@@ -864,9 +869,109 @@ tr:hover td{ background: rgba(94,234,212,.06); }
 .team-link:focus-visible,
 .btn:focus-visible,
 select:focus-visible,
-a:focus-visible{
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible{
   outline:2px solid var(--accent);
   outline-offset:2px;
+}
+
+html{scroll-padding-top:76px}
+:target,
+section[id],
+#teams-section,
+#hero-summary,
+#about-data{
+  scroll-margin-top:76px;
+}
+.matchup-side{min-width:0}
+.matchup-side span{overflow-wrap:anywhere}
+
+.skip-link{
+  position:absolute;
+  left:12px;
+  top:-48px;
+  z-index:40;
+  padding:8px 12px;
+  background:#042f2e;
+  color:#ecfeff;
+  border-radius:8px;
+}
+.skip-link:focus{top:8px}
+
+.league-header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px 16px;
+  padding:10px 16px;
+  background:rgba(11,15,20,.94);
+  border-bottom:1px solid var(--border);
+}
+.league-brand{
+  color:var(--text);
+  font-weight:800;
+  letter-spacing:.04em;
+  text-decoration:none;
+}
+.league-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+}
+.league-nav a{
+  color:var(--text);
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:999px;
+  font-size:14px;
+}
+.league-nav a[aria-current]{
+  background:rgba(94,234,212,.16);
+  color:var(--accent);
+}
+.season-bar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 14px;
+  align-items:center;
+  margin-bottom:18px;
+}
+.season-bar p{margin:0}
+.page-kicker{margin:0;font-size:20px;font-weight:700}
+.badge{
+  display:inline-block;
+  margin-left:8px;
+  padding:2px 8px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  font-size:12px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.breadcrumb,.section-nav,.recap-pager{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 10px;
+  align-items:center;
+  margin:8px 0 14px;
+  font-size:14px;
+}
+.about-data{margin-top:16px}
+.about-data summary{cursor:pointer;padding:14px}
+.player-table{width:100%;border-collapse:collapse;font-size:14px}
+.player-table th,.player-table td{text-align:left;padding:8px;border-bottom:1px solid var(--border);vertical-align:top}
+.player-table th{color:var(--muted);font-weight:600}
+@media (max-width:700px){
+  .player-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .player-table,.player-table tbody,.player-table tr,.player-table td{display:block;width:100%}
+  .player-table tr{margin:0 0 12px;border:1px solid var(--border);border-radius:12px}
+  .player-table td{display:flex;justify-content:space-between;gap:12px}
+  .player-table td::before{content:attr(data-label);color:var(--muted);flex:0 0 88px}
 }
 
 
