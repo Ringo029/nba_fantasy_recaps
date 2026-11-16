@@ -111,6 +111,7 @@ a:hover{text-decoration:underline}
   box-shadow: var(--shadow);
   overflow:hidden;
 }
+.hero-card{overflow:visible}
 
 .card .card-h{
   padding:14px 14px 10px;
@@ -145,9 +146,15 @@ a:hover{text-decoration:underline}
 }
 .recap-item .top{
   display:flex;
-  align-items:flex-start;
+  flex-wrap:wrap;
+  align-items:center;
   justify-content:space-between;
   gap: 10px;
+}
+.recap-item .top a{
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
 }
 .recap-item .title{
   font-weight: 700;
@@ -361,11 +368,14 @@ tr:hover td{ background: rgba(94,234,212,.06); }
 
 .week-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding: 14px 18px;
   border-top: 1px solid rgba(36,48,69,.7);
   background: rgba(11,15,20,.3);
+  max-width: 100%;
+  min-width: 0;
 }
 
 .nav-btn {
@@ -375,7 +385,8 @@ tr:hover td{ background: rgba(94,234,212,.06); }
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
+  min-height: 44px;
   transition: all 0.2s;
 }
 
@@ -395,9 +406,11 @@ tr:hover td{ background: rgba(94,234,212,.06); }
   color: var(--text);
   padding: 8px 12px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 1rem;
   cursor: pointer;
-  min-width: 120px;
+  min-width: 0;
+  min-height: 44px;
+  max-width: 100%;
 }
 
 .week-select:focus {
@@ -411,12 +424,14 @@ tr:hover td{ background: rgba(94,234,212,.06); }
   color: var(--accent);
   padding: 8px 16px;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 44px;
   transition: all 0.2s;
 }
 
@@ -839,6 +854,9 @@ tr:hover td{ background: rgba(94,234,212,.06); }
   border:1px solid var(--border);
   background:#0b1220;
   color:var(--text);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
 }
 .btn-primary{border-color:var(--accent)}
 .stale-warning{
@@ -876,13 +894,9 @@ summary:focus-visible{
   outline-offset:2px;
 }
 
-html{scroll-padding-top:76px}
-:target,
-section[id],
-#teams-section,
-#hero-summary,
-#about-data{
-  scroll-margin-top:76px;
+html{scroll-padding-top:var(--header-offset, 76px)}
+main :focus-visible{
+  scroll-margin-top:var(--header-offset, 76px);
 }
 .matchup-side{min-width:0}
 .matchup-side span{overflow-wrap:anywhere}
@@ -909,7 +923,7 @@ section[id],
   justify-content:space-between;
   gap:8px 16px;
   padding:10px 16px;
-  background:rgba(11,15,20,.94);
+  background:var(--bg);
   border-bottom:1px solid var(--border);
 }
 .league-brand{
@@ -929,6 +943,32 @@ section[id],
   padding:8px 10px;
   border-radius:999px;
   font-size:14px;
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+}
+@media (max-width:700px){
+  .league-header{padding:8px 10px;gap:4px 8px}
+  .league-nav{gap:2px}
+  .league-nav a{padding:8px;font-size:14px}
+  #recaps .week-nav{
+    display:grid;
+    grid-template-columns:minmax(0,auto) minmax(0,1fr) minmax(0,auto);
+    align-items:stretch;
+  }
+  #recaps .week-nav label{grid-column:1 / -1}
+  #recaps #prev-week{grid-column:1}
+  #recaps #week-select{grid-column:2;width:100%}
+  #recaps #next-week{grid-column:3}
+  #view-full-recap,
+  #recaps .week-nav [data-nav="all-recaps"]{
+    grid-column:1 / -1;
+    width:100%;
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
 }
 .league-nav a[aria-current]{
   background:rgba(94,234,212,.16);

@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://ringo029.github.io/nba_fantasy_recaps/data/seasons/2025-26/share.svg" />
   <meta name="referrer" content="no-referrer" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261116d" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261116h" />
 
   <!-- Basic CSP via meta (limited vs server headers, but still helpful on static pages) -->
   <meta http-equiv="Content-Security-Policy"
@@ -51,7 +51,7 @@
       <div id="matchup-cards" class="matchup-grid"></div>
     </section>
 
-    <section id="hero-summary" class="card hero-card">
+    <section id="recaps" class="card hero-card">
       <div class="hero-header">
         <h2 id="hero-title" class="hero-title">Latest completed recap</h2>
         <p id="hero-week" class="footer"></p>
@@ -81,6 +81,7 @@
         <select id="week-select" class="week-select"></select>
         <button id="next-week" class="nav-btn" type="button">Next</button>
         <a id="view-full-recap" href="#" class="btn btn-primary">Open recap</a>
+        <a href="#all-recaps" class="btn" data-nav="all-recaps">All recaps</a>
       </div>
     </section>
 
@@ -88,7 +89,7 @@
       <div class="card" id="teams-section">
         <div class="card-h">
           <h2 id="standings-heading">Standings</h2>
-          <p id="standings-sub">Standing rank follows the league record. Power rank is separate. Choosing a recap does not change this table.</p>
+          <p id="standings-sub">Standing rank follows the league record. Power rank is separate.</p>
         </div>
         <div class="card-b">
           <div id="teamsList" class="teams"></div>
@@ -97,9 +98,9 @@
       </div>
     </section>
 
-    <section id="recaps" class="card">
+    <section id="all-recaps" class="card">
       <div class="card-h">
-        <h2>Recaps</h2>
+        <h2>All recaps</h2>
         <p>Completed weeks and the current week.</p>
       </div>
       <div class="card-b">
@@ -112,6 +113,8 @@
       <div class="card-b">
         <p>Scores are fantasy totals. Averages are fantasy points per player game. Injury status is current. Check availability in ESPN before adding a player.</p>
         <p>Standing rank is the shared record. Power rank is separate. On a completed week, power and luck are through that week.</p>
+        <p>All-play counts a result against every other team in a finalized week. Pythagorean luck compares wins with the score-based expectation through that week.</p>
+        <p>The future-game count is the fantasy schedule. It is not games left on a roster.</p>
         <div id="about-notes"></div>
         <div id="fixture-panel">
           <h2>Scheduled future games</h2>
@@ -124,7 +127,7 @@
 
   <script src="data/league_metadata.js"></script>
   <script src="data/recaps_index.js"></script>
-  <script src="assets/js/shell.js?v=20261116c"></script>
+  <script src="assets/js/shell.js?v=20261116h"></script>
   <script src="assets/js/directory.js?v=20261116c"></script>
   <script src="assets/js/app.js"></script>
   <script src="assets/js/hub.js?v=20261116c"></script>

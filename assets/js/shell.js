@@ -3,9 +3,17 @@
   if (typeof module === "object" && module.exports) module.exports = api;
   root.LeagueShell = api;
   if (typeof document !== "undefined") {
-    const start = () => api.install(document);
+    const start = () => {
+      api.install(document);
+      api.revealLocation(document);
+    };
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
     else start();
+    window.addEventListener("hashchange", () => {
+      api.markLocation(document, location.pathname, location.hash);
+      api.revealLocation(document);
+    });
+    window.addEventListener("resize", () => api.syncHeaderOffset(document));
   }
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   const PAGES_ROOT = "/nba_fantasy_recaps/";
@@ -32,6 +40,10 @@
 
   function withHash(home, hash) {
     return `${home}#${hash}`;
+  }
+
+  function sectionHref(pathname, section) {
+    return withHash(homeHref(pathname), section);
   }
 
   function myTeamHref(pathname, saved) {
@@ -115,7 +127,7 @@
     { pattern: /win probabilit/i, about: "Win probabilities are not published." },
     { pattern: /null values stay unavailable/i, about: "" },
     { pattern: /box-score totals|points-for\/points-against|power score was published/i, about: "Scores are the fantasy totals for each week. Standing rank follows the league record. Power rank is separate." },
-    { pattern: /fixture source|fantasy pro schedule|remaining-game count|nba official schedule|game status is unavailable/i, about: "The future-game count is the fantasy schedule. It is not games left on a roster, and it is not checked against the NBA's official schedule." },
+    { pattern: /fixture source|fantasy pro schedule|remaining-game count|nba official schedule|game status is unavailable/i, about: "The future-game count is the fantasy schedule. It is not games left on a roster." },
   ];
 
   function memberWarnings(warnings) {
@@ -167,6 +179,7 @@
       home: home && !hash,
       matchups: home && hash === "#matchups",
       recaps: onRecap || (home && hash === "#recaps"),
+      "all-recaps": home && hash === "#all-recaps",
       standings: home && hash === "#standings",
       "my-team": onTeam,
     };
@@ -191,6 +204,7 @@
       home,
       matchups: withHash(home, "matchups"),
       recaps: withHash(home, "recaps"),
+      "all-recaps": withHash(home, "all-recaps"),
       standings: withHash(home, "standings"),
       "my-team": myTeamHref(path, saved),
     };
@@ -199,12 +213,32 @@
       if (routes[key]) link.href = routes[key];
     });
     markLocation(doc, path, hash);
+    syncHeaderOffset(doc);
+  }
+
+  function syncHeaderOffset(doc) {
+    if (!doc || !doc.documentElement) return 0;
+    const header = doc.querySelector(".league-header");
+    const height = header ? Math.ceil(header.getBoundingClientRect().height) + 12 : 76;
+    doc.documentElement.style.setProperty("--header-offset", `${height}px`);
+    return height;
+  }
+
+  function revealLocation(doc) {
+    if (!doc || !doc.getElementById || typeof location === "undefined") return;
+    syncHeaderOffset(doc);
+    const id = String(location.hash || "").replace(/^#/, "");
+    if (!id) return;
+    const target = doc.getElementById(decodeURIComponent(id));
+    if (!target || !target.scrollIntoView) return;
+    target.scrollIntoView({ block: "start" });
   }
 
   return {
     HOME_LABEL,
     SEASON_KEY,
     homeHref,
+    sectionHref,
     myTeamHref,
     leagueName,
     weekRange,
@@ -218,5 +252,7 @@
     readSaved,
     markLocation,
     install,
+    syncHeaderOffset,
+    revealLocation,
   };
 });
