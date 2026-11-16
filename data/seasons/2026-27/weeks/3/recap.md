@@ -17,7 +17,7 @@ Dates: 2026-11-02 to 2026-11-08 (America/New_York).
 - Bench warming brick layers unit (668) def. Los Suns de PFKNR (532) — margin 136 pts.
 - Las Villas ENDGAME (811) def. El TumbaCuello 🏆🏆 (691) — margin 120 pts.
 - BBQ CHICKEN MADNESS (685) def. Ringo's Cool Team (590) — margin 95 pts.
-- La Nueva Escuela*  (690) def. Morrisville Fundamental (637) — margin 53 pts.
+- La Escuelita (690) def. Morrisville Fundamental (637) — margin 53 pts.
 - Minneapolis Lakers 🏆 (770) def. La Guillotina (735) — margin 35 pts.
 - Highest team score: Las Villas ENDGAME with 811 pts.
 - Closest matchup: Minneapolis Lakers 🏆 (770) def. La Guillotina (735) — margin 35 pts.
@@ -31,10 +31,10 @@ Dates: 2026-11-02 to 2026-11-08 (America/New_York).
 - La Guillotina: 735.0 (L) vs Minneapolis Lakers 🏆 770.0
 - El Mostroso: 694.0 (W) vs Barrio Cerrillos 🏆 545.0
 - El TumbaCuello 🏆🏆: 691.0 (L) vs Las Villas ENDGAME 811.0
-- La Nueva Escuela* : 690.0 (W) vs Morrisville Fundamental 637.0
+- La Escuelita: 690.0 (W) vs Morrisville Fundamental 637.0
 - BBQ CHICKEN MADNESS: 685.0 (W) vs Ringo's Cool Team 590.0
 - Bench warming brick layers unit: 668.0 (W) vs Los Suns de PFKNR 532.0
-- Morrisville Fundamental: 637.0 (L) vs La Nueva Escuela*  690.0
+- Morrisville Fundamental: 637.0 (L) vs La Escuelita 690.0
 - Morovis  El Calor 🏆: 608.0 (L) vs DX✌🏾two words SUC-K IT!! 779.0
 - Ringo's Cool Team: 590.0 (L) vs BBQ CHICKEN MADNESS 685.0
 - Barrio Cerrillos 🏆: 545.0 (L) vs El Mostroso 694.0
@@ -52,7 +52,7 @@ Dates: 2026-11-02 to 2026-11-08 (America/New_York).
 
 - El Mostroso 694.0 , Barrio Cerrillos 🏆 545.0
 - Morovis  El Calor 🏆 608.0 , DX✌🏾two words SUC-K IT!! 779.0
-- Morrisville Fundamental 637.0 , La Nueva Escuela*  690.0
+- Morrisville Fundamental 637.0 , La Escuelita 690.0
 - El TumbaCuello 🏆🏆 691.0 , Las Villas ENDGAME 811.0
 - Bench warming brick layers unit 668.0 , Los Suns de PFKNR 532.0
 - BBQ CHICKEN MADNESS 685.0 , Ringo's Cool Team 590.0
@@ -67,7 +67,7 @@ power_score = 0.625 * normalized season points-for/points-against + 0.375 * norm
 - 3. Las Villas ENDGAME (Up 3)
 - 4. La Guillotina (Unchanged)
 - 5. Minneapolis Lakers 🏆 (Up 5)
-- 6. La Nueva Escuela*  (Up 1)
+- 6. La Escuelita (Up 1)
 - 7. BBQ CHICKEN MADNESS (Up 4)
 - 8. Bench warming brick layers unit (Up 1)
 - 9. El TumbaCuello 🏆🏆 (Up 3)

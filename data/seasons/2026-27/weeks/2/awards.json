@@ -3,7 +3,7 @@
   "season_id": "2026-27",
   "period_id": 2,
   "awards": {
-    "team_of_period": "La Nueva Escuela*  with 730 pts",
+    "team_of_period": "La Escuelita with 730 pts",
     "mvp": "Luka Doncic (La Guillotina) with 128 pts",
     "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts",
     "closest_matchup": "La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
@@ -13,16 +13,16 @@
       "El Mostroso (679) def. Morrisville Fundamental (581) \u2014 margin 98 pts.",
       "Ringo's Cool Team (674) def. Minneapolis Lakers \ud83c\udfc6 (581) \u2014 margin 93 pts.",
       "Las Villas ENDGAME (703) def. BBQ CHICKEN MADNESS (624) \u2014 margin 79 pts.",
-      "La Nueva Escuela*  (730) def. Bench warming brick layers unit (697) \u2014 margin 33 pts.",
+      "La Escuelita (730) def. Bench warming brick layers unit (697) \u2014 margin 33 pts.",
       "La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts.",
-      "Highest team score: La Nueva Escuela*  with 730 pts.",
+      "Highest team score: La Escuelita with 730 pts.",
       "Closest matchup: La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts.",
       "Biggest win: DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts."
     ],
     "scoring_table": [
       {
         "team_id": 18,
-        "team_name": "La Nueva Escuela* ",
+        "team_name": "La Escuelita",
         "points": 730.0,
         "opponent_points": 697.0,
         "opponent_name": "Bench warming brick layers unit",
@@ -61,7 +61,7 @@
         "team_name": "Bench warming brick layers unit",
         "points": 697.0,
         "opponent_points": 730.0,
-        "opponent_name": "La Nueva Escuela* ",
+        "opponent_name": "La Escuelita",
         "result": "L",
         "margin": 33.0
       },
@@ -165,7 +165,7 @@
       },
       {
         "player_name": "Jayson Tatum",
-        "team_name": "La Nueva Escuela* ",
+        "team_name": "La Escuelita",
         "points": 112.0
       },
       {

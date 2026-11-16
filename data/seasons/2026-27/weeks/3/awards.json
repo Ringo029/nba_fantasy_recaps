@@ -13,7 +13,7 @@
       "Bench warming brick layers unit (668) def. Los Suns de PFKNR (532) \u2014 margin 136 pts.",
       "Las Villas ENDGAME (811) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (691) \u2014 margin 120 pts.",
       "BBQ CHICKEN MADNESS (685) def. Ringo's Cool Team (590) \u2014 margin 95 pts.",
-      "La Nueva Escuela*  (690) def. Morrisville Fundamental (637) \u2014 margin 53 pts.",
+      "La Escuelita (690) def. Morrisville Fundamental (637) \u2014 margin 53 pts.",
       "Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts.",
       "Highest team score: Las Villas ENDGAME with 811 pts.",
       "Closest matchup: Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts.",
@@ -76,7 +76,7 @@
       },
       {
         "team_id": 18,
-        "team_name": "La Nueva Escuela* ",
+        "team_name": "La Escuelita",
         "points": 690.0,
         "opponent_points": 637.0,
         "opponent_name": "Morrisville Fundamental",
@@ -106,7 +106,7 @@
         "team_name": "Morrisville Fundamental",
         "points": 637.0,
         "opponent_points": 690.0,
-        "opponent_name": "La Nueva Escuela* ",
+        "opponent_name": "La Escuelita",
         "result": "L",
         "margin": 53.0
       },

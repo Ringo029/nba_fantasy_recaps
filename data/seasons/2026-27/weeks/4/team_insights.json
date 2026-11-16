@@ -95,7 +95,7 @@
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
       "attention": [],
       "lineup_assessment": "unavailable",
-      "result_line": "818\u2013672 vs La Nueva Escuela* . Final.",
+      "result_line": "818\u2013672 vs La Escuelita. Final.",
       "power_line": "Power rank 2. Unchanged.",
       "all_play_line": "All-play through matchup 4: 40-12-0.",
       "luck_line": "Pythagorean luck through matchup 4: +1.59 wins. This is not an all-play record.",
@@ -103,7 +103,7 @@
     },
     {
       "team_id": 18,
-      "team_name": "La Nueva Escuela* ",
+      "team_name": "La Escuelita",
       "period_id": 4,
       "roster_status": "unavailable",
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",

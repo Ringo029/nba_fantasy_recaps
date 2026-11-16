@@ -9,7 +9,7 @@
     "closest_matchup": "Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
     "storylines": [
       "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Barrio Cerrillos \ud83c\udfc6 (589) \u2014 margin 190 pts.",
-      "El Mostroso (818) def. La Nueva Escuela*  (672) \u2014 margin 146 pts.",
+      "El Mostroso (818) def. La Escuelita (672) \u2014 margin 146 pts.",
       "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (750) def. Ringo's Cool Team (640) \u2014 margin 110 pts.",
       "Las Villas ENDGAME (586) def. Morovis  El Calor \ud83c\udfc6 (488) \u2014 margin 98 pts.",
       "BBQ CHICKEN MADNESS (669) def. La Guillotina (638) \u2014 margin 31 pts.",
@@ -25,7 +25,7 @@
         "team_name": "El Mostroso",
         "points": 818.0,
         "opponent_points": 672.0,
-        "opponent_name": "La Nueva Escuela* ",
+        "opponent_name": "La Escuelita",
         "result": "W",
         "margin": 146.0
       },
@@ -67,7 +67,7 @@
       },
       {
         "team_id": 18,
-        "team_name": "La Nueva Escuela* ",
+        "team_name": "La Escuelita",
         "points": 672.0,
         "opponent_points": 818.0,
         "opponent_name": "El Mostroso",

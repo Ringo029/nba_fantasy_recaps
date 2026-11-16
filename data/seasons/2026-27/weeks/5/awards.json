@@ -22,7 +22,7 @@
         "team_name": "Barrio Cerrillos \ud83c\udfc6",
         "points": 0.0,
         "opponent_points": 0.0,
-        "opponent_name": "La Nueva Escuela* ",
+        "opponent_name": "La Escuelita",
         "result": "T",
         "margin": 0.0
       },
@@ -63,20 +63,20 @@
         "margin": 0.0
       },
       {
+        "team_id": 18,
+        "team_name": "La Escuelita",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
         "team_id": 9,
         "team_name": "La Guillotina",
         "points": 0.0,
         "opponent_points": 0.0,
         "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-        "result": "T",
-        "margin": 0.0
-      },
-      {
-        "team_id": 18,
-        "team_name": "La Nueva Escuela* ",
-        "points": 0.0,
-        "opponent_points": 0.0,
-        "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
         "result": "T",
         "margin": 0.0
       },

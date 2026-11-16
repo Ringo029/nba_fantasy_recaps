@@ -13,7 +13,7 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 ## Results
 
 - DX✌🏾two words SUC-K IT!! (779) def. Barrio Cerrillos 🏆 (589) — margin 190 pts.
-- El Mostroso (818) def. La Nueva Escuela*  (672) — margin 146 pts.
+- El Mostroso (818) def. La Escuelita (672) — margin 146 pts.
 - El TumbaCuello 🏆🏆 (750) def. Ringo's Cool Team (640) — margin 110 pts.
 - Las Villas ENDGAME (586) def. Morovis  El Calor 🏆 (488) — margin 98 pts.
 - BBQ CHICKEN MADNESS (669) def. La Guillotina (638) — margin 31 pts.
@@ -25,12 +25,12 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 
 ## Weekly scoring
 
-- El Mostroso: 818.0 (W) vs La Nueva Escuela*  672.0
+- El Mostroso: 818.0 (W) vs La Escuelita 672.0
 - DX✌🏾two words SUC-K IT!!: 779.0 (W) vs Barrio Cerrillos 🏆 589.0
 - Morrisville Fundamental: 755.0 (W) vs Los Suns de PFKNR 727.0
 - El TumbaCuello 🏆🏆: 750.0 (W) vs Ringo's Cool Team 640.0
 - Los Suns de PFKNR: 727.0 (L) vs Morrisville Fundamental 755.0
-- La Nueva Escuela* : 672.0 (L) vs El Mostroso 818.0
+- La Escuelita: 672.0 (L) vs El Mostroso 818.0
 - Minneapolis Lakers 🏆: 672.0 (W) vs Bench warming brick layers unit 652.0
 - BBQ CHICKEN MADNESS: 669.0 (W) vs La Guillotina 638.0
 - Bench warming brick layers unit: 652.0 (L) vs Minneapolis Lakers 🏆 672.0
@@ -51,7 +51,7 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 ## Matchups
 
 - Barrio Cerrillos 🏆 589.0 , DX✌🏾two words SUC-K IT!! 779.0
-- La Nueva Escuela*  672.0 , El Mostroso 818.0
+- La Escuelita 672.0 , El Mostroso 818.0
 - Las Villas ENDGAME 586.0 , Morovis  El Calor 🏆 488.0
 - Los Suns de PFKNR 727.0 , Morrisville Fundamental 755.0
 - Ringo's Cool Team 640.0 , El TumbaCuello 🏆🏆 750.0
@@ -72,7 +72,7 @@ power_score = 0.625 * normalized season points-for/points-against + 0.375 * norm
 - 8. La Guillotina (Down 4)
 - 9. Los Suns de PFKNR (Up 4)
 - 10. Bench warming brick layers unit (Down 2)
-- 11. La Nueva Escuela*  (Down 5)
+- 11. La Escuelita (Down 5)
 - 12. Ringo's Cool Team (Down 1)
 - 13. Barrio Cerrillos 🏆 (Down 3)
 - 14. Morovis  El Calor 🏆 (Unchanged)

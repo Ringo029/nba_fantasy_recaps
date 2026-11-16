@@ -6,7 +6,7 @@
       "season_id": "2026-27",
       "period_id": 5,
       "status": "provisional",
-      "generated_at": "2026-11-16T17:31:53Z",
+      "generated_at": "2026-11-16T18:40:05Z",
       "url": "seasons/2026-27/recaps/period-05.html",
       "summary": "2026-27 matchup 5 (Provisional) | 2026-11-16 to 2026-11-22 America/New_York | Team of the period: No games scored yet.",
       "awards": {
@@ -29,7 +29,7 @@
             "team_name": "Barrio Cerrillos \ud83c\udfc6",
             "points": 0.0,
             "opponent_points": 0.0,
-            "opponent_name": "La Nueva Escuela* ",
+            "opponent_name": "La Escuelita",
             "result": "T",
             "margin": 0.0
           },
@@ -70,20 +70,20 @@
             "margin": 0.0
           },
           {
+            "team_id": 18,
+            "team_name": "La Escuelita",
+            "points": 0.0,
+            "opponent_points": 0.0,
+            "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
+            "result": "T",
+            "margin": 0.0
+          },
+          {
             "team_id": 9,
             "team_name": "La Guillotina",
             "points": 0.0,
             "opponent_points": 0.0,
             "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-            "result": "T",
-            "margin": 0.0
-          },
-          {
-            "team_id": 18,
-            "team_name": "La Nueva Escuela* ",
-            "points": 0.0,
-            "opponent_points": 0.0,
-            "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
             "result": "T",
             "margin": 0.0
           },
@@ -154,7 +154,7 @@
       "season_id": "2026-27",
       "period_id": 4,
       "status": "final",
-      "generated_at": "2026-11-16T17:31:50Z",
+      "generated_at": "2026-11-16T18:40:02Z",
       "url": "seasons/2026-27/recaps/period-04.html",
       "summary": "2026-27 matchup 4 (Final) | 2026-11-09 to 2026-11-15 America/New_York | Team of the period: El Mostroso with 818 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
       "awards": {
@@ -164,7 +164,7 @@
         "closest_matchup": "Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
         "storylines": [
           "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Barrio Cerrillos \ud83c\udfc6 (589) \u2014 margin 190 pts.",
-          "El Mostroso (818) def. La Nueva Escuela*  (672) \u2014 margin 146 pts.",
+          "El Mostroso (818) def. La Escuelita (672) \u2014 margin 146 pts.",
           "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (750) def. Ringo's Cool Team (640) \u2014 margin 110 pts.",
           "Las Villas ENDGAME (586) def. Morovis  El Calor \ud83c\udfc6 (488) \u2014 margin 98 pts.",
           "BBQ CHICKEN MADNESS (669) def. La Guillotina (638) \u2014 margin 31 pts.",
@@ -180,7 +180,7 @@
             "team_name": "El Mostroso",
             "points": 818.0,
             "opponent_points": 672.0,
-            "opponent_name": "La Nueva Escuela* ",
+            "opponent_name": "La Escuelita",
             "result": "W",
             "margin": 146.0
           },
@@ -222,7 +222,7 @@
           },
           {
             "team_id": 18,
-            "team_name": "La Nueva Escuela* ",
+            "team_name": "La Escuelita",
             "points": 672.0,
             "opponent_points": 818.0,
             "opponent_name": "El Mostroso",
@@ -340,7 +340,7 @@
       "season_id": "2026-27",
       "period_id": 3,
       "status": "final",
-      "generated_at": "2026-11-16T17:31:50Z",
+      "generated_at": "2026-11-16T18:40:02Z",
       "url": "seasons/2026-27/recaps/period-03.html",
       "summary": "2026-27 matchup 3 (Final) | 2026-11-02 to 2026-11-08 America/New_York | Team of the period: Las Villas ENDGAME with 811 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts",
       "awards": {
@@ -354,7 +354,7 @@
           "Bench warming brick layers unit (668) def. Los Suns de PFKNR (532) \u2014 margin 136 pts.",
           "Las Villas ENDGAME (811) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (691) \u2014 margin 120 pts.",
           "BBQ CHICKEN MADNESS (685) def. Ringo's Cool Team (590) \u2014 margin 95 pts.",
-          "La Nueva Escuela*  (690) def. Morrisville Fundamental (637) \u2014 margin 53 pts.",
+          "La Escuelita (690) def. Morrisville Fundamental (637) \u2014 margin 53 pts.",
           "Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts.",
           "Highest team score: Las Villas ENDGAME with 811 pts.",
           "Closest matchup: Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts.",
@@ -417,7 +417,7 @@
           },
           {
             "team_id": 18,
-            "team_name": "La Nueva Escuela* ",
+            "team_name": "La Escuelita",
             "points": 690.0,
             "opponent_points": 637.0,
             "opponent_name": "Morrisville Fundamental",
@@ -447,7 +447,7 @@
             "team_name": "Morrisville Fundamental",
             "points": 637.0,
             "opponent_points": 690.0,
-            "opponent_name": "La Nueva Escuela* ",
+            "opponent_name": "La Escuelita",
             "result": "L",
             "margin": 53.0
           },
@@ -526,11 +526,11 @@
       "season_id": "2026-27",
       "period_id": 2,
       "status": "final",
-      "generated_at": "2026-11-16T17:31:50Z",
+      "generated_at": "2026-11-16T18:40:02Z",
       "url": "seasons/2026-27/recaps/period-02.html",
-      "summary": "2026-27 matchup 2 (Final) | 2026-10-26 to 2026-11-01 America/New_York | Team of the period: La Nueva Escuela*  with 730 pts | MVP: Luka Doncic (La Guillotina) with 128 pts | Closest: La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
+      "summary": "2026-27 matchup 2 (Final) | 2026-10-26 to 2026-11-01 America/New_York | Team of the period: La Escuelita with 730 pts | MVP: Luka Doncic (La Guillotina) with 128 pts | Closest: La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
       "awards": {
-        "team_of_period": "La Nueva Escuela*  with 730 pts",
+        "team_of_period": "La Escuelita with 730 pts",
         "mvp": "Luka Doncic (La Guillotina) with 128 pts",
         "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts",
         "closest_matchup": "La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
@@ -540,16 +540,16 @@
           "El Mostroso (679) def. Morrisville Fundamental (581) \u2014 margin 98 pts.",
           "Ringo's Cool Team (674) def. Minneapolis Lakers \ud83c\udfc6 (581) \u2014 margin 93 pts.",
           "Las Villas ENDGAME (703) def. BBQ CHICKEN MADNESS (624) \u2014 margin 79 pts.",
-          "La Nueva Escuela*  (730) def. Bench warming brick layers unit (697) \u2014 margin 33 pts.",
+          "La Escuelita (730) def. Bench warming brick layers unit (697) \u2014 margin 33 pts.",
           "La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts.",
-          "Highest team score: La Nueva Escuela*  with 730 pts.",
+          "Highest team score: La Escuelita with 730 pts.",
           "Closest matchup: La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts.",
           "Biggest win: DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts."
         ],
         "scoring_table": [
           {
             "team_id": 18,
-            "team_name": "La Nueva Escuela* ",
+            "team_name": "La Escuelita",
             "points": 730.0,
             "opponent_points": 697.0,
             "opponent_name": "Bench warming brick layers unit",
@@ -588,7 +588,7 @@
             "team_name": "Bench warming brick layers unit",
             "points": 697.0,
             "opponent_points": 730.0,
-            "opponent_name": "La Nueva Escuela* ",
+            "opponent_name": "La Escuelita",
             "result": "L",
             "margin": 33.0
           },
@@ -692,7 +692,7 @@
           },
           {
             "player_name": "Jayson Tatum",
-            "team_name": "La Nueva Escuela* ",
+            "team_name": "La Escuelita",
             "points": 112.0
           },
           {
@@ -712,7 +712,7 @@
       "season_id": "2026-27",
       "period_id": 1,
       "status": "final",
-      "generated_at": "2026-11-16T17:31:50Z",
+      "generated_at": "2026-11-16T18:40:02Z",
       "url": "seasons/2026-27/recaps/period-01.html",
       "summary": "2026-27 matchup 1 (Final) | 2026-10-20 to 2026-10-25 America/New_York | Team of the period: El TumbaCuello \ud83c\udfc6\ud83c\udfc6 with 703 pts | MVP: Domantas Sabonis (Ringo's Cool Team) with 113 pts | Closest: Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts",
       "awards": {
@@ -724,7 +724,7 @@
           "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Calor \ud83c\udfc6 (494) \u2014 margin 209 pts.",
           "El Mostroso (645) def. Bench warming brick layers unit (510) \u2014 margin 135 pts.",
           "Barrio Cerrillos \ud83c\udfc6 (620) def. Morrisville Fundamental (515) \u2014 margin 105 pts.",
-          "La Guillotina (638) def. La Nueva Escuela*  (536) \u2014 margin 102 pts.",
+          "La Guillotina (638) def. La Escuelita (536) \u2014 margin 102 pts.",
           "Minneapolis Lakers \ud83c\udfc6 (598) def. Las Villas ENDGAME (539) \u2014 margin 59 pts.",
           "DX\u270c\ud83c\udffetwo words SUC-K IT!! (573) def. BBQ CHICKEN MADNESS (525) \u2014 margin 48 pts.",
           "Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts.",
@@ -756,7 +756,7 @@
             "team_name": "La Guillotina",
             "points": 638.0,
             "opponent_points": 536.0,
-            "opponent_name": "La Nueva Escuela* ",
+            "opponent_name": "La Escuelita",
             "result": "W",
             "margin": 102.0
           },
@@ -816,7 +816,7 @@
           },
           {
             "team_id": 18,
-            "team_name": "La Nueva Escuela* ",
+            "team_name": "La Escuelita",
             "points": 536.0,
             "opponent_points": 638.0,
             "opponent_name": "La Guillotina",

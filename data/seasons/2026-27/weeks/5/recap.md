@@ -10,13 +10,13 @@ Dates: 2026-11-16 to 2026-11-22 (America/New_York).
 ## Weekly scoring
 
 - BBQ CHICKEN MADNESS: 0.0 (T) vs Bench warming brick layers unit 0.0
-- Barrio Cerrillos 🏆: 0.0 (T) vs La Nueva Escuela*  0.0
+- Barrio Cerrillos 🏆: 0.0 (T) vs La Escuelita 0.0
 - Bench warming brick layers unit: 0.0 (T) vs BBQ CHICKEN MADNESS 0.0
 - DX✌🏾two words SUC-K IT!!: 0.0 (T) vs Las Villas ENDGAME 0.0
 - El Mostroso: 0.0 (T) vs Los Suns de PFKNR 0.0
 - El TumbaCuello 🏆🏆: 0.0 (T) vs La Guillotina 0.0
+- La Escuelita: 0.0 (T) vs Barrio Cerrillos 🏆 0.0
 - La Guillotina: 0.0 (T) vs El TumbaCuello 🏆🏆 0.0
-- La Nueva Escuela* : 0.0 (T) vs Barrio Cerrillos 🏆 0.0
 - Las Villas ENDGAME: 0.0 (T) vs DX✌🏾two words SUC-K IT!! 0.0
 - Los Suns de PFKNR: 0.0 (T) vs El Mostroso 0.0
 - Minneapolis Lakers 🏆: 0.0 (T) vs Morrisville Fundamental 0.0
@@ -26,7 +26,7 @@ Dates: 2026-11-16 to 2026-11-22 (America/New_York).
 
 ## Matchups
 
-- La Nueva Escuela*  0.0 , Barrio Cerrillos 🏆 0.0
+- La Escuelita 0.0 , Barrio Cerrillos 🏆 0.0
 - DX✌🏾two words SUC-K IT!! 0.0 , Las Villas ENDGAME 0.0
 - El Mostroso 0.0 , Los Suns de PFKNR 0.0
 - Morovis  El Calor 🏆 0.0 , Ringo's Cool Team 0.0
@@ -48,7 +48,7 @@ power_score = 0.625 * normalized season points-for/points-against + 0.375 * norm
 - 8. Bench warming brick layers unit (Up 2)
 - 9. Barrio Cerrillos 🏆 (Up 4)
 - 10. Ringo's Cool Team (Up 2)
-- 11. La Nueva Escuela*  (Unchanged)
+- 11. La Escuelita (Unchanged)
 - 12. Los Suns de PFKNR (Down 3)
 - 13. Morrisville Fundamental (Down 6)
 - 14. Morovis  El Calor 🏆 (Unchanged)
