@@ -46,6 +46,11 @@
         <div id="summary-content"></div>
       </div>
 
+      <div class="card" id="trends-card" hidden>
+        <h2>Season trends</h2>
+        <div id="trends-content"></div>
+      </div>
+
       <div class="card" id="categories-card">
         <h2>Category Profile</h2>
         <div id="categories-content"></div>
@@ -555,6 +560,18 @@
         if (text) paragraph(summaryEl, text);
       });
     }
+    const trendsCard = document.getElementById("trends-card");
+    const trendsRoot = document.getElementById("trends-content");
+    if (trendsCard && trendsRoot) {
+      trendsRoot.textContent = "";
+      const trendLines = insight
+        ? ["scoring_rank_line", "average_line", "streak_line", "upcoming_line"]
+            .map((key) => insight[key])
+            .filter(Boolean)
+        : [];
+      trendLines.forEach((line) => paragraph(trendsRoot, line));
+      trendsCard.hidden = trendLines.length === 0;
+    }
     const rosterHeading = document.querySelector("#roster-card h2");
     if (rosterHeading) rosterHeading.textContent = "Current roster";
     rosterEl.textContent = "";
@@ -595,6 +612,10 @@
     if (about) {
       const notes = [
         "All-play counts a result against every other team in a finalized week. Pythagorean luck compares wins with the score-based expectation through that week.",
+        "Weekly scoring rank orders teams by fantasy points in that matchup. Ties share a rank.",
+        "A streak counts consecutive finalized matchups with the same result. A missing matchup or a tie ends it.",
+        "Points versus the week average compare a team with the mean score of every team in that matchup.",
+        "Average opponent power rank is the mean power rank of the next fantasy opponents. Lower means stronger. The ranks come from the finalized week named on the line.",
         FantasyDirectory.AVERAGE_NOTE,
         context.roster && context.roster.injury_note,
         context.roster && context.roster.acquisition_note,
