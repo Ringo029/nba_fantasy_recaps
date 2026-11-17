@@ -6,7 +6,7 @@
       "season_id": "2026-27",
       "period_id": 5,
       "status": "provisional",
-      "generated_at": "2026-11-16T21:10:05Z",
+      "generated_at": "2026-11-17T00:01:40Z",
       "url": "seasons/2026-27/recaps/period-05.html",
       "summary": "Week 5 \u00b7 Nov 16\u201322 (This week) | 2026-11-16 to 2026-11-22 America/New_York | Team of the period: No games scored yet.",
       "awards": {
@@ -152,7 +152,7 @@
       "season_id": "2026-27",
       "period_id": 4,
       "status": "final",
-      "generated_at": "2026-11-16T21:10:02Z",
+      "generated_at": "2026-11-17T00:01:37Z",
       "url": "seasons/2026-27/recaps/period-04.html",
       "summary": "Week 4 \u00b7 Nov 9\u201315 (Final) | 2026-11-09 to 2026-11-15 America/New_York | Team of the period: El Mostroso with 818 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
       "awards": {
@@ -160,6 +160,23 @@
         "mvp": "Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts",
         "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Barrio Cerrillos \ud83c\udfc6 (589) \u2014 margin 190 pts",
         "closest_matchup": "Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
+        "highest_scoring_loss": "Los Suns de PFKNR with 727 pts",
+        "lowest_scoring_win": "Las Villas ENDGAME with 586 pts",
+        "weekly_average_line": "League average: 673.9 pts",
+        "highest_scoring_loss_teams": [
+          {
+            "team_id": 23,
+            "team_name": "Los Suns de PFKNR",
+            "points": 727.0
+          }
+        ],
+        "lowest_scoring_win_teams": [
+          {
+            "team_id": 6,
+            "team_name": "Las Villas ENDGAME",
+            "points": 586.0
+          }
+        ],
         "storylines": [
           "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Barrio Cerrillos \ud83c\udfc6 (589) \u2014 margin 190 pts.",
           "El Mostroso (818) def. La Escuelita (672) \u2014 margin 146 pts.",
@@ -336,7 +353,7 @@
       "season_id": "2026-27",
       "period_id": 3,
       "status": "final",
-      "generated_at": "2026-11-16T21:10:01Z",
+      "generated_at": "2026-11-17T00:01:37Z",
       "url": "seasons/2026-27/recaps/period-03.html",
       "summary": "Week 3 \u00b7 Nov 2\u20138 (Final) | 2026-11-02 to 2026-11-08 America/New_York | Team of the period: Las Villas ENDGAME with 811 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts",
       "awards": {
@@ -344,6 +361,23 @@
         "mvp": "Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts",
         "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Calor \ud83c\udfc6 (608) \u2014 margin 171 pts",
         "closest_matchup": "Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts",
+        "highest_scoring_loss": "La Guillotina with 735 pts",
+        "lowest_scoring_win": "Bench warming brick layers unit with 668 pts",
+        "weekly_average_line": "League average: 673.9 pts",
+        "highest_scoring_loss_teams": [
+          {
+            "team_id": 9,
+            "team_name": "La Guillotina",
+            "points": 735.0
+          }
+        ],
+        "lowest_scoring_win_teams": [
+          {
+            "team_id": 24,
+            "team_name": "Bench warming brick layers unit",
+            "points": 668.0
+          }
+        ],
         "storylines": [
           "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Calor \ud83c\udfc6 (608) \u2014 margin 171 pts.",
           "El Mostroso (694) def. Barrio Cerrillos \ud83c\udfc6 (545) \u2014 margin 149 pts.",
@@ -520,7 +554,7 @@
       "season_id": "2026-27",
       "period_id": 2,
       "status": "final",
-      "generated_at": "2026-11-16T21:10:01Z",
+      "generated_at": "2026-11-17T00:01:37Z",
       "url": "seasons/2026-27/recaps/period-02.html",
       "summary": "Week 2 \u00b7 Oct 26\u2013Nov 1 (Final) | 2026-10-26 to 2026-11-01 America/New_York | Team of the period: La Escuelita with 730 pts | MVP: Luka Doncic (La Guillotina) with 128 pts | Closest: La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
       "awards": {
@@ -528,6 +562,23 @@
         "mvp": "Luka Doncic (La Guillotina) with 128 pts",
         "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts",
         "closest_matchup": "La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
+        "highest_scoring_loss": "Bench warming brick layers unit with 697 pts",
+        "lowest_scoring_win": "Ringo's Cool Team with 674 pts",
+        "weekly_average_line": "League average: 650.9 pts",
+        "highest_scoring_loss_teams": [
+          {
+            "team_id": 24,
+            "team_name": "Bench warming brick layers unit",
+            "points": 697.0
+          }
+        ],
+        "lowest_scoring_win_teams": [
+          {
+            "team_id": 25,
+            "team_name": "Ringo's Cool Team",
+            "points": 674.0
+          }
+        ],
         "storylines": [
           "DX\u270c\ud83c\udffetwo words SUC-K IT!! (697) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (514) \u2014 margin 183 pts.",
           "Barrio Cerrillos \ud83c\udfc6 (701) def. Morovis  El Calor \ud83c\udfc6 (520) \u2014 margin 181 pts.",
@@ -704,7 +755,7 @@
       "season_id": "2026-27",
       "period_id": 1,
       "status": "final",
-      "generated_at": "2026-11-16T21:10:01Z",
+      "generated_at": "2026-11-17T00:01:37Z",
       "url": "seasons/2026-27/recaps/period-01.html",
       "summary": "Week 1 \u00b7 Oct 20\u201325 (Final) | 2026-10-20 to 2026-10-25 America/New_York | Team of the period: El TumbaCuello \ud83c\udfc6\ud83c\udfc6 with 703 pts | MVP: Domantas Sabonis (Ringo's Cool Team) with 113 pts | Closest: Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts",
       "awards": {
@@ -712,6 +763,23 @@
         "mvp": "Domantas Sabonis (Ringo's Cool Team) with 113 pts",
         "widest_margin": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Calor \ud83c\udfc6 (494) \u2014 margin 209 pts",
         "closest_matchup": "Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts",
+        "highest_scoring_loss": "Ringo's Cool Team with 544 pts",
+        "lowest_scoring_win": "Los Suns de PFKNR with 552 pts",
+        "weekly_average_line": "League average: 570.9 pts",
+        "highest_scoring_loss_teams": [
+          {
+            "team_id": 25,
+            "team_name": "Ringo's Cool Team",
+            "points": 544.0
+          }
+        ],
+        "lowest_scoring_win_teams": [
+          {
+            "team_id": 23,
+            "team_name": "Los Suns de PFKNR",
+            "points": 552.0
+          }
+        ],
         "storylines": [
           "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Calor \ud83c\udfc6 (494) \u2014 margin 209 pts.",
           "El Mostroso (645) def. Bench warming brick layers unit (510) \u2014 margin 135 pts.",

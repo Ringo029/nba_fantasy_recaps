@@ -10,6 +10,12 @@ Dates: 2026-10-20 to 2026-10-25 (America/New_York).
 - Widest margin: El TumbaCuello 🏆🏆 (703) def. Morovis  El Calor 🏆 (494) — margin 209 pts
 - Closest matchup: Los Suns de PFKNR (552) def. Ringo's Cool Team (544) — margin 8 pts
 
+## Weekly highlights
+
+- Highest-scoring loss: Ringo's Cool Team with 544 pts
+- Lowest-scoring win: Los Suns de PFKNR with 552 pts
+- League average: 570.9 pts
+
 ## Results
 
 - El TumbaCuello 🏆🏆 (703) def. Morovis  El Calor 🏆 (494) — margin 209 pts.

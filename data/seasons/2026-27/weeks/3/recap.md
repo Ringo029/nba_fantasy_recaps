@@ -10,6 +10,12 @@ Dates: 2026-11-02 to 2026-11-08 (America/New_York).
 - Widest margin: DX✌🏾two words SUC-K IT!! (779) def. Morovis  El Calor 🏆 (608) — margin 171 pts
 - Closest matchup: Minneapolis Lakers 🏆 (770) def. La Guillotina (735) — margin 35 pts
 
+## Weekly highlights
+
+- Highest-scoring loss: La Guillotina with 735 pts
+- Lowest-scoring win: Bench warming brick layers unit with 668 pts
+- League average: 673.9 pts
+
 ## Results
 
 - DX✌🏾two words SUC-K IT!! (779) def. Morovis  El Calor 🏆 (608) — margin 171 pts.

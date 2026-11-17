@@ -14,7 +14,11 @@
       "result_line": "488\u2013586 vs Las Villas ENDGAME. Final.",
       "power_line": "Power rank 14. Unchanged.",
       "all_play_line": "All-play through matchup 4: 4-48-0.",
-      "luck_line": "Pythagorean luck through matchup 4: -1.47 wins."
+      "luck_line": "Pythagorean luck through matchup 4: -1.47 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 14 of 14.",
+      "average_line": "185.9 below the Week 4 average.",
+      "streak_line": "4 losses in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 9.2. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Ringo's Cool Team, power rank 12."
     },
     {
       "team_id": 4,
@@ -27,7 +31,11 @@
       "result_line": "672\u2013652 vs Bench warming brick layers unit. Final.",
       "power_line": "Power rank 5. Unchanged.",
       "all_play_line": "All-play through matchup 4: 29-21-2.",
-      "luck_line": "Pythagorean luck through matchup 4: +0.98 wins."
+      "luck_line": "Pythagorean luck through matchup 4: +0.98 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 6 of 14.",
+      "average_line": "1.9 below the Week 4 average.",
+      "streak_line": "2 wins in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 7.2. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Morrisville Fundamental, power rank 7."
     },
     {
       "team_id": 5,
@@ -40,7 +48,11 @@
       "result_line": "589\u2013779 vs DX\u270c\ud83c\udffetwo words SUC-K IT!!. Final.",
       "power_line": "Power rank 13. Down 3.",
       "all_play_line": "All-play through matchup 4: 23-29-0.",
-      "luck_line": "Pythagorean luck through matchup 4: +0.04 wins."
+      "luck_line": "Pythagorean luck through matchup 4: +0.04 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 12 of 14.",
+      "average_line": "84.9 below the Week 4 average.",
+      "streak_line": "2 losses in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 9.0. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is La Escuelita, power rank 11."
     },
     {
       "team_id": 6,
@@ -53,7 +65,11 @@
       "result_line": "586\u2013488 vs Morovis  El Calor \ud83c\udfc6. Final.",
       "power_line": "Power rank 4. Down 1.",
       "all_play_line": "All-play through matchup 4: 30-22-0.",
-      "luck_line": "Pythagorean luck through matchup 4: +0.81 wins."
+      "luck_line": "Pythagorean luck through matchup 4: +0.81 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 13 of 14.",
+      "average_line": "87.9 below the Week 4 average.",
+      "streak_line": "3 wins in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 8.5. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is DX\u270c\ud83c\udffetwo words SUC-K IT!!, power rank 1."
     },
     {
       "team_id": 9,
@@ -66,7 +82,11 @@
       "result_line": "638\u2013669 vs BBQ CHICKEN MADNESS. Final.",
       "power_line": "Power rank 8. Down 4.",
       "all_play_line": "All-play through matchup 4: 36-16-0.",
-      "luck_line": "Pythagorean luck through matchup 4: -0.04 wins."
+      "luck_line": "Pythagorean luck through matchup 4: -0.04 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 11 of 14.",
+      "average_line": "35.9 below the Week 4 average.",
+      "streak_line": "2 losses in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 5.5. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is El TumbaCuello \ud83c\udfc6\ud83c\udfc6, power rank 3."
     },
     {
       "team_id": 16,
@@ -79,7 +99,11 @@
       "result_line": "750\u2013640 vs Ringo's Cool Team. Final.",
       "power_line": "Power rank 3. Up 6.",
       "all_play_line": "All-play through matchup 4: 31-21-0.",
-      "luck_line": "Pythagorean luck through matchup 4: -0.01 wins."
+      "luck_line": "Pythagorean luck through matchup 4: -0.01 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 4 of 14.",
+      "average_line": "76.1 above the Week 4 average.",
+      "streak_line": "1 win in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 6.8. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is La Guillotina, power rank 8."
     },
     {
       "team_id": 17,
@@ -92,7 +116,11 @@
       "result_line": "818\u2013672 vs La Escuelita. Final.",
       "power_line": "Power rank 2. Unchanged.",
       "all_play_line": "All-play through matchup 4: 40-12-0.",
-      "luck_line": "Pythagorean luck through matchup 4: +1.59 wins."
+      "luck_line": "Pythagorean luck through matchup 4: +1.59 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 1 of 14.",
+      "average_line": "144.1 above the Week 4 average.",
+      "streak_line": "4 wins in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 5.8. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Los Suns de PFKNR, power rank 9."
     },
     {
       "team_id": 18,
@@ -105,7 +133,11 @@
       "result_line": "672\u2013818 vs El Mostroso. Final.",
       "power_line": "Power rank 11. Down 5.",
       "all_play_line": "All-play through matchup 4: 31-20-1.",
-      "luck_line": "Pythagorean luck through matchup 4: +0.12 wins."
+      "luck_line": "Pythagorean luck through matchup 4: +0.12 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 6 of 14.",
+      "average_line": "1.9 below the Week 4 average.",
+      "streak_line": "1 loss in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 8.2. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Barrio Cerrillos \ud83c\udfc6, power rank 13."
     },
     {
       "team_id": 20,
@@ -118,7 +150,11 @@
       "result_line": "669\u2013638 vs La Guillotina. Final.",
       "power_line": "Power rank 6. Up 1.",
       "all_play_line": "All-play through matchup 4: 19-33-0.",
-      "luck_line": "Pythagorean luck through matchup 4: +0.00 wins."
+      "luck_line": "Pythagorean luck through matchup 4: +0.00 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 8 of 14.",
+      "average_line": "4.9 below the Week 4 average.",
+      "streak_line": "2 wins in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 7.5. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Bench warming brick layers unit, power rank 10."
     },
     {
       "team_id": 22,
@@ -131,7 +167,11 @@
       "result_line": "779\u2013589 vs Barrio Cerrillos \ud83c\udfc6. Final.",
       "power_line": "Power rank 1. Unchanged.",
       "all_play_line": "All-play through matchup 4: 40-11-1.",
-      "luck_line": "Pythagorean luck through matchup 4: +1.54 wins."
+      "luck_line": "Pythagorean luck through matchup 4: +1.54 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 2 of 14.",
+      "average_line": "105.1 above the Week 4 average.",
+      "streak_line": "4 wins in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 8.5. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Las Villas ENDGAME, power rank 4."
     },
     {
       "team_id": 23,
@@ -144,7 +184,11 @@
       "result_line": "727\u2013755 vs Morrisville Fundamental. Final.",
       "power_line": "Power rank 9. Up 4.",
       "all_play_line": "All-play through matchup 4: 23-29-0.",
-      "luck_line": "Pythagorean luck through matchup 4: -0.86 wins."
+      "luck_line": "Pythagorean luck through matchup 4: -0.86 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 5 of 14.",
+      "average_line": "53.1 above the Week 4 average.",
+      "streak_line": "3 losses in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 7.8. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is El Mostroso, power rank 2."
     },
     {
       "team_id": 24,
@@ -157,7 +201,11 @@
       "result_line": "652\u2013672 vs Minneapolis Lakers \ud83c\udfc6. Final.",
       "power_line": "Power rank 10. Down 2.",
       "all_play_line": "All-play through matchup 4: 19-32-1.",
-      "luck_line": "Pythagorean luck through matchup 4: -0.96 wins."
+      "luck_line": "Pythagorean luck through matchup 4: -0.96 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 9 of 14.",
+      "average_line": "21.9 below the Week 4 average.",
+      "streak_line": "1 loss in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 6.0. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is BBQ CHICKEN MADNESS, power rank 6."
     },
     {
       "team_id": 25,
@@ -170,7 +218,11 @@
       "result_line": "640\u2013750 vs El TumbaCuello \ud83c\udfc6\ud83c\udfc6. Final.",
       "power_line": "Power rank 12. Down 1.",
       "all_play_line": "All-play through matchup 4: 17-35-0.",
-      "luck_line": "Pythagorean luck through matchup 4: -0.90 wins."
+      "luck_line": "Pythagorean luck through matchup 4: -0.90 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 10 of 14.",
+      "average_line": "33.9 below the Week 4 average.",
+      "streak_line": "2 losses in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 8.0. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Morovis  El Calor \ud83c\udfc6, power rank 14."
     },
     {
       "team_id": 26,
@@ -183,7 +235,11 @@
       "result_line": "755\u2013727 vs Los Suns de PFKNR. Final.",
       "power_line": "Power rank 7. Up 5.",
       "all_play_line": "All-play through matchup 4: 19-32-1.",
-      "luck_line": "Pythagorean luck through matchup 4: -0.83 wins."
+      "luck_line": "Pythagorean luck through matchup 4: -0.83 wins.",
+      "scoring_rank_line": "Week 4 scoring rank: 3 of 14.",
+      "average_line": "81.1 above the Week 4 average.",
+      "streak_line": "1 win in a row through Week 4.",
+      "upcoming_line": "Average opponent power rank: 7.0. Power ranks through Week 4. 4 of 4 scheduled opponents rated. Next is Minneapolis Lakers \ud83c\udfc6, power rank 5."
     }
   ]
 }

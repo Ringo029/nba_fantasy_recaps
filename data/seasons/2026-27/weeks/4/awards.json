@@ -7,6 +7,23 @@
     "mvp": "Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts",
     "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Barrio Cerrillos \ud83c\udfc6 (589) \u2014 margin 190 pts",
     "closest_matchup": "Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
+    "highest_scoring_loss": "Los Suns de PFKNR with 727 pts",
+    "lowest_scoring_win": "Las Villas ENDGAME with 586 pts",
+    "weekly_average_line": "League average: 673.9 pts",
+    "highest_scoring_loss_teams": [
+      {
+        "team_id": 23,
+        "team_name": "Los Suns de PFKNR",
+        "points": 727.0
+      }
+    ],
+    "lowest_scoring_win_teams": [
+      {
+        "team_id": 6,
+        "team_name": "Las Villas ENDGAME",
+        "points": 586.0
+      }
+    ],
     "storylines": [
       "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Barrio Cerrillos \ud83c\udfc6 (589) \u2014 margin 190 pts.",
       "El Mostroso (818) def. La Escuelita (672) \u2014 margin 146 pts.",

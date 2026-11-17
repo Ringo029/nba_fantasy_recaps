@@ -10,6 +10,12 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 - Widest margin: DX✌🏾two words SUC-K IT!! (779) def. Barrio Cerrillos 🏆 (589) — margin 190 pts
 - Closest matchup: Minneapolis Lakers 🏆 (672) def. Bench warming brick layers unit (652) — margin 20 pts
 
+## Weekly highlights
+
+- Highest-scoring loss: Los Suns de PFKNR with 727 pts
+- Lowest-scoring win: Las Villas ENDGAME with 586 pts
+- League average: 673.9 pts
+
 ## Results
 
 - DX✌🏾two words SUC-K IT!! (779) def. Barrio Cerrillos 🏆 (589) — margin 190 pts.

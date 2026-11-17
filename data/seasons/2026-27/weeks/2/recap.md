@@ -10,6 +10,12 @@ Dates: 2026-10-26 to 2026-11-01 (America/New_York).
 - Widest margin: DX✌🏾two words SUC-K IT!! (697) def. El TumbaCuello 🏆🏆 (514) — margin 183 pts
 - Closest matchup: La Guillotina (716) def. Los Suns de PFKNR (695) — margin 21 pts
 
+## Weekly highlights
+
+- Highest-scoring loss: Bench warming brick layers unit with 697 pts
+- Lowest-scoring win: Ringo's Cool Team with 674 pts
+- League average: 650.9 pts
+
 ## Results
 
 - DX✌🏾two words SUC-K IT!! (697) def. El TumbaCuello 🏆🏆 (514) — margin 183 pts.

@@ -1,6 +1,6 @@
 {
   "label": "Current ESPN watchlist. Averages and injury attributes were observed at the capture time. This is not a schedule-based waiver ranking.",
-  "observed_at": "2026-11-16T21:10:04Z",
+  "observed_at": "2026-11-17T00:01:39Z",
   "historical_reconstruction": false,
   "avg_basis": "espn_season_total_applied_average_at_capture",
   "avg_basis_note": "avg_fantasy_points is ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals by the installed client, at observed_at. On the payloads checked for this client, appliedAverage equals appliedTotal divided by GP on that same split. GP is games that player has played, not team games and not fantasy matchup periods. games_played is that GP when the split includes it. The value is not points scored in the current matchup period.",
@@ -161,6 +161,19 @@
       "ownership_percent": null
     },
     {
+      "espn_player_id": 3133603,
+      "player_name": "Kelly Oubre Jr.",
+      "pro_team": "IND",
+      "avg_fantasy_points": 10.0,
+      "games_played": 12.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
       "espn_player_id": 2530530,
       "player_name": "T.J. McConnell",
       "pro_team": "IND",
@@ -245,8 +258,8 @@
       "avg_fantasy_points": 9.62,
       "games_played": 8.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "DAY_TO_DAY",
-      "injured": false,
+      "injury_status": "OUT",
+      "injured": true,
       "acquisition_status": "free_agent",
       "ownership_status": "unavailable",
       "ownership_percent": null
@@ -481,19 +494,6 @@
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "OUT",
       "injured": true,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
-      "espn_player_id": 4845374,
-      "player_name": "Bub Carrington",
-      "pro_team": "WAS",
-      "avg_fantasy_points": 6.14,
-      "games_played": 14.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
-      "injured": false,
       "acquisition_status": "free_agent",
       "ownership_status": "unavailable",
       "ownership_percent": null

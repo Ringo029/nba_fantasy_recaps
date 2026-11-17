@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "season_id": "2026-27",
-  "snapshot_id": "20261116T211005Z",
-  "generated_at": "2026-11-16T21:10:05Z",
-  "source_updated_at": "2026-11-16T21:10:04Z",
+  "snapshot_id": "20261117T000140Z",
+  "generated_at": "2026-11-17T00:01:40Z",
+  "source_updated_at": "2026-11-17T00:01:39Z",
   "matchup_period_id": 5,
   "period_start": "2026-11-16",
   "period_end": "2026-11-22",
@@ -22,7 +22,7 @@
   "warnings": [
     "Win probabilities are not published.",
     "Matchup 5 scores are ESPN box-score totals for that matchup. Season points-for on the live league were not used.",
-    "Fixture source is the ESPN fantasy pro schedule, not the NBA official schedule. Games in this matchup: 51. Scheduled future games: 51. Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed."
+    "Fixture source is the ESPN fantasy pro schedule, not the NBA official schedule. Games in this matchup: 51. Scheduled future games: 48. Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed."
   ],
   "power_formula": "power_score = 0.625 * normalized season points-for/points-against + 0.375 * normalized matchup-period points. Strength of schedule is not a component.",
   "public_base_url": "https://ringo029.github.io/nba_fantasy_recaps"
