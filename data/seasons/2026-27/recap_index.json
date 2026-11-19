@@ -6,176 +6,176 @@
       "season_id": "2026-27",
       "period_id": 5,
       "status": "provisional",
-      "generated_at": "2026-11-19T02:39:20Z",
+      "generated_at": "2026-11-19T02:50:29Z",
       "url": "seasons/2026-27/recaps/period-05.html",
-      "summary": "Week 5 \u00b7 Nov 16\u201322 (This week) | 2026-11-16 to 2026-11-22 America/New_York | Team of the period: Morrisville Fundamental with 357 pts | MVP: Giannis Antetokounmpo (DX\u270c\ud83c\udffetwo words SUC-K IT!!) with 69 pts | Closest: Bench warming brick layers unit (293) def. BBQ CHICKEN MADNESS (269) \u2014 margin 24 pts",
+      "summary": "Week 5 \u00b7 Nov 16\u201322 (This week) | 2026-11-16 to 2026-11-22 America/New_York | Team of the period: Morrisville Fundamental with 360 pts | MVP: Giannis Antetokounmpo (DX\u270c\ud83c\udffetwo words SUC-K IT!!) with 79 pts | Closest: Bench warming brick layers unit (291) def. BBQ CHICKEN MADNESS (281) \u2014 margin 10 pts",
       "awards": {
-        "team_of_period": "Morrisville Fundamental with 357 pts",
-        "mvp": "Giannis Antetokounmpo (DX\u270c\ud83c\udffetwo words SUC-K IT!!) with 69 pts",
-        "widest_margin": "Morrisville Fundamental (357) def. Minneapolis Lakers \ud83c\udfc6 (192) \u2014 margin 165 pts",
-        "closest_matchup": "Bench warming brick layers unit (293) def. BBQ CHICKEN MADNESS (269) \u2014 margin 24 pts",
-        "highest_scoring_loss": "BBQ CHICKEN MADNESS with 269 pts",
-        "lowest_scoring_win": "Bench warming brick layers unit with 293 pts",
-        "weekly_average_line": "League average: 274.8 pts",
+        "team_of_period": "Morrisville Fundamental with 360 pts",
+        "mvp": "Giannis Antetokounmpo (DX\u270c\ud83c\udffetwo words SUC-K IT!!) with 79 pts",
+        "widest_margin": "Morrisville Fundamental (360) def. Minneapolis Lakers \ud83c\udfc6 (200) \u2014 margin 160 pts",
+        "closest_matchup": "Bench warming brick layers unit (291) def. BBQ CHICKEN MADNESS (281) \u2014 margin 10 pts",
+        "highest_scoring_loss": "BBQ CHICKEN MADNESS with 281 pts",
+        "lowest_scoring_win": "Bench warming brick layers unit with 291 pts",
+        "weekly_average_line": "League average: 279.9 pts",
         "highest_scoring_loss_teams": [
           {
             "team_id": 20,
             "team_name": "BBQ CHICKEN MADNESS",
-            "points": 269.0
+            "points": 281.0
           }
         ],
         "lowest_scoring_win_teams": [
           {
             "team_id": 24,
             "team_name": "Bench warming brick layers unit",
-            "points": 293.0
+            "points": 291.0
           }
         ],
         "storylines": [
-          "Morrisville Fundamental (357) def. Minneapolis Lakers \ud83c\udfc6 (192) \u2014 margin 165 pts.",
-          "Los Suns de PFKNR (343) def. El Mostroso (190) \u2014 margin 153 pts.",
-          "DX\u270c\ud83c\udffetwo words SUC-K IT!! (297) def. Las Villas ENDGAME (228) \u2014 margin 69 pts.",
-          "Barrio Cerrillos \ud83c\udfc6 (314) def. La Escuelita (266) \u2014 margin 48 pts.",
-          "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (295) def. La Guillotina (250) \u2014 margin 45 pts.",
-          "Morovis  El Calor \ud83c\udfc6 (294) def. Ringo's Cool Team (259) \u2014 margin 35 pts.",
-          "Bench warming brick layers unit (293) def. BBQ CHICKEN MADNESS (269) \u2014 margin 24 pts.",
-          "Highest team score: Morrisville Fundamental with 357 pts.",
-          "Closest matchup: Bench warming brick layers unit (293) def. BBQ CHICKEN MADNESS (269) \u2014 margin 24 pts.",
-          "Biggest win: Morrisville Fundamental (357) def. Minneapolis Lakers \ud83c\udfc6 (192) \u2014 margin 165 pts."
+          "Morrisville Fundamental (360) def. Minneapolis Lakers \ud83c\udfc6 (200) \u2014 margin 160 pts.",
+          "Los Suns de PFKNR (342) def. El Mostroso (200) \u2014 margin 142 pts.",
+          "DX\u270c\ud83c\udffetwo words SUC-K IT!! (308) def. Las Villas ENDGAME (234) \u2014 margin 74 pts.",
+          "Barrio Cerrillos \ud83c\udfc6 (324) def. La Escuelita (273) \u2014 margin 51 pts.",
+          "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (299) def. La Guillotina (253) \u2014 margin 46 pts.",
+          "Morovis  El Calor \ud83c\udfc6 (292) def. Ringo's Cool Team (261) \u2014 margin 31 pts.",
+          "Bench warming brick layers unit (291) def. BBQ CHICKEN MADNESS (281) \u2014 margin 10 pts.",
+          "Highest team score: Morrisville Fundamental with 360 pts.",
+          "Closest matchup: Bench warming brick layers unit (291) def. BBQ CHICKEN MADNESS (281) \u2014 margin 10 pts.",
+          "Biggest win: Morrisville Fundamental (360) def. Minneapolis Lakers \ud83c\udfc6 (200) \u2014 margin 160 pts."
         ],
         "scoring_table": [
           {
             "team_id": 26,
             "team_name": "Morrisville Fundamental",
-            "points": 357.0,
-            "opponent_points": 192.0,
+            "points": 360.0,
+            "opponent_points": 200.0,
             "opponent_name": "Minneapolis Lakers \ud83c\udfc6",
             "result": "W",
-            "margin": 165.0
+            "margin": 160.0
           },
           {
             "team_id": 23,
             "team_name": "Los Suns de PFKNR",
-            "points": 343.0,
-            "opponent_points": 190.0,
+            "points": 342.0,
+            "opponent_points": 200.0,
             "opponent_name": "El Mostroso",
             "result": "W",
-            "margin": 153.0
+            "margin": 142.0
           },
           {
             "team_id": 5,
             "team_name": "Barrio Cerrillos \ud83c\udfc6",
-            "points": 314.0,
-            "opponent_points": 266.0,
+            "points": 324.0,
+            "opponent_points": 273.0,
             "opponent_name": "La Escuelita",
             "result": "W",
-            "margin": 48.0
+            "margin": 51.0
           },
           {
             "team_id": 22,
             "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
-            "points": 297.0,
-            "opponent_points": 228.0,
+            "points": 308.0,
+            "opponent_points": 234.0,
             "opponent_name": "Las Villas ENDGAME",
             "result": "W",
-            "margin": 69.0
+            "margin": 74.0
           },
           {
             "team_id": 16,
             "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-            "points": 295.0,
-            "opponent_points": 250.0,
+            "points": 299.0,
+            "opponent_points": 253.0,
             "opponent_name": "La Guillotina",
             "result": "W",
-            "margin": 45.0
+            "margin": 46.0
           },
           {
             "team_id": 3,
             "team_name": "Morovis  El Calor \ud83c\udfc6",
-            "points": 294.0,
-            "opponent_points": 259.0,
+            "points": 292.0,
+            "opponent_points": 261.0,
             "opponent_name": "Ringo's Cool Team",
             "result": "W",
-            "margin": 35.0
+            "margin": 31.0
           },
           {
             "team_id": 24,
             "team_name": "Bench warming brick layers unit",
-            "points": 293.0,
-            "opponent_points": 269.0,
+            "points": 291.0,
+            "opponent_points": 281.0,
             "opponent_name": "BBQ CHICKEN MADNESS",
             "result": "W",
-            "margin": 24.0
+            "margin": 10.0
           },
           {
             "team_id": 20,
             "team_name": "BBQ CHICKEN MADNESS",
-            "points": 269.0,
-            "opponent_points": 293.0,
+            "points": 281.0,
+            "opponent_points": 291.0,
             "opponent_name": "Bench warming brick layers unit",
             "result": "L",
-            "margin": 24.0
+            "margin": 10.0
           },
           {
             "team_id": 18,
             "team_name": "La Escuelita",
-            "points": 266.0,
-            "opponent_points": 314.0,
+            "points": 273.0,
+            "opponent_points": 324.0,
             "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
             "result": "L",
-            "margin": 48.0
+            "margin": 51.0
           },
           {
             "team_id": 25,
             "team_name": "Ringo's Cool Team",
-            "points": 259.0,
-            "opponent_points": 294.0,
+            "points": 261.0,
+            "opponent_points": 292.0,
             "opponent_name": "Morovis  El Calor \ud83c\udfc6",
             "result": "L",
-            "margin": 35.0
+            "margin": 31.0
           },
           {
             "team_id": 9,
             "team_name": "La Guillotina",
-            "points": 250.0,
-            "opponent_points": 295.0,
+            "points": 253.0,
+            "opponent_points": 299.0,
             "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
             "result": "L",
-            "margin": 45.0
+            "margin": 46.0
           },
           {
             "team_id": 6,
             "team_name": "Las Villas ENDGAME",
-            "points": 228.0,
-            "opponent_points": 297.0,
+            "points": 234.0,
+            "opponent_points": 308.0,
             "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
             "result": "L",
-            "margin": 69.0
-          },
-          {
-            "team_id": 4,
-            "team_name": "Minneapolis Lakers \ud83c\udfc6",
-            "points": 192.0,
-            "opponent_points": 357.0,
-            "opponent_name": "Morrisville Fundamental",
-            "result": "L",
-            "margin": 165.0
+            "margin": 74.0
           },
           {
             "team_id": 17,
             "team_name": "El Mostroso",
-            "points": 190.0,
-            "opponent_points": 343.0,
+            "points": 200.0,
+            "opponent_points": 342.0,
             "opponent_name": "Los Suns de PFKNR",
             "result": "L",
-            "margin": 153.0
+            "margin": 142.0
+          },
+          {
+            "team_id": 4,
+            "team_name": "Minneapolis Lakers \ud83c\udfc6",
+            "points": 200.0,
+            "opponent_points": 360.0,
+            "opponent_name": "Morrisville Fundamental",
+            "result": "L",
+            "margin": 160.0
           }
         ],
         "top_performances": [
           {
             "player_name": "Giannis Antetokounmpo",
             "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
-            "points": 69.0
+            "points": 79.0
           },
           {
             "player_name": "Donovan Mitchell",
@@ -207,7 +207,7 @@
       "season_id": "2026-27",
       "period_id": 4,
       "status": "final",
-      "generated_at": "2026-11-18T20:55:16Z",
+      "generated_at": "2026-11-19T02:50:25Z",
       "url": "seasons/2026-27/recaps/period-04.html",
       "summary": "Week 4 \u00b7 Nov 9\u201315 (Final) | 2026-11-09 to 2026-11-15 America/New_York | Team of the period: El Mostroso with 818 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
       "awards": {
@@ -408,7 +408,7 @@
       "season_id": "2026-27",
       "period_id": 3,
       "status": "final",
-      "generated_at": "2026-11-18T20:55:16Z",
+      "generated_at": "2026-11-19T02:50:25Z",
       "url": "seasons/2026-27/recaps/period-03.html",
       "summary": "Week 3 \u00b7 Nov 2\u20138 (Final) | 2026-11-02 to 2026-11-08 America/New_York | Team of the period: Las Villas ENDGAME with 811 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts",
       "awards": {
@@ -609,7 +609,7 @@
       "season_id": "2026-27",
       "period_id": 2,
       "status": "final",
-      "generated_at": "2026-11-18T20:55:15Z",
+      "generated_at": "2026-11-19T02:50:25Z",
       "url": "seasons/2026-27/recaps/period-02.html",
       "summary": "Week 2 \u00b7 Oct 26\u2013Nov 1 (Final) | 2026-10-26 to 2026-11-01 America/New_York | Team of the period: La Escuelita with 730 pts | MVP: Luka Doncic (La Guillotina) with 128 pts | Closest: La Guillotina (716) def. Los Suns de PFKNR (695) \u2014 margin 21 pts",
       "awards": {
@@ -810,7 +810,7 @@
       "season_id": "2026-27",
       "period_id": 1,
       "status": "final",
-      "generated_at": "2026-11-18T20:55:15Z",
+      "generated_at": "2026-11-19T02:50:25Z",
       "url": "seasons/2026-27/recaps/period-01.html",
       "summary": "Week 1 \u00b7 Oct 20\u201325 (Final) | 2026-10-20 to 2026-10-25 America/New_York | Team of the period: El TumbaCuello \ud83c\udfc6\ud83c\udfc6 with 703 pts | MVP: Domantas Sabonis (Ringo's Cool Team) with 113 pts | Closest: Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts",
       "awards": {

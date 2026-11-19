@@ -5,50 +5,50 @@ Dates: 2026-11-16 to 2026-11-22 (America/New_York).
 
 ## Awards
 
-- Team of the period: Morrisville Fundamental with 357 pts
-- MVP: Giannis Antetokounmpo (DX✌🏾two words SUC-K IT!!) with 69 pts
-- Widest margin: Morrisville Fundamental (357) def. Minneapolis Lakers 🏆 (192) — margin 165 pts
-- Closest matchup: Bench warming brick layers unit (293) def. BBQ CHICKEN MADNESS (269) — margin 24 pts
+- Team of the period: Morrisville Fundamental with 360 pts
+- MVP: Giannis Antetokounmpo (DX✌🏾two words SUC-K IT!!) with 79 pts
+- Widest margin: Morrisville Fundamental (360) def. Minneapolis Lakers 🏆 (200) — margin 160 pts
+- Closest matchup: Bench warming brick layers unit (291) def. BBQ CHICKEN MADNESS (281) — margin 10 pts
 
 ## Weekly highlights
 
-- Highest-scoring loss: BBQ CHICKEN MADNESS with 269 pts
-- Lowest-scoring win: Bench warming brick layers unit with 293 pts
-- League average: 274.8 pts
+- Highest-scoring loss: BBQ CHICKEN MADNESS with 281 pts
+- Lowest-scoring win: Bench warming brick layers unit with 291 pts
+- League average: 279.9 pts
 
 ## Results
 
-- Morrisville Fundamental (357) def. Minneapolis Lakers 🏆 (192) — margin 165 pts.
-- Los Suns de PFKNR (343) def. El Mostroso (190) — margin 153 pts.
-- DX✌🏾two words SUC-K IT!! (297) def. Las Villas ENDGAME (228) — margin 69 pts.
-- Barrio Cerrillos 🏆 (314) def. La Escuelita (266) — margin 48 pts.
-- El TumbaCuello 🏆🏆 (295) def. La Guillotina (250) — margin 45 pts.
-- Morovis  El Calor 🏆 (294) def. Ringo's Cool Team (259) — margin 35 pts.
-- Bench warming brick layers unit (293) def. BBQ CHICKEN MADNESS (269) — margin 24 pts.
-- Highest team score: Morrisville Fundamental with 357 pts.
-- Closest matchup: Bench warming brick layers unit (293) def. BBQ CHICKEN MADNESS (269) — margin 24 pts.
-- Biggest win: Morrisville Fundamental (357) def. Minneapolis Lakers 🏆 (192) — margin 165 pts.
+- Morrisville Fundamental (360) def. Minneapolis Lakers 🏆 (200) — margin 160 pts.
+- Los Suns de PFKNR (342) def. El Mostroso (200) — margin 142 pts.
+- DX✌🏾two words SUC-K IT!! (308) def. Las Villas ENDGAME (234) — margin 74 pts.
+- Barrio Cerrillos 🏆 (324) def. La Escuelita (273) — margin 51 pts.
+- El TumbaCuello 🏆🏆 (299) def. La Guillotina (253) — margin 46 pts.
+- Morovis  El Calor 🏆 (292) def. Ringo's Cool Team (261) — margin 31 pts.
+- Bench warming brick layers unit (291) def. BBQ CHICKEN MADNESS (281) — margin 10 pts.
+- Highest team score: Morrisville Fundamental with 360 pts.
+- Closest matchup: Bench warming brick layers unit (291) def. BBQ CHICKEN MADNESS (281) — margin 10 pts.
+- Biggest win: Morrisville Fundamental (360) def. Minneapolis Lakers 🏆 (200) — margin 160 pts.
 
 ## Weekly scoring
 
-- Morrisville Fundamental: 357.0 (W) vs Minneapolis Lakers 🏆 192.0
-- Los Suns de PFKNR: 343.0 (W) vs El Mostroso 190.0
-- Barrio Cerrillos 🏆: 314.0 (W) vs La Escuelita 266.0
-- DX✌🏾two words SUC-K IT!!: 297.0 (W) vs Las Villas ENDGAME 228.0
-- El TumbaCuello 🏆🏆: 295.0 (W) vs La Guillotina 250.0
-- Morovis  El Calor 🏆: 294.0 (W) vs Ringo's Cool Team 259.0
-- Bench warming brick layers unit: 293.0 (W) vs BBQ CHICKEN MADNESS 269.0
-- BBQ CHICKEN MADNESS: 269.0 (L) vs Bench warming brick layers unit 293.0
-- La Escuelita: 266.0 (L) vs Barrio Cerrillos 🏆 314.0
-- Ringo's Cool Team: 259.0 (L) vs Morovis  El Calor 🏆 294.0
-- La Guillotina: 250.0 (L) vs El TumbaCuello 🏆🏆 295.0
-- Las Villas ENDGAME: 228.0 (L) vs DX✌🏾two words SUC-K IT!! 297.0
-- Minneapolis Lakers 🏆: 192.0 (L) vs Morrisville Fundamental 357.0
-- El Mostroso: 190.0 (L) vs Los Suns de PFKNR 343.0
+- Morrisville Fundamental: 360.0 (W) vs Minneapolis Lakers 🏆 200.0
+- Los Suns de PFKNR: 342.0 (W) vs El Mostroso 200.0
+- Barrio Cerrillos 🏆: 324.0 (W) vs La Escuelita 273.0
+- DX✌🏾two words SUC-K IT!!: 308.0 (W) vs Las Villas ENDGAME 234.0
+- El TumbaCuello 🏆🏆: 299.0 (W) vs La Guillotina 253.0
+- Morovis  El Calor 🏆: 292.0 (W) vs Ringo's Cool Team 261.0
+- Bench warming brick layers unit: 291.0 (W) vs BBQ CHICKEN MADNESS 281.0
+- BBQ CHICKEN MADNESS: 281.0 (L) vs Bench warming brick layers unit 291.0
+- La Escuelita: 273.0 (L) vs Barrio Cerrillos 🏆 324.0
+- Ringo's Cool Team: 261.0 (L) vs Morovis  El Calor 🏆 292.0
+- La Guillotina: 253.0 (L) vs El TumbaCuello 🏆🏆 299.0
+- Las Villas ENDGAME: 234.0 (L) vs DX✌🏾two words SUC-K IT!! 308.0
+- El Mostroso: 200.0 (L) vs Los Suns de PFKNR 342.0
+- Minneapolis Lakers 🏆: 200.0 (L) vs Morrisville Fundamental 360.0
 
 ## Top performances
 
-- Giannis Antetokounmpo (DX✌🏾two words SUC-K IT!!): 69.0
+- Giannis Antetokounmpo (DX✌🏾two words SUC-K IT!!): 79.0
 - Donovan Mitchell (Las Villas ENDGAME): 64.0
 - Joel Embiid (Morrisville Fundamental): 61.0
 - Franz Wagner (DX✌🏾two words SUC-K IT!!): 60.0
@@ -56,13 +56,13 @@ Dates: 2026-11-16 to 2026-11-22 (America/New_York).
 
 ## Matchups
 
-- La Escuelita 266.0 , Barrio Cerrillos 🏆 314.0
-- DX✌🏾two words SUC-K IT!! 297.0 , Las Villas ENDGAME 228.0
-- El Mostroso 190.0 , Los Suns de PFKNR 343.0
-- Morovis  El Calor 🏆 294.0 , Ringo's Cool Team 259.0
-- Morrisville Fundamental 357.0 , Minneapolis Lakers 🏆 192.0
-- El TumbaCuello 🏆🏆 295.0 , La Guillotina 250.0
-- Bench warming brick layers unit 293.0 , BBQ CHICKEN MADNESS 269.0
+- La Escuelita 273.0 , Barrio Cerrillos 🏆 324.0
+- DX✌🏾two words SUC-K IT!! 308.0 , Las Villas ENDGAME 234.0
+- El Mostroso 200.0 , Los Suns de PFKNR 342.0
+- Morovis  El Calor 🏆 292.0 , Ringo's Cool Team 261.0
+- Morrisville Fundamental 360.0 , Minneapolis Lakers 🏆 200.0
+- El TumbaCuello 🏆🏆 299.0 , La Guillotina 253.0
+- Bench warming brick layers unit 291.0 , BBQ CHICKEN MADNESS 281.0
 
 ## Power rankings
 
@@ -73,11 +73,11 @@ Dates: 2026-11-16 to 2026-11-22 (America/New_York).
 - 5. El TumbaCuello 🏆🏆 (Down 2)
 - 6. Bench warming brick layers unit (Up 4)
 - 7. El Mostroso (Down 5)
-- 8. Las Villas ENDGAME (Down 4)
-- 9. BBQ CHICKEN MADNESS (Down 3)
+- 8. BBQ CHICKEN MADNESS (Down 2)
+- 9. Las Villas ENDGAME (Down 5)
 - 10. La Guillotina (Down 2)
-- 11. Ringo's Cool Team (Up 1)
-- 12. La Escuelita (Down 1)
+- 11. La Escuelita (Unchanged)
+- 12. Ringo's Cool Team (Unchanged)
 - 13. Morovis  El Calor 🏆 (Up 1)
 - 14. Minneapolis Lakers 🏆 (Down 9)
 

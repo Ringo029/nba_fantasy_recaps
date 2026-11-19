@@ -47,16 +47,16 @@
       "power_movement": "Down 5"
     },
     {
-      "team_id": 6,
-      "team_name": "Las Villas ENDGAME",
-      "power_rank": 8,
-      "power_movement": "Down 4"
-    },
-    {
       "team_id": 20,
       "team_name": "BBQ CHICKEN MADNESS",
+      "power_rank": 8,
+      "power_movement": "Down 2"
+    },
+    {
+      "team_id": 6,
+      "team_name": "Las Villas ENDGAME",
       "power_rank": 9,
-      "power_movement": "Down 3"
+      "power_movement": "Down 5"
     },
     {
       "team_id": 9,
@@ -65,16 +65,16 @@
       "power_movement": "Down 2"
     },
     {
-      "team_id": 25,
-      "team_name": "Ringo's Cool Team",
-      "power_rank": 11,
-      "power_movement": "Up 1"
-    },
-    {
       "team_id": 18,
       "team_name": "La Escuelita",
+      "power_rank": 11,
+      "power_movement": "Unchanged"
+    },
+    {
+      "team_id": 25,
+      "team_name": "Ringo's Cool Team",
       "power_rank": 12,
-      "power_movement": "Down 1"
+      "power_movement": "Unchanged"
     },
     {
       "team_id": 3,
