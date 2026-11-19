@@ -40,7 +40,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909307",
@@ -55,7 +55,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910034",
@@ -70,7 +70,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910006",
@@ -85,7 +85,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910022",
@@ -100,7 +100,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910025",
@@ -115,7 +115,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910005",
@@ -130,7 +130,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910017",
@@ -145,7 +145,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909313",
@@ -160,7 +160,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909998",
@@ -175,7 +175,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910009",
@@ -190,7 +190,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910030",
@@ -205,7 +205,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910020",
@@ -220,7 +220,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910023",
@@ -235,7 +235,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909999",
@@ -250,7 +250,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910003",
@@ -265,7 +265,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910021",
@@ -280,7 +280,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910026",
@@ -295,7 +295,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909997",
@@ -310,7 +310,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910011",
@@ -325,7 +325,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909306",
@@ -340,7 +340,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910002",
@@ -355,7 +355,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910024",
@@ -370,7 +370,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909994",
@@ -385,7 +385,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910010",
@@ -400,7 +400,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910031",
@@ -415,7 +415,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910001",
@@ -430,7 +430,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910018",
@@ -445,7 +445,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909311",
@@ -460,7 +460,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910028",
@@ -475,7 +475,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910004",
@@ -490,7 +490,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910027",
@@ -505,7 +505,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910014",
@@ -520,7 +520,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909310",
@@ -535,7 +535,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910033",
@@ -550,7 +550,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909996",
@@ -565,7 +565,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910012",
@@ -580,7 +580,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909309",
@@ -595,7 +595,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909308",
@@ -610,7 +610,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910007",
@@ -625,7 +625,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910019",
@@ -640,7 +640,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909305",
@@ -655,7 +655,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910029",
@@ -670,7 +670,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910015",
@@ -685,7 +685,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910035",
@@ -700,7 +700,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910000",
@@ -715,7 +715,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910013",
@@ -730,7 +730,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909995",
@@ -745,7 +745,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910032",
@@ -760,7 +760,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401910016",
@@ -775,7 +775,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     },
     {
       "game_id": "401909312",
@@ -790,7 +790,7 @@
       "game_status": "unknown",
       "confirmed": false,
       "source": "espn_api.requests.espn_requests.get_pro_schedule view=proTeamSchedules_wl",
-      "fetched_at": "2026-11-19T12:11:02Z"
+      "fetched_at": "2026-11-19T20:46:52Z"
     }
   ],
   "note": "Scheduled future games counts games whose status is unknown and whose tipoff is still ahead. Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed."
