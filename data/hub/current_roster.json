@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "label": "Current roster observation at observed_at. These rows are not a historical lineup, a past transaction, or a next-week projection.",
-  "observed_at": "2026-11-19T20:46:52Z",
+  "observed_at": "2026-11-19T20:59:22Z",
   "season_id": "2026-27",
   "matchup_period_id": 5,
   "historical_reconstruction": false,
