@@ -23,8 +23,8 @@
       "ties": 0,
       "rank": 1,
       "playoff_seed": 2,
-      "power_rank": 7,
-      "power_movement": "Down 5"
+      "power_rank": 8,
+      "power_movement": "Down 6"
     },
     {
       "team_id": 4,
@@ -34,8 +34,8 @@
       "ties": 0,
       "rank": 3,
       "playoff_seed": 3,
-      "power_rank": 14,
-      "power_movement": "Down 9"
+      "power_rank": 13,
+      "power_movement": "Down 8"
     },
     {
       "team_id": 6,
@@ -45,8 +45,8 @@
       "ties": 0,
       "rank": 3,
       "playoff_seed": 4,
-      "power_rank": 9,
-      "power_movement": "Down 5"
+      "power_rank": 4,
+      "power_movement": "Unchanged"
     },
     {
       "team_id": 9,
@@ -56,8 +56,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 5,
-      "power_rank": 10,
-      "power_movement": "Down 2"
+      "power_rank": 9,
+      "power_movement": "Down 1"
     },
     {
       "team_id": 16,
@@ -67,8 +67,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 6,
-      "power_rank": 5,
-      "power_movement": "Down 2"
+      "power_rank": 7,
+      "power_movement": "Down 4"
     },
     {
       "team_id": 18,
@@ -78,8 +78,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 7,
-      "power_rank": 11,
-      "power_movement": "Unchanged"
+      "power_rank": 12,
+      "power_movement": "Down 1"
     },
     {
       "team_id": 5,
@@ -89,8 +89,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 8,
-      "power_rank": 4,
-      "power_movement": "Up 9"
+      "power_rank": 5,
+      "power_movement": "Up 8"
     },
     {
       "team_id": 20,
@@ -100,30 +100,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 9,
-      "power_rank": 8,
-      "power_movement": "Down 2"
-    },
-    {
-      "team_id": 26,
-      "team_name": "Morrisville Fundamental",
-      "wins": 1,
-      "losses": 3,
-      "ties": 0,
-      "rank": 10,
-      "playoff_seed": 10,
-      "power_rank": 2,
-      "power_movement": "Up 5"
-    },
-    {
-      "team_id": 24,
-      "team_name": "Bench warming brick layers unit",
-      "wins": 1,
-      "losses": 3,
-      "ties": 0,
-      "rank": 10,
-      "playoff_seed": 11,
-      "power_rank": 6,
-      "power_movement": "Up 4"
+      "power_rank": 11,
+      "power_movement": "Down 5"
     },
     {
       "team_id": 23,
@@ -132,9 +110,31 @@
       "losses": 3,
       "ties": 0,
       "rank": 10,
-      "playoff_seed": 12,
+      "playoff_seed": 10,
+      "power_rank": 2,
+      "power_movement": "Up 7"
+    },
+    {
+      "team_id": 26,
+      "team_name": "Morrisville Fundamental",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0,
+      "rank": 10,
+      "playoff_seed": 11,
       "power_rank": 3,
-      "power_movement": "Up 6"
+      "power_movement": "Up 4"
+    },
+    {
+      "team_id": 24,
+      "team_name": "Bench warming brick layers unit",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0,
+      "rank": 10,
+      "playoff_seed": 12,
+      "power_rank": 6,
+      "power_movement": "Up 4"
     },
     {
       "team_id": 25,
@@ -144,8 +144,8 @@
       "ties": 0,
       "rank": 10,
       "playoff_seed": 13,
-      "power_rank": 12,
-      "power_movement": "Unchanged"
+      "power_rank": 10,
+      "power_movement": "Up 2"
     },
     {
       "team_id": 3,
@@ -155,8 +155,8 @@
       "ties": 0,
       "rank": 14,
       "playoff_seed": 14,
-      "power_rank": 13,
-      "power_movement": "Up 1"
+      "power_rank": 14,
+      "power_movement": "Unchanged"
     }
   ]
 }
