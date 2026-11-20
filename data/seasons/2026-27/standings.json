@@ -23,8 +23,8 @@
       "ties": 0,
       "rank": 1,
       "playoff_seed": 2,
-      "power_rank": 8,
-      "power_movement": "Down 6"
+      "power_rank": 11,
+      "power_movement": "Down 9"
     },
     {
       "team_id": 4,
@@ -67,8 +67,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 6,
-      "power_rank": 7,
-      "power_movement": "Down 4"
+      "power_rank": 6,
+      "power_movement": "Down 3"
     },
     {
       "team_id": 18,
@@ -100,8 +100,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 9,
-      "power_rank": 11,
-      "power_movement": "Down 5"
+      "power_rank": 10,
+      "power_movement": "Down 4"
     },
     {
       "team_id": 23,
@@ -133,8 +133,8 @@
       "ties": 0,
       "rank": 10,
       "playoff_seed": 12,
-      "power_rank": 6,
-      "power_movement": "Up 4"
+      "power_rank": 7,
+      "power_movement": "Up 3"
     },
     {
       "team_id": 25,
@@ -144,8 +144,8 @@
       "ties": 0,
       "rank": 10,
       "playoff_seed": 13,
-      "power_rank": 10,
-      "power_movement": "Up 2"
+      "power_rank": 8,
+      "power_movement": "Up 4"
     },
     {
       "team_id": 3,
