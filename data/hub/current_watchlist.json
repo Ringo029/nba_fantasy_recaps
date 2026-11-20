@@ -1,6 +1,6 @@
 {
   "label": "Current ESPN watchlist. Averages and injury attributes were observed at the capture time. This is not a schedule-based waiver ranking.",
-  "observed_at": "2026-11-20T12:12:52Z",
+  "observed_at": "2026-11-20T20:30:30Z",
   "historical_reconstruction": false,
   "avg_basis": "espn_season_total_applied_average_at_capture",
   "avg_basis_note": "avg_fantasy_points is ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals by the installed client, at observed_at. On the payloads checked for this client, appliedAverage equals appliedTotal divided by GP on that same split. GP is games that player has played, not team games and not fantasy matchup periods. games_played is that GP when the split includes it. The value is not points scored in the current matchup period.",
@@ -109,6 +109,19 @@
       "ownership_percent": null
     },
     {
+      "espn_player_id": 4433137,
+      "player_name": "Ziaire Williams",
+      "pro_team": "LAL",
+      "avg_fantasy_points": 11.69,
+      "games_played": 13.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
       "espn_player_id": 4278355,
       "player_name": "Obi Toppin",
       "pro_team": "IND",
@@ -205,19 +218,6 @@
       "pro_team": "DAL",
       "avg_fantasy_points": 10.73,
       "games_played": 15.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
-      "injured": false,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
-      "espn_player_id": 3133603,
-      "player_name": "Kelly Oubre Jr.",
-      "pro_team": "IND",
-      "avg_fantasy_points": 10.46,
-      "games_played": 13.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,

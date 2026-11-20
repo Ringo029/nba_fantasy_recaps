@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "label": "Current roster observation at observed_at. These rows are not a historical lineup, a past transaction, or a next-week projection.",
-  "observed_at": "2026-11-20T12:12:52Z",
+  "observed_at": "2026-11-20T20:30:30Z",
   "season_id": "2026-27",
   "matchup_period_id": 5,
   "historical_reconstruction": false,
@@ -1954,19 +1954,6 @@
           "acquisition_status": "DRAFT"
         },
         {
-          "espn_player_id": 4433137,
-          "player_name": "Ziaire Williams",
-          "pro_team": "LAL",
-          "lineup_slot": "SF",
-          "injury_status": "ACTIVE",
-          "injured": false,
-          "expected_return_date": null,
-          "avg_fantasy_points": 11.69,
-          "games_played": 13.0,
-          "avg_basis": "espn_season_total_applied_average_at_capture",
-          "acquisition_status": "ADD"
-        },
-        {
           "espn_player_id": 4065732,
           "player_name": "De'Andre Hunter",
           "pro_team": "SAC",
@@ -1989,6 +1976,19 @@
           "expected_return_date": null,
           "avg_fantasy_points": 10.9,
           "games_played": 10.0,
+          "avg_basis": "espn_season_total_applied_average_at_capture",
+          "acquisition_status": "ADD"
+        },
+        {
+          "espn_player_id": 3133603,
+          "player_name": "Kelly Oubre Jr.",
+          "pro_team": "IND",
+          "lineup_slot": "SF",
+          "injury_status": "ACTIVE",
+          "injured": false,
+          "expected_return_date": null,
+          "avg_fantasy_points": 10.46,
+          "games_played": 13.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
         }
@@ -2334,7 +2334,7 @@
           "player_name": "Jalen Smith",
           "pro_team": "CHI",
           "lineup_slot": "F",
-          "injury_status": "ACTIVE",
+          "injury_status": "DAY_TO_DAY",
           "injured": false,
           "expected_return_date": null,
           "avg_fantasy_points": 19.0,
@@ -2548,7 +2548,7 @@
           "player_name": "Dean Wade",
           "pro_team": "PHL",
           "lineup_slot": "IR",
-          "injury_status": "DAY_TO_DAY",
+          "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
           "avg_fantasy_points": 10.46,
