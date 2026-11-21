@@ -3,23 +3,18 @@
   "season_id": "2026-27",
   "period_id": 5,
   "awards": {
-    "team_of_period": "Los Suns de PFKNR with 657 pts",
+    "team_of_period": "Morrisville Fundamental with 660 pts",
     "mvp": "Nikola Jokic (Morrisville Fundamental) with 103 pts",
-    "widest_margin": "Los Suns de PFKNR (657) def. El Mostroso (393) \u2014 margin 264 pts",
-    "closest_matchup": "Bench warming brick layers unit (544) def. BBQ CHICKEN MADNESS (506) \u2014 margin 38 pts",
-    "highest_scoring_loss": "BBQ CHICKEN MADNESS and La Guillotina tied with 506 pts",
+    "widest_margin": "Los Suns de PFKNR (657) def. El Mostroso (396) \u2014 margin 261 pts",
+    "closest_matchup": "Bench warming brick layers unit (544) def. BBQ CHICKEN MADNESS (515) \u2014 margin 29 pts",
+    "highest_scoring_loss": "La Guillotina with 519 pts",
     "lowest_scoring_win": "Ringo's Cool Team with 511 pts",
-    "weekly_average_line": "League average: 513.3 pts",
+    "weekly_average_line": "League average: 516.4 pts",
     "highest_scoring_loss_teams": [
-      {
-        "team_id": 20,
-        "team_name": "BBQ CHICKEN MADNESS",
-        "points": 506.0
-      },
       {
         "team_id": 9,
         "team_name": "La Guillotina",
-        "points": 506.0
+        "points": 519.0
       }
     ],
     "lowest_scoring_win_teams": [
@@ -30,44 +25,44 @@
       }
     ],
     "storylines": [
-      "Los Suns de PFKNR (657) def. El Mostroso (393) \u2014 margin 264 pts.",
-      "Morrisville Fundamental (652) def. Minneapolis Lakers \ud83c\udfc6 (423) \u2014 margin 229 pts.",
-      "Ringo's Cool Team (511) def. Morovis  El Calor \ud83c\udfc6 (415) \u2014 margin 96 pts.",
+      "Los Suns de PFKNR (657) def. El Mostroso (396) \u2014 margin 261 pts.",
+      "Morrisville Fundamental (660) def. Minneapolis Lakers \ud83c\udfc6 (423) \u2014 margin 237 pts.",
+      "Ringo's Cool Team (511) def. Morovis  El Calor \ud83c\udfc6 (411) \u2014 margin 100 pts.",
       "Barrio Cerrillos \ud83c\udfc6 (558) def. La Escuelita (474) \u2014 margin 84 pts.",
-      "DX\u270c\ud83c\udffetwo words SUC-K IT!! (527) def. Las Villas ENDGAME (458) \u2014 margin 69 pts.",
-      "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (562) def. La Guillotina (506) \u2014 margin 56 pts.",
-      "Bench warming brick layers unit (544) def. BBQ CHICKEN MADNESS (506) \u2014 margin 38 pts.",
-      "Highest team score: Los Suns de PFKNR with 657 pts.",
-      "Closest matchup: Bench warming brick layers unit (544) def. BBQ CHICKEN MADNESS (506) \u2014 margin 38 pts.",
-      "Biggest win: Los Suns de PFKNR (657) def. El Mostroso (393) \u2014 margin 264 pts."
+      "DX\u270c\ud83c\udffetwo words SUC-K IT!! (535) def. Las Villas ENDGAME (464) \u2014 margin 71 pts.",
+      "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (562) def. La Guillotina (519) \u2014 margin 43 pts.",
+      "Bench warming brick layers unit (544) def. BBQ CHICKEN MADNESS (515) \u2014 margin 29 pts.",
+      "Highest team score: Morrisville Fundamental with 660 pts.",
+      "Closest matchup: Bench warming brick layers unit (544) def. BBQ CHICKEN MADNESS (515) \u2014 margin 29 pts.",
+      "Biggest win: Los Suns de PFKNR (657) def. El Mostroso (396) \u2014 margin 261 pts."
     ],
     "scoring_table": [
+      {
+        "team_id": 26,
+        "team_name": "Morrisville Fundamental",
+        "points": 660.0,
+        "opponent_points": 423.0,
+        "opponent_name": "Minneapolis Lakers \ud83c\udfc6",
+        "result": "W",
+        "margin": 237.0
+      },
       {
         "team_id": 23,
         "team_name": "Los Suns de PFKNR",
         "points": 657.0,
-        "opponent_points": 393.0,
+        "opponent_points": 396.0,
         "opponent_name": "El Mostroso",
         "result": "W",
-        "margin": 264.0
-      },
-      {
-        "team_id": 26,
-        "team_name": "Morrisville Fundamental",
-        "points": 652.0,
-        "opponent_points": 423.0,
-        "opponent_name": "Minneapolis Lakers \ud83c\udfc6",
-        "result": "W",
-        "margin": 229.0
+        "margin": 261.0
       },
       {
         "team_id": 16,
         "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
         "points": 562.0,
-        "opponent_points": 506.0,
+        "opponent_points": 519.0,
         "opponent_name": "La Guillotina",
         "result": "W",
-        "margin": 56.0
+        "margin": 43.0
       },
       {
         "team_id": 5,
@@ -82,46 +77,46 @@
         "team_id": 24,
         "team_name": "Bench warming brick layers unit",
         "points": 544.0,
-        "opponent_points": 506.0,
+        "opponent_points": 515.0,
         "opponent_name": "BBQ CHICKEN MADNESS",
         "result": "W",
-        "margin": 38.0
+        "margin": 29.0
       },
       {
         "team_id": 22,
         "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
-        "points": 527.0,
-        "opponent_points": 458.0,
+        "points": 535.0,
+        "opponent_points": 464.0,
         "opponent_name": "Las Villas ENDGAME",
         "result": "W",
-        "margin": 69.0
+        "margin": 71.0
+      },
+      {
+        "team_id": 9,
+        "team_name": "La Guillotina",
+        "points": 519.0,
+        "opponent_points": 562.0,
+        "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+        "result": "L",
+        "margin": 43.0
+      },
+      {
+        "team_id": 20,
+        "team_name": "BBQ CHICKEN MADNESS",
+        "points": 515.0,
+        "opponent_points": 544.0,
+        "opponent_name": "Bench warming brick layers unit",
+        "result": "L",
+        "margin": 29.0
       },
       {
         "team_id": 25,
         "team_name": "Ringo's Cool Team",
         "points": 511.0,
-        "opponent_points": 415.0,
+        "opponent_points": 411.0,
         "opponent_name": "Morovis  El Calor \ud83c\udfc6",
         "result": "W",
-        "margin": 96.0
-      },
-      {
-        "team_id": 20,
-        "team_name": "BBQ CHICKEN MADNESS",
-        "points": 506.0,
-        "opponent_points": 544.0,
-        "opponent_name": "Bench warming brick layers unit",
-        "result": "L",
-        "margin": 38.0
-      },
-      {
-        "team_id": 9,
-        "team_name": "La Guillotina",
-        "points": 506.0,
-        "opponent_points": 562.0,
-        "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-        "result": "L",
-        "margin": 56.0
+        "margin": 100.0
       },
       {
         "team_id": 18,
@@ -135,38 +130,38 @@
       {
         "team_id": 6,
         "team_name": "Las Villas ENDGAME",
-        "points": 458.0,
-        "opponent_points": 527.0,
+        "points": 464.0,
+        "opponent_points": 535.0,
         "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
         "result": "L",
-        "margin": 69.0
+        "margin": 71.0
       },
       {
         "team_id": 4,
         "team_name": "Minneapolis Lakers \ud83c\udfc6",
         "points": 423.0,
-        "opponent_points": 652.0,
+        "opponent_points": 660.0,
         "opponent_name": "Morrisville Fundamental",
         "result": "L",
-        "margin": 229.0
+        "margin": 237.0
       },
       {
         "team_id": 3,
         "team_name": "Morovis  El Calor \ud83c\udfc6",
-        "points": 415.0,
+        "points": 411.0,
         "opponent_points": 511.0,
         "opponent_name": "Ringo's Cool Team",
         "result": "L",
-        "margin": 96.0
+        "margin": 100.0
       },
       {
         "team_id": 17,
         "team_name": "El Mostroso",
-        "points": 393.0,
+        "points": 396.0,
         "opponent_points": 657.0,
         "opponent_name": "Los Suns de PFKNR",
         "result": "L",
-        "margin": 264.0
+        "margin": 261.0
       }
     ],
     "top_performances": [
@@ -181,6 +176,11 @@
         "points": 92.0
       },
       {
+        "player_name": "Joel Embiid",
+        "team_name": "Morrisville Fundamental",
+        "points": 91.0
+      },
+      {
         "player_name": "James Harden",
         "team_name": "Barrio Cerrillos \ud83c\udfc6",
         "points": 85.0
@@ -188,11 +188,6 @@
       {
         "player_name": "Anthony Davis",
         "team_name": "Minneapolis Lakers \ud83c\udfc6",
-        "points": 84.0
-      },
-      {
-        "player_name": "Cameron Boozer",
-        "team_name": "Los Suns de PFKNR",
         "points": 84.0
       }
     ],
