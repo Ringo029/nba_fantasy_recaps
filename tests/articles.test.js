@@ -75,13 +75,27 @@ test("article links and share metadata stay on that article", () => {
   assert.equal(articles.articleHref("/nba_fantasy_recaps/", { slug: "late" }), "/nba_fantasy_recaps/articles/late.html");
   assert.equal(articles.safeSitePath("javascript:alert(1)"), "");
   assert.equal(articles.publicationLabel(null), "");
-  assert.equal(articles.articleDateLabel({ author_date: "2026-11-16" }), "Nov 16, 2026");
+  assert.equal(articles.articleDateLabel({ author_date: "2026-11-16" }), "Written Nov 16, 2026");
   assert.equal(articles.articleDateLabel({}), "");
+  const sameTime = articles.articleDateLabel({
+    author_date: "2026-11-16",
+    published_at: "2026-11-21T15:00:00Z",
+    updated_at: "2026-11-21T15:00:00Z",
+  });
+  assert.match(sameTime, /^Written Nov 16, 2026 · Published /);
+  assert.equal(sameTime.includes("Updated "), false);
+  const edited = articles.articleDateLabel({
+    published_at: "2026-11-21T15:00:00Z",
+    updated_at: "2026-11-22T18:00:00Z",
+  });
+  assert.match(edited, /^Published /);
+  assert.match(edited, / · Updated /);
   assert.equal(
     articles.contextLabel({ wins: 2, losses: 2, ties: 0, standing_rank: 5, power_rank: 6, power_movement: "Up 1", label: "Through Week 4." }),
-    "2–2–0 · Standing 5 · Power 6, Up 1 · Through Week 4."
+    "2–2 · Standing #5 · Power #6, up 1 · Through Week 4."
   );
-  assert.equal(articles.contextLabel({ wins: 2, losses: 2, ties: 0 }), "2–2–0");
+  assert.equal(articles.contextLabel({ wins: 2, losses: 2, ties: 1, power_rank: 6, power_movement: "Down 2" }), "2–2–1 · Power #6, down 2");
+  assert.equal(articles.contextLabel({ wins: 2, losses: 2, ties: 0 }), "2–2");
   assert.equal(articles.contextLabel({ label: "Week 4" }).includes("Unavailable"), false);
   assert.match(articles.weekLabel("2026-27", 5), /2026–27/);
   assert.match(articles.weekLabel("2026-27", 5), /Week 5/);

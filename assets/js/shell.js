@@ -195,7 +195,7 @@
   function ensureArticleScript(doc, pathname) {
     if (!doc || !doc.createElement || !doc.querySelector || doc.querySelector("script[data-articles]")) return;
     const script = doc.createElement("script");
-    script.src = `${homeHref(pathname)}assets/js/articles.js?v=20261121b`;
+    script.src = `${homeHref(pathname)}assets/js/articles.js?v=20261121c`;
     script.setAttribute("data-articles", "true");
     (doc.body || doc.documentElement).appendChild(script);
   }

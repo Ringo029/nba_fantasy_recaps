@@ -45,26 +45,99 @@
   function articleDateLabel(article) {
     const parts = [];
     const author = formatDay(article && article.author_date);
-    if (author) parts.push(author);
+    if (author) parts.push(`Written ${author}`);
     if (article && article.published_at) {
       const published = publicationLabel(article.published_at);
       if (published) parts.push(`Published ${published}`);
     }
+    if (article && article.updated_at && article.updated_at !== article.published_at) {
+      const updated = publicationLabel(article.updated_at);
+      if (updated) parts.push(`Updated ${updated}`);
+    }
     return parts.join(" · ");
+  }
+
+  function movementParts(value) {
+    const text = String(value || "").trim();
+    const match = /^(Up|Down)\s+(\d+)$/i.exec(text);
+    if (match) {
+      const direction = match[1].toLowerCase();
+      return { arrow: `${direction === "up" ? "↑" : "↓"}${match[2]}`, words: `${direction} ${match[2]}` };
+    }
+    if (text.toLowerCase() === "unchanged") return { arrow: "", words: "unchanged" };
+    return { arrow: "", words: text };
   }
 
   function contextLabel(context) {
     if (!context || typeof context !== "object") return "";
     const bits = [];
     if (context.wins != null && context.losses != null && context.ties != null) {
-      bits.push(`${context.wins}–${context.losses}–${context.ties}`);
+      const record = Number(context.ties)
+        ? `${context.wins}–${context.losses}–${context.ties}`
+        : `${context.wins}–${context.losses}`;
+      bits.push(record);
     }
-    if (context.standing_rank != null) bits.push(`Standing ${context.standing_rank}`);
+    if (context.standing_rank != null) bits.push(`Standing #${context.standing_rank}`);
     if (context.power_rank != null) {
-      bits.push(context.power_movement ? `Power ${context.power_rank}, ${context.power_movement}` : `Power ${context.power_rank}`);
+      let power = `Power #${context.power_rank}`;
+      const move = movementParts(context.power_movement);
+      if (move.words) power += `, ${move.words}`;
+      bits.push(power);
     }
     if (context.label) bits.push(String(context.label));
     return bits.join(" · ");
+  }
+
+  function appendContext(doc, parent, context) {
+    if (!context || typeof context !== "object") return;
+    const row = doc.createElement("p");
+    row.className = "around-badges";
+    const addBadge = (text, label) => {
+      const badge = doc.createElement("span");
+      badge.className = "around-badge";
+      badge.textContent = text;
+      if (label) badge.setAttribute("aria-label", label);
+      row.appendChild(badge);
+      return badge;
+    };
+    if (context.wins != null && context.losses != null && context.ties != null) {
+      const record = Number(context.ties)
+        ? `${context.wins}–${context.losses}–${context.ties}`
+        : `${context.wins}–${context.losses}`;
+      addBadge(record);
+    }
+    if (context.standing_rank != null) addBadge(`Standing #${context.standing_rank}`);
+    if (context.power_rank != null) {
+      const badge = doc.createElement("span");
+      badge.className = "around-badge";
+      let spoken = `Power rank ${context.power_rank}`;
+      badge.appendChild(doc.createTextNode(`Power #${context.power_rank}`));
+      const move = movementParts(context.power_movement);
+      if (move.arrow && move.words) {
+        const icon = doc.createElement("span");
+        icon.setAttribute("aria-hidden", "true");
+        icon.textContent = ` ${move.arrow}`;
+        badge.appendChild(icon);
+        const words = doc.createElement("span");
+        words.className = "sr-only";
+        words.textContent = ` ${move.words}`;
+        badge.appendChild(words);
+        spoken += `, ${move.words}`;
+      } else if (move.words) {
+        badge.appendChild(doc.createTextNode(` ${move.words}`));
+        spoken += `, ${move.words}`;
+      }
+      badge.setAttribute("aria-label", spoken);
+      row.appendChild(badge);
+    }
+    if (context.label) {
+      const cutoff = doc.createElement("span");
+      cutoff.className = "around-cutoff";
+      cutoff.textContent = String(context.label);
+      if (context.source) cutoff.title = String(context.source);
+      row.appendChild(cutoff);
+    }
+    if (row.childNodes.length) parent.appendChild(row);
   }
 
   function initials(name) {
@@ -192,6 +265,12 @@
   function renderCard(doc, article, home) {
     const card = doc.createElement("article");
     card.className = "around-card";
+    if (article && article.featured) {
+      const kicker = doc.createElement("p");
+      kicker.className = "around-kicker";
+      kicker.textContent = "Around The League";
+      card.appendChild(kicker);
+    }
     appendIdentity(doc, card, article, home);
     const heading = doc.createElement("h3");
     const title = doc.createElement("a");
@@ -213,8 +292,7 @@
     if (article.status === "draft") addText(card, "around-draft", "Draft · Preview only.");
     const excerpt = addText(card, "around-excerpt", article.excerpt || "");
     excerpt.className = "around-excerpt";
-    const context = contextLabel(article.team_context);
-    if (context) addText(card, "around-context", context);
+    appendContext(doc, card, article.team_context);
     if (article.score_citation) addText(card, "score-citation", article.score_citation);
     const actions = doc.createElement("p");
     actions.className = "around-actions";
