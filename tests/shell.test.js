@@ -18,6 +18,22 @@ test("home links resolve at the site root and under nested recaps", () => {
   );
 });
 
+test("article pages keep home and week links and are not treated as home", () => {
+  assert.equal(shell.pageKind("/nba_fantasy_recaps/articles/note.html"), "around");
+  assert.equal(shell.pageKind("/nba_fantasy_recaps/seasons/2026-27/recaps/period-05.html"), "recaps");
+  assert.equal(shell.pageKind("/nba_fantasy_recaps/"), "home");
+  assert.equal(shell.aroundHref("/nba_fantasy_recaps/articles/note.html"), "/nba_fantasy_recaps/articles/index.html");
+  assert.equal(shell.sectionHref("/nba_fantasy_recaps/articles/note.html", "recaps"), "/nba_fantasy_recaps/#recaps");
+  assert.equal(
+    shell.homeHref("/C:/Users/chris/OneDrive/Documents/nba_fantasy_recaps/articles/note.html"),
+    "../"
+  );
+  assert.equal(
+    shell.aroundHref("/C:/Users/chris/OneDrive/Documents/nba_fantasy_recaps/seasons/2026-27/recaps/period-05.html"),
+    "../../../articles/index.html"
+  );
+});
+
 test("recap navigation targets the overview and the archive separately", () => {
   assert.equal(shell.sectionHref("/nba_fantasy_recaps/", "recaps"), "/nba_fantasy_recaps/#recaps");
   assert.equal(shell.sectionHref("/nba_fantasy_recaps/team_insights.html", "recaps"), "/nba_fantasy_recaps/#recaps");

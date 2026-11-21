@@ -38,6 +38,10 @@ All ESPN API calls happen in a **private repository**; only sanitized outputs ar
 └── md_recaps/             # Source markdown files (for reference)
 ```
 
+## Around The League
+
+`articles/` holds member analysis. Those pages are separate from the generated recap. Unpublished drafts are not in this repository. The listing reads `data/articles/index.json`, so a published article can appear on an older week without another score export.
+
 ## 🚀 Usage
 
 Just open `index.html` in your browser (or deploy to GitHub Pages). No server needed!
