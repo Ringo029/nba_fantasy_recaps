@@ -15,9 +15,62 @@
           "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/406bae80-e178-11f1-905a-af6fb8f27404"
         }
       ]
+    },
+    {
+      "author_id": "ringo",
+      "display_name": "Ringo",
+      "alias": null,
+      "teams": [
+        {
+          "team_id": 25,
+          "season_id": "2026-27",
+          "team_name": "Ringo's Cool Team",
+          "logo_url": "https://g.espncdn.com/lm-static/logo-packs/fba/8-bitHeros-JoeyEllis/8bit_basketball-03.svg"
+        }
+      ]
     }
   ],
   "articles": [
+    {
+      "article_id": "atl-2026-27-w5-redraft",
+      "slug": "the-league-re-draft",
+      "season_id": "2026-27",
+      "matchup_period_id": 5,
+      "title": "THE LEAGUE RE-DRAFT 🏀",
+      "excerpt": "4 Weeks Later… Who Actually Won Draft Night?",
+      "author_id": "ringo",
+      "author_display_name": "Ringo",
+      "author_date": null,
+      "article_type": "Draft analysis",
+      "language": "en",
+      "status": "published",
+      "published_at": "2026-11-21T23:26:42Z",
+      "updated_at": "2026-11-21T23:26:42Z",
+      "featured": false,
+      "score_as_of": "2026-11-21",
+      "score_citation": "Player season totals from the roster capture at 2026-11-21T11:48:46Z, during Matchup 5. The totals include games played in that matchup. They are not a through-Week-4 cutoff, and they are not points credited to the team that drafted each player.",
+      "team_context": {
+        "team_id": 25,
+        "as_of_period": 4,
+        "label": "Through Week 4.",
+        "source": "Finalized 2026-27 matchups 1-4 and the Week 4 power rankings. Standing rank is the shared win-loss record. It is not a playoff seed.",
+        "wins": 1,
+        "losses": 3,
+        "ties": 0,
+        "standing_rank": 10,
+        "power_rank": 12,
+        "power_movement": "Down 1"
+      },
+      "url": "articles/the-league-re-draft.html",
+      "recap_href": "seasons/2026-27/recaps/period-05.html",
+      "author_alias": null,
+      "team": {
+        "team_id": 25,
+        "season_id": "2026-27",
+        "team_name": "Ringo's Cool Team",
+        "logo_url": "https://g.espncdn.com/lm-static/logo-packs/fba/8-bitHeros-JoeyEllis/8bit_basketball-03.svg"
+      }
+    },
     {
       "article_id": "atl-2026-27-w5-tres-matchups",
       "slug": "tres-matchups-a-velar-este-weekend",
