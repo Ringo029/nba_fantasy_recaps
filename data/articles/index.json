@@ -1,6 +1,102 @@
 {
   "schema_version": 1,
   "preview": false,
-  "featured_article_id": null,
-  "articles": []
+  "featured_article_id": "atl-2026-27-w5-tres-matchups",
+  "authors": [
+    {
+      "author_id": "bbq-chicken-captain",
+      "display_name": "Walter",
+      "alias": "BBQ CHICKEN CAPTAIN 🍗",
+      "teams": [
+        {
+          "team_id": 20,
+          "season_id": "2026-27",
+          "team_name": "BBQ CHICKEN MADNESS",
+          "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/406bae80-e178-11f1-905a-af6fb8f27404"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "atl-2026-27-w5-tres-matchups",
+      "slug": "tres-matchups-a-velar-este-weekend",
+      "season_id": "2026-27",
+      "matchup_period_id": 5,
+      "title": "🚨 Tres matchups a velar este weekend",
+      "excerpt": "Tres matchups a velar este weekend, con los marcadores citados por el autor.",
+      "author_id": "bbq-chicken-captain",
+      "author_display_name": "Walter",
+      "author_date": "2026-11-20",
+      "article_type": "Midweek analysis",
+      "language": "es",
+      "status": "published",
+      "published_at": "2026-11-21T22:34:52Z",
+      "updated_at": "2026-11-21T22:34:52Z",
+      "featured": true,
+      "score_as_of": "2026-11-20",
+      "score_citation": "Marcadores citados por el autor al 20 de noviembre de 2026. No son marcadores en vivo.",
+      "team_context": {
+        "team_id": 20,
+        "as_of_period": 4,
+        "label": "Through Week 4.",
+        "source": "Finalized 2026-27 matchups 1-4 and the Week 4 power rankings. Standing rank is the shared win-loss record. It is not a playoff seed.",
+        "wins": 2,
+        "losses": 2,
+        "ties": 0,
+        "standing_rank": 5,
+        "power_rank": 6,
+        "power_movement": "Up 1"
+      },
+      "url": "articles/tres-matchups-a-velar-este-weekend.html",
+      "recap_href": "seasons/2026-27/recaps/period-05.html",
+      "author_alias": "BBQ CHICKEN CAPTAIN 🍗",
+      "team": {
+        "team_id": 20,
+        "season_id": "2026-27",
+        "team_name": "BBQ CHICKEN MADNESS",
+        "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/406bae80-e178-11f1-905a-af6fb8f27404"
+      }
+    },
+    {
+      "article_id": "atl-2026-27-w4-recap-matchup-4",
+      "slug": "the-league-recap-matchup-4",
+      "season_id": "2026-27",
+      "matchup_period_id": 4,
+      "title": "THE LEAGUE RECAP MATCHUP 4 · 9–15 NOV",
+      "excerpt": "GANADORES y PERDEDORES de esta semana, y los matchups a velar después.",
+      "author_id": "bbq-chicken-captain",
+      "author_display_name": "Walter",
+      "author_date": "2026-11-16",
+      "article_type": "Weekly recap",
+      "language": "es",
+      "status": "published",
+      "published_at": "2026-11-21T22:34:52Z",
+      "updated_at": "2026-11-21T22:34:52Z",
+      "featured": false,
+      "score_as_of": null,
+      "score_citation": null,
+      "team_context": {
+        "team_id": 20,
+        "as_of_period": 4,
+        "label": "Week 4",
+        "source": "Finalized 2026-27 matchups 1-4 and the Week 4 power rankings. Standing rank is the shared win-loss record. It is not a playoff seed.",
+        "wins": 2,
+        "losses": 2,
+        "ties": 0,
+        "standing_rank": 5,
+        "power_rank": 6,
+        "power_movement": "Up 1"
+      },
+      "url": "articles/the-league-recap-matchup-4.html",
+      "recap_href": "seasons/2026-27/recaps/period-04.html",
+      "author_alias": "BBQ CHICKEN CAPTAIN 🍗",
+      "team": {
+        "team_id": 20,
+        "season_id": "2026-27",
+        "team_name": "BBQ CHICKEN MADNESS",
+        "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/406bae80-e178-11f1-905a-af6fb8f27404"
+      }
+    }
+  ]
 }
