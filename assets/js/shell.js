@@ -165,23 +165,53 @@
     }
   }
 
-  function onHome(pathname) {
+  function pageKind(pathname) {
     const path = String(pathname || "");
-    return !/team_insights\.html/i.test(path) && !/\/recaps\//i.test(path);
+    if (/team_insights\.html/i.test(path)) return "my-team";
+    if (/\/recaps\//i.test(path)) return "recaps";
+    if (/\/articles\//i.test(path)) return "around";
+    return "home";
+  }
+
+  function onHome(pathname) {
+    return pageKind(pathname) === "home";
+  }
+
+  function aroundHref(pathname) {
+    return `${homeHref(pathname)}articles/index.html`;
+  }
+
+  function ensureAroundLink(doc) {
+    const nav = doc.querySelector && doc.querySelector(".league-nav");
+    if (!nav || nav.querySelector("[data-nav='around']")) return;
+    const link = doc.createElement("a");
+    link.setAttribute("data-nav", "around");
+    link.textContent = "Around The League";
+    const team = nav.querySelector("[data-nav='my-team']");
+    if (team) nav.insertBefore(link, team);
+    else nav.appendChild(link);
+  }
+
+  function ensureArticleScript(doc, pathname) {
+    if (!doc || !doc.createElement || !doc.querySelector || doc.querySelector("script[data-articles]")) return;
+    const script = doc.createElement("script");
+    script.src = `${homeHref(pathname)}assets/js/articles.js?v=20261121a`;
+    script.setAttribute("data-articles", "true");
+    (doc.body || doc.documentElement).appendChild(script);
   }
 
   function markLocation(doc, pathname, hash) {
     const path = String(pathname || "");
-    const onTeam = /team_insights\.html/i.test(path);
-    const onRecap = /\/recaps\//i.test(path);
-    const home = onHome(path);
+    const kind = pageKind(path);
+    const home = kind === "home";
     const current = {
       home: home && !hash,
       matchups: home && hash === "#matchups",
-      recaps: onRecap || (home && hash === "#recaps"),
+      recaps: kind === "recaps" || (home && hash === "#recaps"),
       "all-recaps": home && hash === "#all-recaps",
       standings: home && hash === "#standings",
-      "my-team": onTeam,
+      "my-team": kind === "my-team",
+      around: kind === "around",
     };
     doc.querySelectorAll("[data-nav]").forEach((link) => {
       const key = link.getAttribute("data-nav");
@@ -196,6 +226,7 @@
     const hash = typeof location !== "undefined" && !pathname ? location.hash : "";
     const home = homeHref(path);
     const saved = readSaved();
+    ensureAroundLink(doc);
     doc.querySelectorAll(".league-brand").forEach((link) => {
       link.href = home;
       link.setAttribute("aria-label", HOME_LABEL);
@@ -206,6 +237,7 @@
       recaps: withHash(home, "recaps"),
       "all-recaps": withHash(home, "all-recaps"),
       standings: withHash(home, "standings"),
+      around: aroundHref(path),
       "my-team": myTeamHref(path, saved),
     };
     doc.querySelectorAll("[data-nav]").forEach((link) => {
@@ -214,6 +246,9 @@
     });
     markLocation(doc, path, hash);
     syncHeaderOffset(doc);
+    if (typeof document !== "undefined" && doc === document) {
+      setTimeout(() => ensureArticleScript(doc, path), 0);
+    }
   }
 
   function syncHeaderOffset(doc) {
@@ -240,6 +275,8 @@
     homeHref,
     sectionHref,
     myTeamHref,
+    aroundHref,
+    pageKind,
     leagueName,
     weekRange,
     weekHeading,

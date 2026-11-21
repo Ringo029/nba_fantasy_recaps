@@ -282,6 +282,7 @@
     const viewLink = document.getElementById("view-full-recap");
     if (!recap) {
       if (hero) hero.hidden = true;
+      document.dispatchEvent(new CustomEvent("league-recap-selected", { detail: { seasonId: seasonId || "", period: "" } }));
       return;
     }
     if (hero) hero.hidden = false;
@@ -301,6 +302,9 @@
       viewLink.textContent = "Open recap";
     }
     if (source) source.textContent = "";
+    document.dispatchEvent(new CustomEvent("league-recap-selected", {
+      detail: { seasonId: seasonId || "", period: period || "" },
+    }));
   }
 
   function bindRecapPicker(finals, seasonId, navigation) {
