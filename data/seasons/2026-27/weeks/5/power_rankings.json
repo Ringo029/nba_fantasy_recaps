@@ -47,10 +47,10 @@
       "power_movement": "Down 3"
     },
     {
-      "team_id": 20,
-      "team_name": "BBQ CHICKEN MADNESS",
+      "team_id": 9,
+      "team_name": "La Guillotina",
       "power_rank": 8,
-      "power_movement": "Down 2"
+      "power_movement": "Unchanged"
     },
     {
       "team_id": 25,
@@ -59,10 +59,10 @@
       "power_movement": "Up 3"
     },
     {
-      "team_id": 9,
-      "team_name": "La Guillotina",
+      "team_id": 20,
+      "team_name": "BBQ CHICKEN MADNESS",
       "power_rank": 10,
-      "power_movement": "Down 2"
+      "power_movement": "Down 4"
     },
     {
       "team_id": 17,

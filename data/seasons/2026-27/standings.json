@@ -67,8 +67,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 6,
-      "power_rank": 10,
-      "power_movement": "Down 2"
+      "power_rank": 8,
+      "power_movement": "Unchanged"
     },
     {
       "team_id": 18,
@@ -100,8 +100,8 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 9,
-      "power_rank": 8,
-      "power_movement": "Down 2"
+      "power_rank": 10,
+      "power_movement": "Down 4"
     },
     {
       "team_id": 23,

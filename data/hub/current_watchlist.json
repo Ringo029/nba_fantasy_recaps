@@ -1,6 +1,6 @@
 {
   "label": "Current ESPN watchlist. Averages and injury attributes were observed at the capture time. This is not a schedule-based waiver ranking.",
-  "observed_at": "2026-11-21T11:48:46Z",
+  "observed_at": "2026-11-21T19:26:39Z",
   "historical_reconstruction": false,
   "avg_basis": "espn_season_total_applied_average_at_capture",
   "avg_basis_note": "avg_fantasy_points is ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals by the installed client, at observed_at. On the payloads checked for this client, appliedAverage equals appliedTotal divided by GP on that same split. GP is games that player has played, not team games and not fantasy matchup periods. games_played is that GP when the split includes it. The value is not points scored in the current matchup period.",
@@ -83,19 +83,6 @@
       "ownership_percent": null
     },
     {
-      "espn_player_id": 5254165,
-      "player_name": "Keaton Wagler",
-      "pro_team": "LAC",
-      "avg_fantasy_points": 11.43,
-      "games_played": 14.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
-      "injured": false,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
       "espn_player_id": 6589,
       "player_name": "Draymond Green",
       "pro_team": "GSW",
@@ -103,19 +90,6 @@
       "games_played": 13.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "DAY_TO_DAY",
-      "injured": false,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
-      "espn_player_id": 4066372,
-      "player_name": "Kevin Huerter",
-      "pro_team": "DET",
-      "avg_fantasy_points": 11.2,
-      "games_played": 15.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
       "injured": false,
       "acquisition_status": "free_agent",
       "ownership_status": "unavailable",
@@ -148,6 +122,32 @@
       "ownership_percent": null
     },
     {
+      "espn_player_id": 4576060,
+      "player_name": "Ryan Kalkbrenner",
+      "pro_team": "CHA",
+      "avg_fantasy_points": 10.8,
+      "games_played": 15.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
+      "espn_player_id": 4278585,
+      "player_name": "Collin Gillespie",
+      "pro_team": "PHO",
+      "avg_fantasy_points": 10.73,
+      "games_played": 15.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
       "espn_player_id": 5211175,
       "player_name": "Zaccharie Risacher",
       "pro_team": "DAL",
@@ -161,11 +161,11 @@
       "ownership_percent": null
     },
     {
-      "espn_player_id": 4065804,
-      "player_name": "Sam Hauser",
-      "pro_team": "BOS",
-      "avg_fantasy_points": 10.0,
-      "games_played": 15.0,
+      "espn_player_id": 4432241,
+      "player_name": "Jamal Shead",
+      "pro_team": "TOR",
+      "avg_fantasy_points": 10.31,
+      "games_played": 16.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,
@@ -180,8 +180,8 @@
       "avg_fantasy_points": 10.0,
       "games_played": 7.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "OUT",
-      "injured": true,
+      "injury_status": "DAY_TO_DAY",
+      "injured": false,
       "acquisition_status": "free_agent",
       "ownership_status": "unavailable",
       "ownership_percent": null
@@ -317,19 +317,6 @@
       "ownership_percent": null
     },
     {
-      "espn_player_id": 4351851,
-      "player_name": "Anfernee Simons",
-      "pro_team": "PHL",
-      "avg_fantasy_points": 9.25,
-      "games_played": 16.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
-      "injured": false,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
       "espn_player_id": 4896372,
       "player_name": "Walter Clayton Jr.",
       "pro_team": "DAL",
@@ -343,11 +330,11 @@
       "ownership_percent": null
     },
     {
-      "espn_player_id": 2581018,
-      "player_name": "Kentavious Caldwell-Pope",
+      "espn_player_id": 4351851,
+      "player_name": "Anfernee Simons",
       "pro_team": "PHL",
-      "avg_fantasy_points": 8.62,
-      "games_played": 16.0,
+      "avg_fantasy_points": 9.0,
+      "games_played": 17.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,
@@ -387,6 +374,19 @@
       "pro_team": "BKN",
       "avg_fantasy_points": 8.36,
       "games_played": 11.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
+      "espn_player_id": 2581018,
+      "player_name": "Kentavious Caldwell-Pope",
+      "pro_team": "PHL",
+      "avg_fantasy_points": 8.35,
+      "games_played": 17.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,
@@ -486,6 +486,19 @@
       "ownership_percent": null
     },
     {
+      "espn_player_id": 4277813,
+      "player_name": "Herbert Jones",
+      "pro_team": "NOP",
+      "avg_fantasy_points": 6.35,
+      "games_played": 17.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
       "espn_player_id": 6478,
       "player_name": "Nikola Vucevic",
       "pro_team": "ORL",
@@ -504,19 +517,6 @@
       "pro_team": "DAL",
       "avg_fantasy_points": 6.0,
       "games_played": 6.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
-      "injured": false,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
-      "espn_player_id": 4683678,
-      "player_name": "Scoot Henderson",
-      "pro_team": "POR",
-      "avg_fantasy_points": 5.67,
-      "games_played": 15.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,
