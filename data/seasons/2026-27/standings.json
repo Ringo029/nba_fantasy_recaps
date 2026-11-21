@@ -23,8 +23,8 @@
       "ties": 0,
       "rank": 1,
       "playoff_seed": 2,
-      "power_rank": 10,
-      "power_movement": "Down 8"
+      "power_rank": 11,
+      "power_movement": "Down 9"
     },
     {
       "team_id": 4,
@@ -45,18 +45,7 @@
       "ties": 0,
       "rank": 3,
       "playoff_seed": 4,
-      "power_rank": 6,
-      "power_movement": "Down 2"
-    },
-    {
-      "team_id": 9,
-      "team_name": "La Guillotina",
-      "wins": 2,
-      "losses": 2,
-      "ties": 0,
-      "rank": 5,
-      "playoff_seed": 5,
-      "power_rank": 11,
+      "power_rank": 7,
       "power_movement": "Down 3"
     },
     {
@@ -66,8 +55,19 @@
       "losses": 2,
       "ties": 0,
       "rank": 5,
+      "playoff_seed": 5,
+      "power_rank": 4,
+      "power_movement": "Down 1"
+    },
+    {
+      "team_id": 9,
+      "team_name": "La Guillotina",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "rank": 5,
       "playoff_seed": 6,
-      "power_rank": 5,
+      "power_rank": 10,
       "power_movement": "Down 2"
     },
     {
@@ -82,26 +82,26 @@
       "power_movement": "Down 1"
     },
     {
-      "team_id": 20,
-      "team_name": "BBQ CHICKEN MADNESS",
-      "wins": 2,
-      "losses": 2,
-      "ties": 0,
-      "rank": 5,
-      "playoff_seed": 8,
-      "power_rank": 8,
-      "power_movement": "Down 2"
-    },
-    {
       "team_id": 5,
       "team_name": "Barrio Cerrillos \ud83c\udfc6",
       "wins": 2,
       "losses": 2,
       "ties": 0,
       "rank": 5,
+      "playoff_seed": 8,
+      "power_rank": 5,
+      "power_movement": "Up 8"
+    },
+    {
+      "team_id": 20,
+      "team_name": "BBQ CHICKEN MADNESS",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "rank": 5,
       "playoff_seed": 9,
-      "power_rank": 3,
-      "power_movement": "Up 10"
+      "power_rank": 8,
+      "power_movement": "Down 2"
     },
     {
       "team_id": 23,
@@ -122,8 +122,8 @@
       "ties": 0,
       "rank": 10,
       "playoff_seed": 11,
-      "power_rank": 4,
-      "power_movement": "Up 3"
+      "power_rank": 3,
+      "power_movement": "Up 4"
     },
     {
       "team_id": 24,
@@ -133,8 +133,8 @@
       "ties": 0,
       "rank": 10,
       "playoff_seed": 12,
-      "power_rank": 7,
-      "power_movement": "Up 3"
+      "power_rank": 6,
+      "power_movement": "Up 4"
     },
     {
       "team_id": 25,
