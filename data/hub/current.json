@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "season_id": "2026-27",
-  "snapshot_id": "20261121T022750Z",
-  "generated_at": "2026-11-21T02:27:50Z",
-  "source_updated_at": "2026-11-21T02:27:48Z",
+  "snapshot_id": "20261121T025104Z",
+  "generated_at": "2026-11-21T02:51:04Z",
+  "source_updated_at": "2026-11-21T02:51:03Z",
   "matchup_period_id": 5,
   "period_start": "2026-11-16",
   "period_end": "2026-11-22",
@@ -21,14 +21,14 @@
   "warnings": [
     "Win probabilities are not published.",
     "Matchup 5 scores are ESPN box-score totals for that matchup. Season points-for on the live league were not used.",
-    "Fixture source is the ESPN fantasy pro schedule, not the NBA official schedule. Games in this matchup: 51. Scheduled future games: 16. Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed."
+    "Fixture source is the ESPN fantasy pro schedule, not the NBA official schedule. Games in this matchup: 51. Scheduled future games: 15. Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed."
   ],
   "power_formula": "power_score = 0.625 * normalized season points-for/points-against + 0.375 * normalized matchup-period points. Strength of schedule is not a component.",
   "latest_final_recap": {
     "season_id": "2026-27",
     "period_id": 4,
     "status": "final",
-    "generated_at": "2026-11-20T20:44:33Z",
+    "generated_at": "2026-11-21T02:51:01Z",
     "url": "seasons/2026-27/recaps/period-04.html",
     "summary": "Week 4 \u00b7 Nov 9\u201315 (Final) | 2026-11-09 to 2026-11-15 America/New_York | Team of the period: El Mostroso with 818 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
     "awards": {

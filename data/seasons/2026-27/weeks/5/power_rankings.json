@@ -35,16 +35,16 @@
       "power_movement": "Down 2"
     },
     {
-      "team_id": 24,
-      "team_name": "Bench warming brick layers unit",
-      "power_rank": 6,
-      "power_movement": "Up 4"
-    },
-    {
       "team_id": 6,
       "team_name": "Las Villas ENDGAME",
+      "power_rank": 6,
+      "power_movement": "Down 2"
+    },
+    {
+      "team_id": 24,
+      "team_name": "Bench warming brick layers unit",
       "power_rank": 7,
-      "power_movement": "Down 3"
+      "power_movement": "Up 3"
     },
     {
       "team_id": 20,
@@ -59,16 +59,16 @@
       "power_movement": "Up 3"
     },
     {
-      "team_id": 9,
-      "team_name": "La Guillotina",
-      "power_rank": 10,
-      "power_movement": "Down 2"
-    },
-    {
       "team_id": 17,
       "team_name": "El Mostroso",
+      "power_rank": 10,
+      "power_movement": "Down 8"
+    },
+    {
+      "team_id": 9,
+      "team_name": "La Guillotina",
       "power_rank": 11,
-      "power_movement": "Down 9"
+      "power_movement": "Down 3"
     },
     {
       "team_id": 18,

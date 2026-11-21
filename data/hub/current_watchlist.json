@@ -1,6 +1,6 @@
 {
   "label": "Current ESPN watchlist. Averages and injury attributes were observed at the capture time. This is not a schedule-based waiver ranking.",
-  "observed_at": "2026-11-21T02:27:48Z",
+  "observed_at": "2026-11-21T02:51:03Z",
   "historical_reconstruction": false,
   "avg_basis": "espn_season_total_applied_average_at_capture",
   "avg_basis_note": "avg_fantasy_points is ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals by the installed client, at observed_at. On the payloads checked for this client, appliedAverage equals appliedTotal divided by GP on that same split. GP is games that player has played, not team games and not fantasy matchup periods. games_played is that GP when the split includes it. The value is not points scored in the current matchup period.",
@@ -70,6 +70,19 @@
       "ownership_percent": null
     },
     {
+      "espn_player_id": 5107173,
+      "player_name": "Danny Wolf",
+      "pro_team": "BKN",
+      "avg_fantasy_points": 12.2,
+      "games_played": 10.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
       "espn_player_id": 5112087,
       "player_name": "Jaylen Wells",
       "pro_team": "MEM",
@@ -99,7 +112,7 @@
       "espn_player_id": 4278355,
       "player_name": "Obi Toppin",
       "pro_team": "IND",
-      "avg_fantasy_points": 11.85,
+      "avg_fantasy_points": 11.92,
       "games_played": 13.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
@@ -148,11 +161,11 @@
       "ownership_percent": null
     },
     {
-      "espn_player_id": 5107173,
-      "player_name": "Danny Wolf",
-      "pro_team": "BKN",
-      "avg_fantasy_points": 11.0,
-      "games_played": 10.0,
+      "espn_player_id": 4066372,
+      "player_name": "Kevin Huerter",
+      "pro_team": "DET",
+      "avg_fantasy_points": 11.13,
+      "games_played": 15.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,
@@ -178,19 +191,6 @@
       "player_name": "Zaccharie Risacher",
       "pro_team": "DAL",
       "avg_fantasy_points": 10.73,
-      "games_played": 15.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
-      "injured": false,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
-      "espn_player_id": 4066372,
-      "player_name": "Kevin Huerter",
-      "pro_team": "DET",
-      "avg_fantasy_points": 10.67,
       "games_played": 15.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
@@ -434,6 +434,19 @@
       "ownership_percent": null
     },
     {
+      "espn_player_id": 4278129,
+      "player_name": "Deandre Ayton",
+      "pro_team": "WAS",
+      "avg_fantasy_points": 7.35,
+      "games_played": 17.0,
+      "avg_basis": "espn_season_total_applied_average_at_capture",
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "acquisition_status": "free_agent",
+      "ownership_status": "unavailable",
+      "ownership_percent": null
+    },
+    {
       "espn_player_id": 4683692,
       "player_name": "Cason Wallace",
       "pro_team": "OKC",
@@ -442,19 +455,6 @@
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "OUT",
       "injured": true,
-      "acquisition_status": "free_agent",
-      "ownership_status": "unavailable",
-      "ownership_percent": null
-    },
-    {
-      "espn_player_id": 4278129,
-      "player_name": "Deandre Ayton",
-      "pro_team": "WAS",
-      "avg_fantasy_points": 7.29,
-      "games_played": 17.0,
-      "avg_basis": "espn_season_total_applied_average_at_capture",
-      "injury_status": "ACTIVE",
-      "injured": false,
       "acquisition_status": "free_agent",
       "ownership_status": "unavailable",
       "ownership_percent": null
@@ -486,11 +486,11 @@
       "ownership_percent": null
     },
     {
-      "espn_player_id": 4593125,
-      "player_name": "Santi Aldama",
-      "pro_team": "DAL",
+      "espn_player_id": 6478,
+      "player_name": "Nikola Vucevic",
+      "pro_team": "ORL",
       "avg_fantasy_points": 6.0,
-      "games_played": 6.0,
+      "games_played": 13.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,
@@ -499,11 +499,11 @@
       "ownership_percent": null
     },
     {
-      "espn_player_id": 6478,
-      "player_name": "Nikola Vucevic",
-      "pro_team": "ORL",
-      "avg_fantasy_points": 5.77,
-      "games_played": 13.0,
+      "espn_player_id": 4593125,
+      "player_name": "Santi Aldama",
+      "pro_team": "DAL",
+      "avg_fantasy_points": 6.0,
+      "games_played": 6.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
       "injured": false,
