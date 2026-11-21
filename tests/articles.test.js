@@ -74,7 +74,15 @@ test("article links and share metadata stay on that article", () => {
   assert.equal(articles.parseRecapLocation("/articles/note.html"), null);
   assert.equal(articles.articleHref("/nba_fantasy_recaps/", { slug: "late" }), "/nba_fantasy_recaps/articles/late.html");
   assert.equal(articles.safeSitePath("javascript:alert(1)"), "");
-  assert.equal(articles.publicationLabel(null), "Publication date unavailable");
+  assert.equal(articles.publicationLabel(null), "");
+  assert.equal(articles.articleDateLabel({ author_date: "2026-11-16" }), "Nov 16, 2026");
+  assert.equal(articles.articleDateLabel({}), "");
+  assert.equal(
+    articles.contextLabel({ wins: 2, losses: 2, ties: 0, standing_rank: 5, power_rank: 6, power_movement: "Up 1", label: "Through Week 4." }),
+    "2–2–0 · Standing 5 · Power 6, Up 1 · Through Week 4."
+  );
+  assert.equal(articles.contextLabel({ wins: 2, losses: 2, ties: 0 }), "2–2–0");
+  assert.equal(articles.contextLabel({ label: "Week 4" }).includes("Unavailable"), false);
   assert.match(articles.weekLabel("2026-27", 5), /2026–27/);
   assert.match(articles.weekLabel("2026-27", 5), /Week 5/);
   const share = articles.shareHref("🚨 Tres matchups", "https://ringo029.github.io/nba_fantasy_recaps/articles/late.html");

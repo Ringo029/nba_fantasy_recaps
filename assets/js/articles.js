@@ -16,15 +16,60 @@
   const state = { articles: null, home: "./", doc: null, pending: null };
 
   function publicationLabel(iso) {
-    if (!iso) return "Publication date unavailable";
+    if (!iso) return "";
     const date = new Date(iso);
-    if (Number.isNaN(date.getTime())) return "Publication date unavailable";
+    if (Number.isNaN(date.getTime())) return "";
     return new Intl.DateTimeFormat("en-US", {
       timeZone: "America/New_York",
       month: "short",
       day: "numeric",
       year: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      timeZoneName: "short",
     }).format(date);
+  }
+
+  function formatDay(value) {
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || ""));
+    if (!match) return "";
+    const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])));
+    return new Intl.DateTimeFormat("en-US", {
+      timeZone: "UTC",
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    }).format(date);
+  }
+
+  function articleDateLabel(article) {
+    const parts = [];
+    const author = formatDay(article && article.author_date);
+    if (author) parts.push(author);
+    if (article && article.published_at) {
+      const published = publicationLabel(article.published_at);
+      if (published) parts.push(`Published ${published}`);
+    }
+    return parts.join(" · ");
+  }
+
+  function contextLabel(context) {
+    if (!context || typeof context !== "object") return "";
+    const bits = [];
+    if (context.wins != null && context.losses != null && context.ties != null) {
+      bits.push(`${context.wins}–${context.losses}–${context.ties}`);
+    }
+    if (context.standing_rank != null) bits.push(`Standing ${context.standing_rank}`);
+    if (context.power_rank != null) {
+      bits.push(context.power_movement ? `Power ${context.power_rank}, ${context.power_movement}` : `Power ${context.power_rank}`);
+    }
+    if (context.label) bits.push(String(context.label));
+    return bits.join(" · ");
+  }
+
+  function initials(name) {
+    const words = String(name || "").trim().split(/\s+/).filter(Boolean).slice(0, 2);
+    return words.map((word) => word[0]).join("").toUpperCase() || "?";
   }
 
   function weekLabel(seasonId, period) {
@@ -96,29 +141,93 @@
     return el;
   }
 
+  function appendIdentity(doc, parent, article, home) {
+    const row = doc.createElement("div");
+    row.className = "around-identity";
+    const team = article && article.team;
+    if (team && team.team_name) {
+      const directory = typeof globalThis !== "undefined" ? globalThis.FantasyDirectory : null;
+      const logo = directory && directory.logoElement
+        ? directory.logoElement(team.logo_url || "", team.team_name, doc)
+        : null;
+      if (logo) {
+        logo.classList.add("around-logo");
+        row.appendChild(logo);
+      } else {
+        const span = doc.createElement("span");
+        span.className = "logo-fallback around-logo";
+        span.textContent = initials(team.team_name);
+        row.appendChild(span);
+      }
+    }
+    const text = doc.createElement("div");
+    text.className = "around-identity-text";
+    const name = doc.createElement("p");
+    name.className = "around-author";
+    name.textContent = (article && article.author_display_name) || "";
+    text.appendChild(name);
+    if (team && team.team_name && team.team_id != null && team.season_id) {
+      const flair = doc.createElement("a");
+      flair.className = "around-flair";
+      flair.href = `${home || "./"}team_insights.html?season=${encodeURIComponent(team.season_id)}&team_id=${encodeURIComponent(team.team_id)}`;
+      flair.textContent = team.team_name;
+      text.appendChild(flair);
+    }
+    row.appendChild(text);
+    parent.appendChild(row);
+  }
+
+  function absoluteArticleUrl(home, article) {
+    const href = articleHref(home, article);
+    if (typeof location !== "undefined" && location.href) {
+      try {
+        return new URL(href, location.href).href;
+      } catch (err) {
+        return href;
+      }
+    }
+    return href;
+  }
+
   function renderCard(doc, article, home) {
     const card = doc.createElement("article");
     card.className = "around-card";
-    addText(card, "around-attribution", ATTRIBUTION);
+    appendIdentity(doc, card, article, home);
     const heading = doc.createElement("h3");
     const title = doc.createElement("a");
     title.href = articleHref(home, article);
     title.textContent = article.title || "";
     heading.appendChild(title);
     card.appendChild(heading);
-    addText(card, null, article.excerpt || "");
-    addText(card, "around-meta", article.author_display_name || "");
-    addText(card, "around-meta", publicationLabel(article.published_at));
+    const meta = doc.createElement("p");
+    meta.className = "around-meta";
+    const badge = doc.createElement("span");
+    badge.className = "around-type";
+    badge.textContent = article.article_type || "";
+    meta.appendChild(badge);
     const season = String(article.season_id || "").replace("-", "–");
-    addText(card, "around-meta", `${season} · Week ${article.matchup_period_id} · ${article.article_type || ""}`);
+    meta.appendChild(doc.createTextNode(` ${season} · Week ${article.matchup_period_id}`));
+    const when = articleDateLabel(article);
+    if (when) meta.appendChild(doc.createTextNode(` · ${when}`));
+    card.appendChild(meta);
+    if (article.status === "draft") addText(card, "around-draft", "Draft · Preview only.");
+    const excerpt = addText(card, "around-excerpt", article.excerpt || "");
+    excerpt.className = "around-excerpt";
+    const context = contextLabel(article.team_context);
+    if (context) addText(card, "around-context", context);
     if (article.score_citation) addText(card, "score-citation", article.score_citation);
-    const recap = safeSitePath(article.recap_href);
-    if (recap) {
-      const link = doc.createElement("a");
-      link.href = `${home || "./"}${recap}`;
-      link.textContent = recap.endsWith(".html") ? `${season} Week ${article.matchup_period_id} recap` : `${season} Week ${article.matchup_period_id} matchups`;
-      card.appendChild(link);
-    }
+    const actions = doc.createElement("p");
+    actions.className = "around-actions";
+    const read = doc.createElement("a");
+    read.className = "btn btn-primary";
+    read.href = articleHref(home, article);
+    read.textContent = "Read full post";
+    const share = doc.createElement("a");
+    share.className = "btn";
+    share.href = shareHref(article.title, absoluteArticleUrl(home, article));
+    share.textContent = "Share";
+    actions.append(read, share);
+    card.appendChild(actions);
     return card;
   }
 
@@ -183,8 +292,8 @@
     const title = doc.createElement("h2");
     title.textContent = "Around The League";
     const note = doc.createElement("p");
-    note.className = "around-note";
-    note.textContent = "Member analysis for this week. Separate from the generated recap.";
+    note.className = "around-attribution";
+    note.textContent = ATTRIBUTION;
     const list = doc.createElement("div");
     list.className = "around-list";
     wrap.append(title, note, list);
@@ -228,10 +337,28 @@
     return "./";
   }
 
+  function attachLogoFallbacks(doc) {
+    const images = doc.querySelectorAll ? doc.querySelectorAll("img.around-logo") : [];
+    images.forEach((img) => {
+      const name = img.getAttribute("data-team-name") || "";
+      const apply = () => {
+        if (img.__fallbackApplied) return;
+        img.__fallbackApplied = true;
+        const span = doc.createElement("span");
+        span.className = "logo-fallback around-logo";
+        span.textContent = initials(name);
+        if (typeof img.replaceWith === "function") img.replaceWith(span);
+      };
+      img.addEventListener("error", apply);
+      if (img.complete && img.naturalWidth === 0) apply();
+    });
+  }
+
   function mount(doc) {
     const home = homeFrom();
     state.home = home;
     state.doc = doc;
+    attachLogoFallbacks(doc);
     const request = typeof fetch === "function" ? fetch(`${home}data/articles/index.json`, { cache: "no-store" }) : Promise.reject();
     return Promise.resolve(request)
       .then((response) => (response && response.ok ? response.json() : null))
@@ -242,7 +369,7 @@
         if (index.preview && doc.body && !doc.querySelector(".preview-banner")) {
           const banner = doc.createElement("p");
           banner.className = "preview-banner";
-          banner.textContent = "Local preview. This draft is not approved for publication.";
+          banner.textContent = "Draft · Preview only.";
           doc.body.insertBefore(banner, doc.body.firstChild);
         }
         renderFeatured(doc, articles, home);
@@ -264,6 +391,8 @@
   return {
     ATTRIBUTION,
     publicationLabel,
+    articleDateLabel,
+    contextLabel,
     weekLabel,
     selectFeatured,
     articlesForWeek,
