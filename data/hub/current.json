@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "season_id": "2026-27",
-  "snapshot_id": "20261122T194952Z",
-  "generated_at": "2026-11-22T19:49:52Z",
-  "source_updated_at": "2026-11-22T19:49:50Z",
+  "snapshot_id": "20261122T195857Z",
+  "generated_at": "2026-11-22T19:58:57Z",
+  "source_updated_at": "2026-11-22T19:58:55Z",
   "matchup_period_id": 5,
   "period_start": "2026-11-16",
   "period_end": "2026-11-22",
@@ -28,7 +28,7 @@
     "season_id": "2026-27",
     "period_id": 4,
     "status": "final",
-    "generated_at": "2026-11-22T11:59:58Z",
+    "generated_at": "2026-11-22T19:58:53Z",
     "url": "seasons/2026-27/recaps/period-04.html",
     "summary": "Week 4 \u00b7 Nov 9\u201315 (Final) | 2026-11-09 to 2026-11-15 America/New_York | Team of the period: El Mostroso with 818 pts | MVP: Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts | Closest: Minneapolis Lakers \ud83c\udfc6 (672) def. Bench warming brick layers unit (652) \u2014 margin 20 pts",
     "awards": {
