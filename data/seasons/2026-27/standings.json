@@ -34,8 +34,8 @@
       "ties": 0,
       "rank": 3,
       "playoff_seed": 3,
-      "power_rank": 13,
-      "power_movement": "Down 8"
+      "power_rank": 12,
+      "power_movement": "Down 7"
     },
     {
       "team_id": 6,
@@ -45,19 +45,8 @@
       "ties": 0,
       "rank": 3,
       "playoff_seed": 4,
-      "power_rank": 9,
-      "power_movement": "Down 5"
-    },
-    {
-      "team_id": 16,
-      "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-      "wins": 2,
-      "losses": 2,
-      "ties": 0,
-      "rank": 5,
-      "playoff_seed": 5,
-      "power_rank": 5,
-      "power_movement": "Down 2"
+      "power_rank": 8,
+      "power_movement": "Down 4"
     },
     {
       "team_id": 9,
@@ -66,9 +55,20 @@
       "losses": 2,
       "ties": 0,
       "rank": 5,
-      "playoff_seed": 6,
+      "playoff_seed": 5,
       "power_rank": 6,
       "power_movement": "Up 2"
+    },
+    {
+      "team_id": 16,
+      "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "rank": 5,
+      "playoff_seed": 6,
+      "power_rank": 4,
+      "power_movement": "Down 1"
     },
     {
       "team_id": 18,
@@ -78,7 +78,18 @@
       "ties": 0,
       "rank": 5,
       "playoff_seed": 7,
-      "power_rank": 12,
+      "power_rank": 13,
+      "power_movement": "Down 2"
+    },
+    {
+      "team_id": 20,
+      "team_name": "BBQ CHICKEN MADNESS",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "rank": 5,
+      "playoff_seed": 8,
+      "power_rank": 7,
       "power_movement": "Down 1"
     },
     {
@@ -88,31 +99,9 @@
       "losses": 2,
       "ties": 0,
       "rank": 5,
-      "playoff_seed": 8,
-      "power_rank": 4,
-      "power_movement": "Up 9"
-    },
-    {
-      "team_id": 20,
-      "team_name": "BBQ CHICKEN MADNESS",
-      "wins": 2,
-      "losses": 2,
-      "ties": 0,
-      "rank": 5,
       "playoff_seed": 9,
-      "power_rank": 10,
-      "power_movement": "Down 4"
-    },
-    {
-      "team_id": 23,
-      "team_name": "Los Suns de PFKNR",
-      "wins": 1,
-      "losses": 3,
-      "ties": 0,
-      "rank": 10,
-      "playoff_seed": 10,
-      "power_rank": 2,
-      "power_movement": "Up 7"
+      "power_rank": 5,
+      "power_movement": "Up 8"
     },
     {
       "team_id": 26,
@@ -121,9 +110,20 @@
       "losses": 3,
       "ties": 0,
       "rank": 10,
+      "playoff_seed": 10,
+      "power_rank": 2,
+      "power_movement": "Up 5"
+    },
+    {
+      "team_id": 23,
+      "team_name": "Los Suns de PFKNR",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0,
+      "rank": 10,
       "playoff_seed": 11,
       "power_rank": 3,
-      "power_movement": "Up 4"
+      "power_movement": "Up 6"
     },
     {
       "team_id": 24,
@@ -133,8 +133,8 @@
       "ties": 0,
       "rank": 10,
       "playoff_seed": 12,
-      "power_rank": 7,
-      "power_movement": "Up 3"
+      "power_rank": 9,
+      "power_movement": "Up 1"
     },
     {
       "team_id": 25,
@@ -144,8 +144,8 @@
       "ties": 0,
       "rank": 10,
       "playoff_seed": 13,
-      "power_rank": 8,
-      "power_movement": "Up 4"
+      "power_rank": 10,
+      "power_movement": "Up 2"
     },
     {
       "team_id": 3,
