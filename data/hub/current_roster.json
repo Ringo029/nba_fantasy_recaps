@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "label": "Current roster observation at observed_at. These rows are not a historical lineup, a past transaction, or a next-week projection.",
-  "observed_at": "2026-11-23T01:49:50Z",
+  "observed_at": "2026-11-23T01:58:58Z",
   "season_id": "2026-27",
   "matchup_period_id": 5,
   "historical_reconstruction": false,
@@ -35,7 +35,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 16.44,
+          "avg_fantasy_points": 16.69,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -204,7 +204,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 9.38,
+          "avg_fantasy_points": 9.69,
           "games_played": 13.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -379,7 +379,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 9.65,
+          "avg_fantasy_points": 9.76,
           "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -489,7 +489,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 10.86,
+          "avg_fantasy_points": 11.14,
           "games_played": 14.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -502,7 +502,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 19.06,
+          "avg_fantasy_points": 19.18,
           "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -541,7 +541,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 18.11,
+          "avg_fantasy_points": 18.06,
           "games_played": 18.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "TRADE"
@@ -554,7 +554,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 20.65,
+          "avg_fantasy_points": 20.94,
           "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "TRADE"
@@ -956,7 +956,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 18.38,
+          "avg_fantasy_points": 18.62,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -995,7 +995,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 10.17,
+          "avg_fantasy_points": 10.28,
           "games_played": 18.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -1008,7 +1008,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 10.94,
+          "avg_fantasy_points": 11.29,
           "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -1131,7 +1131,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 14.06,
+          "avg_fantasy_points": 14.22,
           "games_played": 18.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -1228,7 +1228,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 26.5,
+          "avg_fantasy_points": 26.31,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -1332,7 +1332,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 13.81,
+          "avg_fantasy_points": 13.88,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -1384,7 +1384,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 10.62,
+          "avg_fantasy_points": 10.5,
           "games_played": 8.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -1416,7 +1416,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 24.33,
+          "avg_fantasy_points": 24.53,
           "games_played": 15.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -1455,7 +1455,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 15.88,
+          "avg_fantasy_points": 16.12,
           "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -1559,7 +1559,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 8.0,
+          "avg_fantasy_points": 8.12,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -1572,7 +1572,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 12.47,
+          "avg_fantasy_points": 12.53,
           "games_played": 15.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -1585,7 +1585,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 10.12,
+          "avg_fantasy_points": 10.18,
           "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -1844,7 +1844,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 25.25,
+          "avg_fantasy_points": 25.75,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2019,7 +2019,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 26.73,
+          "avg_fantasy_points": 26.8,
           "games_played": 15.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2032,7 +2032,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 15.42,
+          "avg_fantasy_points": 15.33,
           "games_played": 12.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2162,7 +2162,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 7.56,
+          "avg_fantasy_points": 7.5,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -2246,7 +2246,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 8.47,
+          "avg_fantasy_points": 8.41,
           "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2272,8 +2272,8 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 13.12,
-          "games_played": 16.0,
+          "avg_fantasy_points": 12.47,
+          "games_played": 17.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
         },
@@ -2337,7 +2337,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 19.43,
+          "avg_fantasy_points": 19.57,
           "games_played": 14.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -2376,7 +2376,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 11.21,
+          "avg_fantasy_points": 11.14,
           "games_played": 14.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -2408,7 +2408,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 28.94,
+          "avg_fantasy_points": 28.88,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2525,7 +2525,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 17.85,
+          "avg_fantasy_points": 18.0,
           "games_played": 13.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2564,7 +2564,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 10.79,
+          "avg_fantasy_points": 11.14,
           "games_played": 14.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -2577,7 +2577,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 5.67,
+          "avg_fantasy_points": 6.0,
           "games_played": 18.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
@@ -2609,7 +2609,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 21.56,
+          "avg_fantasy_points": 21.44,
           "games_played": 16.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2635,7 +2635,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 16.27,
+          "avg_fantasy_points": 16.2,
           "games_played": 15.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2674,7 +2674,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 15.5,
+          "avg_fantasy_points": 15.64,
           "games_played": 14.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "DRAFT"
@@ -2778,7 +2778,7 @@
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 11.14,
+          "avg_fantasy_points": 11.29,
           "games_played": 14.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
