@@ -23,22 +23,22 @@
       "power_movement": "Up 6"
     },
     {
+      "team_id": 9,
+      "team_name": "La Guillotina",
+      "power_rank": 4,
+      "power_movement": "Up 4"
+    },
+    {
       "team_id": 16,
       "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-      "power_rank": 4,
-      "power_movement": "Down 1"
+      "power_rank": 5,
+      "power_movement": "Down 2"
     },
     {
       "team_id": 5,
       "team_name": "Barrio Cerrillos \ud83c\udfc6",
-      "power_rank": 5,
-      "power_movement": "Up 8"
-    },
-    {
-      "team_id": 9,
-      "team_name": "La Guillotina",
       "power_rank": 6,
-      "power_movement": "Up 2"
+      "power_movement": "Up 7"
     },
     {
       "team_id": 20,
@@ -47,10 +47,10 @@
       "power_movement": "Down 1"
     },
     {
-      "team_id": 6,
-      "team_name": "Las Villas ENDGAME",
+      "team_id": 25,
+      "team_name": "Ringo's Cool Team",
       "power_rank": 8,
-      "power_movement": "Down 4"
+      "power_movement": "Up 4"
     },
     {
       "team_id": 24,
@@ -59,28 +59,28 @@
       "power_movement": "Up 1"
     },
     {
-      "team_id": 25,
-      "team_name": "Ringo's Cool Team",
-      "power_rank": 10,
-      "power_movement": "Up 2"
-    },
-    {
       "team_id": 17,
       "team_name": "El Mostroso",
-      "power_rank": 11,
-      "power_movement": "Down 9"
+      "power_rank": 10,
+      "power_movement": "Down 8"
     },
     {
-      "team_id": 4,
-      "team_name": "Minneapolis Lakers \ud83c\udfc6",
-      "power_rank": 12,
+      "team_id": 6,
+      "team_name": "Las Villas ENDGAME",
+      "power_rank": 11,
       "power_movement": "Down 7"
     },
     {
       "team_id": 18,
       "team_name": "La Escuelita",
+      "power_rank": 12,
+      "power_movement": "Down 1"
+    },
+    {
+      "team_id": 4,
+      "team_name": "Minneapolis Lakers \ud83c\udfc6",
       "power_rank": 13,
-      "power_movement": "Down 2"
+      "power_movement": "Down 8"
     },
     {
       "team_id": 3,
