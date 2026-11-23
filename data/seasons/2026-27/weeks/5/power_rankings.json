@@ -29,22 +29,22 @@
       "power_movement": "Up 4"
     },
     {
+      "team_id": 25,
+      "team_name": "Ringo's Cool Team",
+      "power_rank": 5,
+      "power_movement": "Up 7"
+    },
+    {
       "team_id": 5,
       "team_name": "Barrio Cerrillos \ud83c\udfc6",
-      "power_rank": 5,
-      "power_movement": "Up 8"
+      "power_rank": 6,
+      "power_movement": "Up 7"
     },
     {
       "team_id": 16,
       "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-      "power_rank": 6,
-      "power_movement": "Down 3"
-    },
-    {
-      "team_id": 25,
-      "team_name": "Ringo's Cool Team",
       "power_rank": 7,
-      "power_movement": "Up 5"
+      "power_movement": "Down 4"
     },
     {
       "team_id": 20,
