@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "season_id": "2026-27",
+  "period_id": 6,
+  "awards": {
+    "team_of_period": "No games scored yet.",
+    "mvp": null,
+    "widest_margin": null,
+    "closest_matchup": null,
+    "scoring_table": [
+      {
+        "team_id": 20,
+        "team_name": "BBQ CHICKEN MADNESS",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Morrisville Fundamental",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 5,
+        "team_name": "Barrio Cerrillos \ud83c\udfc6",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Las Villas ENDGAME",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 24,
+        "team_name": "Bench warming brick layers unit",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 22,
+        "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Ringo's Cool Team",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 17,
+        "team_name": "El Mostroso",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Minneapolis Lakers \ud83c\udfc6",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 16,
+        "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Bench warming brick layers unit",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 18,
+        "team_name": "La Escuelita",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Los Suns de PFKNR",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 9,
+        "team_name": "La Guillotina",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Morovis  El Calor \ud83c\udfc6",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 6,
+        "team_name": "Las Villas ENDGAME",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 23,
+        "team_name": "Los Suns de PFKNR",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "La Escuelita",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 4,
+        "team_name": "Minneapolis Lakers \ud83c\udfc6",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "El Mostroso",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 3,
+        "team_name": "Morovis  El Calor \ud83c\udfc6",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "La Guillotina",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 26,
+        "team_name": "Morrisville Fundamental",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "BBQ CHICKEN MADNESS",
+        "result": "T",
+        "margin": 0.0
+      },
+      {
+        "team_id": 25,
+        "team_name": "Ringo's Cool Team",
+        "points": 0.0,
+        "opponent_points": 0.0,
+        "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "result": "T",
+        "margin": 0.0
+      }
+    ],
+    "limitations": [
+      "Player MVP and top performances are omitted. Historical player scoring could not be tied to these team totals.",
+      "Totals use matchup 6 and earlier finalized matchups only."
+    ]
+  }
+}
