@@ -5,7 +5,7 @@
   "awards": {
     "team_of_period": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 with 703 pts",
     "mvp": "Domantas Sabonis (Ringo's Cool Team) with 113 pts",
-    "widest_margin": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Calor \ud83c\udfc6 (494) \u2014 margin 209 pts",
+    "widest_margin": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Frio \ud83c\udfc6 (494) \u2014 margin 209 pts",
     "closest_matchup": "Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts",
     "highest_scoring_loss": "Ringo's Cool Team with 544 pts",
     "lowest_scoring_win": "Los Suns de PFKNR with 552 pts",
@@ -25,16 +25,16 @@
       }
     ],
     "storylines": [
-      "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Calor \ud83c\udfc6 (494) \u2014 margin 209 pts.",
+      "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Frio \ud83c\udfc6 (494) \u2014 margin 209 pts.",
       "El Mostroso (645) def. Bench warming brick layers unit (510) \u2014 margin 135 pts.",
       "Barrio Cerrillos \ud83c\udfc6 (620) def. Morrisville Fundamental (515) \u2014 margin 105 pts.",
-      "La Guillotina (638) def. La Escuelita (536) \u2014 margin 102 pts.",
+      "La Guillotina Saiyans \u26a1\ufe0f (638) def. La Escuelita (536) \u2014 margin 102 pts.",
       "Minneapolis Lakers \ud83c\udfc6 (598) def. Las Villas ENDGAME (539) \u2014 margin 59 pts.",
       "DX\u270c\ud83c\udffetwo words SUC-K IT!! (573) def. BBQ CHICKEN MADNESS (525) \u2014 margin 48 pts.",
       "Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts.",
       "Highest team score: El TumbaCuello \ud83c\udfc6\ud83c\udfc6 with 703 pts.",
       "Closest matchup: Los Suns de PFKNR (552) def. Ringo's Cool Team (544) \u2014 margin 8 pts.",
-      "Biggest win: El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Calor \ud83c\udfc6 (494) \u2014 margin 209 pts."
+      "Biggest win: El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (703) def. Morovis  El Frio \ud83c\udfc6 (494) \u2014 margin 209 pts."
     ],
     "scoring_table": [
       {
@@ -42,7 +42,7 @@
         "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
         "points": 703.0,
         "opponent_points": 494.0,
-        "opponent_name": "Morovis  El Calor \ud83c\udfc6",
+        "opponent_name": "Morovis  El Frio \ud83c\udfc6",
         "result": "W",
         "margin": 209.0
       },
@@ -57,7 +57,7 @@
       },
       {
         "team_id": 9,
-        "team_name": "La Guillotina",
+        "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "points": 638.0,
         "opponent_points": 536.0,
         "opponent_name": "La Escuelita",
@@ -123,7 +123,7 @@
         "team_name": "La Escuelita",
         "points": 536.0,
         "opponent_points": 638.0,
-        "opponent_name": "La Guillotina",
+        "opponent_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "result": "L",
         "margin": 102.0
       },
@@ -156,7 +156,7 @@
       },
       {
         "team_id": 3,
-        "team_name": "Morovis  El Calor \ud83c\udfc6",
+        "team_name": "Morovis  El Frio \ud83c\udfc6",
         "points": 494.0,
         "opponent_points": 703.0,
         "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
@@ -182,7 +182,7 @@
       },
       {
         "player_name": "Luka Doncic",
-        "team_name": "La Guillotina",
+        "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "points": 94.0
       },
       {

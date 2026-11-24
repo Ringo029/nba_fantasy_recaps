@@ -5,7 +5,7 @@
   "teams": [
     {
       "team_id": 3,
-      "team_name": "Morovis  El Calor \ud83c\udfc6",
+      "team_name": "Morovis  El Frio \ud83c\udfc6",
       "period_id": 2,
       "roster_status": "unavailable",
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
@@ -35,7 +35,7 @@
       "scoring_rank_line": "Week 2 scoring rank: 11 of 14.",
       "average_line": "69.9 below the Week 2 average.",
       "streak_line": "1 loss in a row through Week 2.",
-      "upcoming_line": "Average opponent power rank: 7.2. Power ranks through Week 2. 4 of 4 scheduled opponents rated. Next is La Guillotina, power rank 4."
+      "upcoming_line": "Average opponent power rank: 7.2. Power ranks through Week 2. 4 of 4 scheduled opponents rated. Next is La Guillotina Saiyans \u26a1\ufe0f, power rank 4."
     },
     {
       "team_id": 5,
@@ -45,7 +45,7 @@
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
       "attention": [],
       "lineup_assessment": "unavailable",
-      "result_line": "701\u2013520 vs Morovis  El Calor \ud83c\udfc6. Final.",
+      "result_line": "701\u2013520 vs Morovis  El Frio \ud83c\udfc6. Final.",
       "power_line": "Power rank 1. Up 3.",
       "all_play_line": "All-play through matchup 2: 20-6-0.",
       "luck_line": "Pythagorean luck through matchup 2: +0.76 wins.",
@@ -73,7 +73,7 @@
     },
     {
       "team_id": 9,
-      "team_name": "La Guillotina",
+      "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
       "period_id": 2,
       "roster_status": "unavailable",
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
@@ -171,7 +171,7 @@
       "scoring_rank_line": "Week 2 scoring rank: 5 of 14.",
       "average_line": "46.1 above the Week 2 average.",
       "streak_line": "2 wins in a row through Week 2.",
-      "upcoming_line": "Average opponent power rank: 6.5. Power ranks through Week 2. 4 of 4 scheduled opponents rated. Next is Morovis  El Calor \ud83c\udfc6, power rank 14."
+      "upcoming_line": "Average opponent power rank: 6.5. Power ranks through Week 2. 4 of 4 scheduled opponents rated. Next is Morovis  El Frio \ud83c\udfc6, power rank 14."
     },
     {
       "team_id": 23,
@@ -181,7 +181,7 @@
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
       "attention": [],
       "lineup_assessment": "unavailable",
-      "result_line": "695\u2013716 vs La Guillotina. Final.",
+      "result_line": "695\u2013716 vs La Guillotina Saiyans \u26a1\ufe0f. Final.",
       "power_line": "Power rank 8. Down 1.",
       "all_play_line": "All-play through matchup 2: 14-12-0.",
       "luck_line": "Pythagorean luck through matchup 2: +0.01 wins.",

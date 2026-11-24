@@ -5,7 +5,7 @@
   "teams": [
     {
       "team_id": 3,
-      "team_name": "Morovis  El Calor \ud83c\udfc6",
+      "team_name": "Morovis  El Frio \ud83c\udfc6",
       "period_id": 5,
       "roster_status": "unavailable",
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
@@ -18,7 +18,7 @@
       "scoring_rank_line": "Week 5 scoring rank: 12 of 14.",
       "average_line": "97.9 below the Week 5 average.",
       "streak_line": "5 losses in a row through Week 5.",
-      "upcoming_line": "Average opponent power rank: 6.2. Power ranks through Week 5. 4 of 4 scheduled opponents rated. Next is La Guillotina, power rank 4."
+      "upcoming_line": "Average opponent power rank: 6.2. Power ranks through Week 5. 4 of 4 scheduled opponents rated. Next is La Guillotina Saiyans \u26a1\ufe0f, power rank 4."
     },
     {
       "team_id": 4,
@@ -73,7 +73,7 @@
     },
     {
       "team_id": 9,
-      "team_name": "La Guillotina",
+      "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
       "period_id": 5,
       "roster_status": "unavailable",
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
@@ -86,7 +86,7 @@
       "scoring_rank_line": "Week 5 scoring rank: 3 of 14.",
       "average_line": "62.1 above the Week 5 average.",
       "streak_line": "1 win in a row through Week 5.",
-      "upcoming_line": "Average opponent power rank: 7.8. Power ranks through Week 5. 4 of 4 scheduled opponents rated. Next is Morovis  El Calor \ud83c\udfc6, power rank 14."
+      "upcoming_line": "Average opponent power rank: 7.8. Power ranks through Week 5. 4 of 4 scheduled opponents rated. Next is Morovis  El Frio \ud83c\udfc6, power rank 14."
     },
     {
       "team_id": 16,
@@ -96,7 +96,7 @@
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
       "attention": [],
       "lineup_assessment": "unavailable",
-      "result_line": "697\u2013738 vs La Guillotina. Final.",
+      "result_line": "697\u2013738 vs La Guillotina Saiyans \u26a1\ufe0f. Final.",
       "power_line": "Power rank 7. Down 4.",
       "all_play_line": "All-play through matchup 5: 38-27-0.",
       "luck_line": "Pythagorean luck through matchup 5: -0.48 wins.",
@@ -215,7 +215,7 @@
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
       "attention": [],
       "lineup_assessment": "unavailable",
-      "result_line": "708\u2013578 vs Morovis  El Calor \ud83c\udfc6. Final.",
+      "result_line": "708\u2013578 vs Morovis  El Frio \ud83c\udfc6. Final.",
       "power_line": "Power rank 5. Up 7.",
       "all_play_line": "All-play through matchup 5: 25-40-0.",
       "luck_line": "Pythagorean luck through matchup 5: -0.51 wins.",

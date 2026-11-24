@@ -21,8 +21,8 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 - DX✌🏾two words SUC-K IT!! (779) def. Barrio Cerrillos 🏆 (589) — margin 190 pts.
 - El Mostroso (818) def. La Escuelita (672) — margin 146 pts.
 - El TumbaCuello 🏆🏆 (750) def. Ringo's Cool Team (640) — margin 110 pts.
-- Las Villas ENDGAME (586) def. Morovis  El Calor 🏆 (488) — margin 98 pts.
-- BBQ CHICKEN MADNESS (669) def. La Guillotina (638) — margin 31 pts.
+- Las Villas ENDGAME (586) def. Morovis  El Frio 🏆 (488) — margin 98 pts.
+- BBQ CHICKEN MADNESS (669) def. La Guillotina Saiyans ⚡️ (638) — margin 31 pts.
 - Morrisville Fundamental (755) def. Los Suns de PFKNR (727) — margin 28 pts.
 - Minneapolis Lakers 🏆 (672) def. Bench warming brick layers unit (652) — margin 20 pts.
 - Highest team score: El Mostroso with 818 pts.
@@ -38,13 +38,13 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 - Los Suns de PFKNR: 727.0 (L) vs Morrisville Fundamental 755.0
 - La Escuelita: 672.0 (L) vs El Mostroso 818.0
 - Minneapolis Lakers 🏆: 672.0 (W) vs Bench warming brick layers unit 652.0
-- BBQ CHICKEN MADNESS: 669.0 (W) vs La Guillotina 638.0
+- BBQ CHICKEN MADNESS: 669.0 (W) vs La Guillotina Saiyans ⚡️ 638.0
 - Bench warming brick layers unit: 652.0 (L) vs Minneapolis Lakers 🏆 672.0
 - Ringo's Cool Team: 640.0 (L) vs El TumbaCuello 🏆🏆 750.0
-- La Guillotina: 638.0 (L) vs BBQ CHICKEN MADNESS 669.0
+- La Guillotina Saiyans ⚡️: 638.0 (L) vs BBQ CHICKEN MADNESS 669.0
 - Barrio Cerrillos 🏆: 589.0 (L) vs DX✌🏾two words SUC-K IT!! 779.0
-- Las Villas ENDGAME: 586.0 (W) vs Morovis  El Calor 🏆 488.0
-- Morovis  El Calor 🏆: 488.0 (L) vs Las Villas ENDGAME 586.0
+- Las Villas ENDGAME: 586.0 (W) vs Morovis  El Frio 🏆 488.0
+- Morovis  El Frio 🏆: 488.0 (L) vs Las Villas ENDGAME 586.0
 
 ## Top performances
 
@@ -58,11 +58,11 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 
 - Barrio Cerrillos 🏆 589.0 , DX✌🏾two words SUC-K IT!! 779.0
 - La Escuelita 672.0 , El Mostroso 818.0
-- Las Villas ENDGAME 586.0 , Morovis  El Calor 🏆 488.0
+- Las Villas ENDGAME 586.0 , Morovis  El Frio 🏆 488.0
 - Los Suns de PFKNR 727.0 , Morrisville Fundamental 755.0
 - Ringo's Cool Team 640.0 , El TumbaCuello 🏆🏆 750.0
 - Minneapolis Lakers 🏆 672.0 , Bench warming brick layers unit 652.0
-- La Guillotina 638.0 , BBQ CHICKEN MADNESS 669.0
+- La Guillotina Saiyans ⚡️ 638.0 , BBQ CHICKEN MADNESS 669.0
 
 ## Power rankings
 
@@ -73,13 +73,13 @@ Dates: 2026-11-09 to 2026-11-15 (America/New_York).
 - 5. Minneapolis Lakers 🏆 (Unchanged)
 - 6. BBQ CHICKEN MADNESS (Up 1)
 - 7. Morrisville Fundamental (Up 5)
-- 8. La Guillotina (Down 4)
+- 8. La Guillotina Saiyans ⚡️ (Down 4)
 - 9. Los Suns de PFKNR (Up 4)
 - 10. Bench warming brick layers unit (Down 2)
 - 11. La Escuelita (Down 5)
 - 12. Ringo's Cool Team (Down 1)
 - 13. Barrio Cerrillos 🏆 (Down 3)
-- 14. Morovis  El Calor 🏆 (Unchanged)
+- 14. Morovis  El Frio 🏆 (Unchanged)
 
 ## Limits
 

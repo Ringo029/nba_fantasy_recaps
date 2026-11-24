@@ -5,7 +5,7 @@
   "teams": [
     {
       "team_id": 3,
-      "team_name": "Morovis  El Calor \ud83c\udfc6",
+      "team_name": "Morovis  El Frio \ud83c\udfc6",
       "period_id": 1,
       "roster_status": "unavailable",
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
@@ -52,7 +52,7 @@
       "scoring_rank_line": "Week 1 scoring rank: 4 of 14.",
       "average_line": "49.1 above the Week 1 average.",
       "streak_line": "1 win in a row through Week 1.",
-      "upcoming_line": "Average opponent power rank: 8.2. Power ranks through Week 1. 4 of 4 scheduled opponents rated. Next is Morovis  El Calor \ud83c\udfc6, power rank 14."
+      "upcoming_line": "Average opponent power rank: 8.2. Power ranks through Week 1. 4 of 4 scheduled opponents rated. Next is Morovis  El Frio \ud83c\udfc6, power rank 14."
     },
     {
       "team_id": 6,
@@ -73,7 +73,7 @@
     },
     {
       "team_id": 9,
-      "team_name": "La Guillotina",
+      "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
       "period_id": 1,
       "roster_status": "unavailable",
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
@@ -96,7 +96,7 @@
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
       "attention": [],
       "lineup_assessment": "unavailable",
-      "result_line": "703\u2013494 vs Morovis  El Calor \ud83c\udfc6. Final.",
+      "result_line": "703\u2013494 vs Morovis  El Frio \ud83c\udfc6. Final.",
       "power_line": "Power rank 1. First ranking.",
       "all_play_line": "All-play through matchup 1: 13-0-0.",
       "luck_line": "Pythagorean luck through matchup 1: +0.33 wins.",
@@ -130,7 +130,7 @@
       "roster_reason": "Historical roster or lineup assignments were not captured for this period.",
       "attention": [],
       "lineup_assessment": "unavailable",
-      "result_line": "536\u2013638 vs La Guillotina. Final.",
+      "result_line": "536\u2013638 vs La Guillotina Saiyans \u26a1\ufe0f. Final.",
       "power_line": "Power rank 11. First ranking.",
       "all_play_line": "All-play through matchup 1: 4-9-0.",
       "luck_line": "Pythagorean luck through matchup 1: -0.41 wins.",
@@ -188,7 +188,7 @@
       "scoring_rank_line": "Week 1 scoring rank: 7 of 14.",
       "average_line": "18.9 below the Week 1 average.",
       "streak_line": "1 win in a row through Week 1.",
-      "upcoming_line": "Average opponent power rank: 7.5. Power ranks through Week 1. 4 of 4 scheduled opponents rated. Next is La Guillotina, power rank 3."
+      "upcoming_line": "Average opponent power rank: 7.5. Power ranks through Week 1. 4 of 4 scheduled opponents rated. Next is La Guillotina Saiyans \u26a1\ufe0f, power rank 3."
     },
     {
       "team_id": 24,

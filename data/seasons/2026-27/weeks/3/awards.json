@@ -5,15 +5,15 @@
   "awards": {
     "team_of_period": "Las Villas ENDGAME with 811 pts",
     "mvp": "Victor Wembanyama (Minneapolis Lakers \ud83c\udfc6) with 155 pts",
-    "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Calor \ud83c\udfc6 (608) \u2014 margin 171 pts",
-    "closest_matchup": "Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts",
-    "highest_scoring_loss": "La Guillotina with 735 pts",
+    "widest_margin": "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Frio \ud83c\udfc6 (608) \u2014 margin 171 pts",
+    "closest_matchup": "Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina Saiyans \u26a1\ufe0f (735) \u2014 margin 35 pts",
+    "highest_scoring_loss": "La Guillotina Saiyans \u26a1\ufe0f with 735 pts",
     "lowest_scoring_win": "Bench warming brick layers unit with 668 pts",
     "weekly_average_line": "League average: 673.9 pts",
     "highest_scoring_loss_teams": [
       {
         "team_id": 9,
-        "team_name": "La Guillotina",
+        "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "points": 735.0
       }
     ],
@@ -25,16 +25,16 @@
       }
     ],
     "storylines": [
-      "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Calor \ud83c\udfc6 (608) \u2014 margin 171 pts.",
+      "DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Frio \ud83c\udfc6 (608) \u2014 margin 171 pts.",
       "El Mostroso (694) def. Barrio Cerrillos \ud83c\udfc6 (545) \u2014 margin 149 pts.",
       "Bench warming brick layers unit (668) def. Los Suns de PFKNR (532) \u2014 margin 136 pts.",
       "Las Villas ENDGAME (811) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (691) \u2014 margin 120 pts.",
       "BBQ CHICKEN MADNESS (685) def. Ringo's Cool Team (590) \u2014 margin 95 pts.",
       "La Escuelita (690) def. Morrisville Fundamental (637) \u2014 margin 53 pts.",
-      "Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts.",
+      "Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina Saiyans \u26a1\ufe0f (735) \u2014 margin 35 pts.",
       "Highest team score: Las Villas ENDGAME with 811 pts.",
-      "Closest matchup: Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina (735) \u2014 margin 35 pts.",
-      "Biggest win: DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Calor \ud83c\udfc6 (608) \u2014 margin 171 pts."
+      "Closest matchup: Minneapolis Lakers \ud83c\udfc6 (770) def. La Guillotina Saiyans \u26a1\ufe0f (735) \u2014 margin 35 pts.",
+      "Biggest win: DX\u270c\ud83c\udffetwo words SUC-K IT!! (779) def. Morovis  El Frio \ud83c\udfc6 (608) \u2014 margin 171 pts."
     ],
     "scoring_table": [
       {
@@ -51,7 +51,7 @@
         "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
         "points": 779.0,
         "opponent_points": 608.0,
-        "opponent_name": "Morovis  El Calor \ud83c\udfc6",
+        "opponent_name": "Morovis  El Frio \ud83c\udfc6",
         "result": "W",
         "margin": 171.0
       },
@@ -60,13 +60,13 @@
         "team_name": "Minneapolis Lakers \ud83c\udfc6",
         "points": 770.0,
         "opponent_points": 735.0,
-        "opponent_name": "La Guillotina",
+        "opponent_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "result": "W",
         "margin": 35.0
       },
       {
         "team_id": 9,
-        "team_name": "La Guillotina",
+        "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "points": 735.0,
         "opponent_points": 770.0,
         "opponent_name": "Minneapolis Lakers \ud83c\udfc6",
@@ -129,7 +129,7 @@
       },
       {
         "team_id": 3,
-        "team_name": "Morovis  El Calor \ud83c\udfc6",
+        "team_name": "Morovis  El Frio \ud83c\udfc6",
         "points": 608.0,
         "opponent_points": 779.0,
         "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
@@ -172,7 +172,7 @@
       },
       {
         "player_name": "Luka Doncic",
-        "team_name": "La Guillotina",
+        "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "points": 128.0
       },
       {
@@ -187,7 +187,7 @@
       },
       {
         "player_name": "Bam Adebayo",
-        "team_name": "La Guillotina",
+        "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "points": 109.0
       }
     ],
