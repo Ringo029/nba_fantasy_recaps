@@ -11,10 +11,10 @@
       "power_movement": "Unchanged"
     },
     {
-      "team_id": 6,
-      "team_name": "Las Villas ENDGAME",
+      "team_id": 9,
+      "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
       "power_rank": 2,
-      "power_movement": "Up 9"
+      "power_movement": "Up 2"
     },
     {
       "team_id": 23,
@@ -23,22 +23,22 @@
       "power_movement": "Unchanged"
     },
     {
-      "team_id": 9,
-      "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
+      "team_id": 6,
+      "team_name": "Las Villas ENDGAME",
       "power_rank": 4,
-      "power_movement": "Unchanged"
+      "power_movement": "Up 7"
+    },
+    {
+      "team_id": 26,
+      "team_name": "Morrisville Fundamental",
+      "power_rank": 5,
+      "power_movement": "Down 3"
     },
     {
       "team_id": 20,
       "team_name": "BBQ CHICKEN MADNESS",
-      "power_rank": 5,
-      "power_movement": "Up 3"
-    },
-    {
-      "team_id": 16,
-      "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
       "power_rank": 6,
-      "power_movement": "Up 1"
+      "power_movement": "Up 2"
     },
     {
       "team_id": 17,
@@ -47,28 +47,28 @@
       "power_movement": "Up 3"
     },
     {
-      "team_id": 24,
-      "team_name": "Bench warming brick layers unit",
+      "team_id": 18,
+      "team_name": "La Escuelita",
       "power_rank": 8,
-      "power_movement": "Up 1"
+      "power_movement": "Up 4"
+    },
+    {
+      "team_id": 16,
+      "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
+      "power_rank": 9,
+      "power_movement": "Down 2"
     },
     {
       "team_id": 25,
       "team_name": "Ringo's Cool Team",
-      "power_rank": 9,
-      "power_movement": "Down 4"
-    },
-    {
-      "team_id": 26,
-      "team_name": "Morrisville Fundamental",
       "power_rank": 10,
-      "power_movement": "Down 8"
+      "power_movement": "Down 5"
     },
     {
-      "team_id": 18,
-      "team_name": "La Escuelita",
+      "team_id": 24,
+      "team_name": "Bench warming brick layers unit",
       "power_rank": 11,
-      "power_movement": "Up 1"
+      "power_movement": "Down 2"
     },
     {
       "team_id": 5,
