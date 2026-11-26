@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "label": "Current roster observation at observed_at. These rows are not a historical lineup, a past transaction, or a next-week projection.",
-  "observed_at": "2026-11-26T13:14:25Z",
+  "observed_at": "2026-11-26T17:03:44Z",
   "season_id": "2026-27",
   "matchup_period_id": 6,
   "historical_reconstruction": false,
@@ -398,15 +398,15 @@
           "acquisition_status": "ADD"
         },
         {
-          "espn_player_id": 5023693,
-          "player_name": "Tyrese Proctor",
-          "pro_team": "CLE",
+          "espn_player_id": 6589,
+          "player_name": "Draymond Green",
+          "pro_team": "GSW",
           "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "injured": false,
           "expected_return_date": null,
-          "avg_fantasy_points": 10.5,
-          "games_played": 18.0,
+          "avg_fantasy_points": 11.53,
+          "games_played": 15.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
         }
