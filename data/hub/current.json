@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "season_id": "2026-27",
-  "snapshot_id": "20261126T034729Z",
-  "generated_at": "2026-11-26T03:47:29Z",
-  "source_updated_at": "2026-11-26T03:47:28Z",
+  "snapshot_id": "20261126T131427Z",
+  "generated_at": "2026-11-26T13:14:27Z",
+  "source_updated_at": "2026-11-26T13:14:25Z",
   "matchup_period_id": 6,
   "period_start": "2026-11-23",
   "period_end": "2026-11-29",
@@ -29,22 +29,22 @@
     "season_id": "2026-27",
     "period_id": 5,
     "status": "final",
-    "generated_at": "2026-11-26T03:47:26Z",
+    "generated_at": "2026-11-26T13:14:23Z",
     "url": "seasons/2026-27/recaps/period-05.html",
-    "summary": "Week 5 \u00b7 Nov 16\u201322 (Final) | 2026-11-16 to 2026-11-22 America/New_York | Team of the period: Morrisville Fundamental with 866 pts | MVP: Nikola Jokic (Morrisville Fundamental) with 158 pts | Closest: BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (646) \u2014 margin 11 pts",
+    "summary": "Week 5 \u00b7 Nov 16\u201322 (Final) | 2026-11-16 to 2026-11-22 America/New_York | Team of the period: Morrisville Fundamental with 866 pts | MVP: Nikola Jokic (Morrisville Fundamental) with 158 pts | Closest: BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (647) \u2014 margin 10 pts",
     "awards": {
       "team_of_period": "Morrisville Fundamental with 866 pts",
       "mvp": "Nikola Jokic (Morrisville Fundamental) with 158 pts",
-      "widest_margin": "Los Suns de PFKNR (812) def. El Mostroso (525) \u2014 margin 287 pts",
-      "closest_matchup": "BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (646) \u2014 margin 11 pts",
-      "highest_scoring_loss": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 with 696 pts",
+      "widest_margin": "Los Suns de PFKNR (812) def. El Mostroso (524) \u2014 margin 288 pts",
+      "closest_matchup": "BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (647) \u2014 margin 10 pts",
+      "highest_scoring_loss": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 with 697 pts",
       "lowest_scoring_win": "BBQ CHICKEN MADNESS with 657 pts",
-      "weekly_average_line": "League average: 675.6 pts",
+      "weekly_average_line": "League average: 675.8 pts",
       "highest_scoring_loss_teams": [
         {
           "team_id": 16,
           "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-          "points": 696.0
+          "points": 697.0
         }
       ],
       "lowest_scoring_win_teams": [
@@ -55,16 +55,16 @@
         }
       ],
       "storylines": [
-        "Los Suns de PFKNR (812) def. El Mostroso (525) \u2014 margin 287 pts.",
+        "Los Suns de PFKNR (812) def. El Mostroso (524) \u2014 margin 288 pts.",
         "Morrisville Fundamental (866) def. Minneapolis Lakers \ud83c\udfc6 (598) \u2014 margin 268 pts.",
-        "DX\u270c\ud83c\udffetwo words SUC-K IT!! (713) def. Las Villas ENDGAME (557) \u2014 margin 156 pts.",
+        "DX\u270c\ud83c\udffetwo words SUC-K IT!! (713) def. Las Villas ENDGAME (558) \u2014 margin 155 pts.",
         "Ringo's Cool Team (708) def. Morovis  El Frio \ud83c\udfc6 (578) \u2014 margin 130 pts.",
         "Barrio Cerrillos \ud83c\udfc6 (710) def. La Escuelita (655) \u2014 margin 55 pts.",
-        "La Guillotina Saiyans \u26a1\ufe0f (738) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (696) \u2014 margin 42 pts.",
-        "BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (646) \u2014 margin 11 pts.",
+        "La Guillotina Saiyans \u26a1\ufe0f (738) def. El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (697) \u2014 margin 41 pts.",
+        "BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (647) \u2014 margin 10 pts.",
         "Highest team score: Morrisville Fundamental with 866 pts.",
-        "Closest matchup: BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (646) \u2014 margin 11 pts.",
-        "Biggest win: Los Suns de PFKNR (812) def. El Mostroso (525) \u2014 margin 287 pts."
+        "Closest matchup: BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (647) \u2014 margin 10 pts.",
+        "Biggest win: Los Suns de PFKNR (812) def. El Mostroso (524) \u2014 margin 288 pts."
       ],
       "scoring_table": [
         {
@@ -80,28 +80,28 @@
           "team_id": 23,
           "team_name": "Los Suns de PFKNR",
           "points": 812.0,
-          "opponent_points": 525.0,
+          "opponent_points": 524.0,
           "opponent_name": "El Mostroso",
           "result": "W",
-          "margin": 287.0
+          "margin": 288.0
         },
         {
           "team_id": 9,
           "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
           "points": 738.0,
-          "opponent_points": 696.0,
+          "opponent_points": 697.0,
           "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
           "result": "W",
-          "margin": 42.0
+          "margin": 41.0
         },
         {
           "team_id": 22,
           "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
           "points": 713.0,
-          "opponent_points": 557.0,
+          "opponent_points": 558.0,
           "opponent_name": "Las Villas ENDGAME",
           "result": "W",
-          "margin": 156.0
+          "margin": 155.0
         },
         {
           "team_id": 5,
@@ -124,20 +124,20 @@
         {
           "team_id": 16,
           "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-          "points": 696.0,
+          "points": 697.0,
           "opponent_points": 738.0,
           "opponent_name": "La Guillotina Saiyans \u26a1\ufe0f",
           "result": "L",
-          "margin": 42.0
+          "margin": 41.0
         },
         {
           "team_id": 20,
           "team_name": "BBQ CHICKEN MADNESS",
           "points": 657.0,
-          "opponent_points": 646.0,
+          "opponent_points": 647.0,
           "opponent_name": "Bench warming brick layers unit",
           "result": "W",
-          "margin": 11.0
+          "margin": 10.0
         },
         {
           "team_id": 18,
@@ -151,11 +151,11 @@
         {
           "team_id": 24,
           "team_name": "Bench warming brick layers unit",
-          "points": 646.0,
+          "points": 647.0,
           "opponent_points": 657.0,
           "opponent_name": "BBQ CHICKEN MADNESS",
           "result": "L",
-          "margin": 11.0
+          "margin": 10.0
         },
         {
           "team_id": 4,
@@ -178,20 +178,20 @@
         {
           "team_id": 6,
           "team_name": "Las Villas ENDGAME",
-          "points": 557.0,
+          "points": 558.0,
           "opponent_points": 713.0,
           "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
           "result": "L",
-          "margin": 156.0
+          "margin": 155.0
         },
         {
           "team_id": 17,
           "team_name": "El Mostroso",
-          "points": 525.0,
+          "points": 524.0,
           "opponent_points": 812.0,
           "opponent_name": "Los Suns de PFKNR",
           "result": "L",
-          "margin": 287.0
+          "margin": 288.0
         }
       ],
       "top_performances": [

@@ -35,22 +35,22 @@
       "power_movement": "Up 2"
     },
     {
+      "team_id": 25,
+      "team_name": "Ringo's Cool Team",
+      "power_rank": 6,
+      "power_movement": "Down 1"
+    },
+    {
       "team_id": 23,
       "team_name": "Los Suns de PFKNR",
-      "power_rank": 6,
-      "power_movement": "Down 3"
+      "power_rank": 7,
+      "power_movement": "Down 4"
     },
     {
       "team_id": 26,
       "team_name": "Morrisville Fundamental",
-      "power_rank": 7,
-      "power_movement": "Down 5"
-    },
-    {
-      "team_id": 25,
-      "team_name": "Ringo's Cool Team",
       "power_rank": 8,
-      "power_movement": "Down 3"
+      "power_movement": "Down 6"
     },
     {
       "team_id": 18,

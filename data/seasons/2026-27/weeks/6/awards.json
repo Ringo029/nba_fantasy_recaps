@@ -3,153 +3,153 @@
   "season_id": "2026-27",
   "period_id": 6,
   "awards": {
-    "team_of_period": "Las Villas ENDGAME with 362 pts",
+    "team_of_period": "Las Villas ENDGAME with 383 pts",
     "mvp": "Jaden McDaniels (Las Villas ENDGAME) with 90 pts",
-    "widest_margin": "Las Villas ENDGAME (362) def. Barrio Cerrillos \ud83c\udfc6 (232) \u2014 margin 130 pts",
-    "closest_matchup": "La Escuelita (317) def. Los Suns de PFKNR (303) \u2014 margin 14 pts",
-    "highest_scoring_loss": "Los Suns de PFKNR with 303 pts",
-    "lowest_scoring_win": "El Mostroso with 272 pts",
-    "weekly_average_line": "League average: 277.6 pts",
+    "widest_margin": "Las Villas ENDGAME (383) def. Barrio Cerrillos \ud83c\udfc6 (247) \u2014 margin 136 pts",
+    "closest_matchup": "La Escuelita (327) def. Los Suns de PFKNR (305) \u2014 margin 22 pts",
+    "highest_scoring_loss": "Ringo's Cool Team with 332 pts",
+    "lowest_scoring_win": "El Mostroso with 285 pts",
+    "weekly_average_line": "League average: 298.4 pts",
     "highest_scoring_loss_teams": [
       {
-        "team_id": 23,
-        "team_name": "Los Suns de PFKNR",
-        "points": 303.0
+        "team_id": 25,
+        "team_name": "Ringo's Cool Team",
+        "points": 332.0
       }
     ],
     "lowest_scoring_win_teams": [
       {
         "team_id": 17,
         "team_name": "El Mostroso",
-        "points": 272.0
+        "points": 285.0
       }
     ],
     "storylines": [
-      "Las Villas ENDGAME (362) def. Barrio Cerrillos \ud83c\udfc6 (232) \u2014 margin 130 pts.",
-      "La Guillotina Saiyans \u26a1\ufe0f (340) def. Morovis  El Frio \ud83c\udfc6 (212) \u2014 margin 128 pts.",
-      "El Mostroso (272) def. Minneapolis Lakers \ud83c\udfc6 (148) \u2014 margin 124 pts.",
-      "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (317) def. Bench warming brick layers unit (239) \u2014 margin 78 pts.",
-      "Morrisville Fundamental (295) def. BBQ CHICKEN MADNESS (241) \u2014 margin 54 pts.",
-      "DX\u270c\ud83c\udffetwo words SUC-K IT!! (311) def. Ringo's Cool Team (297) \u2014 margin 14 pts.",
-      "La Escuelita (317) def. Los Suns de PFKNR (303) \u2014 margin 14 pts.",
-      "Highest team score: Las Villas ENDGAME with 362 pts.",
-      "Closest matchup: La Escuelita (317) def. Los Suns de PFKNR (303) \u2014 margin 14 pts.",
-      "Biggest win: Las Villas ENDGAME (362) def. Barrio Cerrillos \ud83c\udfc6 (232) \u2014 margin 130 pts."
+      "Las Villas ENDGAME (383) def. Barrio Cerrillos \ud83c\udfc6 (247) \u2014 margin 136 pts.",
+      "La Guillotina Saiyans \u26a1\ufe0f (348) def. Morovis  El Frio \ud83c\udfc6 (220) \u2014 margin 128 pts.",
+      "El Mostroso (285) def. Minneapolis Lakers \ud83c\udfc6 (197) \u2014 margin 88 pts.",
+      "El TumbaCuello \ud83c\udfc6\ud83c\udfc6 (331) def. Bench warming brick layers unit (260) \u2014 margin 71 pts.",
+      "DX\u270c\ud83c\udffetwo words SUC-K IT!! (380) def. Ringo's Cool Team (332) \u2014 margin 48 pts.",
+      "Morrisville Fundamental (303) def. BBQ CHICKEN MADNESS (259) \u2014 margin 44 pts.",
+      "La Escuelita (327) def. Los Suns de PFKNR (305) \u2014 margin 22 pts.",
+      "Highest team score: Las Villas ENDGAME with 383 pts.",
+      "Closest matchup: La Escuelita (327) def. Los Suns de PFKNR (305) \u2014 margin 22 pts.",
+      "Biggest win: Las Villas ENDGAME (383) def. Barrio Cerrillos \ud83c\udfc6 (247) \u2014 margin 136 pts."
     ],
     "scoring_table": [
       {
         "team_id": 6,
         "team_name": "Las Villas ENDGAME",
-        "points": 362.0,
-        "opponent_points": 232.0,
+        "points": 383.0,
+        "opponent_points": 247.0,
         "opponent_name": "Barrio Cerrillos \ud83c\udfc6",
         "result": "W",
-        "margin": 130.0
+        "margin": 136.0
+      },
+      {
+        "team_id": 22,
+        "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "points": 380.0,
+        "opponent_points": 332.0,
+        "opponent_name": "Ringo's Cool Team",
+        "result": "W",
+        "margin": 48.0
       },
       {
         "team_id": 9,
         "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
-        "points": 340.0,
-        "opponent_points": 212.0,
+        "points": 348.0,
+        "opponent_points": 220.0,
         "opponent_name": "Morovis  El Frio \ud83c\udfc6",
         "result": "W",
         "margin": 128.0
       },
       {
+        "team_id": 25,
+        "team_name": "Ringo's Cool Team",
+        "points": 332.0,
+        "opponent_points": 380.0,
+        "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "result": "L",
+        "margin": 48.0
+      },
+      {
         "team_id": 16,
         "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-        "points": 317.0,
-        "opponent_points": 239.0,
+        "points": 331.0,
+        "opponent_points": 260.0,
         "opponent_name": "Bench warming brick layers unit",
         "result": "W",
-        "margin": 78.0
+        "margin": 71.0
       },
       {
         "team_id": 18,
         "team_name": "La Escuelita",
-        "points": 317.0,
-        "opponent_points": 303.0,
+        "points": 327.0,
+        "opponent_points": 305.0,
         "opponent_name": "Los Suns de PFKNR",
         "result": "W",
-        "margin": 14.0
-      },
-      {
-        "team_id": 22,
-        "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
-        "points": 311.0,
-        "opponent_points": 297.0,
-        "opponent_name": "Ringo's Cool Team",
-        "result": "W",
-        "margin": 14.0
+        "margin": 22.0
       },
       {
         "team_id": 23,
         "team_name": "Los Suns de PFKNR",
-        "points": 303.0,
-        "opponent_points": 317.0,
+        "points": 305.0,
+        "opponent_points": 327.0,
         "opponent_name": "La Escuelita",
         "result": "L",
-        "margin": 14.0
-      },
-      {
-        "team_id": 25,
-        "team_name": "Ringo's Cool Team",
-        "points": 297.0,
-        "opponent_points": 311.0,
-        "opponent_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
-        "result": "L",
-        "margin": 14.0
+        "margin": 22.0
       },
       {
         "team_id": 26,
         "team_name": "Morrisville Fundamental",
-        "points": 295.0,
-        "opponent_points": 241.0,
+        "points": 303.0,
+        "opponent_points": 259.0,
         "opponent_name": "BBQ CHICKEN MADNESS",
         "result": "W",
-        "margin": 54.0
+        "margin": 44.0
       },
       {
         "team_id": 17,
         "team_name": "El Mostroso",
-        "points": 272.0,
-        "opponent_points": 148.0,
+        "points": 285.0,
+        "opponent_points": 197.0,
         "opponent_name": "Minneapolis Lakers \ud83c\udfc6",
         "result": "W",
-        "margin": 124.0
-      },
-      {
-        "team_id": 20,
-        "team_name": "BBQ CHICKEN MADNESS",
-        "points": 241.0,
-        "opponent_points": 295.0,
-        "opponent_name": "Morrisville Fundamental",
-        "result": "L",
-        "margin": 54.0
+        "margin": 88.0
       },
       {
         "team_id": 24,
         "team_name": "Bench warming brick layers unit",
-        "points": 239.0,
-        "opponent_points": 317.0,
+        "points": 260.0,
+        "opponent_points": 331.0,
         "opponent_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
         "result": "L",
-        "margin": 78.0
+        "margin": 71.0
+      },
+      {
+        "team_id": 20,
+        "team_name": "BBQ CHICKEN MADNESS",
+        "points": 259.0,
+        "opponent_points": 303.0,
+        "opponent_name": "Morrisville Fundamental",
+        "result": "L",
+        "margin": 44.0
       },
       {
         "team_id": 5,
         "team_name": "Barrio Cerrillos \ud83c\udfc6",
-        "points": 232.0,
-        "opponent_points": 362.0,
+        "points": 247.0,
+        "opponent_points": 383.0,
         "opponent_name": "Las Villas ENDGAME",
         "result": "L",
-        "margin": 130.0
+        "margin": 136.0
       },
       {
         "team_id": 3,
         "team_name": "Morovis  El Frio \ud83c\udfc6",
-        "points": 212.0,
-        "opponent_points": 340.0,
+        "points": 220.0,
+        "opponent_points": 348.0,
         "opponent_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "result": "L",
         "margin": 128.0
@@ -157,11 +157,11 @@
       {
         "team_id": 4,
         "team_name": "Minneapolis Lakers \ud83c\udfc6",
-        "points": 148.0,
-        "opponent_points": 272.0,
+        "points": 197.0,
+        "opponent_points": 285.0,
         "opponent_name": "El Mostroso",
         "result": "L",
-        "margin": 124.0
+        "margin": 88.0
       }
     ],
     "top_performances": [
@@ -169,6 +169,16 @@
         "player_name": "Jaden McDaniels",
         "team_name": "Las Villas ENDGAME",
         "points": 90.0
+      },
+      {
+        "player_name": "Domantas Sabonis",
+        "team_name": "Ringo's Cool Team",
+        "points": 73.0
+      },
+      {
+        "player_name": "Deni Avdija",
+        "team_name": "DX\u270c\ud83c\udffetwo words SUC-K IT!!",
+        "points": 67.0
       },
       {
         "player_name": "LeBron James",
@@ -179,16 +189,6 @@
         "player_name": "Tyler Herro",
         "team_name": "La Guillotina Saiyans \u26a1\ufe0f",
         "points": 62.0
-      },
-      {
-        "player_name": "Julius Randle",
-        "team_name": "El TumbaCuello \ud83c\udfc6\ud83c\udfc6",
-        "points": 55.0
-      },
-      {
-        "player_name": "Shai Gilgeous-Alexander",
-        "team_name": "La Escuelita",
-        "points": 55.0
       }
     ],
     "limitations": [
