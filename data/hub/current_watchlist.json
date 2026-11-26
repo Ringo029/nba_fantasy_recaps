@@ -1,6 +1,6 @@
 {
   "label": "Current ESPN watchlist. Averages and injury attributes were observed at the capture time. This is not a schedule-based waiver ranking.",
-  "observed_at": "2026-11-26T03:38:46Z",
+  "observed_at": "2026-11-26T03:47:28Z",
   "historical_reconstruction": false,
   "avg_basis": "espn_season_total_applied_average_at_capture",
   "avg_basis_note": "avg_fantasy_points is ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals by the installed client, at observed_at. On the payloads checked for this client, appliedAverage equals appliedTotal divided by GP on that same split. GP is games that player has played, not team games and not fantasy matchup periods. games_played is that GP when the split includes it. The value is not points scored in the current matchup period.",
@@ -476,7 +476,7 @@
       "espn_player_id": 4066262,
       "player_name": "Malik Monk",
       "pro_team": "SAC",
-      "avg_fantasy_points": 6.76,
+      "avg_fantasy_points": 6.88,
       "games_played": 17.0,
       "avg_basis": "espn_season_total_applied_average_at_capture",
       "injury_status": "ACTIVE",
