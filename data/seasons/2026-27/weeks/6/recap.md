@@ -21,7 +21,7 @@ Dates: 2026-11-23 to 2026-11-29 (America/New_York).
 - Las Villas ENDGAME (383) def. Barrio Cerrillos 🏆 (247) — margin 136 pts.
 - La Guillotina Saiyans ⚡️ (348) def. Morovis  El Frio 🏆 (220) — margin 128 pts.
 - El Mostroso (285) def. Minneapolis Lakers 🏆 (197) — margin 88 pts.
-- El TumbaCuello 🏆🏆 (331) def. Bench warming brick layers unit (260) — margin 71 pts.
+- El TumbaCuello 🏆🏆 (332) def. Bench warming brick layers unit (260) — margin 72 pts.
 - DX✌🏾two words SUC-K IT!! (380) def. Ringo's Cool Team (332) — margin 48 pts.
 - Morrisville Fundamental (303) def. BBQ CHICKEN MADNESS (259) — margin 44 pts.
 - La Escuelita (327) def. Los Suns de PFKNR (305) — margin 22 pts.
@@ -34,13 +34,13 @@ Dates: 2026-11-23 to 2026-11-29 (America/New_York).
 - Las Villas ENDGAME: 383.0 (W) vs Barrio Cerrillos 🏆 247.0
 - DX✌🏾two words SUC-K IT!!: 380.0 (W) vs Ringo's Cool Team 332.0
 - La Guillotina Saiyans ⚡️: 348.0 (W) vs Morovis  El Frio 🏆 220.0
+- El TumbaCuello 🏆🏆: 332.0 (W) vs Bench warming brick layers unit 260.0
 - Ringo's Cool Team: 332.0 (L) vs DX✌🏾two words SUC-K IT!! 380.0
-- El TumbaCuello 🏆🏆: 331.0 (W) vs Bench warming brick layers unit 260.0
 - La Escuelita: 327.0 (W) vs Los Suns de PFKNR 305.0
 - Los Suns de PFKNR: 305.0 (L) vs La Escuelita 327.0
 - Morrisville Fundamental: 303.0 (W) vs BBQ CHICKEN MADNESS 259.0
 - El Mostroso: 285.0 (W) vs Minneapolis Lakers 🏆 197.0
-- Bench warming brick layers unit: 260.0 (L) vs El TumbaCuello 🏆🏆 331.0
+- Bench warming brick layers unit: 260.0 (L) vs El TumbaCuello 🏆🏆 332.0
 - BBQ CHICKEN MADNESS: 259.0 (L) vs Morrisville Fundamental 303.0
 - Barrio Cerrillos 🏆: 247.0 (L) vs Las Villas ENDGAME 383.0
 - Morovis  El Frio 🏆: 220.0 (L) vs La Guillotina Saiyans ⚡️ 348.0
@@ -62,7 +62,7 @@ Dates: 2026-11-23 to 2026-11-29 (America/New_York).
 - Minneapolis Lakers 🏆 197.0 , El Mostroso 285.0
 - La Guillotina Saiyans ⚡️ 348.0 , Morovis  El Frio 🏆 220.0
 - BBQ CHICKEN MADNESS 259.0 , Morrisville Fundamental 303.0
-- Bench warming brick layers unit 260.0 , El TumbaCuello 🏆🏆 331.0
+- Bench warming brick layers unit 260.0 , El TumbaCuello 🏆🏆 332.0
 
 ## Power rankings
 
