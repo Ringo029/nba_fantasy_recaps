@@ -1,6 +1,6 @@
 {
   "label": "Current ESPN watchlist. Averages and injury attributes were observed at the capture time. This is not a schedule-based waiver ranking.",
-  "observed_at": "2026-11-27T00:00:59Z",
+  "observed_at": "2026-11-27T01:47:50Z",
   "historical_reconstruction": false,
   "avg_basis": "espn_season_total_applied_average_at_capture",
   "avg_basis_note": "avg_fantasy_points is ESPN appliedAverage on the season-total split (stat id prefix 00), rounded to 2 decimals by the installed client, at observed_at. On the payloads checked for this client, appliedAverage equals appliedTotal divided by GP on that same split. GP is games that player has played, not team games and not fantasy matchup periods. games_played is that GP when the split includes it. The value is not points scored in the current matchup period.",
