@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "label": "Current roster observation at observed_at. These rows are not a historical lineup, a past transaction, or a next-week projection.",
-  "observed_at": "2026-11-28T08:00:32Z",
+  "observed_at": "2026-11-28T12:24:08Z",
   "season_id": "2026-27",
   "matchup_period_id": 6,
   "historical_reconstruction": false,
@@ -2644,7 +2644,7 @@
           "espn_player_id": 3059318,
           "player_name": "Joel Embiid",
           "pro_team": "PHL",
-          "lineup_slot": "UT",
+          "lineup_slot": "IR",
           "injury_status": "OUT",
           "injured": true,
           "expected_return_date": null,
@@ -2767,6 +2767,19 @@
           "expected_return_date": null,
           "avg_fantasy_points": 11.8,
           "games_played": 20.0,
+          "avg_basis": "espn_season_total_applied_average_at_capture",
+          "acquisition_status": "ADD"
+        },
+        {
+          "espn_player_id": 4870562,
+          "player_name": "Dominick Barlow",
+          "pro_team": "PHL",
+          "lineup_slot": "UT",
+          "injury_status": "ACTIVE",
+          "injured": false,
+          "expected_return_date": null,
+          "avg_fantasy_points": 15.0,
+          "games_played": 4.0,
           "avg_basis": "espn_season_total_applied_average_at_capture",
           "acquisition_status": "ADD"
         }
