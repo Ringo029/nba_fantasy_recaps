@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "season_id": "2026-27",
-  "snapshot_id": "20261127T233119Z",
-  "generated_at": "2026-11-27T23:31:19Z",
-  "source_updated_at": "2026-11-27T23:31:17Z",
+  "snapshot_id": "20261128T033144Z",
+  "generated_at": "2026-11-28T03:31:44Z",
+  "source_updated_at": "2026-11-28T03:31:42Z",
   "matchup_period_id": 6,
   "period_start": "2026-11-23",
   "period_end": "2026-11-29",
@@ -21,7 +21,7 @@
   "warnings": [
     "Win probabilities are not published.",
     "Matchup 6 scores are ESPN box-score totals for that matchup. Season points-for on the live league were not used.",
-    "Fixture source is the ESPN fantasy pro schedule, not the NBA official schedule. Games in this matchup: 48. Scheduled future games: 26. Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed.",
+    "Fixture source is the ESPN fantasy pro schedule, not the NBA official schedule. Games in this matchup: 48. Scheduled future games: 15. Game status is unavailable, so this is not an exact remaining-game count. Games whose tipoff has already passed are not labeled completed.",
     "ESPN pro schedule has no game on: 2026-11-26."
   ],
   "power_formula": "power_score = 0.625 * normalized season points-for/points-against + 0.375 * normalized matchup-period points. Strength of schedule is not a component.",
@@ -29,7 +29,7 @@
     "season_id": "2026-27",
     "period_id": 5,
     "status": "final",
-    "generated_at": "2026-11-27T19:11:37Z",
+    "generated_at": "2026-11-28T03:31:40Z",
     "url": "seasons/2026-27/recaps/period-05.html",
     "summary": "Week 5 \u00b7 Nov 16\u201322 (Final) | 2026-11-16 to 2026-11-22 America/New_York | Team of the period: Morrisville Fundamental with 866 pts | MVP: Nikola Jokic (Morrisville Fundamental) with 158 pts | Closest: BBQ CHICKEN MADNESS (657) def. Bench warming brick layers unit (647) \u2014 margin 10 pts",
     "awards": {
